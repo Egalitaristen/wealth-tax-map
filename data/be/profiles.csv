@@ -1,0 +1,43 @@
+profile_id,actor_id,platform,url,source,checked
+P00001,A0001,website,https://www.pvda.be,actors.csv website column,2026-10-23
+P00002,A0002,website,https://www.petermertens.be,actors.csv website column,2026-10-23
+P00003,A0003,website,https://www.raoulhedebouw.be,actors.csv website column,2026-10-23
+P00004,A0005,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00005,A0006,website,https://www.paulmagnette.be,actors.csv website column,2026-10-23
+P00006,A0007,website,https://www.groen.be,actors.csv website column,2026-10-23
+P00007,A0010,website,https://www.vooruit.org,actors.csv website column,2026-10-23
+P00008,A0012,website,https://www.abvv.be,actors.csv website column,2026-10-23
+P00009,A0014,website,https://www.lse.ac.uk/european-institute/people/academic-staff/de-grauwe,actors.csv website column,2026-10-23
+P00010,A0001,wikipedia,https://en.wikipedia.org/wiki/Harbor,Wikidata Q283202,2026-10-23
+P00011,A0002,wikipedia,https://en.wikipedia.org/wiki/Project_management_office,Wikidata Q2112461,2026-10-23
+P00012,A0006,wikipedia,https://en.wikipedia.org/wiki/Jessica_Hagedorn,Wikidata Q465222,2026-10-23
+P00013,A0007,wikipedia,https://en.wikipedia.org/wiki/Earl_Watson,Wikidata Q922434,2026-10-23
+P00014,A0010,wikipedia,https://en.wikipedia.org/wiki/Amazon_Fire,Wikidata Q196561,2026-10-23
+P00015,A0012,wikipedia,https://en.wikipedia.org/wiki/Cuddington%2C_Eddisbury,Wikidata Q2346743,2026-10-23
+P00016,A0030,website,https://www.ecolo.be,actors.csv website column,2026-10-23
+P00017,A0032,website,https://www.hetacv.be,actors.csv website column,2026-10-23
+P00018,A0034,website,https://www.oxfambelgique.be,actors.csv website column,2026-10-23
+P00019,A0036,website,https://www.hartbovenhard.be,actors.csv website column,2026-10-23
+P00020,A0016,wikipedia,https://en.wikipedia.org/wiki/Latin_American_Poker_Tour_season_1_results,Wikidata Q3290176,2026-10-23
+P00021,A0022,wikipedia,https://en.wikipedia.org/wiki/Silverware,Wikidata Q766432,2026-10-23
+P00022,A0023,x,https://x.com/CarolineDiament,Wikidata Q2939989,2026-10-23
+P00023,A0023,instagram,https://www.instagram.com/carolinediament/,Wikidata Q2939989,2026-10-23
+P00024,A0029,wikipedia,https://en.wikipedia.org/wiki/Carl_H._Johnson,Wikidata Q28530058,2026-10-23
+P00025,A0030,wikipedia,https://en.wikipedia.org/wiki/Fender_Coronado,Wikidata Q837092,2026-10-23
+P00026,A0040,wikipedia,https://en.wikipedia.org/wiki/Gremlins_%28franchise%29,Wikidata Q118876800,2026-10-23
+P00027,A0043,wikipedia,https://en.wikipedia.org/wiki/Derrick_McCall,Wikidata Q126487198,2026-10-23
+P00028,A0061,website,https://www.ptb.be,actors.csv website column,2026-10-23
+P00029,A0062,website,https://sint-niklaas.pvda.be,actors.csv website column,2026-10-23
+P00032,A0066,website,https://www.financite.be,actors.csv website column,2026-10-23
+P00033,A0067,website,https://www.toutautrechose.be,actors.csv website column,2026-10-23
+P00034,A0069,website,https://lirias.kuleuven.be,actors.csv website column,2026-10-23
+P00035,A0070,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00036,A0071,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00037,A0072,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00038,A0073,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00039,A0074,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00040,A0075,website,https://www.ps.be,actors.csv website column,2026-10-23
+P00043,A0078,website,https://antwerpen.pvda.be,actors.csv website column,2026-10-23
+P00046,A0073,wikipedia,https://en.wikipedia.org/wiki/Constance_Talmadge,Wikidata Q272213,2026-10-23
+P00049,A0082,website,https://gent.pvda.be,actors.csv website column,2026-10-23
+P00066,A0099,website,https://antwerpen.pvda.be,actors.csv website column,2026-10-23
