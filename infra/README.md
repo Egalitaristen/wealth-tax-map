@@ -29,7 +29,32 @@ Deploy again whenever `main` changes. The `validate` workflow on GitHub still ch
 
 Cloudflare dashboard → **Email** → **Email Routing** → create an address such as `contact@wealthtaxsupporters.com` that forwards to your own inbox. Use it for correction and removal requests and, later, the privacy policy.
 
-## 4. The database (when you are ready)
+## 4. Suggestions from the site
+
+The `/suggest` page posts to `/api/suggest`, handled by `worker/index.js`, which stores each suggestion in the D1
+database `wts-suggestions` (schema: `infra/d1/suggestions.sql`; binding and ID in `wrangler.jsonc`). It keeps no
+details about the sender, only a keyed hash of their IP and the day, which limits them to 20 suggestions a day. The key
+is the Worker secret `HASH_KEY` (`npx wrangler secret put HASH_KEY`). A hidden honeypot field catches simple bots.
+
+Review them from this machine:
+
+```bash
+python scripts/suggestions.py                          # the new ones
+python scripts/suggestions.py mark 1a2b3c4d added      # or duplicate / rejected, with an optional note
+python scripts/suggestions.py export new.csv           # hand the new ones to a research run
+```
+
+A suggestion is a lead, not evidence: check it against its source with the rules in `skill/SKILL.md` first. If spam
+gets through, add Cloudflare Turnstile to the form.
+
+To run the Worker locally with a local copy of the database:
+
+```bash
+npx wrangler d1 execute wts-suggestions --local --file infra/d1/suggestions.sql
+python scripts/build_site.py && npx wrangler dev --local
+```
+
+## 5. The community database (when you are ready)
 
 Install the CLI and sign in: `npx wrangler login`.
 

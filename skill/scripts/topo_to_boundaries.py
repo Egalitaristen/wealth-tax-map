@@ -25,11 +25,16 @@ Examples
       --flip-y --simplify 0.6 --source "(c) GeoBasis-DE / BKG (2025)" --licence dl-de/by-2-0 \\
       --licence-url https://www.govdata.de/dl-de/by-2-0 --code-scheme AGS --out data/de/boundaries.json
 
+  # Spanish provinces from es-atlas (IGN shapes), Gibraltar dropped and the Canary Islands moved into an inset
+  python skill/scripts/topo_to_boundaries.py provinces.json --object provinces --code-prop id --where "id!=54" \
+      --shift 35,38:17,6.8 --project lonlat --scale 100 --simplify 0.4 --licence CC-BY-4.0 \
+      --licence-url https://creativecommons.org/licenses/by/4.0/ --code-scheme "INE province codes" --out prov.json
+
   # Longitude/latitude shapes (for example geoBoundaries gbOpen, after checking that country's licence)
   python skill/scripts/topo_to_boundaries.py regions.geojson --project lonlat --name-prop shapeName \\
       --licence CC-BY-4.0 --licence-url https://www.geoboundaries.org/ --out data/xx/boundaries.json
 """
-import argparse, json, math, sys
+import argparse, fnmatch, json, math, sys
 from pathlib import Path
 
 
@@ -79,13 +84,21 @@ def simplify(pts, tol):
     return out if len(out) >= 4 else pts
 
 
+def keep(where, get):
+    """--where FIELD=V1,V2 keeps shapes whose FIELD is one of the values; FIELD!=V1,V2 drops them. Values may use * (53*)."""
+    if not where:
+        return True
+    neg = "!=" in where
+    key, _, vals = where.partition("!=" if neg else "=")
+    return any(fnmatch.fnmatchcase(str(get(key)), v) for v in vals.split(",")) != neg
+
+
 def read_topojson(a):
     topo = json.load(open(a.source_file, encoding="utf-8"))
     arcs = decode(topo)
     for g in topo["objects"][a.object]["geometries"]:
         props = g.get("properties", {}) or {}
-        key, _, val = a.where.partition("=")
-        if key and str(g.get("id") if key == "id" else props.get(key)) != val:
+        if not keep(a.where, lambda k: g.get("id") if k == "id" else props.get(k)):
             continue
         name = props.get(a.name_prop, "")
         polys = g.get("arcs") or []
@@ -96,10 +109,9 @@ def read_topojson(a):
 
 def read_geojson(a):
     gj = json.load(open(a.source_file, encoding="utf-8"))
-    key, _, val = a.where.partition("=")
     for f in gj.get("features", []):
         props, g = f.get("properties") or {}, f.get("geometry") or {}
-        if key and str(props.get(key)) != val:
+        if not keep(a.where, props.get):
             continue
         polys = g.get("coordinates") or []
         polys = polys if g.get("type") == "MultiPolygon" else [polys]
@@ -110,10 +122,9 @@ def read_shapefile(a):
     import shapefile  # pyshp
     sf = shapefile.Reader(a.source_file, encoding=a.encoding)
     fields = [f[0] for f in sf.fields[1:]]
-    key, _, val = a.where.partition("=")
     for sr in sf.iterShapeRecords():
         rec = dict(zip(fields, sr.record))
-        if key and str(rec.get(key)) != val:
+        if not keep(a.where, rec.get):
             continue
         pts, parts = sr.shape.points, list(sr.shape.parts) + [len(sr.shape.points)]
         rings = [pts[parts[i]:parts[i + 1]] for i in range(len(parts) - 1)]
@@ -132,7 +143,11 @@ def main():
     ap.add_argument("--scale", type=float, default=10, help="multiply coordinates before rounding to integers")
     ap.add_argument("--simplify", type=float, default=0, help="Douglas-Peucker tolerance in output units (0 = off)")
     ap.add_argument("--flip-y", action="store_true", help="planar sources with y pointing up (most shapefiles)")
-    ap.add_argument("--where", default="", help="keep only shapes where FIELD=VALUE (for example GF=9 for land areas in BKG data)")
+    ap.add_argument("--where", default="", help="keep only shapes where FIELD=V1,V2 (GF=9 keeps land areas in BKG data), "
+                                                "or drop them with FIELD!=V1,V2")
+    ap.add_argument("--shift", action="append", default=[], metavar="CODES:DX,DY",
+                    help="move outlying areas into an inset, in source units, before projecting: 35,38:5,7 moves the "
+                         "shapes with codes 35 and 38 (the Canary Islands) 5 east and 7 north; codes may use * (35*). Repeatable")
     ap.add_argument("--source", default="", help="where the shapes come from and the credit the licence asks for")
     ap.add_argument("--licence", required=True,
                     help="the shapes' open licence, as the source states it (CC0-1.0, CC-BY-4.0, OGL-UK-3.0, ...). "
@@ -141,6 +156,7 @@ def main():
     ap.add_argument("--code-scheme", default="",
                     help="the official code system in --code-prop (GSS, FIPS, AGS, LGD ...); required for the local "
                          "units. Never invent codes")
+    ap.add_argument("--strip-prefix", default="", help="drop this prefix from codes (OCHA P-codes: BR1100015 -> 1100015)")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     if a.licence.strip().lower() in ("", "unknown", "none", "not stated", "unclear"):
@@ -152,6 +168,15 @@ def main():
     if ext == "json" and not a.object:
         ap.error("--object is needed for TopoJSON")
     shapes = list(read_shapefile(a) if ext == "shp" else read_geojson(a) if ext == "geojson" else read_topojson(a))
+    if a.strip_prefix:
+        shapes = [(n, str(c)[len(a.strip_prefix):] if str(c).startswith(a.strip_prefix) else c, r) for n, c, r in shapes]
+    for spec in a.shift:
+        codes, _, d = spec.partition(":")
+        dx, dy = (float(v) for v in d.split(","))
+        codes = codes.split(",")
+        shapes = [(n, c, [[(p[0] + dx, p[1] + dy) for p in r] for r in rings])
+                  if any(fnmatch.fnmatchcase(str(c), k) for k in codes) else (n, c, rings)
+                  for n, c, rings in shapes]
     lats = [p[1] for _, _, rings in shapes for r in rings for p in r]
     k = math.cos(math.radians((min(lats) + max(lats)) / 2)) if a.project == "lonlat" else 1.0
     flip = a.project == "lonlat" or a.flip_y
@@ -171,7 +196,8 @@ def main():
                     pts.append(p)
             if len(pts) < 3:
                 continue
-            d += "M" + "L".join(f"{x} {y}" for x, y in pts) + "Z"
+            # Relative steps after the first point keep the file small (a commune map has 35,000 shapes)
+            d += f"M{pts[0][0]} {pts[0][1]}l" + " ".join(f"{x - px} {y - py}" for (px, py), (x, y) in zip(pts, pts[1:])) + "z"
             xs += [p[0] for p in pts]; ys += [p[1] for p in pts]; npts += len(pts)
         if d:
             units.append({"name": str(name), "code": str(code or ""), "path": d})

@@ -1,0 +1,23 @@
+{
+  "name": "Brazil",
+  "iso2": "BR",
+  "lead": "Egalitaristen",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Depth: seed. Scope: national level. R001 (2026-10-21) covered every bill on the Imposto sobre Grandes Fortunas (IGF) filed in the Câmara since 2010 and its named authors (45 bills, H0001-H0045), the Senate bills found by web search (H0046-H0049), the roll call of 30 Oct 2024 on the PSOL-Rede wealth-tax amendment to PLP 108/2024 (136 yes, 262 no; H0050), Lula and Haddad on the G20 billionaire-tax track, the 'Tem Um Elefante Na Sala' coalition (Oxfam Brasil, Inesc, Dieese and others) and one tax-justice professional. The register holds the root, three federal bodies, the 27 UFs and the 5,570 municípios (IBGE codes). R002 (2026-10-21) added the Senate (eight bills, four senators' statements), the 2020 'Tributar os Super-Ricos' campaign and its study (Fagnani, Fenafisco, Anfip, IJF, MST, UNE and others), ten union centrais, the six left parties via press reports, Ciro Gomes, Flávio Dino, Zucman, Luciana Genro, Walter Salles, the G20 declaration and one Ipsos poll. R003 added the PSOL's ADO 55 petition, the PDT 2022 plan, a 2010 interview with Luciana Genro, Piketty, an O Povo editorial, Walter Salles's own words, the 2026 'Taxar os Super-ricos' campaign and Fenafisco's president. Not done: party programmes from primary pages, committee hearings and plenary speeches, most economists and columnists, CNBB and faith groups (no statement found), the full signatory list of the 2020 campaign, state assemblies and city councils. Party and state in actors.csv are those at the member's latest recorded status, not necessarily when the bill was filed. No map: IBGE's mesh is available through its API, but I could not confirm an open licence for it, so none was built (SKILL.md section 5, map licence rule). Map (review, 2026-10-21): municípios and states from IBGE's 2020 boundaries as republished by OCHA ROLAC on HDX (cod-ab-bra) under CC BY-IGO, matched by IBGE code; Boa Esperança do Norte (MT, created 2025) has no shape yet.",
+  "polls": [
+    {
+      "support": 69,
+      "oppose": null,
+      "scope": "Brazil, adults aged 18-75, online",
+      "question": "A higher tax on the large fortunes concentrated in the hands of the 'super-rich'",
+      "question_original": "",
+      "pollster": "Ipsos",
+      "commissioned_by": "Earth4All (survey partner)",
+      "fieldwork": "2024-03-05 to 2024-04-08",
+      "sample": "22,000 respondents in 22 countries",
+      "published": "2024-06-24",
+      "url": "https://www.poder360.com.br/economia/69-dos-brasileiros-apoiam-taxar-super-ricos-diz-pesquisa/"
+    }
+  ]
+}

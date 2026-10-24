@@ -14,7 +14,7 @@
 - [ ] I ran `wtdb.py dedupe` and merged true duplicates
 - [ ] Supporters only: no opponents, no petition signers, no private individuals
 - [ ] I checked for death records; anyone found dead is in `exclusions.csv`
-- [ ] New rows are `verified=n` (only a second person sets `y`)
+- [ ] `checkquotes` finds every new quote on its source
 - [ ] `meta.json` is filled in (`name`, `iso2`, `lead`, `status`)
 - [ ] If there is a map: the shapes have a stated open licence (named here, with a link), and the unit codes are the official ones, not invented (`licence`, `licence_url` and `code_scheme` in `boundaries.json`)
 

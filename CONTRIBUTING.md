@@ -10,7 +10,7 @@ Thanks for helping. This project records, with sources, who publicly supports a 
 4. **Public figures and organisations only.** Never add petition signers or private individuals. Self-declared signers of a public open letter are fine.
 5. **Grade honestly.** A: formal act or a stated design. B: names a wealth tax. C: implied. When unsure, use the lower grade.
 6. **People are assumed alive.** Check for a death record (Wikidata is a good start) and set `alive_checked=y`. If dead, add them to `exclusions.csv` with reason `deceased`, not to `actors.csv`. Do not write "alive" or "no Wikidata match" in `notes`; notes are shown to readers and are for identity caveats and sources only.
-7. **New rows are `verified=n`.** Only a second person who opened the source and confirmed the quote may set `verified=y`.
+7. **Every quote is found on its source.** Run `wtdb.py checkquotes` and fix or remove what it cannot find.
 
 ## Adding a country or region
 
@@ -37,7 +37,6 @@ Allowed and encouraged, with these conditions:
 
 - State in the pull request that an assistant did the research.
 - Check a sample of its rows yourself against the sources. Assistants invent quotes and misread dates.
-- Do not let an assistant mark rows `verified=y` on its own.
 - Assistants and agents work on a branch and open a pull request. They never push to `main`.
 - Record what you chose to leave out (levels, years, sources that blocked you) in `meta.json` `notes` and the area profile, so the next person can continue.
 

@@ -1,0 +1,52 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0001,A0002,A0001,member_of,E00002,https://www.pvda.be/programma/miljonairstaks,General Secretary and MP of PTB-PVDA
+L0002,A0003,A0001,leads,E00003,https://www.pvda.be/programma/miljonairstaks,President of PTB-PVDA
+L0003,A0004,A0001,member_of,E00004,https://www.pvda.be/programma/miljonairstaks,Group Leader of PTB-PVDA in the Chamber of Representatives
+L0004,A0006,A0005,leads,E00006,https://www.ps.be/les_grandes_fortunes_paient_moins_impots_que_la_classe_moyenne,President of the Parti Socialiste
+L0005,A0008,A0007,leads,E00008,https://www.groen.be/groen_in_een_eerlijke_samenleving_dragen_de_sterkste_schouders_de_zwaarste_lasten,Co-Chair of Groen
+L0006,A0009,A0007,leads,E00009,https://www.groen.be/groen_in_een_eerlijke_samenleving_dragen_de_sterkste_schouders_de_zwaarste_lasten,Co-Chair of Groen
+L0007,A0011,A0010,leads,E00011,https://nieuws.vooruit.org/1-mei-2026-speech-conner-rousseau,President of Vooruit
+L0008,A0013,A0012,leads,E00013,https://www.pvda.be/programma/miljonairstaks,Federal President of FGTB
+L0009,A0016,A0001,member_of,E00016,https://www.lachambre.be/FLWB/PDF/55/0397/55K0397001.pdf,Former MP and tax essayist of PTB-PVDA
+L0010,A0017,A0001,member_of,E00017,https://www.lachambre.be/FLWB/PDF/55/0397/55K0397001.pdf,MP and Alderman of PTB-PVDA
+L0011,A0018,A0001,member_of,E00018,https://www.lachambre.be/FLWB/PDF/56/0323/56K0323001.pdf,MP of PTB-PVDA
+L0012,A0019,A0001,member_of,E00019,https://www.lachambre.be/FLWB/PDF/56/0323/56K0323001.pdf,MP of PTB-PVDA
+L0013,A0020,A0001,member_of,E00020,https://www.lachambre.be/FLWB/PDF/56/0323/56K0323001.pdf,MP of PTB-PVDA
+L0014,A0021,A0005,member_of,E00021,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,MP of Parti Socialiste
+L0015,A0022,A0005,member_of,E00022,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and Mayor of Herstal, Parti Socialiste"
+L0016,A0023,A0005,member_of,E00023,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and former Minister, Parti Socialiste"
+L0017,A0024,A0005,member_of,E00024,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and Mayor of Farciennes, Parti Socialiste"
+L0018,A0025,A0005,member_of,E00025,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and former Minister of Defence, Parti Socialiste"
+L0019,A0026,A0005,member_of,E00026,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,MP of Parti Socialiste
+L0020,A0027,A0005,member_of,E00027,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and Alderwoman of Brussels, Parti Socialiste"
+L0021,A0028,A0005,member_of,E00028,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and Mayor of Wanze, Parti Socialiste"
+L0022,A0029,A0005,member_of,E00029,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and former Deputy Prime Minister, Parti Socialiste"
+L0024,A0033,A0032,leads,E00033,https://visie.net/artikel/laat-de-redelijkheid-regeren,Federal President of ACV
+L0025,A0035,A0034,works_for,E00035,https://oxfambelgique.be,Tax justice policy expert at Oxfam Belgique
+L0026,A0037,A0001,leads,E00037,https://docs.vlaamsparlement.be/files/pfile?id=2246061,Group Leader of PVDA in the Flemish Parliament
+L0027,A0038,A0007,member_of,E00038,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Groen
+L0028,A0039,A0030,member_of,E00039,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Ecolo
+L0029,A0040,A0007,member_of,E00040,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Groen
+L0030,A0041,A0007,leads,E00041,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,Former Federal President of Groen
+L0031,A0042,A0030,leads,E00042,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,Former Co-President of Ecolo
+L0032,A0043,A0007,member_of,E00043,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Groen
+L0033,A0044,A0007,leads,E00044,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,Parliamentary Group Leader of Ecolo-Groen
+L0034,A0045,A0007,member_of,E00045,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Groen
+L0035,A0046,A0030,member_of,E00046,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Ecolo
+L0036,A0047,A0001,member_of,E00047,https://www.pvda.be,MP of PTB-PVDA
+L0037,A0048,A0001,member_of,E00048,https://www.lachambre.be,MP of PTB-PVDA
+L0048,A0059,A0012,leads,E00059,https://denieuwewerker.be,General Secretary of ABVV
+L0049,A0060,A0032,leads,E00060,https://www.hetacv.be,General Secretary of CSC
+L0050,A0061,A0001,leads,E00061,https://archive.pfwb.be/1000000020d6033,Group Leader of PTB in the Walloon Parliament
+L0051,A0062,A0001,member_of,E00062,https://sint-niklaas.pvda.be,Flemish MP of PVDA
+L0054,A0065,A0012,coalition_partner,E00065,https://www.dewereldmorgen.be,ABVV is a member organisation of FAN
+L0055,A0065,A0032,coalition_partner,E00065,https://www.dewereldmorgen.be,ACV is a member organisation of FAN
+L0058,A0070,A0005,leads,E00070,https://www.lachambre.be/FLWB/PDF/55/0036/55K0036001.pdf,Group Leader of PS in the Chamber of Representatives
+L0059,A0071,A0005,member_of,E00071,https://www.lachambre.be/FLWB/PDF/55/0036/55K0036001.pdf,Federal MP of PS
+L0060,A0072,A0005,member_of,E00072,https://www.lachambre.be/FLWB/PDF/55/0036/55K0036001.pdf,Federal MP of PS
+L0061,A0073,A0005,member_of,E00073,https://www.lachambre.be/FLWB/PDF/54/0770/54K0770001.pdf,Former Minister and Federal MP of PS
+L0062,A0074,A0005,member_of,E00074,https://www.lachambre.be/FLWB/PDF/54/0770/54K0770001.pdf,Federal MP of PS
+L0063,A0075,A0005,member_of,E00075,https://www.lachambre.be/FLWB/PDF/54/0770/54K0770001.pdf,Former Federal MP of PS
+L0066,A0078,A0001,member_of,E00078,https://mortsel.pvda.be,Flemish MP of PVDA
+L0070,A0082,A0001,member_of,E00082,https://gent.pvda.be,Flemish MP of PVDA
+L0087,A0099,A0001,member_of,E00099,https://antwerpen.pvda.be,Antwerp municipal councillor of PVDA

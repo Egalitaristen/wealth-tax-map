@@ -4,7 +4,7 @@ First written 2026-10-21 (run R001). Seed pass, national level only. Lines marke
 
 ## 1. Scope
 - Area: Spain (Reino de España); unitary state with 17 autonomous communities and 2 autonomous cities. The communities run the Impuesto sobre el Patrimonio (ceded tax) and have their own rules; Navarre and the Basque provinces have their own tax regimes *[verify]*.
-- Depth: **Seed** (SKILL.md 6.1). National level (Cortes, government, parties, unions, NGOs, tax professionals). The register holds the root, the Cortes Generales and the 19 communities (INE codes). Provinces (50) and municipalities (about 8,100) are not loaded; there is no map.
+- Depth: **Seed** (SKILL.md 6.1). National level (Cortes, government, parties, unions, NGOs, tax professionals). The register holds the root, the Cortes Generales, the 19 communities (ISO 3166-2:ES codes) and the 52 provinces and autonomous cities (INE codes), and the 8,132 municipios (INE, 1 Jan 2026), which are the map tier. Deputies sit in the province they were elected for (Wikidata P768); three whose seat was not found stay at "Spain".
 - Languages to search in: Spanish (main), Catalan, Basque, Galician, English. Only Spanish and English were used in R001.
 - Date of first run: 2026-10-21.
 

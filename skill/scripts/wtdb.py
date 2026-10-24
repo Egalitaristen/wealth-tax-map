@@ -12,6 +12,7 @@ Commands
   merge    DIR KEEP_ID DROP_ID      merge a duplicate actor into another (moves evidence, links, profiles)
   checkquotes DIR [--run R] [--ids E1,E2] [--sample N] [--strict]
                                     fetch source pages and check each quote appears on the page
+  locate   DIR                      fill geo_unit_id from location, and rewrite location after a unit is renamed
   status   DIR                      counts, coverage grid, sweep progress, next targets
   export   DIR [--out FILE]         write the xlsx report
 """
@@ -20,19 +21,19 @@ from collections import Counter, defaultdict
 
 SCHEMA = {
     "actors": ["actor_id", "name", "kind", "actor_type", "other_types", "role", "affiliation", "party", "affiliation_actor_id", "country",
-               "level", "location", "wikidata_qid", "website", "status", "alive_checked", "prominence", "notes",
-               "added_run", "updated"],
+               "level", "location", "geo_unit_id", "location_source", "wikidata_qid", "website", "status", "alive_checked", "prominence", "notes",
+               "added_run", "updated", "refined"],
     "profiles": ["profile_id", "actor_id", "platform", "url", "source", "checked"],
     "evidence": ["evidence_id", "actor_id", "date", "stance", "grade", "evidence_type", "wt_design", "design_detail",
                  "quote_original", "quote_lang", "quote_en", "source_url", "source_title", "publisher", "archive_url",
-                 "accessed", "harvest_id", "grading_note", "verified", "run_id"],
+                 "accessed", "harvest_id", "grading_note", "run_id"],
     "geo_units": ["geo_unit_id", "name", "level", "unit_type", "parent_id", "website", "sweep_status", "swept_run",
                   "swept_date", "queries_run", "hits", "notes", "code"],
     "links": ["link_id", "from_actor_id", "to_actor_id", "link_type", "evidence_id", "source_url", "note"],
     "harvest": ["harvest_id", "title", "list_type", "url", "date", "est_size", "status", "actors_added", "notes"],
     "exclusions": ["exclusion_id", "name", "reason", "detail", "source_url", "run_id"],
     "runs": ["run_id", "date", "assistant", "focus", "targets", "queries_run", "sources_opened", "candidates_seen",
-             "new_actors", "new_evidence", "grade_upgrades", "verified_ok", "verified_failed", "saturation",
+             "new_actors", "new_evidence", "grade_upgrades", "saturation",
              "notes_next"],
 }
 PREFIX = {"actors": ("A", 4), "evidence": ("E", 5), "geo_units": ("G", 4), "links": ("L", 4),
@@ -66,7 +67,6 @@ ENUMS = {
                                     "coalition_membership", "testimony", "funding", "other"},
     ("evidence", "wt_design"): {"annual_net_wealth", "one_off_levy", "billionaire_minimum", "unrealised_gains",
                                 "exit_tax", "partial_wealth", "defend_existing", "wealth_tax_unspecified"},
-    ("evidence", "verified"): {"", "n", "y", "failed"},
     ("geo_units", "level"): {"supranational", "national", "devolved", "region", "county", "combined_authority",
                              "council", "sub_council"},
     ("geo_units", "sweep_status"): {"pending", "in_progress", "done", "skipped"},
@@ -109,7 +109,7 @@ def save(d, t, rows):
     p = path(d, t)
     tmp = p + ".tmp"
     with open(tmp, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=SCHEMA[t], extrasaction="ignore")
+        w = csv.DictWriter(f, fieldnames=SCHEMA[t], extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k, "") for k in SCHEMA[t]})
@@ -201,13 +201,14 @@ def cmd_add(a):
         elif r[idcol(t)] in existing:
             sys.exit(f"ID {r[idcol(t)]} already exists in {t}")
         if t == "actors":
+            if not r.get("geo_unit_id") and r.get("location"):
+                r["geo_unit_id"] = resolve_location(r["location"], geo_index(load(a.dir, "geo_units")))[0]
             r.setdefault("updated", today)
             r.setdefault("status", "active")
             if r.get("kind") in ("organisation", "institution"):
                 r.setdefault("alive_checked", "na")
         if t == "evidence":
             r.setdefault("accessed", today)
-            r.setdefault("verified", "n")
             r.setdefault("stance", "support")
         if t == "geo_units":
             r.setdefault("sweep_status", "pending")
@@ -288,10 +289,8 @@ def validate(db):
         if e.get("grade") == "A" and e.get("evidence_type") not in FORMAL_TYPES and not e.get("design_detail") \
                 and e.get("wt_design") != "wealth_tax_unspecified":
             warns.append(f"{where}: grade A {e.get('evidence_type')} — add design_detail (rate, threshold or bill)")
-        if len(e.get("quote_original", "")) < 15:
+        if len(e.get("quote_original", "")) < 15 and e.get("evidence_type") != "vote":  # a vote quotes the member's name on the list
             warns.append(f"{where}: very short quote")
-        if e.get("verified") == "failed":
-            errs.append(f"{where}: verification failed — fix or remove the row")
     geo = {g["geo_unit_id"] for g in db["geo_units"]}
     gidx = geo_index(db["geo_units"])
     names = defaultdict(list)
@@ -305,6 +304,13 @@ def validate(db):
         if r.get("kind") != "person" and r.get("alive_checked") == "y" and r.get("status") == "dissolved":
             warns.append(f"{where}: dissolved organisation marked alive_checked=y")
         uid, depth, rest = resolve_location(r.get("location", ""), gidx)
+        gu = r.get("geo_unit_id", "")
+        if gu and gu not in geo:
+            errs.append(f"{where}: geo_unit_id {gu} is not in geo_units.csv")
+        elif uid and gu != uid:
+            errs.append(f"{where}: location '{r.get('location')}' resolves to {uid or 'nothing'} but geo_unit_id is "
+                        f"{gu or 'empty'}. Run `wtdb.py locate` (it fills empty IDs and rewrites locations after a "
+                        f"unit is renamed), or fix whichever one is wrong")
         if not r.get("location"):
             warns.append(f"{where}: no location (use at least the country name)")
         elif gidx[2] and not uid:
@@ -324,6 +330,10 @@ def validate(db):
             errs.append(f"{where}: affiliation_actor_id {r['affiliation_actor_id']} does not exist")
         if r.get("wikidata_qid") and not re.match(r"^Q\d+$", r["wikidata_qid"]):
             errs.append(f"{where}: wikidata_qid must look like Q12345")
+        if r.get("location_source") and not r["location_source"].startswith(("https://", "http://")):
+            errs.append(f"{where}: location_source must be a link to the page that shows where they are")
+        if r.get("refined") and not re.match(r"^\d{4}-\d{2}-\d{2}$", r["refined"]):
+            errs.append(f"{where}: refined must be a date (YYYY-MM-DD)")
         names[(norm_name(r.get("name", "")), r.get("kind"))].append(r.get("actor_id"))
         if r.get("wikidata_qid"):
             qids[r["wikidata_qid"]].append(r.get("actor_id"))
@@ -378,6 +388,9 @@ def validate(db):
 # Licences that let anyone republish map shapes. A map from a source with no stated licence is not published.
 OPEN_LICENCES = ("cc0", "cc-by", "cc by", "odbl", "pddl", "public domain", "ogl", "open government licence", "dl-de",
                  "datenlizenz deutschland", "godl", "licence ouverte", "etalab", "nlod")
+LOCAL_LEVELS = {"county", "combined_authority", "council", "sub_council"}
+LEGISLATOR = re.compile(r"(?i)\b(member of (the )?(congress|parliament|bundestag|lok sabha|riksdag|house of (commons|representatives|delegates)|assembl|national assembly)"
+                        r"|MP\b|MdB\b|député|diputad|deputy\b(?!\s*,|\s+(chair|head|leader|director|general|secretary|mayor|prime|minister|governor))|senator|sénat|congress(wo)?man|representative\b)")
 
 
 def check_boundaries(d, db):
@@ -387,15 +400,26 @@ def check_boundaries(d, db):
         meta = json.load(open(os.path.join(d, "meta.json"), encoding="utf-8"))
     except (OSError, ValueError):
         return errs, warns
+    units = [g for g in db["geo_units"] if g.get("level") in LOCAL_LEVELS]
+    if db["geo_units"] and not units:
+        errs.append("geo_units: the register stops above the local tier. Load the official list of local units with "
+                    "their codes (SKILL.md 6.7) before research; it is part of every seed pass")
+    root = next((g["name"] for g in db["geo_units"] if g.get("unit_type") == "country"), "")
+    seated = [a["name"] for a in db["actors"] if root and a.get("location") == root and LEGISLATOR.search(a.get("role", ""))]
+    if units and seated:
+        warns.append(f"actors: {len(seated)} legislators are placed at the country root, for example {', '.join(seated[:3])}. "
+                     f"Seats are places: put each in their constituency (SKILL.md 6.7)")
     bfile = meta.get("boundaries")
     if not bfile or not os.path.exists(os.path.join(d, bfile)):
+        warns.append("boundaries: no map. Every country gets a local-tier map from an open source (SKILL.md 5 and 6.7); "
+                     "if none exists, say which sources you checked in meta.json notes")
         return errs, warns
     b = json.load(open(os.path.join(d, bfile), encoding="utf-8"))
     lic = (b.get("licence") or "").strip()
     if not lic or lic.lower() in ("unknown", "none", "not stated", "unclear"):
         errs.append("boundaries: no licence. Use shapes from a source with an open licence and record it in "
                     "\"licence\" and \"licence_url\" (SKILL.md 5, boundaries.json); a map without one is not published")
-    elif not any(k in lic.lower() for k in OPEN_LICENCES):
+    elif not any(k in lic.lower() or k in lic.lower().replace("-", " ") for k in OPEN_LICENCES):
         warns.append(f"boundaries: licence '{lic}' is not one of the known open licences; check that it allows "
                      f"republishing before merging")
     if lic and not b.get("licence_url", "").startswith("https://"):
@@ -547,6 +571,38 @@ def sweep_progress(db):
     return prog
 
 
+def unit_names(uid, by_id):
+    names, seen = [], set()
+    while uid and uid in by_id and uid not in seen:
+        seen.add(uid); names.append(by_id[uid]["name"]); uid = by_id[uid].get("parent_id")
+    return names[::-1]
+
+
+def cmd_locate(a):
+    """geo_unit_id is the actor's place; location is its readable path plus any finer place text.
+    Fill empty geo_unit_ids from location, and rewrite the unit part of location from the register when a unit was
+    renamed or moved (the place text after it is kept)."""
+    need_dir(a.dir)
+    geo = load(a.dir, "geo_units")
+    gidx = geo_index(geo)
+    by_id = gidx[0]
+    rows = load(a.dir, "actors")
+    filled = rewritten = 0
+    for r in rows:
+        uid, depth, rest = resolve_location(r.get("location", ""), gidx)
+        gu = r.get("geo_unit_id", "")
+        if not gu:
+            if uid:
+                r["geo_unit_id"] = uid; filled += 1
+            continue
+        if gu in by_id and gu != uid:
+            names = unit_names(gu, by_id)
+            parts = [p.strip() for p in r.get("location", "").split(">") if p.strip()]
+            r["location"] = " > ".join(names + parts[len(names):]); rewritten += 1
+    save(a.dir, "actors", rows)
+    print(f"geo_unit_id filled for {filled} actors; location rewritten for {rewritten}")
+
+
 def cmd_status(a):
     need_dir(a.dir)
     db = load_all(a.dir)
@@ -577,8 +633,6 @@ def cmd_status(a):
     hq = Counter(h["status"] for h in db["harvest"])
     print(f"\nHarvest lists: queued {hq['queued']}, in_progress {hq['in_progress']}, done {hq['done']}, "
           f"failed {hq['failed']}")
-    unver = sum(1 for e in db["evidence"] if e.get("verified") in ("", "n"))
-    print(f"Unverified evidence rows: {unver}")
     if db["runs"]:
         last = db["runs"][-1]
         print(f"\nLast run {last['run_id']} ({last['date']}): {last['focus']} → next: {last.get('notes_next','')}")
@@ -592,8 +646,6 @@ def cmd_status(a):
         sugg.append("thin actor types (cover these layers first): " + ", ".join(thin))
     if g["C"]:
         sugg.append(f"upgrade {g['C']} C-graded actors")
-    if unver:
-        sugg.append(f"quote-check and spot-check unverified evidence ({unver} rows)")
     pend = [(reg, c) for reg, c in prog.items() if c["pending"] or c["in_progress"]]
     if pend:
         pend.sort(key=lambda x: (-(x[1]["in_progress"]), -x[1]["done"]))
@@ -800,17 +852,53 @@ def _plain(s, tags=True):
 
 
 def _pdf_to_text(data):
-    """Text of a PDF via poppler's pdftotext when installed, else None."""
+    """Text of a PDF via poppler's pdftotext when installed, else via pypdf (pip install pypdf), else None."""
     import shutil, subprocess, tempfile
-    if not shutil.which("pdftotext"):
-        return None
-    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
-        f.write(data)
-        path = f.name
+    if shutil.which("pdftotext"):
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
+            f.write(data)
+            path = f.name
+        try:
+            return subprocess.run(["pdftotext", path, "-"], capture_output=True, text=True).stdout
+        finally:
+            os.unlink(path)
     try:
-        return subprocess.run(["pdftotext", path, "-"], capture_output=True, text=True).stdout
-    finally:
-        os.unlink(path)
+        import io, pypdf
+        return "\n".join(pg.extract_text() or "" for pg in pypdf.PdfReader(io.BytesIO(data)).pages)
+    except Exception:
+        return None
+
+
+def _decode_page(raw, header_charset=None):
+    """Decode a page in the charset it declares (header, then <meta>), else UTF-8, else the common East Asian ones.
+    Strict decoding, so a wrong guess fails over instead of producing mojibake; Latin-1 is the last resort. A page that
+    declares nothing and is not UTF-8 is tried as GB18030 first, which accepts most byte strings: such a page may need
+    its charset added by hand (rare; nearly every page declares one)."""
+    declared = header_charset
+    if not declared:
+        m = re.search(rb'charset\s*=\s*["\']?([A-Za-z0-9_-]+)', raw[:4096])
+        declared = m.group(1).decode("ascii", "ignore") if m else None
+    for enc in (declared, "utf-8", "gb18030", "cp932", "euc-kr", "latin-1"):
+        if enc:
+            try:
+                return raw.decode(enc)
+            except (UnicodeDecodeError, LookupError):
+                continue
+    return raw.decode("utf-8", "ignore")
+
+
+def _kokkai_text(u, timeout):
+    """Japan's Diet records (kokkai.ndl.go.jp/txt/<issue>/<speech>) are JavaScript pages; the same text is in the
+    open API. Returns the speeches as one string, or None when u is not such a link."""
+    import json, urllib.request
+    m = re.search(r"kokkai\.ndl\.go\.jp/txt/([^/?#]+)(?:/(\d+))?", u)
+    if not m:
+        return None
+    api = f"https://kokkai.ndl.go.jp/api/speech?recordPacking=json&issueID={m.group(1)}" + (f"&speechNumber={m.group(2)}" if m.group(2) else "")
+    req = urllib.request.Request(api, headers={"User-Agent": "Mozilla/5.0 (wtdb quote check)"})
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+    return " ".join(r.get("speech", "") for r in data.get("speechRecord", []))
 
 
 def _browser_text(url):
@@ -831,14 +919,18 @@ def _fetch_for_check(u, timeout):
     import urllib.request
     raw = None
     try:
+        text = _kokkai_text(u, timeout) if "kokkai.ndl.go.jp/txt/" in u else None
+        if text:
+            return _plain(text, tags=False)
         req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (wtdb quote check)"})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             raw = resp.read()
             ctype = resp.headers.get("Content-Type", "").lower()
+            charset = resp.headers.get_content_charset()
         if raw[:4] == b"%PDF" or "pdf" in ctype:
             text = _pdf_to_text(raw)
             return _plain(text, tags=False) if text else None  # a "<" in PDF text must not swallow what follows
-        return _plain(raw.decode("utf-8", "ignore"))
+        return _plain(_decode_page(raw, charset))
     except Exception:
         text = _browser_text(u)
         return _plain(text) if text else None
@@ -847,6 +939,24 @@ def _fetch_for_check(u, timeout):
 def _dehyphenate(page):
     """Line-end hyphens in PDFs split words ("miljardärs- skatt"); join them for a second comparison."""
     return re.sub(r"(?<=\w)- (?=[a-zåäö])", "", page)
+
+
+CJK = re.compile(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]")
+
+
+def _quote_parts(e):
+    """The fragments of a quote to look for on its page (the quote split at ellipses), or [] when it is too short to
+    check. Words are counted by spaces, and in Chinese, Japanese and Korean, which have none, by characters: a
+    fragment needs three words or six CJK characters. A quote shorter than that is checked whole when it is a name
+    on a roll-call or roster (two words, a vote row, or three CJK characters)."""
+    q = _plain(e["quote_original"])
+    parts = [p.strip() for p in re.split(r"…|\.\.\.", q)
+             if len(p.split()) >= 3 or (CJK.search(p) and len(p.strip()) >= 6)]
+    if parts:
+        return parts
+    if len(q.split()) >= 2 or e.get("evidence_type") == "vote" or (CJK.search(q) and len(q) >= 3):
+        return [q]
+    return []
 
 
 def cmd_checkquotes(a):
@@ -861,15 +971,17 @@ def cmd_checkquotes(a):
     if a.sample and len(rows) > a.sample:
         random.seed(a.seed)
         rows = random.sample(rows, a.sample)
-    cache, browser_cache, ok, miss, skip = {}, {}, 0, [], []
+    cache, browser_cache, ok, miss, skip, short = {}, {}, 0, [], [], []
     for e in rows:
         u = e["source_url"]
+        parts = _quote_parts(e)
+        if not parts:
+            short.append(e["evidence_id"]); continue
         if u not in cache:
             cache[u] = _fetch_for_check(u, a.timeout)
         page = cache[u]
         if page is None:
             skip.append(e["evidence_id"]); continue
-        parts = [p for p in re.split(r"…|\.\.\.", _plain(e["quote_original"])) if len(p.split()) >= 3]
 
         def found(pg):
             return bool(parts) and all(any(p.strip(" .") in v for v in (pg, _dehyphenate(pg))) for p in parts)
@@ -884,9 +996,12 @@ def cmd_checkquotes(a):
             ok += 1
         else:
             miss.append(e["evidence_id"])
-    print(f"Checked {len(rows)} rows: {ok} found on the page, {len(miss)} NOT found, {len(skip)} skipped (unreadable: no pdftotext, blocked or error)")
+    print(f"Checked {len(rows)} rows: {ok} found on the page, {len(miss)} NOT found, {len(skip)} skipped (unreadable: no pdftotext, blocked or error), "
+          f"{len(short)} too short to check")
     if miss:
         print("Not found:", ", ".join(miss))
+    if short:
+        print("Too short to check:", ", ".join(short[:40]) + (" ..." if len(short) > 40 else ""))
     if skip:
         print("Skipped:", ", ".join(skip[:40]) + (" ..." if len(skip) > 40 else ""))
     if miss and a.strict:
@@ -903,6 +1018,7 @@ def main():
     x.add_argument("pairs", nargs="+"); x.set_defaults(f=cmd_set)
     for name, fn in (("validate", cmd_validate), ("dedupe", cmd_dedupe), ("status", cmd_status)):
         x = s.add_parser(name); x.add_argument("dir"); x.set_defaults(f=fn)
+    x = s.add_parser("locate"); x.add_argument("dir"); x.set_defaults(f=cmd_locate)
     x = s.add_parser("merge"); x.add_argument("dir"); x.add_argument("keep"); x.add_argument("drop"); x.set_defaults(f=cmd_merge)
     x = s.add_parser("checkquotes"); x.add_argument("dir"); x.add_argument("--run"); x.add_argument("--ids")
     x.add_argument("--sample", type=int, default=0); x.add_argument("--seed", type=int, default=1)

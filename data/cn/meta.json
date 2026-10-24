@@ -1,0 +1,8 @@
+{
+  "name": "China",
+  "iso2": "CN",
+  "lead": "",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Depth: seed. Scope: national level, with provincial and prefectural local tier. Boundaries from UN OCHA COD-AB China (2020) under CC BY-IGO. Review 2026-10-24 (R004): exit-tax-only and property-tax rows removed; 9 supporters remain."
+}

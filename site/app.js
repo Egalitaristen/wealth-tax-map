@@ -12,7 +12,10 @@ const year = d => (d || '').slice(0, 4);
 const issueUrl = (title, fields = {}) =>
   `https://github.com/${REPO}/issues/new?template=data-report.yml&title=${enc(title)}` +
   Object.entries(fields).map(([k, v]) => `&${k}=${enc(v)}`).join('');
-const suggestUrl = (fields = {}) =>
+const DISCORD = 'https://discord.gg/yCjEK47aeh';
+// The site's own suggestion form (no account needed), prefilled with a country and place where known.
+const suggestUrl = (fields = {}) => '/suggest' + (Object.keys(fields).length ? '?' + new URLSearchParams(fields) : '');
+const githubSuggestUrl = (fields = {}) =>
   `https://github.com/${REPO}/issues/new?template=suggest-supporter.yml` + Object.entries(fields).map(([k, v]) => `&${k}=${enc(v)}`).join('');
 const ext = (href, text, cls = '') => `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener noreferrer nofollow">${text}</a>`;
 
@@ -31,8 +34,8 @@ const pollSource = p => [p.pollster, p.commissioned_by ? `for ${p.commissioned_b
 const glyph = g => `<i class="g ${esc(g)}" title="${esc(GRADE_LONG[g] || '')}"></i>`;
 const label = (map, k) => map[k] || String(k || '').replace(/_/g, ' ').replace(/^./, c => c.toUpperCase());
 // People rows from build_site.py
-const P_ = {id: 0, name: 1, kind: 2, type: 3, role: 4, aff: 5, level: 6, loc: 7, grade: 8, n: 9, first: 10, last: 11, des: 12, notes: 13, web: 14, party: 15, other: 16, prof: 17};
-const E_ = {actor: 0, date: 1, grade: 2, type: 3, des: 4, detail: 5, quote: 6, url: 7, title: 8, pub: 9, verified: 10, id: 11};
+const P_ = {id: 0, name: 1, kind: 2, type: 3, role: 4, aff: 5, level: 6, loc: 7, grade: 8, n: 9, first: 10, last: 11, des: 12, notes: 13, web: 14, party: 15, other: 16, prof: 17, qid: 18};
+const E_ = {actor: 0, date: 1, grade: 2, type: 3, des: 4, detail: 5, quote: 6, url: 7, title: 8, pub: 9, archive: 10, id: 11};
 
 // ---------- data ----------
 const cache = {};
@@ -43,6 +46,8 @@ const prepared = {};
 function loadCountry(slug) {
   return prepared[slug] || (prepared[slug] = getJSON(`/data/${slug}.json`).then(D => {
     D.byId = Object.fromEntries(D.P.map(p => [p[P_.id], p]));
+    // C[8] is an index into UP, the parent's place path; rebuild the unit's own path from it.
+    if (D.UP) D.C.forEach(c => { if (typeof c[8] === 'number') c[8] = (D.UP[c[8]] ? D.UP[c[8]] + ' > ' : '') + c[0]; });
     D.evBy = {};
     D.E.forEach(e => (D.evBy[e[E_.actor]] = D.evBy[e[E_.actor]] || []).push(e));
     // Every place that can be selected: map units (C) and unmapped units with people (O).
@@ -50,17 +55,23 @@ function loadCountry(slug) {
       ...D.C.map(c => ({name: c[0], path: c[8], ids: c[6], state: c[2], sweep: c[3], notes: c[5], mapped: true})),
       ...D.O.map(o => ({name: o[0], path: o[5], ids: o[4], state: 'support', sweep: o[2], notes: o[3], mapped: false}))];
     // The list of places to browse: every area and every region above it, counting everyone inside.
-    const paths = new Set();
-    D.places.forEach(pl => { const parts = pl.path.split(' > '); parts.forEach((_, i) => { if (i) paths.add(parts.slice(0, i + 1).join(' > ')); }); });
-    D.placeList = [...paths].map(path => {
-      const own = D.places.find(pl => pl.path === path);
-      const ids = idsForPlace(D, path);
-      return {path, name: path.split(' > ').pop(), n: ids.size, state: own ? own.state : 'support', notes: own ? own.notes : '',
-        mapped: D.places.some(pl => pl.mapped && (pl.path === path || pl.path.startsWith(path + ' > ')))};
+    // Built in one pass with maps: a commune map has tens of thousands of places.
+    const own = new Map(), agg = new Map();
+    D.places.forEach(pl => {
+      own.set(pl.path, pl);
+      const parts = pl.path.split(' > ');
+      for (let i = 1; i < parts.length; i++) {
+        const path = parts.slice(0, i + 1).join(' > ');
+        const a = agg.get(path) || agg.set(path, {ids: new Set(), mapped: false}).get(path);
+        pl.ids.forEach(x => a.ids.add(x));
+        if (pl.mapped) a.mapped = true;
+      }
     });
+    D.placeList = [...agg].map(([path, a]) => { const o = own.get(path);
+      return {path, name: path.split(' > ').pop(), n: a.ids.size, state: o ? o.state : 'support', notes: o ? o.notes : '', mapped: a.mapped}; });
     // A city-state is both a region and its only area (Berlin in Berlin): list it once.
-    D.placeList = D.placeList.filter(pl => { const parts = pl.path.split(' > '), up = parts.slice(0, -1).join(' > ');
-      const parent = D.placeList.find(q => q.path === up);
+    const byPath = new Map(D.placeList.map(p => [p.path, p]));
+    D.placeList = D.placeList.filter(pl => { const parts = pl.path.split(' > '), parent = byPath.get(parts.slice(0, -1).join(' > '));
       return !(parent && parts.length > 2 && parts[parts.length - 1] === parts[parts.length - 2] && parent.n === pl.n) || !pl.mapped; });
     const root = D.places.find(pl => !pl.path.includes(' > '));
     D.nationalOnly = root ? root.ids.length : 0;
@@ -113,11 +124,12 @@ async function render(fresh) {
     if (!parts.length) await home(W);
     else if (parts[0] === 'about' && parts.length === 1) aboutPage(W);
     else if (parts[0] === 'contribute' && parts.length === 1) contributePage(W);
+    else if (parts[0] === 'suggest' && parts.length === 1) suggestPage(W, params);
     else if (country && parts.length === 1) await countryPage(country.slug, params);
     else if (country && parts.length === 2 && SECTIONS[parts[1]]) await countryPage(country.slug, params, parts[1]);
     else if (country && parts.length === 2) await personPage(country.slug, parts[1]);
     else notFound();
-    const navKey = parts[0] === 'about' ? '/about' : parts[0] === 'contribute' ? '/contribute' : null;
+    const navKey = {about: '/about', contribute: '/contribute', suggest: '/suggest'}[parts[0]] || null;
     if (navKey) $$('.nav a').forEach(a => { if (a.getAttribute('href') === navKey) a.setAttribute('aria-current', 'page'); });
   } catch (err) {
     console.error(err);
@@ -278,7 +290,7 @@ async function home(W) {
       </div>
       <div class="hero-side">
         <div class="ledger">
-          <div><b>${fmt(tot('supporters'))}</b><span>public figures and organisations found so far</span></div>
+          <div><b>${fmt(tot('supporters'))}</b><span>public figures and organisations found <em>so far</em></span></div>
           <div><b>${fmt(tot('evidence'))}</b><span>sourced statements</span></div>
           <div><b>${fmt(tot('A'))}</b><span>with explicit support</span></div>
           <div><b>${cs.length}</b><span>${cs.length === 1 ? 'country' : 'countries'}, and counting</span></div>
@@ -565,7 +577,7 @@ function mapSection(box, D, slug, params) {
       <div class="atlas">
         <div class="mapbox" id="mapbox">
           <div class="zoomer"><button type="button" data-z="in" aria-label="Zoom in">+</button><button type="button" data-z="out" aria-label="Zoom out">−</button><button type="button" data-z="fit" aria-label="Show the whole country">⤢</button></div>
-          <div class="legend"><span><span class="ramp" style="display:inline-block;vertical-align:-1px;margin-right:6px"></span>Supporters</span>${D.C.some(c => c[9]) ? '<span><i class="sw up"></i>Supporters known by region only</span>' : ''}<span><i class="sw none"></i>None recorded yet</span></div>
+          <div class="legend"><span><span class="ramp" style="display:inline-block;vertical-align:-1px;margin-right:6px"></span>Supporters</span>${D.C.some(c => c[9]) ? '<span><span class="ramp up" style="display:inline-block;vertical-align:-1px;margin-right:6px"></span>Supporters known only for the wider area</span>' : ''}<span><i class="sw none"></i>None recorded yet</span></div>
         </div>
         <div class="panel" id="panel"></div>
       </div>
@@ -666,7 +678,7 @@ function directorySection(box, D, slug, params) {
         </div>
         <ul class="dir" id="dir"></ul>
         <div class="more" id="more"></div>
-        <p class="dir-suggest">Someone missing? <a href="${esc(suggestUrl({country: D.meta.name}))}" target="_blank" rel="noopener">Suggest a supporter ↗</a></p>
+        <p class="dir-suggest">Someone missing? <a href="${esc(suggestUrl({country: D.meta.name}))}">Suggest a supporter →</a></p>
       </div>
       <aside class="preview" id="preview" aria-live="polite"></aside>
     </div></section>`;
@@ -833,18 +845,21 @@ function yearChart(E) {
 function countryMap(D, slug, onShowAll) {
   const box = $('#mapbox'), panel = $('#panel');
   const [vx, vy, vw, vh] = D.vb;
-  const mx = Math.max(1, ...D.C.map(c => c[6].length));
+  const mx = Math.max(1, ...D.C.map(c => c[6].length)), mxUp = Math.max(1, ...D.C.map(c => c[9] || 0));
   const svgNS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(svgNS, 'svg');
   svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', `Map of ${D.meta.name} by area`);
+  if (D.C.length > 2000) svg.classList.add('dense');
   // Areas with their own supporters are shaded from a clearly visible start; areas whose region has supporters
-  // known only at region level (a state, Land or län) get one fixed faint tint, always lighter than a real
-  // supporter, so the two never look alike; region outlines go on top.
+  // known only at a level above (a province, département, state or län) get a faint tint graded by how many are known
+  // there, from 8% to 28%: always lighter than the 42% where real local supporters start, so the two never look
+  // alike; region outlines go on top.
   svg.innerHTML = `<g>${D.C.map((c, i) => { const n = c[6].length, up = c[9] || 0;
       if (n) return `<path data-i="${i}" class="u-sup" style="--t:${(.42 + .58 * Math.log(n + 1) / Math.log(mx + 1)).toFixed(3)}" d="${c[7]}"/>`;
-      if (up) return `<path data-i="${i}" class="u-up" style="--t:.13" d="${c[7]}"/>`;
+      if (up) return `<path data-i="${i}" class="u-up" style="--t:${(.08 + .2 * Math.log(up + 1) / Math.log(mxUp + 1)).toFixed(3)}" d="${c[7]}"/>`;
       return `<path data-i="${i}" class="u-none" d="${c[7]}"/>`; }).join('')}</g>
-    ${(D.R || []).length ? `<g class="regions">${D.R.map(d => `<path d="${d}"/>`).join('')}</g>` : ''}`;
+    ${(D.R || []).length ? `<g class="regions${(D.R2 || []).length ? ' lower' : ''}">${D.R.map(d => `<path d="${d}"/>`).join('')}</g>` : ''}
+    ${(D.R2 || []).length ? `<g class="regions upper">${D.R2.map(d => `<path d="${d}"/>`).join('')}</g>` : ''}`;
   const frame = document.createElement('div'); frame.className = 'mapframe'; frame.appendChild(svg);
   box.prepend(frame);
   box.style.setProperty('--ar', Math.max(.75, Math.min(1.6, vw / vh)).toFixed(3));
@@ -900,18 +915,40 @@ function countryMap(D, slug, onShowAll) {
   function detail(path) {
     const pl = D.placeList.find(p => p.path === path);
     const ids = [...idsForPlace(D, path)];
-    const people = ids.map(i => D.byId[i]).filter(Boolean).sort(byStrength);
+    const person = i => D.byId[i];
+    const people = ids.map(person).filter(Boolean).sort(byStrength);
     const name = pl ? pl.name : path.split(' > ').pop();
     const state = people.length ? `${fmt(people.length)} supporter${people.length === 1 ? '' : 's'}` : 'Nobody recorded yet';
+    const row = p => `<a class="prow" href="/${slug}/${enc(p[P_.id])}"><span>${glyph(p[P_.grade])}&nbsp; ${esc(p[P_.name])}<span class="sub">${esc([label(TYPE, p[P_.type]), p[P_.role]].filter(Boolean).join(' · ').slice(0, 80))}</span></span><span class="n">→</span></a>`;
+    // The wider area: each level above this place (nearest first, then the country) with the supporters placed at
+    // that level as a whole, such as a state's legislators. A place with nobody of its own shows the nearest of them.
+    const parts = path.split(' > ');
+    const own = new Map(D.places.map(q => [q.path, q.ids]));
+    const wider = parts.slice(0, -1).map((_, k) => parts.slice(0, k + 1).join(' > ')).reverse()
+      .map(a => ({path: a, name: a.includes(' > ') ? a.split(' > ').pop() : `${D.meta.name}, national level`,
+                  ids: (own.get(a) || []).filter(i => person(i))}))
+      .filter(w => w.ids.length);
+    const near = !people.length && wider[0];
+    const shown = near ? near.ids.map(person).sort(byStrength) : people;
     panel.innerHTML = `<div><button class="chip" type="button" id="pl-back">← All places</button></div>
       <h3 style="margin-top:16px">${esc(name)}</h3>
       <div class="path">${esc(path)}</div>
       <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag ${people.length ? 'signal' : ''}">${esc(state)}</span></div>
-      <div class="scroll">${people.slice(0, 40).map(p => `<a class="prow" href="/${slug}/${enc(p[P_.id])}"><span>${glyph(p[P_.grade])}&nbsp; ${esc(p[P_.name])}<span class="sub">${esc([label(TYPE, p[P_.type]), p[P_.role]].filter(Boolean).join(' · ').slice(0, 80))}</span></span><span class="n">→</span></a>`).join('')}
+      <div class="scroll">
+        ${near ? `<div class="kicker" style="margin-top:6px">Known for ${esc(near.name)} as a whole · ${fmt(near.ids.length)}</div>` : ''}
+        ${shown.slice(0, 40).map(row).join('')}
+        ${wider.length ? `<div class="kicker" style="margin-top:18px">The wider area</div>
+          ${wider.map((w, k) => `<button type="button" class="prow" data-up="${k}"><span>${esc(w.name)}<span class="sub">supporters for the area as a whole</span></span><span class="n">${fmt(w.ids.length)} →</span></button>`).join('')}` : ''}
         ${pl && pl.notes ? `<p class="note">${esc(pl.notes)}</p>` : ''}</div>
-      ${people.length ? `<button class="btn sm" type="button" id="pl-all" style="margin-top:14px;justify-content:center">Show ${people.length > 40 ? 'all ' + fmt(people.length) : 'them'} in the directory ↓</button>` : `<a class="report" href="${esc(suggestUrl({country: D.meta.name, note: 'Place: ' + path}))}" target="_blank" rel="noopener">Know a public supporter here? Suggest them ↗</a>`}`;
+      <div class="pl-actions">
+        ${people.length ? `<button class="btn sm ghost" type="button" id="pl-all">Show ${people.length > 40 ? 'all ' + fmt(people.length) : 'them'} in the directory ↓</button>`
+          : near && near.ids.length > 40 ? `<button class="btn sm ghost" type="button" id="pl-near">Show all ${fmt(near.ids.length)} in ${esc(near.name)} ↓</button>` : ''}
+        <a class="btn sm" href="${esc(suggestUrl({country: D.meta.name, place: path.split(' > ').slice(1).reverse().join(', ')}))}">Suggest a supporter from ${esc(name)} →</a>
+      </div>`;
     $('#pl-back', panel).onclick = () => select(null);
     const all = $('#pl-all', panel); if (all) all.onclick = () => onShowAll(path);
+    const nb = $('#pl-near', panel); if (nb) nb.onclick = () => onShowAll(near.path);
+    $$('[data-up]', panel).forEach(b => b.onclick = () => { const w = wider[+b.dataset.up]; w.path.includes(' > ') ? select(w.path) : go(`/${slug}/directory?level=national`); });
   }
   fit(false); home();
   return {select};
@@ -946,6 +983,7 @@ async function personPage(slug, id) {
           <div><span>Statements on record</span><b>${p[P_.n]}${firstY ? ` · ${firstY === lastY ? firstY : firstY + '–' + lastY}` : ''}</b></div>
           ${p[P_.des].length ? `<div><span>Backs</span><b>${p[P_.des].map(d => esc(label(DES, d))).join('<br>')}</b></div>` : ''}
         </dl>
+        <div id="elsewhere"></div>
         ${p[P_.notes] ? `<p class="p-note">${esc(p[P_.notes])}</p>` : ''}
         <a class="report" href="${esc(issueUrl(`[${m.iso2}] Report: ${p[P_.name]}`, {country: slug, entry: id}))}" target="_blank" rel="noopener">Something wrong, or want this removed? Report it ↗</a>
       </aside>
@@ -960,6 +998,13 @@ async function personPage(slug, id) {
       </div>
     </div>
   </div>`;
+  // The same person on other countries' registers, linked by their Wikidata ID.
+  if (p[P_.qid]) Promise.all([INDEX(), WORLD()]).then(([I, W]) => {
+    const names = Object.fromEntries((W.countries || []).map(c => [c.slug, c.name]));
+    const other = I.people.filter(r => r[8] === p[P_.qid] && r[0] !== slug);
+    const box = $('#elsewhere');
+    if (box && other.length) box.innerHTML = `<p class="p-else">Also on the record in ${other.map(r => `<a href="/${r[0]}/${enc(r[1])}">${esc(names[r[0]] || r[0].toUpperCase())}</a>`).join(', ')}</p>`;
+  });
 }
 function evCard(e, m, slug) {
   const url = safeUrl(e[E_.url]);
@@ -969,7 +1014,7 @@ function evCard(e, m, slug) {
     ${e[E_.detail] ? `<p class="muted" style="font-size:14px;margin-top:-4px">${esc(e[E_.detail])}</p>` : ''}
     <div class="ev-src">
       <div>${url ? ext(url, esc(e[E_.title] || e[E_.pub] || url) + ' ↗', 's') : esc(e[E_.title])}<span class="pub">${esc(e[E_.pub])}</span></div>
-      <div class="ev-foot"><a href="${esc(issueUrl(`[${m.iso2}] Report: ${e[E_.id]}`, {country: slug, entry: e[E_.id]}))}" target="_blank" rel="noopener">Report</a></div>
+      <div class="ev-foot">${safeUrl(e[E_.archive]) ? `<a href="${esc(safeUrl(e[E_.archive]))}" target="_blank" rel="noopener">Archived copy</a> · ` : ''}<a href="${esc(issueUrl(`[${m.iso2}] Report: ${e[E_.id]}`, {country: slug, entry: e[E_.id]}))}" target="_blank" rel="noopener">Report</a></div>
     </div>
   </article>`;
 }
@@ -1023,13 +1068,62 @@ function contributePage(W) {
       <h2>Help check what is here</h2>
       <p>Open an entry, follow the source, and report anything that does not match.</p>
       <h2>Suggest a supporter</h2>
-      <p>Know someone who has backed a wealth tax in public? <a href="${esc(suggestUrl())}" target="_blank" rel="noopener">Suggest them</a>: just their name, the country and a link to where they said it. You need a free GitHub account.</p>
+      <p>Know someone who has backed a wealth tax in public? <a href="/suggest">Suggest them</a>: just their name, the country and a link to where they said it. No account needed.</p>
     </div>
     <aside class="aside-card"><h3>Get started</h3>
       <p><a class="btn sm" href="https://github.com/${REPO}/issues/new?template=new-country.yml" target="_blank" rel="noopener">Start a new country ↗</a></p>
-      <p><a class="btn sm ghost" href="${esc(suggestUrl())}" target="_blank" rel="noopener">Suggest a supporter ↗</a></p>
+      <p><a class="btn sm ghost" href="/suggest">Suggest a supporter →</a></p>
       <p style="margin:18px 0 0"><a href="https://github.com/${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing guide ↗</a><br><a href="https://github.com/${REPO}/blob/main/skill/SKILL.md" target="_blank" rel="noopener">The research workflow ↗</a></p></aside>
   </div>`;
+}
+
+// ---------- suggest a supporter ----------
+function suggestPage(W, params) {
+  setTitle('Suggest a supporter');
+  const started = new Set(W.countries.map(c => c.name));
+  const names = W.all_countries || [...started].sort();
+  const val = k => esc(params.get(k) || '');
+  main.innerHTML = `
+  <div class="wrap page-head fade"><div class="kicker">Suggest a supporter</div><h1>Know someone <em>on the record?</em></h1>
+    <p class="lede" style="margin-top:18px">Tell us about a public figure or organisation who has backed a wealth tax in public. No account needed: a name, a country and a link to where they said it is enough.</p></div>
+  <div class="wrap two" style="margin-top:36px">
+    <form class="suggest" id="suggest-form" novalidate>
+      <label><span>Who <b>*</b></span><input class="field" name="name" required maxlength="200" placeholder="Name of the person or organisation" autocomplete="off"></label>
+      <div class="pair">
+        <label><span>Country <b>*</b></span><input class="field" name="country" required maxlength="80" list="sg-countries" value="${val('country')}" placeholder="Any country, type to search" autocomplete="off"><small>Any country. Where no register has started yet, we keep the suggestion for when one does.</small></label>
+        <label><span>Where in the country</span><input class="field" name="place" maxlength="200" value="${val('place')}" placeholder="Town, region or constituency" autocomplete="off"></label>
+      </div>
+      <datalist id="sg-countries">${names.map(n => `<option value="${esc(n)}"${started.has(n) ? ' label="Register started"' : ''}>`).join('')}</datalist>
+      <label><span>Where they said it <b>*</b></span><textarea class="field" name="links" rows="3" required maxlength="2000" placeholder="https://… one link per line: an article, video, post, letter or vote"></textarea></label>
+      <label><span>What they said, or why they belong here</span><textarea class="field" name="said" rows="5" maxlength="3000" placeholder="A quote, or a few words on what they back (a tax on wealth, not just “tax the rich”)"></textarea></label>
+      <label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+      <div class="suggest-foot"><button class="btn" type="submit" id="sg-send">Send suggestion</button><span class="sg-msg" id="sg-msg" role="status"></span></div>
+      <p class="fine">We check every suggestion against its source before it appears, so it can take a while. We don't ask who you are. To stop spam we keep a scrambled code of your connection that changes every day and can't be traced back to you.</p>
+    </form>
+    <aside class="aside-card"><h3>Other ways</h3>
+      <p>Prefer to talk it through, or have a whole list? Post it in the Discord and someone will pick it up.</p>
+      <p><a class="btn sm" href="${DISCORD}" target="_blank" rel="noopener">Join the Discord ↗</a></p>
+      <p style="margin-top:18px">Have a GitHub account? Open an issue, and follow it as it is checked.</p>
+      <p><a class="btn sm ghost" href="${esc(githubSuggestUrl({country: params.get('country') || ''}))}" target="_blank" rel="noopener">Suggest on GitHub ↗</a></p>
+      <p class="fine" style="margin-top:18px">What counts: a public statement, vote, letter or policy backing a tax on wealth (net assets), such as an annual wealth tax or a billionaire minimum tax. Read <a href="/about">the method</a>.</p></aside>
+  </div>`;
+  const form = $('#suggest-form'), msg = $('#sg-msg'), send = $('#sg-send');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    data.page = document.referrer && new URL(document.referrer).origin === location.origin ? new URL(document.referrer).pathname : '';
+    if (!data.name.trim() || !data.country.trim() || !data.links.trim()) { msg.textContent = 'Please fill in who, the country and at least one link.'; msg.className = 'sg-msg err'; return; }
+    send.disabled = true; msg.textContent = 'Sending…'; msg.className = 'sg-msg';
+    try {
+      const r = await fetch('/api/suggest', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(data)});
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(out.error || 'Could not send it. Please try again, or post it on Discord.');
+      form.innerHTML = `<div class="sg-done"><h2>Thank you.</h2><p>We'll check <b>${esc(data.name)}</b> against the source and add them if it holds up.</p>
+        <p style="margin-top:18px"><a class="btn" href="/suggest${data.country ? '?country=' + enc(data.country) : ''}">Suggest someone else</a></p></div>`;
+    } catch (err) {
+      msg.textContent = err.message; msg.className = 'sg-msg err'; send.disabled = false;
+    }
+  });
 }
 
 // ---------- start ----------

@@ -1,0 +1,4 @@
+exclusion_id,name,reason,detail,source_url,run_id
+X0001,Assis Carvalho,deceased,Federal deputy; death date 2020-07-05 in the Câmara register (author of PL 924/2020 and PLP 130/2012),https://dadosabertos.camara.leg.br/api/v2/deputados/159237,R001
+X0002,Guilherme Klein / Made-USP,insufficient_evidence,Made/USP study estimates a 2% tax on the wealth of the top 0.2% (R$ 41.9bn a year); Klein is quoted on regressivity only. Look for his own statement or paper before adding.,https://fpabramo.org.br/taxacao-de-2-sobre-super-ricos/,R001
+X0003,Major Olimpio,deceased,Senator who gave a favourable report on PLP 183/2019 in the CAE in 2020 (from a search summary of the bill page [verify]); died in March 2021 [verify date].,https://www25.senado.leg.br/web/atividade/materias/-/materia/137929,R003

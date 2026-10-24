@@ -9,15 +9,18 @@ A fourth worked example. It shows a country where the wealth tax was never repea
 | national | Bundestag, Bundesrat, Bundesregierung | The tax is federal law (*Vermögensteuergesetz*); the yield goes to the Länder |
 | supranational | German MEPs | Not yet searched |
 | region | 16 Länder (each with a Landtag) | Names written in English (Bavaria, Lower Saxony, …) so the site reads in English |
-| local | 400 Kreise: 294 Landkreise and Kreise, 106 kreisfreie Städte and Stadtkreise | The map tier, with the 5-digit AGS in `code`. Named as Germans write them: `München` (the city) and `Landkreis München`, `Kreis Pinneberg`, `Region Hannover`. Berlin and Hamburg are each one Kreis inside their own Land. Municipalities below the Kreise are not loaded; they cannot levy the tax. Sample the largest cities only if the Länder pass finds council motions |
+| county | 401 Kreise: 294 Landkreise and Kreise, 107 kreisfreie Städte and Stadtkreise (Hanau since 1 January 2026) | 5-digit AGS in `code`. Named as Germans write them: `München` (the city) and `Landkreis München`, `Kreis Pinneberg`, `Region Hannover`. Bundestag members go in the Land of their seat (direct or list), from the Bundestag's MdB-Stammdaten |
+| council | 10,939 Gemeinden, including 192 unincorporated areas (`Gemeindefreies Gebiet …`, mostly forests and lakes) | The map tier, with the 8-digit AGS. A kreisfreie Stadt is one Gemeinde inside its own Kreis (München > München); actors placed in such a city go in the Gemeinde, so the map shades them. Two Gemeinden called Neuenkirchen share a Landkreis and are written `Neuenkirchen bei Anklam` and `Neuenkirchen bei Greifswald` |
 
-**Map:** `data/de/boundaries.json` uses the BKG's *Verwaltungsgebiete 1:2 500 000* (VG2500): Kreise as units and Länder as region outlines, both from the same shapefile set so codes and borders agree. Licence: Datenlizenz Deutschland – Namensnennung – Version 2.0; the credit `© GeoBasis-DE / BKG (year)` must appear wherever the map is shown, and the site prints the file's `source` on the Method page.
+**Map:** `data/de/boundaries.json` uses the BKG's *Verwaltungsgebiete 1:250 000* (VG250, as of 1 January): Gemeinden as units, Kreise as region outlines and Länder as the upper outlines, all from the same shapefile set so codes and borders agree. Licence: Datenlizenz Deutschland – Namensnennung – Version 2.0; the credit `© BKG (year) dl-de/by-2-0` with the data-sources link must appear wherever the map is shown, and the site prints the file's `source` on the Method page. `GF=4` keeps land areas (2 is water).
 
 ```bash
-python skill/scripts/topo_to_boundaries.py VG2500_KRS.shp --name-prop GEN --code-prop AGS --scale 0.002 \
-  --flip-y --simplify 0.6 --source "© GeoBasis-DE / BKG (2025), VG2500, dl-de/by-2-0" --out kreise.json
-python skill/scripts/topo_to_boundaries.py VG2500_LAN.shp --name-prop GEN --code-prop AGS --scale 0.002 \
-  --flip-y --simplify 1 --where GF=9 --out laender.json   # GF=9 keeps land areas, not the sea
+# https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/aktuell/vg250_01-01.utm32s.shape.ebenen.zip
+L="--scale 0.005 --flip-y --licence dl-de/by-2-0 --licence-url https://www.govdata.de/dl-de/by-2-0"
+python skill/scripts/topo_to_boundaries.py VG250_GEM.shp --name-prop GEN --code-prop AGS --where GF=4 --simplify 1.2 $L   --code-scheme "AGS (Amtlicher Gemeindeschlüssel)" --source "© BKG (2026) dl-de/by-2-0, VG250 ..." --out gem.json
+python skill/scripts/topo_to_boundaries.py VG250_KRS.shp --name-prop GEN --code-prop AGS --where GF=4 --simplify 1.5 $L --code-scheme AGS --out krs.json
+python skill/scripts/topo_to_boundaries.py VG250_LAN.shp --name-prop GEN --code-prop AGS --where GF=4 --simplify 2 $L --code-scheme AGS --out lan.json
+python skill/scripts/merge_boundaries.py gem.json --regions krs.json --upper lan.json --out data/de/boundaries.json
 ```
 
 ## Where the national record is

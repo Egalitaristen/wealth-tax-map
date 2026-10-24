@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 HERE = Path(__file__).resolve().parent
 FONTS = HERE / "fonts"
 CACHE = HERE.parent / ".cache" / "cards"
-VERSION = "4"  # bump to redraw every card after a design change
+VERSION = "5"  # bump to redraw every card after a design change
 
 W, H, S = 1200, 630, 2  # drawn at 2x, then scaled down for smooth edges
 PAPER, PAPER2, INK, INK2, INK3, RULE = (243, 239, 230), (233, 227, 214), (23, 21, 15), (74, 70, 61), (124, 118, 106), (214, 207, 191)
@@ -45,22 +45,29 @@ def _bez(p0, p1, p2, p3, n=24):
 
 
 def _rings(d):
-    """Absolute M/L/C/Z path data to a list of point rings."""
-    toks = re.findall(r"[MLCZ]|-?\d+(?:\.\d+)?", d)
-    rings, cur, i, pt = [], [], 0, None
+    """M/L/l/C/Z path data (absolute, or relative lines) to a list of point rings."""
+    toks = re.findall(r"[MLlCZz]|-?\d+(?:\.\d+)?", d)
+    rings, cur, i, pt, cmd = [], [], 0, None, None
+    num = lambda k: float(toks[k])
     while i < len(toks):
-        c = toks[i]; i += 1
-        if c == "M":
+        if toks[i] in "MLlCZz":
+            cmd = toks[i]; i += 1
+            if cmd in "Zz":
+                if len(cur) > 2: rings.append(cur)
+                cur = []
+            continue
+        if cmd == "M":
             if len(cur) > 2: rings.append(cur)
-            pt = (float(toks[i]), float(toks[i + 1])); i += 2; cur = [pt]
-        elif c == "L":
-            pt = (float(toks[i]), float(toks[i + 1])); i += 2; cur.append(pt)
-        elif c == "C":
-            a = [(float(toks[i + k]), float(toks[i + k + 1])) for k in (0, 2, 4)]; i += 6
+            pt = (num(i), num(i + 1)); i += 2; cur = [pt]; cmd = "L"
+        elif cmd == "L":
+            pt = (num(i), num(i + 1)); i += 2; cur.append(pt)
+        elif cmd == "l":
+            pt = (pt[0] + num(i), pt[1] + num(i + 1)); i += 2; cur.append(pt)
+        elif cmd == "C":
+            a = [(num(i + k), num(i + k + 1)) for k in (0, 2, 4)]; i += 6
             cur += _bez(pt, *a); pt = a[2]
-        elif c == "Z":
-            if len(cur) > 2: rings.append(cur)
-            cur = []
+        else:
+            i += 1
     if len(cur) > 2: rings.append(cur)
     return rings
 

@@ -82,7 +82,9 @@ def main():
         for qid, ent in (data or {}).get("entities", {}).items():
             r, src = by_q[qid], f"Wikidata {qid}"
             v = claim(ent, "P856")
-            if isinstance(v, str):
+            # Some entries give a social account as the "official website"; that one is added under its platform below.
+            social = ("x.com/", "twitter.com/", "facebook.com/", "instagram.com/", "bsky.app/", "youtube.com/", "tiktok.com/", "linkedin.com/")
+            if isinstance(v, str) and not any(s in v for s in social):
                 add(r["actor_id"], "website", v.replace("http://", "https://", 1), src)
             for p, (plat, tpl) in PROPS.items():
                 v = claim(ent, p)

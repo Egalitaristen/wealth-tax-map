@@ -1,0 +1,8 @@
+{
+  "name": "Singapore",
+  "iso2": "SG",
+  "lead": "Egalitaristen",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Depth: seed pass. Scope: National level across Parliament, political parties, think tanks, civil society organisations, academics/economists, and commentators. Geography register covers 5 regions and 55 URA planning areas as the local statistical tier, with map boundaries from URA / geoBoundaries gbOpen under Singapore Open Data Licence Version 1.0. Review 2026-10-24 (R007): 61 members who only carry a party platform removed; 20 supporters remain."
+}

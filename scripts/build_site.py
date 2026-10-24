@@ -107,7 +107,7 @@ def numeric_for(iso2):
     if pycountry:
         c = pycountry.countries.get(alpha_2=iso2.upper())
         if c:
-            return str(int(c.numeric))
+            return c.numeric  # three digits, zero-padded, as the world map ids are ("076" for Brazil)
     return ""
 
 
@@ -154,6 +154,12 @@ def build_country(folder):
     meta = json.load(open(folder / "meta.json", encoding="utf-8"))
     slug = folder.name
     actors, ev, geo = rd(folder / "actors.csv"), rd(folder / "evidence.csv"), rd(folder / "geo_units.csv")
+    # Supporters whose latest evidence is a retraction (stance=retracted) stay in the files but leave the site.
+    latest = {}
+    for e in sorted(ev, key=lambda e: e["date"]):
+        latest[e["actor_id"]] = e.get("stance", "support")
+    gone = {i for i, st in latest.items() if st == "retracted"}
+    actors, ev = [a for a in actors if a["actor_id"] not in gone], [e for e in ev if e["actor_id"] not in gone]
     prof = collections.defaultdict(list)
     for p in rd(folder / "profiles.csv"):
         if p["url"].startswith("https://"):
@@ -166,7 +172,7 @@ def build_country(folder):
         by[e["actor_id"]].append(e)
 
     E = [[e["actor_id"], e["date"], e["grade"], e["evidence_type"], e["wt_design"], e["design_detail"],
-          e["quote_original"][:420], e["source_url"], e["source_title"], e["publisher"], e["verified"],
+          e["quote_original"][:420], e["source_url"], e["source_title"], e["publisher"], e.get("archive_url", ""),
           e["evidence_id"]] for e in ev]
     P = []
     for a in actors:
@@ -179,7 +185,8 @@ def build_country(folder):
         P.append([a["actor_id"], a["name"], a["kind"], a["actor_type"], a["role"], a["affiliation"], a["level"],
                   a.get("location", ""), "ABC"[best], len(es), dates[0] if dates else "",
                   dates[-1] if dates else "", designs, a["notes"], a["website"], a.get("party", ""),
-                  [x.strip() for x in a.get("other_types", "").split(";") if x.strip()], prof.get(a["actor_id"], [])])
+                  [x.strip() for x in a.get("other_types", "").split(";") if x.strip()], prof.get(a["actor_id"], []),
+                  a.get("wikidata_qid", "")])
 
     bounds = None
     bfile = meta.get("boundaries")
@@ -191,7 +198,7 @@ def build_country(folder):
     for a in actors:
         if a["actor_id"] not in by:
             continue
-        uid = resolve_location(a.get("location", ""), gidx)[0]
+        uid = a.get("geo_unit_id") if a.get("geo_unit_id") in by_id else resolve_location(a.get("location", ""), gidx)[0]
         if uid:
             here[uid].append(a["actor_id"])
         seen = set()
@@ -199,6 +206,16 @@ def build_country(folder):
             seen.add(uid); inside[uid].append(a["actor_id"]); uid = by_id[uid]["parent_id"]
     roots = set(gidx[2].values())
     C, vb, mapped = [], None, set()
+    # A unit's place path is its parent's path plus its name; send each parent path once (UP) and its index in C,
+    # since a commune map repeats "France > Occitanie > Haute-Garonne" thousands of times.
+    UP, up_at = [], {}
+
+    def up_index(g):
+        par = unit_path(g.get("parent_id"), by_id)
+        if par not in up_at:
+            up_at[par] = len(UP); UP.append(par)
+        return up_at[par]
+
     if bounds:
         vb = bounds["viewBox"]
         for u in bounds["units"]:
@@ -208,12 +225,14 @@ def build_country(folder):
             mapped.add(g["geo_unit_id"])
             ids = inside.get(g["geo_unit_id"], [])
             state = "support" if ids else ("clear" if g["sweep_status"] == "done" else "open")
-            # Supporters known only at the parent level (a state or Land, say) tint the area lightly on the map.
-            par = g.get("parent_id")
-            above = len(here.get(par, [])) if par and par not in roots else 0
+            # Supporters known only at a level above (a province, state or Land, say) tint the area lightly on the map.
+            above, near, anc = 0, "", g.get("parent_id")
+            while anc and anc in by_id and anc not in roots:
+                if here.get(anc):
+                    above += len(here[anc]); near = near or re.sub(r"\s*\(.*$", "", by_id[anc]["name"]).strip()
+                anc = by_id[anc].get("parent_id")
             C.append([re.sub(r"\s*\(.*$", "", g["name"]).strip(), u.get("code", ""), state, g["sweep_status"], g["hits"],
-                      g["notes"][:600], ids, u["path"], unit_path(g["geo_unit_id"], by_id), above,
-                      re.sub(r"\s*\(.*$", "", by_id[par]["name"]).strip() if above else ""])
+                      g["notes"][:600], ids, u["path"], up_index(g), above, near])
     O = []
     for g in geo:
         uid = g["geo_unit_id"]
@@ -222,23 +241,23 @@ def build_country(folder):
         name = g["name"] + (" (country level)" if uid in roots else "")
         O.append([name, g["level"], g["sweep_status"], g["notes"][:500], here[uid], unit_path(uid, by_id)])
     L = [[l["from_actor_id"], l["to_actor_id"], l["link_type"], l["note"]] for l in links]
-    verified = sum(1 for e in ev if e["verified"] == "y")
     last = max([r.get("date", "") for r in runs] or [""])
     done = sum(1 for g in geo if g["sweep_status"] == "done")
     with_sup = sum(1 for u, ids in inside.items() if ids and u not in roots)
     grades = collections.Counter(p[8] for p in P)
     summary = dict(slug=slug, iso2=meta.get("iso2", slug.split("-")[0].upper()), name=meta["name"],
                    status=meta.get("status", ""), lead=meta.get("lead", ""), notes=meta.get("notes", ""),
-                   supporters=len(P), evidence=len(E), verified=verified, A=grades["A"], B=grades["B"], C=grades["C"],
+                   supporters=len(P), evidence=len(E), A=grades["A"], B=grades["B"], C=grades["C"],
                    units=len(geo) - len(roots), units_done=done, units_with_supporters=with_sup, updated=last, excluded=len(excl),
                    polls=[p for p in meta.get("polls", []) if str(p.get("url", "")).startswith("https://")])
     summary["map_source"] = (bounds or {}).get("source", "")
     summary["map_licence"] = [(bounds or {}).get("licence", ""), (bounds or {}).get("licence_url", "")]
     R = [r["path"] for r in (bounds or {}).get("regions", [])]
-    country = dict(meta=summary, P=P, E=E, C=C, vb=vb, O=O, L=L, R=R)
+    R2 = [r["path"] for r in (bounds or {}).get("regions_upper", [])]  # a second, bolder outline (régions over départements)
+    country = dict(meta=summary, P=P, E=E, C=C, UP=UP, vb=vb, O=O, L=L, R=R, R2=R2)
 
     # Search index rows: [slug, id, name, type, role, place, grade, statements]
-    index = [[slug, p[0], p[1], p[3], p[4][:80], [x.strip() for x in p[7].split(">")][-1] if p[7] else "", p[8], p[9]]
+    index = [[slug, p[0], p[1], p[3], p[4][:80], [x.strip() for x in p[7].split(">")][-1] if p[7] else "", p[8], p[9], p[18]]
              for p in P]
     # Place rows: [slug, unit path, supporters inside]
     places = [[slug, unit_path(u, by_id), len(ids)] for u, ids in inside.items() if ids and u not in roots]
@@ -352,13 +371,18 @@ def share_pages(out, base, countries, full):
     write("/contribute", "Put your country on the map · Wealth Tax Supporters",
           "Start a register for your country, suggest a supporter, or help check the entries that are already here.",
           "contribute", "Put your country on the map", lambda o: cards.page_card(o, "Contribute", "Put your country on the map", "Start a register for your country, or suggest a supporter."))
+    write("/suggest", "Suggest a supporter · Wealth Tax Supporters",
+          "Know a public figure or organisation who has backed a wealth tax? Send a name, a country and a link. No account needed.",
+          "suggest", "Suggest a supporter", lambda o: cards.page_card(o, "Suggest a supporter", "Know someone on the record?", "A name, a country and a link to where they said it. No account needed."))
 
     for c in countries:
         D, slug, name = full[c["slug"]], c["slug"], c["name"]
         mx = max([len(u[6]) for u in D["C"]] or [1]) or 1
-        # The same shading as the site map: real supporters from 0.42 up, region-only areas a fixed faint 0.13.
-        units = [(u[7], (0.42 + 0.58 * math.log(len(u[6]) + 1) / math.log(mx + 1)) if u[6] else 0.13 if u[9] else 0)
-                 for u in D["C"]]
+        mx_up = max([u[9] for u in D["C"]] or [1]) or 1
+        # The same shading as the site map: real supporters from 0.42 up, areas known only through the level above
+        # a faint 0.08 to 0.28.
+        units = [(u[7], (0.42 + 0.58 * math.log(len(u[6]) + 1) / math.log(mx + 1)) if u[6]
+                  else (0.08 + 0.2 * math.log(u[9] + 1) / math.log(mx_up + 1)) if u[9] else 0) for u in D["C"]]
         found = f"public figures and organisations in {the(name)} on the record so far"
         years = sorted({e[1][:4] for e in D["E"] if e[1]})
         sections = {
@@ -440,7 +464,16 @@ def main():
                 if (folder / name).exists():
                     shutil.copy(folder / name, dl / name)
             print(f"  {folder.name}: {summary['supporters']} supporters, {summary['evidence']} evidence rows")
-    world = dict(paths=world_paths(), countries=countries, built=datetime.date.today().isoformat())
+    paths = world_paths()
+    # Every country's everyday name, for the suggestion form: people may suggest supporters anywhere, not only
+    # where a register has started.
+    # One name per ISO country: the register's name, else the world map's everyday name, else ISO's common name.
+    own = {c["iso2"].upper(): c["name"] for c in countries}
+    every = {p["name"] for p in paths.values()} | set(own.values())
+    for c in (pycountry.countries if pycountry else []):
+        if c.alpha_2 not in own and c.numeric not in paths:
+            every.add(getattr(c, "common_name", None) or c.name)
+    world = dict(paths=paths, countries=countries, all_countries=sorted(every), built=datetime.date.today().isoformat())
     json.dump(world, open(out / "data" / "world.json", "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     json.dump(dict(people=index, places=places), open(out / "data" / "index.json", "w", encoding="utf-8"),
               separators=(",", ":"), ensure_ascii=False)

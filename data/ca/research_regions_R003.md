@@ -1,0 +1,29 @@
+# Regional, climate, faith and philanthropy pass R003
+
+Eight checked new actors/evidence rows staged in staging_regions_R003.jsonl. Canonical CSVs were not edited. The sources were opened in the web reader; Adam Saifer's article was also read directly after a bare-domain cache miss.
+
+## Added candidates and source checks
+
+- Climate Justice Saskatoon and One Cowichan: community.350.org petition mirrors explicitly name the public organisation as campaign partner and demand a tax on net wealth above CAD10m. Rate and recurrence remain unspecified. Visible January/February 2025 milestone updates establish the campaign year, not the exact launch day. The campaigns.350.org variants returned 403/cache miss. No private petition signer or page creator was imported.
+- PEI NDP: VoteMate preserves the party's 9 March 2023 manifesto excerpt committing to lobby for a federal wealth tax. That demand is distinct from the provincial income-tax bracket in the same sentence. The linked party PDF is now 404. Candidate pages reusing this party platform do not establish personal support and were not imported.
+- Auréa Cormier: own French opinion article of 18 February 2022 in NB Media Co-op explicitly recommends a new impôt sur la fortune to curb excessive accumulation. Byline identifies her public religious/social-justice role and Moncton organisation. This does not establish institutional endorsement by that organisation. Death-record search found no matching death record; November2025 public activity and Moncton council January2025 minutes corroborate identity. Same-name friend mentioned in another person's obituary is not a death notice for her.
+- Elizabeth Shearer: own quoted interview in Winnipeg Free Press, 2 October 2019, supports NDP 1% tax on net worth above CAD20m. Source identifies the then29-year-old federal candidate for Winnipeg South Centre. Marked former_role. Same-name U.S. obituaries concern people born1934/1942/1935, inconsistent with this identity; no matching death found. Party platform reused on a candidate directory was not used as personal endorsement.
+- Marc Lee and DT Cochrane: opened full April2024 coauthored tax-incidence report, cover and printed pp22–23. Explicitly says an annual tax on holdings of wealth improves fairness and broadens taxation beyond real estate to financial assets. The brackets are discussed as a Hemingway example, without exclusive adoption. Report authorship supports gradeA. Official SFU/Carleton profiles corroborate economics discipline and current public roles. Death searches found no matching record; Lee's generic same-name obituaries were not a matching economist identity. The 7 October2026 Lee article mainly considers the difficulty of provincial implementation, so the clearer authored2024 proposal was preferred.
+- Adam Saifer: own16 August2020 opinion article in Canadian Accountant advocates the NDP net-wealth tax of1% aboveCAD20m and extending coverage to privately controlled foundation assets; describes paying wealth tax each year. Current UBC Okanagan profile supplies public role and location; death search found no matching record. A same-name New York musician is a different identity.
+
+## Screened but not imported
+
+- NB Media Co-op,10 March2026 open-letter lead: the letter demands a “wealth tax or surtax” on the top0.5–1% while referring to high-income earners. The reporting does not resolve stock-of-wealth versus income-surtax meaning. GoogleDoc original did not open. Liane Thibodeau and the200 ordinary signers were not added; further clarification needed.
+- Manitoba legislature keyword hits in2021/2022 mean property tax; older1993 net-wealth proposal is outside the2010+window. Manitoba Federation of Labour statements found in these debates concern property-tax rebates. No wealth-stock endorsement inferred.
+- Yukon/NWT/Nunavut searches yielded old pre2010/property-tax debate, generic tax-policy summaries, or party-platform reuse on Katherine McCallum/Lori Idlout candidate pages. No individual imported from those. Coverage remains thin, not an assertion of no support.
+- Presbyterian Church of Canada's tax page reproduces1990 study/review recommendations. Old act date and study-only language both prevent inclusion.
+- First Unitarian Church of Hamilton's24 June2026 bylined blog makes a favourable wealth-tax argument but does not clearly establish a whole-congregation policy; author Jennifer Wallace needs clearer public-role/identity corroboration. Retained as a lead, not institutional endorsement.
+- Allofustogether.ca FAQ clearly names net-wealth tax>$10m and says the site is a350Canada project, but is undated. Without a dated Canadian350statement, no separate350Canada actor was staged. Main local-campaign aggregator lists exactly two campaigns, both screened above. Do not infer every350member's endorsement.
+- MakeWay republishes CBC Resource Movement coverage of16 September2020 and says it supplies operational support/governance through its shared platform. This is a possible specific-support lead, not yet a grant record proving financial support for wealth-tax advocacy; no funder added. Trottier-family foundation membership does not establish foundation endorsement. London Council of Canadians22 September2026 author-talk sponsorship alone is also insufficient to infer policy endorsement.
+
+## Further leads
+
+1. Obtain dated350Canada wealth-tax campaign launch statement or archive FAQ; follow public climate organisers' own words.
+2. Recover PEI NDP original2023 platform archive; seek direct personal statements by PEI/territorial proponents rather than reused party promises.
+3. Clarify NB2026 letter's tax base with an accessible original. Use later explicit policy sources for the named public organisers; do not harvest private signers.
+4. Investigate grant records supporting Resource Movement specifically; distinguish administrative hosting from funding.

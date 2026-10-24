@@ -1,2 +1,2 @@
-run_id,date,assistant,focus,targets,queries_run,sources_opened,candidates_seen,new_actors,new_evidence,grade_upgrades,verified_ok,verified_failed,saturation,notes_next
-R001,2026-10-20,Claude,"Seed first pass: register, map, Assemblée and Sénat roll calls, bills, appeal, NGOs, unions, parties","H0001-H0014",about 30 web searches,about 80 pages,,,,0,0,0,Not measured,"See area_profile.md section 10"
+run_id,date,assistant,focus,targets,queries_run,sources_opened,candidates_seen,new_actors,new_evidence,grade_upgrades,saturation,notes_next
+R001,2026-10-20,Claude,"Seed first pass: register, map, Assemblée and Sénat roll calls, bills, appeal, NGOs, unions, parties",H0001-H0014,about 30 web searches,about 80 pages,,,,0,Not measured,See area_profile.md section 10

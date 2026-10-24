@@ -1,0 +1,63 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,Parliament of Singapore,national,legislature,G0007,https://www.parliament.gov.sg,in_progress,R001,2026-10-23,5,5,Official parliamentary debates and Hansard on wealth tax proposals since 2010,
+G0002,Central Region,region,region,G0007,,pending,,,,,URA Region: Central Region,CR
+G0003,East Region,region,region,G0007,,pending,,,,,URA Region: East Region,ER
+G0004,North Region,region,region,G0007,,pending,,,,,URA Region: North Region,NR
+G0005,North-East Region,region,region,G0007,,pending,,,,,URA Region: North-East Region,NER
+G0006,West Region,region,region,G0007,,pending,,,,,URA Region: West Region,WR
+G0007,Singapore,national,country,,,in_progress,R001,2026-10-23,,,Country root: actors known only to the country sit here. Parent of the units below.,
+G0008,Ang Mo Kio,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,AM
+G0009,Bedok,council,planning_area,G0003,,pending,,,,,URA Planning Area in East Region,BD
+G0010,Bishan,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,BS
+G0011,Boon Lay,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,BL
+G0012,Bukit Batok,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,BK
+G0013,Bukit Merah,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,BM
+G0014,Bukit Panjang,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,BP
+G0015,Bukit Timah,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,BT
+G0016,Central Water Catchment,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,CC
+G0017,Changi,council,planning_area,G0003,,pending,,,,,URA Planning Area in East Region,CH
+G0018,Changi Bay,council,planning_area,G0003,,pending,,,,,URA Planning Area in East Region,CB
+G0019,Choa Chu Kang,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,CK
+G0020,Clementi,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,CL
+G0021,Downtown Core,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,DT
+G0022,Geylang,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,GL
+G0023,Hougang,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,HG
+G0024,Jurong East,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,JE
+G0025,Jurong West,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,JW
+G0026,Kallang,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,KL
+G0027,Lim Chu Kang,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,LK
+G0028,Mandai,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,MD
+G0029,Marina East,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,ME
+G0030,Marina South,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,MS
+G0031,Marine Parade,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,MP
+G0032,Museum,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,MU
+G0033,Newton,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,NT
+G0034,North-Eastern Islands,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,NE
+G0035,Novena,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,NV
+G0036,Orchard,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,OR
+G0037,Outram,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,OT
+G0038,Pasir Ris,council,planning_area,G0003,,pending,,,,,URA Planning Area in East Region,PR
+G0039,Paya Lebar,council,planning_area,G0003,,pending,,,,,URA Planning Area in East Region,PL
+G0040,Pioneer,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,PN
+G0041,Punggol,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,PG
+G0042,Queenstown,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,QT
+G0043,River Valley,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,RV
+G0044,Rochor,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,RC
+G0045,Seletar,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,SL
+G0046,Sembawang,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,SB
+G0047,Sengkang,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,SE
+G0048,Serangoon,council,planning_area,G0005,,pending,,,,,URA Planning Area in North-East Region,SG
+G0049,Simpang,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,SM
+G0050,Singapore River,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,SR
+G0051,Southern Islands,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,SI
+G0052,Straits View,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,SV
+G0053,Sungei Kadut,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,SK
+G0054,Tampines,council,planning_area,G0003,,pending,,,,,URA Planning Area in East Region,TM
+G0055,Tanglin,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,TN
+G0056,Tengah,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,TH
+G0057,Toa Payoh,council,planning_area,G0002,,pending,,,,,URA Planning Area in Central Region,TP
+G0058,Tuas,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,TS
+G0059,Western Islands,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,WI
+G0060,Western Water Catchment,council,planning_area,G0006,,pending,,,,,URA Planning Area in West Region,WC
+G0061,Woodlands,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,WD
+G0062,Yishun,council,planning_area,G0004,,pending,,,,,URA Planning Area in North Region,YS

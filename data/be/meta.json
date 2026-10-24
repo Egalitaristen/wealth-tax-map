@@ -1,0 +1,8 @@
+{
+  "name": "Belgium",
+  "iso2": "BE",
+  "lead": "",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Scope: national (federal parliament, parties, unions, economists, NGOs), 3 regions (Flanders, Wallonia, Brussels), 10 provinces, and 581 municipalities (REFNIS codes). Seed pass R001. Review 2026-10-24 (R006): 41 rows removed, 4 regraded; 64 supporters remain. The one poll (80% for a wealth tax above EUR 1m, Dedicated/Ipsos for Le Vif and CNCD-11.11.11, Oct 2023) was removed because the source page could not be read and no other source for it was found."
+}

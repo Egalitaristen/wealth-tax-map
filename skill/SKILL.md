@@ -55,9 +55,9 @@ Files in this skill (use them if present; the rules in this file are sufficient 
    - Fetch tools that return a summary can paraphrase. Quote from the raw page text (download it, or use a browser) and run `wtdb.py checkquotes` on the rows you add. It reads PDFs with `pdftotext` and falls back to the headless browser (`fetch_page.py`) for pages that block plain clients.
    - Never compose a sentence of your own and put it in `quote_original`. For list or roster pages where the only text is a name, use the text the page itself prints for that entry: a claim sentence in the page's structured data (JSON-LD), an official bill-status field such as `Rep. Lee, Barbara [D-CA-13]`, or the name and role as listed. Keep quotes short (about 25 words or fewer).
 3. **Time window and the living.** Only evidence dated 2010-01-01 or later counts. Individuals are assumed alive unless a death record is found. Check before adding (Wikidata's date of death, or an obituary search when in doubt); anyone found dead goes in `exclusions.csv` (`deceased`), not in `actors.csv`. Record the check by setting `alive_checked=y`; do not narrate it in `notes`. Dissolved organisations may stay, marked `dissolved`.
-4. **Supporters only.** Opponents are not recorded as actors. If an existing supporter later retracts or votes against, add evidence with `stance=retracted`; they then show as a former supporter.
+4. **Supporters only.** Opponents are not recorded as actors. If an existing supporter later retracts or votes against, add evidence with `stance=retracted` (dated, quoted and sourced like any other row). An actor whose latest evidence is a retraction stays in the files but leaves the site.
 5. **Public role, public record.** Only people acting in a public capacity (elected officials, officials, published authors, journalists, organisation leaders, people who publicly declared themselves, e.g. signed a published letter). Never record private individuals (ordinary petition signers, private social-media users), and never record home addresses, personal phone numbers or personal emails. Organisation websites and official pages are fine.
-6. **The CSV files are the database.** Write each actor and its evidence to disk as soon as it is verified — never hold a batch in memory to write at the end. The xlsx is a generated export, never edited by hand.
+6. **The CSV files are the database.** Write each actor and its evidence to disk as soon as you have checked it — never hold a batch in memory to write at the end. The xlsx is a generated export, never edited by hand.
 7. **Controlled vocabularies only** (section 5). If nothing fits, use the closest value and say so in `notes`; propose a vocabulary change in the run log rather than inventing a value.
 8. **Report counts from the files**, not from memory (`wtdb.py status`, or count the CSV rows).
 9. **Search in every official language of the area** (local-language terms are in the source playbook). English-only searching misses most of the local layer.
@@ -99,7 +99,7 @@ Someone who supports both an included design and an excluded one qualifies on th
 |---|---|---|
 | **A** | Explicit | Endorses an included design **with specifics** (rate, threshold, named bill or proposal), **or** a formal act: voted for, sponsored or co-sponsored, signed a motion or letter that calls for an included design, organisational policy adoption, authored a publication recommending one, gave supportive testimony. |
 | **B** | Named | Supports "a wealth tax", "wealth levy", "billionaire tax" or an equivalent local term by name, without specifics. |
-| **C** | Implied | Language that probably means wealth taxation but is ambiguous ("make the super-rich pay on their wealth"). Included and flagged as *appears to support*; a target for upgrade. |
+| **C** | Implied | Language that probably means wealth taxation but is ambiguous ("make the super-rich pay on their wealth"). Included and flagged as *appears to support*; a target for upgrade. C still needs words about wealth: "those with most should contribute more" is not C, it is an exclusion (section 2). Neither is a name on an event programme or a speaking slot without the words spoken. |
 
 **Roster and endorsement lists.** When a campaign's own page lists someone as an endorser, that is a claim by the campaign, not a statement by the endorser. Grade it **B** and say so in `grading_note`; upgrade to A when you find the endorser's own statement, vote or signature. Sponsors and cosponsors in official bill data are a formal act (A).
 
@@ -142,18 +142,21 @@ International actors (Zucman, Oxfam International) are included in a country dat
 In this repository, `<area-slug>` is the lowercase ISO 3166-1 alpha-2 code (`gb`, `de`) or `<iso2>-<region>` (`us-ca`). Each folder also needs a `meta.json` (`name`, `iso2`, `lead`, `status`, `boundaries`, `notes`; `init` creates it). Put the scope you chose (levels covered, anything left out) in `notes` and in section 1 of `area_profile.md`. Everything lives in `data/<area-slug>/` (e.g. `data/gb/`, `data/us-california/`, `data/eu/`). Create it with `python skill/scripts/wtdb.py init data/<slug> --area "<Area name>"`, or by hand with exactly these headers. IDs are prefix + zero-padded number (A0001, E00001, G0001, L0001, H0001, X0001, R001).
 
 **actors.csv** — one row per actor
-`actor_id, name, kind, actor_type, other_types, role, affiliation, party, affiliation_actor_id, country, level, location, wikidata_qid, website, status, alive_checked, prominence, notes, added_run, updated`
+`actor_id, name, kind, actor_type, other_types, role, affiliation, party, affiliation_actor_id, country, level, location, geo_unit_id, location_source, wikidata_qid, website, status, alive_checked, prominence, notes, added_run, updated, refined`
 - `other_types`: extra `actor_type` values separated by `;`, for people who fit more than one (for example `journalist` primary with `economist` here). `actor_type` is the main role; the site and the coverage grid count a person under every type they hold.
 - `party`: for politicians, the party's common name in English (for example `Labour`, `Green Party`, `Democratic Party`; `Independent` if none). Use one name per party so the site can filter on it; a regional or state branch uses the national party's name (the Minnesota DFL is `Democratic Party`). Blank for non-politicians, and for local officials in non-partisan offices when the party is not known. `validate` warns about a missing party above local level.
 - `level`: supranational · national · regional · local (the level of government or society they act at)
 - `location`: where they are based or whom they represent, written as a path from the country down, separated by ` > `: `United States > California > Camarillo`, `United Kingdom > London > Hackney`, `United Kingdom > Yorkshire and The Humber > Leeds East`. The first part is the country root unit in `geo_units.csv`. Each next part that matches a register unit under the previous one is resolved to that unit; anything after that is plain place text (a city, district or constituency the register does not list yet). Give the finest place you can prove. If you only know the state, stop at the state; if you only know the country (a national union, a nationwide campaign), write just the country. Never guess a finer place. A national-level actor sits at the country; a legislator sits at the place they represent (the district, constituency, state or region), not at the institution (that goes in `role`). The site counts an actor for every unit on the path, so a city actor counts for their state and the country.
+- `geo_unit_id`: the register unit the actor is placed in, the deepest unit `location` resolves to. It is the stable key (names change: Araba became Álava, and Connecticut's counties became planning regions). `wtdb.py add` fills it from `location`; `wtdb.py locate` fills any that are empty and, after a unit is renamed or moved, rewrites the unit part of `location` from the register and keeps the place text after it. `validate` fails when the two disagree.
+- `location_source`: the page that shows the place, when it is not obvious from the evidence (a news profile saying where they are from, their organisation's address, a university page). A legislator's seat needs none. Never a home address.
+- `refined`: the date of the last refinement pass on this actor (the `refine` skill), so the next pass can skip them.
 - `status`: active · former_role · dissolved
 - `alive_checked`: y · na (organisations and institutions). `y` means you looked for a death record and found none.
 - `notes`: only what a reader needs: an identity caveat (a common name, a role taken from a list), where the party or role came from, or context the evidence rows do not show. **Never** write that the person is alive, that Wikidata has no match, or that no death record was found; `alive_checked` already says it, and the site shows the notes to readers. Leave `notes` empty when there is nothing to add.
 - `prominence`: international · national · regional · local (how widely they are known on this issue)
 
 **evidence.csv** — one row per piece of evidence (an actor can have many)
-`evidence_id, actor_id, date, stance, grade, evidence_type, wt_design, design_detail, quote_original, quote_lang, quote_en, source_url, source_title, publisher, archive_url, accessed, harvest_id, grading_note, verified, run_id`
+`evidence_id, actor_id, date, stance, grade, evidence_type, wt_design, design_detail, quote_original, quote_lang, quote_en, source_url, source_title, publisher, archive_url, accessed, harvest_id, grading_note, run_id`
 - `date`: YYYY-MM-DD (or YYYY-MM / YYYY if that is all that is known); the date of the act or statement, not of a later article about it
 - `stance`: support · retracted
 - `grade`: A · B · C
@@ -161,7 +164,7 @@ In this repository, `<area-slug>` is the lowercase ISO 3166-1 alpha-2 code (`gb`
 - `wt_design`: values in section 2
 - `design_detail`: rate, threshold, bill name or number (e.g. "2% over £10m")
 - `quote_original`: verbatim from the source page; `quote_lang`: ISO code; `quote_en`: translation if not English
-- `verified`: n · y · failed (y means re-opened in QA and the quote was found)
+- `archive_url`: a Wayback Machine copy of the source (`skill/scripts/archive_sources.py` fills it), so the quote stays checkable when the page moves or goes behind a paywall
 
 **geo_units.csv** — the tree of places you report on, and the checklist for regional and local sweeps (6.5, 6.7)
 `geo_unit_id, name, level, unit_type, parent_id, website, sweep_status, swept_run, swept_date, queries_run, hits, notes, code`
@@ -178,9 +181,12 @@ In this repository, `<area-slug>` is the lowercase ISO 3166-1 alpha-2 code (`gb`
 **Map licence rule (hard):** the shapes must come from a source that states an open licence (public domain, CC0, CC BY, ODbL, or an open government licence such as OGL or dl-de/by), and the unit codes must be the official ones. In order of preference, look for:
 1. the national statistics office or mapping agency, which also publishes the codes;
 2. a well-known open republication of those official shapes (us-atlas for the US Census; DataMeet for the Survey of India);
-3. geoBoundaries gbOpen, after checking the licence of that country's entry.
+3. OCHA's Common Operational Datasets on HDX (`data.humdata.org/dataset/cod-ab-<iso3>`): the national agency's boundaries, usually under CC BY-IGO, with P-codes built from the official codes (Brazil's `BR1100015` is IBGE `1100015`; `topo_to_boundaries.py --strip-prefix BR`). The HDX API (`/api/3/action/package_show?id=cod-ab-<iso3>`) states the licence.
+4. geoBoundaries gbOpen, after checking the licence of that country's entry (`geoboundaries.org/api/current/gbOpen/<ISO3>/ADM2/` gives `boundaryLicense`).
 
-A personal GitHub repository or blog with no licence file, a "free to use" note, a non-commercial licence (GADM is CC BY-NC, so not usable), or any shapes whose origin you cannot name are **not** used, however convenient. Never invent codes, not even "state code plus a running number". If no open source with official codes turns up, ship the country without a map: the site works without one, and say so in `meta.json` notes. Write `licence`, `licence_url` (https) and `code_scheme` into the file. `topo_to_boundaries.py` requires them, `wtdb.py validate` fails without them and warns about licences it does not know, and the PR description must name the licence. (India's first map broke this rule and had to be replaced.) `units` are the local tier (6.7) and are matched to `geo_units.csv` by `code` when the register has codes, otherwise by name. `regions` are the outlines of the level above (English regions and UK nations, län, Länder, states), drawn as lines over the map; every country has them. Take units and regions from the same agency and coordinate system so the lines fall on the unit borders (deriving region borders from simplified units does not work: neighbours rarely share vertices). Make both with `scripts/topo_to_boundaries.py` from a TopoJSON, GeoJSON or shapefile (`--simplify` keeps the file small, `--where` drops water areas, `--encoding` reads Latin-1 shapefiles). `source` names where the shapes come from and their licence; the site prints it on the country's Method page as the credit most licences require. `wtdb.py validate` warns about shapes that match no unit.
+When the national agency states no licence on its own site, look at 3 and 4 before giving up: they often republish the same official shapes under an open licence.
+
+A personal GitHub repository or blog with no licence file, a "free to use" note, a non-commercial licence (GADM is CC BY-NC, so not usable), or any shapes whose origin you cannot name are **not** used, however convenient. Never invent codes, not even "state code plus a running number". If no open source with official codes turns up, ship the country without a map: the site works without one, and say so in `meta.json` notes. Write `licence`, `licence_url` (https) and `code_scheme` into the file. `topo_to_boundaries.py` requires them, `wtdb.py validate` fails without them and warns about licences it does not know, and the PR description must name the licence. (India's first map broke this rule and had to be replaced.) `units` are the local tier (6.7) and are matched to `geo_units.csv` by `code` when the register has codes, otherwise by name. `regions` are the outlines of the level above (English regions and UK nations, län, Länder, states, départements, provinces), drawn as lines over the map; every country has them. Where there are two levels above the units, put the higher one in `regions_upper` (régions over départements, communities over provinces), drawn bolder; `scripts/merge_boundaries.py` combines the files. Take units and regions from the same agency and coordinate system so the lines fall on the unit borders (deriving region borders from simplified units does not work: neighbours rarely share vertices). Make both with `scripts/topo_to_boundaries.py` from a TopoJSON, GeoJSON or shapefile (`--simplify` keeps the file small, `--where` drops water areas, `--encoding` reads Latin-1 shapefiles). `source` names where the shapes come from and their licence; the site prints it on the country's Method page as the credit most licences require. `wtdb.py validate` warns about shapes that match no unit.
 
 **links.csv** — relationships, used for snowballing
 `link_id, from_actor_id, to_actor_id, link_type, evidence_id, source_url, note`
@@ -201,7 +207,7 @@ A personal GitHub repository or blog with no licence file, a "free to use" note,
 - `reason`: out_of_definition · pre_2010_only · deceased · private_individual · opposes · insufficient_evidence · duplicate
 
 **runs.csv** — one row per run
-`run_id, date, assistant, focus, targets, queries_run, sources_opened, candidates_seen, new_actors, new_evidence, grade_upgrades, verified_ok, verified_failed, saturation, notes_next`
+`run_id, date, assistant, focus, targets, queries_run, sources_opened, candidates_seen, new_actors, new_evidence, grade_upgrades, saturation, notes_next`
 
 **area_profile.md** — the area profile (section 6.2).
 
@@ -211,6 +217,8 @@ python skill/scripts/wtdb.py add data/gb actors '{"name":"…","kind":"person",�
 python skill/scripts/wtdb.py add data/gb evidence @new_evidence.jsonl               # one JSON object per line
 python skill/scripts/wtdb.py set data/gb geo_units G0042 sweep_status=done hits=2 queries_run=6
 python skill/scripts/wtdb.py validate data/gb     # errors must be fixed before a run ends
+python skill/scripts/wtdb.py locate data/gb       # fill geo_unit_id; repair locations after a unit is renamed
+python skill/scripts/match_wikidata.py data/gb  # fill wikidata_qid where the match is unambiguous; spot-check it
 python skill/scripts/wtdb.py dedupe data/gb       # likely duplicate actors
 python skill/scripts/wtdb.py merge data/gb A0012 A0345   # merge a duplicate (second) into the first: moves evidence, links, profiles
 python skill/scripts/wtdb.py checkquotes data/gb --run R004   # fetch sources and check the quotes are on the pages
@@ -226,10 +234,10 @@ Writing CSVs directly is fine too, but quote fields properly (quotes often conta
 ## 6. Workflow
 
 ### 6.1 Start (brief)
-1. Read this file, the area's folder if it exists (`area_profile.md`, the last three `runs.csv` rows, `wtdb.py status`), and the notes for the nearest country in `skill/references/countries/`.
+1. Read this file, the area's folder if it exists (`area_profile.md`, the last three `runs.csv` rows, `wtdb.py status`), and the notes for the nearest country in `skill/references/countries/`. For a new country, also list the suggestions people have already sent for it from the site (`python scripts/suggestions.py`): the form accepts any country, so they wait there until a register starts, and they go into the first pass's leads.
 2. Settle three things with the user, in **one short message**, each with a recommended default: **which area**, **scope** (national only; plus regional; plus local) and **depth** (see the ladder below). If the user has already told you, do not ask again. If they do not answer, use the defaults and say so.
 3. In this repository, work on a branch and open one pull request per run. Never push to `main`.
-4. `wtdb.py init data/<iso2> --area "<Name>"`, then go straight to 6.2. State your plan in a few lines and begin; do not wait for approval of the plan.
+4. `wtdb.py init data/<iso2> --area "<Name>"`, then **load the geography register down to the local tier and build the map** (6.7): an official list with codes and one open-licence shape file, usually under an hour. It is part of every seed pass, not a later run, and `validate` fails while the register stops at regions. Then go straight to 6.2. State your plan in a few lines and begin; do not wait for approval of the plan.
 
 **Depth ladder** (pick one, and say which in `meta.json` `notes`):
 
@@ -256,7 +264,7 @@ Touch **every layer once, highest yield first**, before going deep in any one. A
 
 For bulk lists (letters, rosters, coalition pages, bill cosponsor data) queue them in `harvest.csv` and process them whole; they produce many actors with uniform evidence (6.4). Use search in the area's languages (the playbook has terms). Check the definition against what each list or person actually calls for.
 
-**End the first pass when every layer has been touched and the biggest lists are in.** Then validate, run the quote check, open the pull request, and write the run plan (6.6). The first pass should take hours. If you find yourself building a crawler or loading hundreds of units, stop and check the plan against the goal.
+**End the first pass when every layer has been touched and the biggest lists are in.** Then validate, run the quote check, open the pull request, and write the run plan (6.6). The first pass should take hours. If you find yourself building a crawler or sweeping hundreds of units one by one, stop and check the plan against the goal.
 
 ### 6.4 Bulk harvest
 Lists produce many actors at once with uniform, strong evidence. Queue each in `harvest.csv`, then process it entry by entry:
@@ -267,7 +275,7 @@ Lists produce many actors at once with uniform, strong evidence. Queue each in `
 - authors of wealth-tax reports and commissions; witnesses and written evidence
 - union and party conference motions (mover, seconder, supporting bodies)
 
-Rosters can be large (a ballot campaign's endorsement page listed about 250 names). Parse the page's structured data instead of retyping names, check each name against the database (name variants such as "Coalition for Human Needs" and "Coalition on Human Needs" are the same body: `merge`), and keep the list's own entry text as the quote. Wikipedia and other secondary lists are good for finding names, never as the source; re-read each name at its own cited page.
+Rosters can be large (a ballot campaign's endorsement page listed about 250 names). Parse the page's structured data instead of retyping names, check each name against the database (name variants such as "Coalition for Human Needs" and "Coalition on Human Needs" are the same body: `merge`), and keep the list's own entry text as the quote. For a roll call, that is the member's own line: the `source_url` is the official per-member list (an open-data API endpoint is fine, such as the Câmara's `/votacoes/<id>/votos`) and `quote_original` is the name exactly as that list prints it, with the vote, party and seat in `grading_note`. Never quote the result line ("Yes: 136; No: 262") for every member: it is the same on every row and proves nobody's vote. Wikipedia and other secondary lists are good for finding names, never as the source; re-read each name at its own cited page.
 
 For each person or organisation on a list: check for duplicates, check the definition applies to what the list actually calls for, check they are not dead (or, for an organisation, that it still exists), then add the actor and an evidence row whose `harvest_id` points to the list. Mark the list `done` with `actors_added`.
 
@@ -293,30 +301,36 @@ A tree of the places you will report on, in `geo_units.csv`, with a country root
 |---|---|---|
 | United Kingdom | nations and English regions, counties | 361 local authority districts (GSS codes) |
 | Sweden | 21 län | 290 kommuner (kommunkod) |
-| Germany | 16 Länder | 400 Kreise and kreisfreie Städte (AGS) |
+| Germany | 16 Länder, 401 Kreise and kreisfreie Städte | 10,939 Gemeinden and unincorporated areas (AGS, BKG VG250) |
 | India | 36 states and union territories (ISO 3166-2:IN) | 734 districts (LGD codes; Survey of India shapes) |
 | United States | 50 states and DC | 3,143 counties and equivalents (FIPS) |
+| Brazil | 26 states and the Federal District (IBGE codes) | 5,571 municípios (IBGE codes) |
+| France | 13 regions (ISO 3166-2:FR), 101 départements | 34,920 communes (INSEE, COG 2025) |
+| Spain | 17 autonomous communities and 2 autonomous cities (ISO 3166-2:ES), 52 provinces (INE) | 8,132 municipios (INE) |
 
-For a new country, pick the tier that elects a council and runs local services (municipalities, districts or counties), not wards or parishes. Fetch the **official current list** with codes (a statistics office, mapping agency or interior ministry), not memory, and build `boundaries.json` from the same agency's shapes where possible, so codes match. **Check the licence before you download anything** (map licence rule, section 5): an unlicensed map has to be thrown away later, and so does the work built on it.
+For a new country, pick the tier that elects a council and runs local services (municipalities, districts or counties), not wards or parishes. Take that tier even when it runs to tens of thousands of units (France's 35,000 communes): an official list loads in minutes, a generalised shape file (a few MB) draws fine, and the site needs no change. Supporters still sit at whatever level the evidence shows (a deputy in the département, a mayor in the commune); areas below a level with supporters get a faint tint graded by how many are known there. Give the regions a different code system from the units when the official ones overlap (INE numbers both Spanish provinces and communities from 01): use ISO 3166-2 for the regions, since `validate` rejects duplicate codes. Fetch the **official current list** with codes (a statistics office, mapping agency or interior ministry), not memory, and build `boundaries.json` from the same agency's shapes where possible, so codes match. **Check the licence before you download anything** (map licence rule, section 5): an unlicensed map has to be thrown away later, and so does the work built on it.
 
-Loading the local tier is not a promise to sweep it: sweeping stays proportionate to what the sample finds (6.5), and unswept units stay `pending`. Place each actor at the finest unit the source shows (a mayor in the city's unit, a state legislator in the state). Finer places you meet are not lost: put them in `location` as place text after the last unit (`United States > California > Ventura County > Camarillo`). On the map, areas with their own supporters are shaded, and areas whose region only has supporters at region level get a light tint. Seats are places, not institutions: an MP belongs to the constituency, a US representative to the district. For a map, also build `boundaries.json` (see `scripts/topo_to_boundaries.py`).
+Loading the local tier is not a promise to sweep it: sweeping stays proportionate to what the sample finds (6.5), and unswept units stay `pending`. Place each actor at the finest unit the source shows (a mayor in the city's unit, a state legislator in the state). Finer places you meet are not lost: put them in `location` as place text after the last unit (`United States > California > Ventura County > Camarillo`). On the map, areas with their own supporters are shaded, and areas whose region only has supporters at region level get a light tint. Seats are places, not institutions: an MP belongs to the constituency, a US representative to the district. Roll calls rarely print the constituency, so look it up in bulk: Wikidata records it as the qualifier *electoral district* (P768) on the member's *position held* (P39) statement, one SPARQL query for the whole list. `validate` warns about legislators left at the country root. For a map, also build `boundaries.json` (see `scripts/topo_to_boundaries.py`).
 
 ### 6.8 Later runs
+Improving the supporters already found (links, finer places, more statements, a check that support is still current) is a separate workflow: `refine/SKILL.md`.
+
 Each run reads the folder (`status`, `notes_next`), picks the top of the plan, works it, and writes a new plan. A good run is one harvest list, or one region, plus one layer pass. Priority order when the plan is silent:
-1. queued harvest lists
-2. thin cells in the coverage grid (actor type × level)
-3. upgrades of C- and B-graded actors (look for a vote, a signed letter, a specified design; leave the old evidence in place)
-4. snowballing: follow co-authors, co-signatories, coalition members, their organisation and party outwards
-5. regional and local units, as decided in 6.5
-6. retractions: for prominent supporters, check whether they have since retracted
+1. suggestions sent from the site for this country (`python scripts/suggestions.py export new.csv`; check each against its source, then `mark` it added, duplicate or rejected)
+2. queued harvest lists
+3. thin cells in the coverage grid (actor type × level)
+4. upgrades of C- and B-graded actors (look for a vote, a signed letter, a specified design; leave the old evidence in place)
+5. snowballing: follow co-authors, co-signatories, coalition members, their organisation and party outwards
+6. regional and local units, as decided in 6.5
+7. retractions: for prominent supporters, check whether they have since retracted
 
 **Stopping.** A layer is saturated when about nine in ten of the candidates you find are already in the database (or excluded) for two passes in a row. The database is "complete for now" when the plan is empty or the remaining items are low yield; after that, runs are update sweeps (new evidence since the last run). Completeness is never a precondition for publishing: a partial database with honest coverage notes is the normal state.
 
 ### 6.9 QA, and the pull request (end of every run)
 1. `validate` → fix every error. Warnings: fix or justify in `notes`.
 2. `dedupe` → merge true duplicates with `merge`.
-3. **Quote check:** `checkquotes --run <this run>`. Fix or remove every row it reports as not found. Rows it skips (PDFs, blocked pages) need a manual look: open the page, find the quote. Then spot-check at least 10% of the run's rows (minimum 5) by hand for grade and meaning, not just wording. **`verified=y` is set only by someone other than the row's author**: a person, or a separate agent that has not seen the work. Authors leave rows at `n`. A row whose quote cannot be found is set to `failed` and then fixed or removed.
-4. `profiles_wikidata.py` for new actors with Wikidata IDs; add `boundaries.json` if the area has a map.
+3. **Quote check:** `checkquotes --run <this run>`. Fix or remove every row it reports as not found. Rows it skips (PDFs, blocked pages) need a manual look: open the page, find the quote. The checker reads the page's declared charset (so Chinese and Japanese pages work), falls back to `pypdf` when `pdftotext` is missing, and counts CJK quotes by characters. A quote too short to compare (a single-word roster name) is listed as "too short to check" rather than as missing. Then spot-check at least 10% of the run's rows (minimum 5) by hand for grade and meaning, not just wording. There is no separate verification mark: a row is in the database because its quote was found on its source, and readers report mistakes from the site.
+4. `profiles_wikidata.py` for new actors with Wikidata IDs. Check that `boundaries.json` exists (6.7); `validate` warns when it does not.
 5. Append the run row to `runs.csv`, including `saturation` and `notes_next` (the plan).
 6. Open or update the pull request and report to the user: new actors and evidence by type and level, what was left out and why, the plan for the next runs, and numbers from `status`, not from memory.
 
@@ -349,10 +363,13 @@ The xlsx export contains: **Overview** (counts, grade mix, coverage and sweep pr
 - Party names written several ways ("Labour Party", "Labour", "Welsh Labour"; "Democratic-Farmer-Labor") → one common name per party, branches use the national name.
 - Pages that said "tax the wealthy" but not wealth tax were nearly counted → apply section 2 to the speaker's own words.
 - Progress reports that ignored higher-level units ("no geography units loaded") → `status` counts the lowest units of whatever depth you loaded.
-- Pushing straight to `main`, or setting `verified=y` on one's own rows → branch, pull request, and a different checker for `verified=y`.
+- Pushing straight to `main` → branch and pull request.
 - A run began by writing a crawler for 290 municipalities' protocols before the national legislature, parties and major organisations had been searched, because "every unit, no exceptions" was read as an order → touch every layer once first, sample local units, and build tooling only when a sample shows it pays (6.5).
 - Several scoping questions asked one after another before any research → one short message with recommended defaults, then start.
+- Brazil's seed pass shipped without a map because IBGE's own pages state no licence, though OCHA republishes the same IBGE shapes with IBGE codes under CC BY-IGO → check HDX and geoBoundaries before giving up on a map (section 5). The same run quoted the roll call's result line on all 136 vote rows, so no row proved its member's vote → quote the member's own entry on the per-member list (6.4).
 - Countries were mapped at different depths (US and German maps stopped at states and Länder while the UK and Sweden went down to councils), so maps could not be compared and most local supporters had nowhere to go → load the local tier everywhere (6.7), whether or not you sweep it.
 - Maps were built from whatever shapes were easiest to find: Sweden from a GitHub repository whose licence was "to be confirmed", India from a personal compilation with no licence and district codes invented for the project. Both had to be rebuilt → follow the map licence rule (section 5): an open licence and official codes, or no map.
 - The UK's exhaustive council sweep was treated as the template for every country. It fits where councils pass motions and publish searchable minutes. Elsewhere, regional or local work should be proportionate to what the sample finds.
 - Progress measured by units marked done rather than by supporters found and checked → report supporters, grades and checked rows.
+- Spain's seed pass stopped the register at the autonomous communities and shipped without a map, and left all 58 deputies of a roll call at "Spain", because 6.3 warned against "loading hundreds of units" and the map step came last → the register and map are now step 4 of 6.1, `validate` fails without a local tier and warns about a missing map and about legislators at the root.
+- A journalist went in at grade C for "those with most should contribute more", and a minister for opening a conference on wealth caps → grade C still needs words about wealth; vague fairness language and event programmes are exclusions or nothing.
