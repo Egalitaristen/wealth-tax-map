@@ -1,0 +1,6 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0002,A0006,A0005,co_author,E00005,http://ipft.ruc.edu.cn/yjcg/sdpl/c4477742d9064feb8b5935ef6396a194.htm,Co-authors of paper on Global Minimum Wealth Tax and China countermeasures
+L0003,A0008,A0007,co_author,E00007,https://m.thepaper.cn/newsDetail_forward_33340028,Co-authors of think-tank analysis on UN and G20 wealth tax coordination
+L0004,A0011,A0010,co_author,E00010,https://www.yicai.com/news/102190883.html,Co-authors of paper on G20 global minimum wealth tax
+L0005,A0012,A0010,co_author,E00010,https://www.yicai.com/news/102190883.html,Co-authors of paper on G20 global minimum wealth tax
+L0006,A0012,A0011,co_author,E00010,https://www.yicai.com/news/102190883.html,Co-authors of paper on G20 global minimum wealth tax

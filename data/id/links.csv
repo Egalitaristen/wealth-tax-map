@@ -1,0 +1,60 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0002,A0007,A0008,works_for,,https://celios.co.id,Executive Director of CELIOS at Center of Economic and Law Studies
+L0003,A0009,A0008,works_for,,https://ugm.ac.id,Director of Public Policy at CELIOS; Lecturer at FISIPOL Universitas Gadjah Mada at Center of Economic and Law Studies
+L0004,A0010,A0008,works_for,,https://celios.co.id,Senior Researcher at CELIOS at Center of Economic and Law Studies
+L0005,A0011,A0008,works_for,,https://celios.co.id,Researcher at CELIOS at Center of Economic and Law Studies
+L0006,A0012,A0008,works_for,,https://celios.co.id,Researcher at CELIOS at Center of Economic and Law Studies
+L0007,A0013,A0008,works_for,,https://celios.co.id,Researcher at CELIOS at Center of Economic and Law Studies
+L0008,A0014,A0008,works_for,,https://celios.co.id,Researcher at CELIOS at Center of Economic and Law Studies
+L0009,A0015,A0016,works_for,,https://indef.or.id,Executive Director of INDEF; Lecturer at Universitas Trisakti at Institute for Development of Economics and Finance
+L0010,A0018,A0017,member_of,,https://theprakarsa.org,Welfare policy and fiscal justice research institute at Forum Pajak Berkeadilan Indonesia
+L0011,A0019,A0018,leads,,https://theprakarsa.org,Executive Director of The PRAKARSA; Coordinator of FPBI; Co-coordinator of TAFJA at The PRAKARSA
+L0012,A0020,A0017,member_of,,https://pwypindonesia.org,Transparency and fiscal governance coalition at Forum Pajak Berkeadilan Indonesia
+L0013,A0021,A0020,leads,,https://pwypindonesia.org,Deputy Director of PWYP Indonesia; Coordinating Committee of TAFJA at Publish What You Pay Indonesia
+L0016,A0024,A0025,member_of,,https://ti.or.id,Researcher at Transparency International Indonesia at Transparency International Indonesia
+L0017,A0025,A0017,member_of,,https://ti.or.id,Anti-corruption and governance NGO at Forum Pajak Berkeadilan Indonesia
+L0018,A0026,A0017,member_of,,https://seknasfitra.org,Budget transparency and fiscal watchdog NGO at Forum Pajak Berkeadilan Indonesia
+L0019,A0027,A0017,member_of,,https://lokataru.id,Human rights and legal aid organisation at Forum Pajak Berkeadilan Indonesia
+L0020,A0028,A0017,member_of,,https://igj.or.id,Global trade and economic justice NGO at Forum Pajak Berkeadilan Indonesia
+L0021,A0029,A0017,member_of,,https://trendasia.org,Environmental and energy transition advocacy organisation at Forum Pajak Berkeadilan Indonesia
+L0022,A0030,A0017,member_of,,https://theprakarsa.org,Gender and ecological justice NGO at Forum Pajak Berkeadilan Indonesia
+L0023,A0031,A0018,works_for,,https://theprakarsa.org,Research Manager at The PRAKARSA at The PRAKARSA
+L0024,A0032,A0018,works_for,,https://theprakarsa.org,Fiscal Policy Researcher at The PRAKARSA at The PRAKARSA
+L0025,A0033,A0018,works_for,,https://theprakarsa.org,Researcher at The PRAKARSA at The PRAKARSA
+L0026,A0034,A0018,works_for,,https://theprakarsa.org,Senior Research Associate at The PRAKARSA at The PRAKARSA
+L0027,A0035,A0018,member_of,,https://theprakarsa.org,Program Manager at The PRAKARSA at The PRAKARSA
+L0028,A0036,A0018,works_for,,https://theprakarsa.org,Researcher at The PRAKARSA at The PRAKARSA
+L0029,A0037,A0018,works_for,,https://theprakarsa.org,Research and Knowledge Manager at The PRAKARSA at The PRAKARSA
+L0030,A0039,A0038,leads,,https://www.mediadinamikaglobal.id,General Chair of Liga Mahasiswa Nasional untuk Demokrasi (LMND) at Liga Mahasiswa Nasional untuk Demokrasi
+L0031,A0040,A0038,member_of,,https://mattanews.co,Provincial student movement chapter at Liga Mahasiswa Nasional untuk Demokrasi
+L0032,A0041,A0040,leads,,https://mattanews.co,Chairperson of EW-LMND Sumatera Selatan at EW-LMND Sumatera Selatan
+L0033,A0018,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0034,A0020,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0035,A0025,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0036,A0026,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0037,A0027,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0038,A0008,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0040,A0028,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0041,A0029,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0042,A0030,A0017,coalition_partner,E00021,https://theprakarsa.org/fpbi-dorong-reformasi-sistem-perpajakan-yang-lebih-adil-dan-transparan/,Founding/member organisation of Forum Pajak Berkeadilan Indonesia (FPBI)
+L0043,A0040,A0038,member_of,,https://mattanews.co,Regional chapter of national LMND organisation
+L0044,A0042,A0055,leads,E00044,https://nasional.kontan.co.id/news/menanti-langkah-berani-prabowo-buru-pajak-orang-kaya-indonesia,Managing Director of Botax Consulting Indonesia
+L0045,A0044,A0045,works_for,E00047,https://forumkeadilan.com/2024/11/22/kenaikan-tarif-ppn-tax-amnesty-sengsarakan-rakyat-dan-kurangi-daya-beli/,Official Economist for Partai Buruh
+L0046,A0047,A0056,works_for,E00050,https://tirto.id/pemerintah-didesak-pajaki-orang-superkaya-potensi-rp142-triliun-huJt,Economic analyst and spokesperson for MBG Watch
+L0047,A0049,A0050,works_for,E00053,https://tirto.id/betapa-susahnya-tarik-pajak-kekayaan-konglomerat-di-indonesia-hfRS,Fiscal policy researcher at Institute for Demographic and Poverty Studies (IDEAS)
+L0048,A0052,A0020,leads,E00056,https://pwypindonesia.org,National Coordinator of Publish What You Pay (PWYP) Indonesia
+L0049,A0020,A0053,member_of,E00056,https://theprakarsa.org/masyarakat-sipil-sampaikan-empat-isu-prioritas-dalam-pembukaan-c20-summit/,Steering committee member and organizer of C20 Indonesia 2022
+L0050,A0018,A0053,member_of,E00056,https://theprakarsa.org/masyarakat-sipil-sampaikan-empat-isu-prioritas-dalam-pembukaan-c20-summit/,The PRAKARSA was the host organization and Secretariat for C20 Indonesia 2022
+L0051,A0054,A0008,works_for,E00058,https://www.financialreview.id/industri/63415879651/celios-5-tugas-menkeu-purbaya-kembalikan-kepercayaan-publik,Director of Digital Economy at CELIOS
+L0052,A0057,A0038,leads,E00063,https://mediatrapnews.com/eksekusi-mandat-kongres-lmnd-audiensi-dengan-dpr-komisi-xi-pajak-kekayaan-untuk-hentikan-ledakan-ketimpangan/,Secretary General of LMND National Executive
+L0053,A0060,A0038,member_of,E00066,https://siarpost.com/2026/02/28/dialog-publik-konferwil-lmnd-ntb-kupas-pajak-kekayaan-untuk-pendidikan-gratis/,Regional chapter of LMND in West Nusa Tenggara (NTB)
+L0054,A0062,A0008,works_for,E00068,https://channel9.id/celios-pajak-kekayaan-bakal-berikan-tambahan-penerimaan-di-atas-rp81-triliun-per-tahun/,Fiscal policy and economics researcher at CELIOS
+L0058,A0065,A0071,member_of,E00071,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Lead legal organisation of TAUD-SKP
+L0059,A0066,A0071,member_of,E00072,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP
+L0060,A0067,A0071,member_of,E00073,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP
+L0061,A0068,A0071,member_of,E00074,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP
+L0062,A0069,A0071,member_of,E00075,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP
+L0063,A0070,A0071,member_of,E00076,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP
+L0064,A0008,A0071,member_of,E00071,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Economic research partner and member of TAUD-SKP
+L0065,A0028,A0071,member_of,E00071,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP
+L0066,A0029,A0071,member_of,E00071,https://ylbhi.or.id/informasi/siaran-pers/pajak-dalam-bayang-bayang-aparat-tajam-kepada-yang-miskin-dan-rentan-tumpul-kepada-yang-kaya-dan-korporasi/,Coalition member of TAUD-SKP

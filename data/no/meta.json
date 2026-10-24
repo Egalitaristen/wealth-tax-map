@@ -1,0 +1,8 @@
+{
+  "name": "Norway",
+  "iso2": "NO",
+  "lead": "",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Scope: national (Stortinget, regjeringen), regional (15 fylker) and local (357 kommuner) level. First pass R001 covers prominent supporters across all key layers. Review 2026-10-24: removed 154 rows that were not evidence of support (see R013); 145 supporters remain."
+}

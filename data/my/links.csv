@@ -1,0 +1,10 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0001,A0005,A0007,leads,E00006,https://partisosialis.org,Chairperson of Parti Sosialis Malaysia
+L0002,A0006,A0007,leads,E00008,https://partisosialis.org,Deputy Chairperson of Parti Sosialis Malaysia
+L0003,A0009,A0008,works_for,E00011,https://www.malaysiakini.com/news/745907,Manager at Monitoring Sustainability of Globalisation (MSN)
+L0004,A0013,A0012,works_for,E00016,https://refsa.org/tax-tax-tax-for-the-common-good/,Research Officer at REFSA
+L0008,A0021,A0007,member_of,E00025,https://sosialis.net/2026/04/24/selesaikan-masalah-kesesakan-hospital-cukai-ke-atas-kekayaan-aset-bilionair/,Dr. Cecilia Anthonysamy is a committee member of PSM Health Campaign
+L0009,A0022,A0007,leads,E00026,https://partisosialis.org/isu-cukai-korporat-di-peringkat-asean/,Gandipan Nantha Gopalan is a Central Committee Member of PSM
+L0010,A0026,A0007,leads,E00032,https://partisosialis.org/en/despicable-to-even-think-of-gst/,A. Sivarajan is the Secretary-General of PSM
+L0011,A0027,A0007,leads,E00033,https://sosialis.net/2021/06/30/menteri-kewangan-gagal-faham-impak-pengeluaran-kwsp-sebelum-bersara/,Sharan Raj is a Central Committee Member of PSM
+L0012,A0030,A0029,leads,E00036,https://www.isis.org.my/wp-content/uploads/2024/10/Research-note-budget-2025.pdf,Calvin Cheng is Director / Fellow of Economics Trade and Regional Integration at ISIS Malaysia
