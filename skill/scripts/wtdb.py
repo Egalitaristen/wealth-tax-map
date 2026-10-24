@@ -852,7 +852,7 @@ def _plain(s, tags=True):
 
 
 def _pdf_to_text(data):
-    """Text of a PDF via poppler's pdftotext when installed, else pypdf if installed, else None."""
+    """Text of a PDF via poppler's pdftotext when installed, else via pypdf (pip install pypdf), else None."""
     import shutil, subprocess, tempfile
     if shutil.which("pdftotext"):
         with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
@@ -863,11 +863,42 @@ def _pdf_to_text(data):
         finally:
             os.unlink(path)
     try:
-        import pypdf, io
-        reader = pypdf.PdfReader(io.BytesIO(data))
-        return "\n".join(page.extract_text() or "" for page in reader.pages)
+        import io, pypdf
+        return "\n".join(pg.extract_text() or "" for pg in pypdf.PdfReader(io.BytesIO(data)).pages)
     except Exception:
         return None
+
+
+def _decode_page(raw, header_charset=None):
+    """Decode a page in the charset it declares (header, then <meta>), else UTF-8, else the common East Asian ones.
+    Strict decoding, so a wrong guess fails over instead of producing mojibake; Latin-1 is the last resort. A page that
+    declares nothing and is not UTF-8 is tried as GB18030 first, which accepts most byte strings: such a page may need
+    its charset added by hand (rare; nearly every page declares one)."""
+    declared = header_charset
+    if not declared:
+        m = re.search(rb'charset\s*=\s*["\']?([A-Za-z0-9_-]+)', raw[:4096])
+        declared = m.group(1).decode("ascii", "ignore") if m else None
+    for enc in (declared, "utf-8", "gb18030", "cp932", "euc-kr", "latin-1"):
+        if enc:
+            try:
+                return raw.decode(enc)
+            except (UnicodeDecodeError, LookupError):
+                continue
+    return raw.decode("utf-8", "ignore")
+
+
+def _kokkai_text(u, timeout):
+    """Japan's Diet records (kokkai.ndl.go.jp/txt/<issue>/<speech>) are JavaScript pages; the same text is in the
+    open API. Returns the speeches as one string, or None when u is not such a link."""
+    import json, urllib.request
+    m = re.search(r"kokkai\.ndl\.go\.jp/txt/([^/?#]+)(?:/(\d+))?", u)
+    if not m:
+        return None
+    api = f"https://kokkai.ndl.go.jp/api/speech?recordPacking=json&issueID={m.group(1)}" + (f"&speechNumber={m.group(2)}" if m.group(2) else "")
+    req = urllib.request.Request(api, headers={"User-Agent": "Mozilla/5.0 (wtdb quote check)"})
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
+    return " ".join(r.get("speech", "") for r in data.get("speechRecord", []))
 
 
 def _browser_text(url):
@@ -888,14 +919,18 @@ def _fetch_for_check(u, timeout):
     import urllib.request
     raw = None
     try:
+        text = _kokkai_text(u, timeout) if "kokkai.ndl.go.jp/txt/" in u else None
+        if text:
+            return _plain(text, tags=False)
         req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (wtdb quote check)"})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             raw = resp.read()
             ctype = resp.headers.get("Content-Type", "").lower()
+            charset = resp.headers.get_content_charset()
         if raw[:4] == b"%PDF" or "pdf" in ctype:
             text = _pdf_to_text(raw)
             return _plain(text, tags=False) if text else None  # a "<" in PDF text must not swallow what follows
-        return _plain(raw.decode("utf-8", "ignore"))
+        return _plain(_decode_page(raw, charset))
     except Exception:
         text = _browser_text(u)
         return _plain(text) if text else None
@@ -904,6 +939,24 @@ def _fetch_for_check(u, timeout):
 def _dehyphenate(page):
     """Line-end hyphens in PDFs split words ("miljardärs- skatt"); join them for a second comparison."""
     return re.sub(r"(?<=\w)- (?=[a-zåäö])", "", page)
+
+
+CJK = re.compile(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]")
+
+
+def _quote_parts(e):
+    """The fragments of a quote to look for on its page (the quote split at ellipses), or [] when it is too short to
+    check. Words are counted by spaces, and in Chinese, Japanese and Korean, which have none, by characters: a
+    fragment needs three words or six CJK characters. A quote shorter than that is checked whole when it is a name
+    on a roll-call or roster (two words, a vote row, or three CJK characters)."""
+    q = _plain(e["quote_original"])
+    parts = [p.strip() for p in re.split(r"…|\.\.\.", q)
+             if len(p.split()) >= 3 or (CJK.search(p) and len(p.strip()) >= 6)]
+    if parts:
+        return parts
+    if len(q.split()) >= 2 or e.get("evidence_type") == "vote" or (CJK.search(q) and len(q) >= 3):
+        return [q]
+    return []
 
 
 def cmd_checkquotes(a):
@@ -918,17 +971,17 @@ def cmd_checkquotes(a):
     if a.sample and len(rows) > a.sample:
         random.seed(a.seed)
         rows = random.sample(rows, a.sample)
-    cache, browser_cache, ok, miss, skip = {}, {}, 0, [], []
+    cache, browser_cache, ok, miss, skip, short = {}, {}, 0, [], [], []
     for e in rows:
         u = e["source_url"]
+        parts = _quote_parts(e)
+        if not parts:
+            short.append(e["evidence_id"]); continue
         if u not in cache:
             cache[u] = _fetch_for_check(u, a.timeout)
         page = cache[u]
         if page is None:
             skip.append(e["evidence_id"]); continue
-        parts = [p for p in re.split(r"…|\.\.\.", _plain(e["quote_original"])) if len(p.split()) >= 3]
-        if not parts and (len(_plain(e["quote_original"]).split()) >= 2 or e.get("evidence_type") == "vote"):
-            parts = [_plain(e["quote_original"])]  # a short quote, such as a name on a roll-call list, is checked whole
 
         def found(pg):
             return bool(parts) and all(any(p.strip(" .") in v for v in (pg, _dehyphenate(pg))) for p in parts)
@@ -943,9 +996,12 @@ def cmd_checkquotes(a):
             ok += 1
         else:
             miss.append(e["evidence_id"])
-    print(f"Checked {len(rows)} rows: {ok} found on the page, {len(miss)} NOT found, {len(skip)} skipped (unreadable: no pdftotext, blocked or error)")
+    print(f"Checked {len(rows)} rows: {ok} found on the page, {len(miss)} NOT found, {len(skip)} skipped (unreadable: no pdftotext, blocked or error), "
+          f"{len(short)} too short to check")
     if miss:
         print("Not found:", ", ".join(miss))
+    if short:
+        print("Too short to check:", ", ".join(short[:40]) + (" ..." if len(short) > 40 else ""))
     if skip:
         print("Skipped:", ", ".join(skip[:40]) + (" ..." if len(skip) > 40 else ""))
     if miss and a.strict:
