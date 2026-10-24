@@ -13,16 +13,40 @@ The aim is to make it easy for people who share the view that wealth should be t
 | Path | What it holds |
 |---|---|
 | `data/<iso2>/` | One database per country or region, for example `data/gb/`. Plain CSV files plus a `meta.json`. |
-| `skill/` | The research workflow (`SKILL.md`), source playbook, country examples and helper scripts (`wtdb.py`, `profiles_wikidata.py`, `topo_to_boundaries.py`). Works for people and for AI assistants. |
+| `skill/` | The research workflow (`SKILL.md`), source playbook, country examples and helper scripts (`wtdb.py`, `review_scan.py`, `match_wikidata.py`, `profiles_wikidata.py`, `topo_to_boundaries.py`, `merge_boundaries.py`). Works for people and for AI assistants. |
 | `refine/` | The refinement workflow (`SKILL.md`) for supporters already in a register: links, finer places, more statements, and a check that support is still current. Uses the scripts in `skill/scripts/` (`refine_queue.py`, `archive_sources.py`). |
-| `site/` | The static front end: one page and one script, no framework. Home with search and a dot world map, country pages (area map, directory, timeline, method), a page per supporter, method and contribute pages. |
+| `site/` | The static front end: one page and one script, no framework. Home with search and a zoomable world map, country pages (area map, directory, timeline, method), a page per supporter, method and contribute pages. |
 | `scripts/build_site.py` | Turns `data/` into the site data, a search index and CSV downloads. Standard library plus `pycountry`. |
 | `scripts/share_cards.py`, `scripts/fonts/` | Link-preview images for every page (home, each country page, each supporter), drawn with Pillow. The build also writes a small HTML file per page with its own title, description and image, so previews on Discord and social media match the page. |
 | `scripts/serve.py` | Serves the built site locally the way Cloudflare does (unknown paths fall back to `index.html`). |
 | `scripts/deploy.py`, `wrangler.jsonc` | Build and deploy the site to Cloudflare from a local checkout. |
-| `docs/`, `infra/` | The community plan, and the Cloudflare setup and draft database schema. Nothing deployed yet. |
+| `docs/`, `infra/` | The community plan, and the Cloudflare setup and draft database schema. The suggestions database is deployed; the community schema is a draft. |
 
-Nine countries so far, all work in progress: the United Kingdom (`data/gb/`, with a council-level map), the United States (`data/us/`, federal and state level, with a county map), Sweden (`data/se/`, national first pass done; regional and local sweep planned, with a municipality map), Germany (`data/de/`, a seed pass: Bundestag sponsors since 2010, party programmes, the alliance "Vermögen besteuern jetzt", unions, economists and commentators, with a map of the 10,939 Gemeinden), France (`data/fr/`, a seed pass: Assemblée and Sénat roll calls on the "taxe Zucman" and earlier ISF bills, the Le Monde appeal, Nobel economists, NGOs, unions and left parties, with a commune map), Spain (`data/es/`, a seed pass: the Congreso roll call of 7 June 2022 on the Unidas Podemos wealth-tax bill, the law that created the solidarity tax on large fortunes, Sumar, ministers, two former prime ministers, Oxfam Intermón, Gestha and the big unions, with a municipality map), Brazil (`data/br/`, a seed pass: every wealth-tax bill in the Câmara since 2010 with its named authors, the 30 October 2024 roll call on the PSOL-Rede amendment, the G20 billionaire-tax track under Lula and Haddad and the Oxfam Brasil-led "Tem Um Elefante Na Sala" coalition, with a map of the 5,570 municípios), India (`data/in/`, a seed pass: the 2024 World Inequality Lab proposal, the Left parties, the central trade unions, Oxfam India, the Tax the Top campaign and its petition signers, and a few economists, with a provisional district map) and Norway (`data/no/`, a seed pass: 145 supporters among the political parties, trade unions, think tanks, economists, commentators and campaigners who defend the formuesskatt in their own words, with a map of the 357 kommuner). Every country is registered and mapped down to its lowest tier of local government (councils, municipalities, communes, Gemeinden, kommuner or counties), so maps are comparable; see `skill/SKILL.md` 6.7.
+Nineteen countries so far, all built with AI assistants and all work in progress. The site shows the live counts; each folder's `area_profile.md` says what was searched and what was not.
+
+| Country | Folder | Map (local tier) | What it rests on |
+|---|---|---|---|
+| Belgium | `data/be/` | 581 municipalities | Wealth-tax bills of the PTB-PVDA, PS and Groen and their cosponsors, party manifestos, unions |
+| Brazil | `data/br/` | 5,570 municípios | Every wealth-tax bill in the Câmara since 2010 with its authors, the 30 October 2024 roll call, the G20 billionaire-tax track, the "Tem Um Elefante Na Sala" coalition |
+| Canada | `data/ca/` | 5,054 census subdivisions | The 2020 NDP motion for a 1% tax on wealth above CAD 20m, convention resolutions, a Quebec manifesto, Patriotic Millionaires Canada, unions |
+| China | `data/cn/` | 361 prefectures | A few economists and scholars who propose a wealth or minimum wealth tax, and Oxfam Hong Kong |
+| France | `data/fr/` | 34,790 communes | Assemblée and Sénat roll calls on the "taxe Zucman" and earlier ISF bills, the Le Monde appeal, economists, NGOs, unions |
+| Germany | `data/de/` | 10,939 Gemeinden | Bundestag sponsors since 2010, party programmes, the alliance "Vermögen besteuern jetzt", unions, economists |
+| India | `data/in/` | 731 districts (provisional) | The 2024 World Inequality Lab proposal, the Left parties, the central trade unions, Oxfam India, the Tax the Top campaign |
+| Indonesia | `data/id/` | 514 districts and cities | CELIOS, PRAKARSA and the FPBI alliance white paper, politicians who proposed a wealth tax, a student league, economists |
+| Japan | `data/jp/` | 1,749 municipalities | Diet speeches naming the tax, the Communist, Social Democratic and Reiwa party policies, a citizens' coalition and scholars |
+| Malaysia | `data/my/` | 144 districts | MPs and parliamentary questions, PSM, economists, civil society |
+| Netherlands | `data/nl/` | 342 gemeenten | The Box 3 wealth-tax bill and its cosponsors, motions, party manifestos, Zucman's testimony, the Davos letters |
+| Nigeria | `data/ng/` | 774 local government areas | The Oxfam-led 2024 report and its authors, Oxfam's 2026 call for a 1% tax, a Lagos wealth-tax conference, op-eds |
+| Norway | `data/no/` | 357 kommuner | Parties, unions, think tanks, economists and commentators who defend the formuesskatt in their own words |
+| Poland | `data/pl/` | none yet | Razem and the Greens, OPZZ, economists and commentators, MEP votes; 251 manifesto signatories are flagged as implied support |
+| Singapore | `data/sg/` | 55 planning areas | The Workers', Progress Singapore and Red Dot United party platforms, MPs' motions, economists and NGOs |
+| Spain | `data/es/` | 8,125 municipios | The 7 June 2022 Congreso roll call, Ley 38/2022, Sumar, ministers, Oxfam Intermón, Gestha, the big unions |
+| Sweden | `data/se/` | 290 kommuner | Riksdag members of the left parties, unions, economists; the regional and local sweep is still to do |
+| United Kingdom | `data/gb/` | 361 council districts | Councils, MPs, unions, economists and the "Proud to Pay" millionaires' letter |
+| United States | `data/us/` | 3,143 counties | State legislators and Congress, cities and counties, unions, economists, wealthy signers |
+
+Every country is registered and mapped down to its lowest tier of local government, so maps are comparable; see `skill/SKILL.md` 6.7. Supporters need their own evidence: a party's platform is recorded on the party, not on each of its members (`skill/SKILL.md` section 4).
 
 ## What counts
 
