@@ -21,7 +21,6 @@ L0019,A0026,A0005,member_of,E00026,https://www.lachambre.be/FLWB/PDF/56/0901/56K
 L0020,A0027,A0005,member_of,E00027,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and Alderwoman of Brussels, Parti Socialiste"
 L0021,A0028,A0005,member_of,E00028,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and Mayor of Wanze, Parti Socialiste"
 L0022,A0029,A0005,member_of,E00029,https://www.lachambre.be/FLWB/PDF/56/0901/56K0901001.pdf,"MP and former Deputy Prime Minister, Parti Socialiste"
-L0023,A0031,A0030,leads,E00031,https://ecolo.be,Co-President of Ecolo
 L0024,A0033,A0032,leads,E00033,https://visie.net/artikel/laat-de-redelijkheid-regeren,Federal President of ACV
 L0025,A0035,A0034,works_for,E00035,https://oxfambelgique.be,Tax justice policy expert at Oxfam Belgique
 L0026,A0037,A0001,leads,E00037,https://docs.vlaamsparlement.be/files/pfile?id=2246061,Group Leader of PVDA in the Flemish Parliament
@@ -36,59 +35,18 @@ L0034,A0045,A0007,member_of,E00045,https://www.lachambre.be/FLWB/PDF/56/1298/56K
 L0035,A0046,A0030,member_of,E00046,https://www.lachambre.be/FLWB/PDF/56/1298/56K1298001.pdf,MP of Ecolo
 L0036,A0047,A0001,member_of,E00047,https://www.pvda.be,MP of PTB-PVDA
 L0037,A0048,A0001,member_of,E00048,https://www.lachambre.be,MP of PTB-PVDA
-L0038,A0049,A0001,member_of,E00049,https://www.pvda.be,MP of PTB-PVDA
-L0039,A0050,A0001,member_of,E00050,https://www.pvda.be,MP of PTB-PVDA
-L0040,A0051,A0001,member_of,E00051,https://www.ptb.be,MP of PTB-PVDA
-L0041,A0052,A0001,member_of,E00052,https://www.ptb.be,MP of PTB-PVDA
-L0042,A0053,A0001,member_of,E00053,https://www.pvda.be,MP of PTB-PVDA
-L0043,A0054,A0001,member_of,E00054,https://www.ptb.be,MP of PTB-PVDA
-L0044,A0055,A0001,member_of,E00055,https://www.pvda.be,MP of PTB-PVDA
-L0045,A0056,A0001,leads,E00056,https://www.ptb.be,Group Leader in Brussels Parliament
-L0046,A0057,A0001,member_of,E00057,https://www.ptb.be,Brussels MP of PTB-PVDA
-L0047,A0058,A0001,member_of,E00058,https://denieuwewerker.be,Antwerp councillor of PTB-PVDA
 L0048,A0059,A0012,leads,E00059,https://denieuwewerker.be,General Secretary of ABVV
 L0049,A0060,A0032,leads,E00060,https://www.hetacv.be,General Secretary of CSC
 L0050,A0061,A0001,leads,E00061,https://archive.pfwb.be/1000000020d6033,Group Leader of PTB in the Walloon Parliament
 L0051,A0062,A0001,member_of,E00062,https://sint-niklaas.pvda.be,Flemish MP of PVDA
-L0052,A0063,A0001,member_of,E00063,https://leuven.pvda.be,Flemish MP of PVDA
-L0053,A0064,A0001,member_of,E00064,https://gent.pvda.be,Ghent faction leader of PVDA
 L0054,A0065,A0012,coalition_partner,E00065,https://www.dewereldmorgen.be,ABVV is a member organisation of FAN
 L0055,A0065,A0032,coalition_partner,E00065,https://www.dewereldmorgen.be,ACV is a member organisation of FAN
-L0056,A0068,A0012,coalition_partner,E00068,https://syndicatsmagazine.be,FGTB is a founder and core member of RJF
-L0057,A0068,A0032,coalition_partner,E00068,https://syndicatsmagazine.be,CSC is a founder and core member of RJF
 L0058,A0070,A0005,leads,E00070,https://www.lachambre.be/FLWB/PDF/55/0036/55K0036001.pdf,Group Leader of PS in the Chamber of Representatives
 L0059,A0071,A0005,member_of,E00071,https://www.lachambre.be/FLWB/PDF/55/0036/55K0036001.pdf,Federal MP of PS
 L0060,A0072,A0005,member_of,E00072,https://www.lachambre.be/FLWB/PDF/55/0036/55K0036001.pdf,Federal MP of PS
 L0061,A0073,A0005,member_of,E00073,https://www.lachambre.be/FLWB/PDF/54/0770/54K0770001.pdf,Former Minister and Federal MP of PS
 L0062,A0074,A0005,member_of,E00074,https://www.lachambre.be/FLWB/PDF/54/0770/54K0770001.pdf,Federal MP of PS
 L0063,A0075,A0005,member_of,E00075,https://www.lachambre.be/FLWB/PDF/54/0770/54K0770001.pdf,Former Federal MP of PS
-L0064,A0076,A0005,leads,E00076,https://www.ps.be/budget-wallonie-2026,Group Leader of PS in the Walloon Parliament
-L0065,A0077,A0010,leads,E00077,https://syndicatsmagazine.be/fiscalite-partis/,Group Leader of Vooruit in the Chamber of Representatives
 L0066,A0078,A0001,member_of,E00078,https://mortsel.pvda.be,Flemish MP of PVDA
-L0067,A0079,A0012,leads,E00079,https://www.metallos.be,General Secretary of MWB-FGTB
-L0068,A0080,A0068,coalition_partner,E00080,https://syndicatsmagazine.be,CNCD-11.11.11 is a key member organisation of RJF
-L0069,A0081,A0030,leads,E00081,https://www.parlement-wallonie.be,Group Leader of Ecolo in the Walloon Parliament
 L0070,A0082,A0001,member_of,E00082,https://gent.pvda.be,Flemish MP of PVDA
-L0071,A0083,A0001,member_of,E00083,https://www.ptb.be,Walloon MP of PTB
-L0072,A0084,A0001,member_of,E00084,https://www.ptb.be,Walloon MP of PTB
-L0073,A0085,A0001,member_of,E00085,https://www.ptb.be,Former Walloon MP and communal group leader of PTB
-L0074,A0086,A0001,member_of,E00086,https://www.ptb.be,Walloon MP of PTB
-L0075,A0087,A0001,member_of,E00087,https://www.ptb.be,Walloon MP of PTB
-L0076,A0088,A0001,member_of,E00088,https://brussel.pvda.be,Brussels MP of PVDA
-L0077,A0089,A0001,member_of,E00089,https://bruxelles.ptb.be,Brussels MP of PTB
-L0078,A0090,A0001,member_of,E00090,https://bruxelles.ptb.be,Brussels MP of PTB
-L0079,A0091,A0001,member_of,E00091,https://www.pvda.be,Former Federal MP of PVDA
-L0080,A0092,A0001,member_of,E00092,https://turnhout.pvda.be,Flemish MP of PVDA
-L0081,A0093,A0001,member_of,E00093,https://www.ptb.be,Candidate of PTB
-L0082,A0094,A0001,member_of,E00094,https://www.ptb.be,Candidate of PTB
-L0083,A0095,A0012,leads,E00095,https://www.fgtb.be,Former President of FGTB Charleroi
-L0084,A0096,A0012,leads,E00096,https://www.accg.be,Former Regional Secretary of Centrale Generale FGTB
-L0085,A0097,A0001,leads,E00097,https://hainaut.ptb.be,President of PTB Hainaut
-L0086,A0098,A0001,member_of,E00098,https://aalst.pvda.be,Aalst municipal group leader of PVDA
 L0087,A0099,A0001,member_of,E00099,https://antwerpen.pvda.be,Antwerp municipal councillor of PVDA
-L0088,A0100,A0012,leads,E00100,https://www.acodspoor.be,National Secretary of ACOD Spoor
-L0089,A0101,A0032,member_of,E00101,https://www.hetacv.be,Chief delegate of ACV
-L0090,A0102,A0001,member_of,E00102,https://bruxelles.ptb.be,Brussels municipal councillor of PTB
-L0091,A0103,A0001,member_of,E00103,https://bruxelles.ptb.be,Saint-Gilles municipal councillor of PTB
-L0092,A0104,A0001,member_of,E00104,https://bruxelles.ptb.be,Saint-Gilles municipal councillor of PTB
-L0093,A0105,A0001,leads,E00105,https://www.redfox.be,President of RedFox youth movement
