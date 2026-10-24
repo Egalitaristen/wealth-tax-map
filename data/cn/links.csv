@@ -1,14 +1,6 @@
 link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
-L0001,A0004,A0003,co_author,E00003,https://m.hswh.org.cn/wzzx/llyd/jj/2024-07-19/89102.html,Co-authors of 2024 paper proposing exit tax and asset exit levy
 L0002,A0006,A0005,co_author,E00005,http://ipft.ruc.edu.cn/yjcg/sdpl/c4477742d9064feb8b5935ef6396a194.htm,Co-authors of paper on Global Minimum Wealth Tax and China countermeasures
 L0003,A0008,A0007,co_author,E00007,https://m.thepaper.cn/newsDetail_forward_33340028,Co-authors of think-tank analysis on UN and G20 wealth tax coordination
 L0004,A0011,A0010,co_author,E00010,https://www.yicai.com/news/102190883.html,Co-authors of paper on G20 global minimum wealth tax
 L0005,A0012,A0010,co_author,E00010,https://www.yicai.com/news/102190883.html,Co-authors of paper on G20 global minimum wealth tax
 L0006,A0012,A0011,co_author,E00010,https://www.yicai.com/news/102190883.html,Co-authors of paper on G20 global minimum wealth tax
-L0007,A0014,A0013,leads,E00013,https://www.oxfam.org.hk/tc/news-and-publication/davos-2023,Director General of Oxfam Hong Kong
-L0008,A0017,A0016,co_author,E00016,https://epaper.gmw.cn/wzb/html/2019-06/20/nw.D110000wzb_20190620_3-06.htm,Co-authors of foundational legal study on China's exit tax system
-L0009,A0020,A0019,co_author,E00019,http://www.cpepr.sdu.edu.cn/info/1014/1922.htm,Co-authors of comprehensive study on exit tax systems and international practices
-L0010,A0021,A0003,co_author,E00021,https://wapescholar.elsevierpure.com/en/publications/%E9%80%80%E5%87%BA%E7%A8%8E%E7%A8%8E%E6%94%B6%E4%B8%BB%E6%9D%83%E4%B8%8E%E7%AE%A1%E6%8E%A7%E5%AF%8C%E4%BA%BA%E7%A7%BB%E6%B0%91%E6%BD%AE%E7%A0%94%E7%A9%B6/,Co-authors of study on exit tax and controlling rich migration waves with Cheng Enfu
-L0011,A0022,A0021,co_author,E00021,https://wapescholar.elsevierpure.com/en/publications/%E9%80%80%E5%87%BA%E7%A8%8E%E7%A8%8E%E6%94%B6%E4%B8%BB%E6%9D%83%E4%B8%8E%E7%AE%A1%E6%8E%A7%E5%AF%8C%E4%BA%BA%E7%A7%BB%E6%B0%91%E6%BD%AE%E7%A0%94%E7%A9%B6/,Co-authors of study on exit tax and tax sovereignty
-L0012,A0022,A0003,co_author,E00021,https://wapescholar.elsevierpure.com/en/publications/%E9%80%80%E5%87%BA%E7%A8%8E%E7%A8%8E%E6%94%B6%E4%B8%BB%E6%9D%83%E4%B8%8E%E7%AE%A1%E6%8E%A7%E5%AF%8C%E4%BA%BA%E7%A7%BB%E6%B0%91%E6%BD%AE%E7%A0%94%E7%A9%B6/,Co-authors of study on exit tax and rich migration with Cheng Enfu
-L0013,A0025,A0024,co_author,E00024,http://www.jjykj.com/view202105050505.asp?nid=17359,Co-authors of study on exit tax legislation conception

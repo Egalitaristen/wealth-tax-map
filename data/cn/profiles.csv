@@ -1,13 +1,9 @@
 profile_id,actor_id,platform,url,source,checked
-P0001,A0001,official_page,https://www.ecupl.edu.cn,East China University of Political Science and Law directory,2026-10-22
-P0002,A0001,wikipedia,https://zh.wikipedia.org/wiki/%E9%99%88%E6%99%B6%E8%8E%B9,Wikidata Q9365122,2026-10-22
-P0003,A0002,wikipedia,https://zh.wikipedia.org/wiki/%E7%8E%8B%E4%B8%9C%E4%BA%AC,Wikidata Q51102819,2026-10-22
-P0004,A0003,wikipedia,https://zh.wikipedia.org/wiki/%E7%A8%8B%E6%81%A9%E5%AF%8C,Wikidata Q9365675,2026-10-22
 P0005,A0005,official_page,https://spft.cufe.edu.cn,Central University of Finance and Economics faculty page,2026-10-22
-P0006,A0009,wikipedia,https://zh.wikipedia.org/wiki/%E9%BB%84%E5%A5%87%E5%B8%86,Wikidata Q3377444,2026-10-22
 P0007,A0013,official_page,https://www.oxfam.org.hk,Official organization website,2026-10-22
 P0008,A0015,official_page,https://spft.cufe.edu.cn,Central University of Finance and Economics faculty profile,2026-10-22
-P0009,A0016,official_page,https://law.hnu.edu.cn,Hunan University Law School faculty profile,2026-10-22
-P0010,A0018,official_page,https://rw.nuaa.edu.cn/2022/0907/c12234a291693/page.htm,NUAA faculty profile,2026-10-22
-P0011,A0019,wikipedia,https://zh.wikipedia.org/wiki/%E6%A8%81%E4%B8%BD%E6%98%8E,Wikidata Q47665519,2026-10-22
-P0012,A0021,official_page,https://wapescholar.elsevierpure.com/en/persons/xiaoqin-ding,SUFE / WAPE scholar profile,2026-10-22
+P00012,A0013,x,https://x.com/oxfamgb,Wikidata Q267941,2026-10-24
+P00013,A0013,instagram,https://www.instagram.com/oxfaminternational/,Wikidata Q267941,2026-10-24
+P00014,A0013,facebook,https://www.facebook.com/oxfamGB,Wikidata Q267941,2026-10-24
+P00015,A0013,youtube,https://www.youtube.com/channel/UCP19oUtmzamYAOTuOpTfThg,Wikidata Q267941,2026-10-24
+P00016,A0013,wikipedia,https://en.wikipedia.org/wiki/Oxfam,Wikidata Q267941,2026-10-24
