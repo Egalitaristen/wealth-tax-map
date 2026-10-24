@@ -24,15 +24,12 @@ P00022,A0007,wikipedia,https://en.wikipedia.org/wiki/Socialist_Party_of_Malaysia
 P00023,A0010,wikipedia,https://en.wikipedia.org/wiki/Kua_Kia_Soong,Wikidata Q6774964,2026-10-23
 P00024,A0011,wikipedia,https://en.wikipedia.org/wiki/Jomo_Kwame_Sundaram,Wikidata Q6270219,2026-10-23
 P00025,A0012,facebook,https://www.facebook.com/refsa,Wikidata Q117662848,2026-10-23
-P00026,A0019,website,https://pas.org.my,actors.csv website column,2026-10-23
 P00027,A0025,website,https://www.baitalamanah.com,actors.csv website column,2026-10-23
 P00028,A0016,wikipedia,https://en.wikipedia.org/wiki/Syed_Saddiq,Wikidata Q39050368,2026-10-23
 P00029,A0016,x,https://x.com/SyedSaddiq,Wikidata Q39050368,2026-10-23
 P00030,A0016,official_page,https://www.parlimen.gov.my/ahli-dewan.html?uweb=dr&id=861,Parliament of Malaysia,2026-10-23
 P00031,A0017,wikipedia,https://en.wikipedia.org/wiki/Shahrir_Abdul_Samad,Wikidata Q7462244,2026-10-23
 P00032,A0018,wikipedia,https://ms.wikipedia.org/wiki/Mohd_Hisamudin_Yahaya,Wikidata Q6893948,2026-10-23
-P00033,A0019,wikipedia,https://en.wikipedia.org/wiki/Malaysian_Islamic_Party,Wikidata Q1547025,2026-10-23
-P00034,A0019,facebook,https://www.facebook.com/paspusat,Official PAS Facebook,2026-10-23
 P00035,A0023,website,https://anilnetto.com,Official blog,2026-10-23
 P00036,A0024,wikipedia,https://en.wikipedia.org/wiki/Ramon_Navaratnam,Wikidata Q7289857,2026-10-23
 P00037,A0026,website,https://partisosialis.org,Party official website,2026-10-23
@@ -40,3 +37,6 @@ P00038,A0029,website,https://www.isis.org.my,Official website,2026-10-23
 P00039,A0029,wikipedia,https://en.wikipedia.org/wiki/Institute_of_Strategic_and_International_Studies,Wikidata Q46487543,2026-10-23
 P00040,A0030,official_page,https://www.isis.org.my/staff/calvin-cheng/,Official staff directory,2026-10-23
 P00041,A0028,website,https://aliran.com,Aliran contributor,2026-10-23
+P00042,A0016,website,https://syedsaddiq.my,Wikidata Q39050368,2026-10-24
+P00043,A0016,instagram,https://www.instagram.com/syedsaddiq/,Wikidata Q39050368,2026-10-24
+P00044,A0016,facebook,https://www.facebook.com/721079793,Wikidata Q39050368,2026-10-24
