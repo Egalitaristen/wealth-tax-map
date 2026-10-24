@@ -1,6 +1,6 @@
 # Nigeria: no federal wealth or inheritance tax since 1996; support led by tax-justice coalitions, unions, economists and Lagos tax conferences
 
-Worked notes from the Nigeria seed pass (`R001`) and wide sweep (`R002`, 2026-10-22; 95 supporters, 108 evidence rows). Check every URL still works before relying on it.
+Worked notes from the Nigeria seed pass (`R001`) and wide sweep (`R002`, 2026-10-22; 95 supporters, 108 evidence rows before the 2026-10-24 review, which removed land, property and luxury-tax rows and "tax the rich" statements and left 39 supporters, 40 rows). Check every URL still works before relying on it.
 
 ## Levels and the geography register
 
