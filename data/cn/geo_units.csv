@@ -1,0 +1,400 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,China,national,country,,https://www.gov.cn,pending,,,,,,CN
+G0002,National People's Congress,national,legislature,G0001,http://www.npc.gov.cn,pending,,,,,,
+G0003,Chinese People's Political Consultative Conference,national,legislature,G0001,http://www.cppcc.gov.cn,pending,,,,,,
+G0004,State Council,national,executive,G0001,https://www.gov.cn,pending,,,,,,
+G0005,Beijing,region,municipality,G0001,,pending,,,,,北京市 (Beijing Municipality),CN011
+G0006,Tianjin,region,municipality,G0001,,pending,,,,,天津市 (Tianjin Municipality),CN012
+G0007,Hebei,region,province,G0001,,pending,,,,,河北省 (Hebei Province),CN013
+G0008,Shanxi,region,province,G0001,,pending,,,,,山西省 (Shanxi Province),CN014
+G0009,Inner Mongolia,region,autonomous region,G0001,,pending,,,,,内蒙古自治区 (Inner Mongolia Autonomous Region),CN015
+G0010,Liaoning,region,province,G0001,,pending,,,,,辽宁省 (Liaoning Province),CN021
+G0011,Jilin,region,province,G0001,,pending,,,,,吉林省 (Jilin Province),CN022
+G0012,Heilongjiang,region,province,G0001,,pending,,,,,黑龙江省 (Heilongjiang Province),CN023
+G0013,Shanghai,region,municipality,G0001,,pending,,,,,上海市 (Shanghai Municipality),CN031
+G0014,Jiangsu,region,province,G0001,,pending,,,,,江苏省 (Jiangsu Province),CN032
+G0015,Zhejiang,region,province,G0001,,pending,,,,,浙江省 (Zhejiang Province),CN033
+G0016,Anhui,region,province,G0001,,pending,,,,,安徽省 (Anhui Province),CN034
+G0017,Fujian,region,province,G0001,,pending,,,,,福建省 (Fujian Province),CN035
+G0018,Jiangxi,region,province,G0001,,pending,,,,,江西省 (Jiangxi Province),CN036
+G0019,Shandong,region,province,G0001,,pending,,,,,山东省 (Shandong Province),CN037
+G0020,Henan,region,province,G0001,,pending,,,,,河南省 (Henan Province),CN041
+G0021,Hubei,region,province,G0001,,pending,,,,,湖北省 (Hubei Province),CN042
+G0022,Hunan,region,province,G0001,,pending,,,,,湖南省 (Hunan Province),CN043
+G0023,Guangdong,region,province,G0001,,pending,,,,,广东省 (Guangdong Province),CN044
+G0024,Guangxi Zhuang,region,autonomous region,G0001,,pending,,,,,广西壮族自治区 (Guangxi Zhuang Autonomous Region),CN045
+G0025,Hainan,region,province,G0001,,pending,,,,,海南省 (Hainan Province),CN046
+G0026,Chongqing,region,municipality,G0001,,pending,,,,,重庆市 (Chongqing Municipality),CN050
+G0027,Sichuan,region,province,G0001,,pending,,,,,四川省 (Sichuan Province),CN051
+G0028,Guizhou,region,province,G0001,,pending,,,,,贵州省 (Guizhou Province),CN052
+G0029,Yunnan,region,province,G0001,,pending,,,,,云南省 (Yunnan Province),CN053
+G0030,Tibet,region,autonomous region,G0001,,pending,,,,,西藏自治区 (Tibet Autonomous Region),CN054
+G0031,Shaanxi,region,province,G0001,,pending,,,,,陕西省 (Shaanxi Province),CN061
+G0032,Gansu,region,province,G0001,,pending,,,,,甘肃省 (Gansu province),CN062
+G0033,Qinghai,region,province,G0001,,pending,,,,,青海省 (Qinghai Province),CN063
+G0034,Ningxia Hui,region,autonomous region,G0001,,pending,,,,,宁夏回族自治区 (Ningxia Hui Autonomous Region),CN064
+G0035,Xinjiang Uygur,region,autonomous region,G0001,,pending,,,,,新疆维吾尔自治区 (Xinjiang Uygur Autonomous Region),CN065
+G0036,Taiwan,region,province,G0001,,pending,,,,,台湾省 (Taiwan Province),CN071
+G0037,Hong Kong,region,special administrative region,G0001,,pending,,,,,香港特别行政区 (Hong Kong Special Administrative Region),CN081
+G0038,Macao,region,special administrative region,G0001,,pending,,,,,澳门特别行政区 (Macao Special Administrative Region),CN082
+G0039,Beijing Municipality,council,municipality,G0005,,pending,,,,,北京市,CN011010
+G0040,Tianjin Municipality,council,municipality,G0006,,pending,,,,,天津市,CN012010
+G0041,Baoding,council,prefecture-level city,G0007,,pending,,,,,保定市,CN013010
+G0042,Cangzhou,council,prefecture-level city,G0007,,pending,,,,,沧州市,CN013020
+G0043,Chengde,council,prefecture-level city,G0007,,pending,,,,,承德市,CN013030
+G0044,Handan,council,prefecture-level city,G0007,,pending,,,,,邯郸市,CN013040
+G0045,Hengshui,council,prefecture-level city,G0007,,pending,,,,,衡水市,CN013050
+G0046,Langfang,council,prefecture-level city,G0007,,pending,,,,,廊坊市,CN013060
+G0047,Qinhuangdao,council,prefecture-level city,G0007,,pending,,,,,秦皇岛市,CN013070
+G0048,Shijiazhuang,council,prefecture-level city,G0007,,pending,,,,,石家庄市,CN013080
+G0049,Tangshan,council,prefecture-level city,G0007,,pending,,,,,唐山市,CN013090
+G0050,Xingtai,council,prefecture-level city,G0007,,pending,,,,,邢台市,CN013100
+G0051,Zhangjiakou,council,prefecture-level city,G0007,,pending,,,,,张家口市,CN013110
+G0052,Changzhi,council,prefecture-level city,G0008,,pending,,,,,长治市,CN014010
+G0053,Datong,council,prefecture-level city,G0008,,pending,,,,,大同市,CN014020
+G0054,Jincheng,council,prefecture-level city,G0008,,pending,,,,,晋城市,CN014030
+G0055,Jinzhong,council,prefecture-level city,G0008,,pending,,,,,晋中市,CN014040
+G0056,Lüliang,council,prefecture-level city,G0008,,pending,,,,,吕梁市,CN014050
+G0057,Linfen,council,prefecture-level city,G0008,,pending,,,,,临汾市,CN014060
+G0058,Shuozhou,council,prefecture-level city,G0008,,pending,,,,,朔州市,CN014070
+G0059,Taiyuan,council,prefecture-level city,G0008,,pending,,,,,太原市,CN014080
+G0060,Xinzhou,council,prefecture-level city,G0008,,pending,,,,,忻州市,CN014090
+G0061,Yangquan,council,prefecture-level city,G0008,,pending,,,,,阳泉市,CN014100
+G0062,Yuncheng,council,prefecture-level city,G0008,,pending,,,,,运城市,CN014110
+G0063,Alxa League,council,league,G0009,,pending,,,,,阿拉善盟,CN015010
+G0064,Baotou,council,prefecture-level city,G0009,,pending,,,,,包头市,CN015020
+G0065,Bayannur,council,prefecture-level city,G0009,,pending,,,,,巴彦淖尔市,CN015030
+G0066,Chifeng,council,prefecture-level city,G0009,,pending,,,,,赤峰市,CN015040
+G0067,Hinggan League,council,league,G0009,,pending,,,,,兴安盟,CN015050
+G0068,Hohhot,council,prefecture-level city,G0009,,pending,,,,,呼和浩特市,CN015060
+G0069,Hulunbuir,council,prefecture-level city,G0009,,pending,,,,,呼伦贝尔市,CN015070
+G0070,Ordos,council,prefecture-level city,G0009,,pending,,,,,鄂尔多斯市,CN015080
+G0071,Tongliao,council,prefecture-level city,G0009,,pending,,,,,通辽市,CN015090
+G0072,Ulanqab,council,prefecture-level city,G0009,,pending,,,,,乌兰察布市,CN015100
+G0073,Wuhai,council,prefecture-level city,G0009,,pending,,,,,乌海市,CN015110
+G0074,Xilingol League,council,league,G0009,,pending,,,,,锡林郭勒盟,CN015120
+G0075,Anshan,council,prefecture-level city,G0010,,pending,,,,,鞍山市,CN021010
+G0076,Benxi,council,prefecture-level city,G0010,,pending,,,,,本溪市,CN021020
+G0077,Chaoyang,council,prefecture-level city,G0010,,pending,,,,,朝阳市,CN021030
+G0078,Dalian,council,prefecture-level city,G0010,,pending,,,,,大连市,CN021040
+G0079,Dandong,council,prefecture-level city,G0010,,pending,,,,,丹东市,CN021050
+G0080,Fushun,council,prefecture-level city,G0010,,pending,,,,,抚顺市,CN021060
+G0081,Fuxin,council,prefecture-level city,G0010,,pending,,,,,阜新市,CN021070
+G0082,Huludao,council,prefecture-level city,G0010,,pending,,,,,葫芦岛市,CN021080
+G0083,Jinzhou,council,prefecture-level city,G0010,,pending,,,,,锦州市,CN021090
+G0084,Liaoyang,council,prefecture-level city,G0010,,pending,,,,,辽阳市,CN021100
+G0085,Panjin,council,prefecture-level city,G0010,,pending,,,,,盘锦市,CN021110
+G0086,Shenyang,council,prefecture-level city,G0010,,pending,,,,,沈阳市,CN021120
+G0087,Tieling,council,prefecture-level city,G0010,,pending,,,,,铁岭市,CN021130
+G0088,Yingkou,council,prefecture-level city,G0010,,pending,,,,,营口市,CN021140
+G0089,Baicheng,council,prefecture-level city,G0011,,pending,,,,,白城市,CN022010
+G0090,Baishan,council,prefecture-level city,G0011,,pending,,,,,白山市,CN022020
+G0091,Changchun,council,prefecture-level city,G0011,,pending,,,,,长春市,CN022030
+G0092,Jilin,council,prefecture-level city,G0011,,pending,,,,,吉林市,CN022040
+G0093,Liaoyuan,council,prefecture-level city,G0011,,pending,,,,,辽源市,CN022050
+G0094,Siping,council,prefecture-level city,G0011,,pending,,,,,四平市,CN022060
+G0095,Songyuan,council,prefecture-level city,G0011,,pending,,,,,松原市,CN022070
+G0096,Tonghua,council,prefecture-level city,G0011,,pending,,,,,通化市,CN022080
+G0097,Yanbian Korean Autonomous Prefecture,council,autonomous prefecture,G0011,,pending,,,,,延边朝鲜族自治州,CN022090
+G0098,Daqing,council,prefecture-level city,G0012,,pending,,,,,大庆市,CN023010
+G0099,Daxinganling Prefecture,council,prefecture,G0012,,pending,,,,,大兴安岭地区[4],CN023020
+G0100,Harbin,council,prefecture-level city,G0012,,pending,,,,,哈尔滨市,CN023030
+G0101,Hegang,council,prefecture-level city,G0012,,pending,,,,,鹤岗市,CN023040
+G0102,Heihe,council,prefecture-level city,G0012,,pending,,,,,黑河市,CN023050
+G0103,Jiamusi,council,prefecture-level city,G0012,,pending,,,,,佳木斯市,CN023060
+G0104,Jixi,council,prefecture-level city,G0012,,pending,,,,,鸡西市,CN023070
+G0105,Mudanjiang,council,prefecture-level city,G0012,,pending,,,,,牡丹江市,CN023080
+G0106,Qiqihar,council,prefecture-level city,G0012,,pending,,,,,齐齐哈尔市,CN023090
+G0107,Qitaihe,council,prefecture-level city,G0012,,pending,,,,,七台河市,CN023100
+G0108,Shuangyashan,council,prefecture-level city,G0012,,pending,,,,,双鸭山市,CN023110
+G0109,Suihua,council,prefecture-level city,G0012,,pending,,,,,绥化市,CN023120
+G0110,Yichun,council,prefecture-level city,G0012,,pending,,,,,伊春市,CN023130
+G0111,Shanghai Municipality,council,municipality,G0013,,pending,,,,,上海市,CN031010
+G0112,Changzhou,council,prefecture-level city,G0014,,pending,,,,,常州市,CN032010
+G0113,Huai'an,council,prefecture-level city,G0014,,pending,,,,,淮安市,CN032020
+G0114,Lianyungang,council,prefecture-level city,G0014,,pending,,,,,连云港市,CN032030
+G0115,Nanjing,council,prefecture-level city,G0014,,pending,,,,,南京市,CN032040
+G0116,Nantong,council,prefecture-level city,G0014,,pending,,,,,南通市,CN032050
+G0117,Suqian,council,prefecture-level city,G0014,,pending,,,,,宿迁市,CN032060
+G0118,Suzhou,council,prefecture-level city,G0014,,pending,,,,,苏州市,CN032070
+G0119,Taizhou,council,prefecture-level city,G0014,,pending,,,,,泰州市,CN032080
+G0120,Wuxi,council,prefecture-level city,G0014,,pending,,,,,无锡市,CN032090
+G0121,Xuzhou,council,prefecture-level city,G0014,,pending,,,,,徐州市,CN032100
+G0122,Yancheng,council,prefecture-level city,G0014,,pending,,,,,盐城市,CN032110
+G0123,Yangzhou,council,prefecture-level city,G0014,,pending,,,,,扬州市,CN032120
+G0124,Zhenjiang,council,prefecture-level city,G0014,,pending,,,,,镇江市,CN032130
+G0125,Hangzhou,council,prefecture-level city,G0015,,pending,,,,,杭州市,CN033010
+G0126,Huzhou,council,prefecture-level city,G0015,,pending,,,,,湖州市,CN033020
+G0127,Jiaxing,council,prefecture-level city,G0015,,pending,,,,,嘉兴市,CN033030
+G0128,Jinhua,council,prefecture-level city,G0015,,pending,,,,,金华市,CN033040
+G0129,Lishui,council,prefecture-level city,G0015,,pending,,,,,丽水市,CN033050
+G0130,Ningbo,council,prefecture-level city,G0015,,pending,,,,,宁波市,CN033060
+G0131,Quzhou,council,prefecture-level city,G0015,,pending,,,,,衢州市,CN033070
+G0132,Shaoxing,council,prefecture-level city,G0015,,pending,,,,,绍兴市,CN033080
+G0133,Taizhou,council,prefecture-level city,G0015,,pending,,,,,台州市,CN033090
+G0134,Wenzhou,council,prefecture-level city,G0015,,pending,,,,,温州市,CN033100
+G0135,Zhoushan,council,prefecture-level city,G0015,,pending,,,,,舟山市,CN033110
+G0136,Anqing,council,prefecture-level city,G0016,,pending,,,,,安庆市,CN034010
+G0137,Bengbu,council,prefecture-level city,G0016,,pending,,,,,蚌埠市,CN034020
+G0138,Bozhou,council,prefecture-level city,G0016,,pending,,,,,亳州市,CN034030
+G0139,Chizhou,council,prefecture-level city,G0016,,pending,,,,,池州市,CN034040
+G0140,Chuzhou,council,prefecture-level city,G0016,,pending,,,,,滁州市,CN034050
+G0141,Fuyang,council,prefecture-level city,G0016,,pending,,,,,阜阳市,CN034060
+G0142,Hefei,council,prefecture-level city,G0016,,pending,,,,,合肥市,CN034070
+G0143,Huaibei,council,prefecture-level city,G0016,,pending,,,,,淮北市,CN034080
+G0144,Huainan,council,prefecture-level city,G0016,,pending,,,,,淮南市,CN034090
+G0145,Huangshan,council,prefecture-level city,G0016,,pending,,,,,黄山市,CN034100
+G0146,Lu'an,council,prefecture-level city,G0016,,pending,,,,,六安市,CN034110
+G0147,Ma'anshan,council,prefecture-level city,G0016,,pending,,,,,马鞍山市,CN034120
+G0148,Suzhou,council,prefecture-level city,G0016,,pending,,,,,宿州市,CN034130
+G0149,Tongling,council,prefecture-level city,G0016,,pending,,,,,铜陵市,CN034140
+G0150,Wuhu,council,prefecture-level city,G0016,,pending,,,,,芜湖市,CN034150
+G0151,Xuancheng,council,prefecture-level city,G0016,,pending,,,,,宣城市,CN034160
+G0152,Fuzhou,council,prefecture-level city,G0017,,pending,,,,,福州市,CN035010
+G0153,Longyan,council,prefecture-level city,G0017,,pending,,,,,龙岩市,CN035020
+G0154,Nanping,council,prefecture-level city,G0017,,pending,,,,,南平市,CN035030
+G0155,Ningde,council,prefecture-level city,G0017,,pending,,,,,宁德市,CN035040
+G0156,Putian,council,prefecture-level city,G0017,,pending,,,,,莆田市,CN035050
+G0157,Quanzhou,council,prefecture-level city,G0017,,pending,,,,,泉州市,CN035060
+G0158,Sanming,council,prefecture-level city,G0017,,pending,,,,,三明市,CN035070
+G0159,Xiamen,council,prefecture-level city,G0017,,pending,,,,,厦门市,CN035080
+G0160,Zhangzhou,council,prefecture-level city,G0017,,pending,,,,,漳州市,CN035090
+G0161,Fuzhou,council,prefecture-level city,G0018,,pending,,,,,抚州市,CN036010
+G0162,Ganzhou,council,prefecture-level city,G0018,,pending,,,,,赣州市,CN036020
+G0163,Ji'an,council,prefecture-level city,G0018,,pending,,,,,吉安市,CN036030
+G0164,Jingdezhen,council,prefecture-level city,G0018,,pending,,,,,景德镇市,CN036040
+G0165,Jiujiang,council,prefecture-level city,G0018,,pending,,,,,九江市,CN036050
+G0166,Nanchang,council,prefecture-level city,G0018,,pending,,,,,南昌市,CN036060
+G0167,Pingxiang,council,prefecture-level city,G0018,,pending,,,,,萍乡市,CN036070
+G0168,Shangrao,council,prefecture-level city,G0018,,pending,,,,,上饶市,CN036080
+G0169,Xinyu,council,prefecture-level city,G0018,,pending,,,,,新余市,CN036090
+G0170,Yichun,council,prefecture-level city,G0018,,pending,,,,,宜春市,CN036100
+G0171,Yingtan,council,prefecture-level city,G0018,,pending,,,,,鹰潭市,CN036110
+G0172,Binzhou,council,prefecture-level city,G0019,,pending,,,,,滨州市,CN037010
+G0173,Dezhou,council,prefecture-level city,G0019,,pending,,,,,德州市,CN037020
+G0174,Dongying,council,prefecture-level city,G0019,,pending,,,,,东营市,CN037030
+G0175,Heze,council,prefecture-level city,G0019,,pending,,,,,菏泽市,CN037040
+G0176,Jinan,council,prefecture-level city,G0019,,pending,,,,,济南市,CN037050
+G0177,Jining,council,prefecture-level city,G0019,,pending,,,,,济宁市,CN037060
+G0178,Laiwu,council,prefecture-level city,G0019,,pending,,,,,莱芜市,CN037070
+G0179,Liaocheng,council,prefecture-level city,G0019,,pending,,,,,聊城市,CN037080
+G0180,Linyi,council,prefecture-level city,G0019,,pending,,,,,临沂市,CN037090
+G0181,Qingdao,council,prefecture-level city,G0019,,pending,,,,,青岛市,CN037100
+G0182,Rizhao,council,prefecture-level city,G0019,,pending,,,,,日照市,CN037110
+G0183,Tai'an,council,prefecture-level city,G0019,,pending,,,,,泰安市,CN037120
+G0184,Weifang,council,prefecture-level city,G0019,,pending,,,,,潍坊市,CN037130
+G0185,Weihai,council,prefecture-level city,G0019,,pending,,,,,威海市,CN037140
+G0186,Yantai,council,prefecture-level city,G0019,,pending,,,,,烟台市,CN037150
+G0187,Zaozhuang,council,prefecture-level city,G0019,,pending,,,,,枣庄市,CN037160
+G0188,Zibo,council,prefecture-level city,G0019,,pending,,,,,淄博市,CN037170
+G0189,Anyang,council,prefecture-level city,G0020,,pending,,,,,安阳市,CN041010
+G0190,Hebi,council,prefecture-level city,G0020,,pending,,,,,鹤壁市,CN041020
+G0191,Jiaozuo,council,prefecture-level city,G0020,,pending,,,,,焦作市,CN041030
+G0192,Jiyuan,council,sub-prefecture-level city,G0020,,pending,,,,,济源市〔1〕,CN041040
+G0193,Kaifeng,council,prefecture-level city,G0020,,pending,,,,,开封市,CN041050
+G0194,Luohe,council,prefecture-level city,G0020,,pending,,,,,漯河市,CN041060
+G0195,Luoyang,council,prefecture-level city,G0020,,pending,,,,,洛阳市,CN041070
+G0196,Nanyang,council,prefecture-level city,G0020,,pending,,,,,南阳市,CN041080
+G0197,Pingdingshan,council,prefecture-level city,G0020,,pending,,,,,平顶山市,CN041090
+G0198,Puyang,council,prefecture-level city,G0020,,pending,,,,,濮阳市,CN041100
+G0199,Sanmenxia,council,prefecture-level city,G0020,,pending,,,,,三门峡市,CN041110
+G0200,Shangqiu,council,prefecture-level city,G0020,,pending,,,,,商丘市,CN041120
+G0201,Xinxiang,council,prefecture-level city,G0020,,pending,,,,,新乡市,CN041130
+G0202,Xinyang,council,prefecture-level city,G0020,,pending,,,,,信阳市,CN041140
+G0203,Xuchang,council,prefecture-level city,G0020,,pending,,,,,许昌市,CN041150
+G0204,Zhengzhou,council,prefecture-level city,G0020,,pending,,,,,郑州市,CN041160
+G0205,Zhoukou,council,prefecture-level city,G0020,,pending,,,,,周口市,CN041170
+G0206,Zhumadian,council,prefecture-level city,G0020,,pending,,,,,驻马店市,CN041180
+G0207,Enshi Tujia and Miao Autonomous Prefecture,council,autonomous prefecture,G0021,,pending,,,,,恩施土家族苗族自治州,CN042010
+G0208,Ezhou,council,prefecture-level city,G0021,,pending,,,,,鄂州市,CN042020
+G0209,Huanggang,council,prefecture-level city,G0021,,pending,,,,,黄冈市,CN042030
+G0210,Huangshi,council,prefecture-level city,G0021,,pending,,,,,黄石市,CN042040
+G0211,Jingmen,council,prefecture-level city,G0021,,pending,,,,,荆门市,CN042050
+G0212,Jingzhou,council,prefecture-level city,G0021,,pending,,,,,荆州市,CN042060
+G0213,Qianjiang,council,sub-prefecture-level city,G0021,,pending,,,,,潜江市[1],CN042070
+G0214,Shennongjia Forestry District,council,forestry district,G0021,,pending,,,,,神农架林区[3],CN042080
+G0215,Shiyan,council,prefecture-level city,G0021,,pending,,,,,十堰市,CN042090
+G0216,Suizhou,council,prefecture-level city,G0021,,pending,,,,,随州市,CN042100
+G0217,Tianmen,council,sub-prefecture-level city,G0021,,pending,,,,,天门市[1],CN042110
+G0218,Wuhan,council,prefecture-level city,G0021,,pending,,,,,武汉市,CN042120
+G0219,Xiangyang,council,prefecture-level city,G0021,,pending,,,,,襄阳市,CN042130
+G0220,Xianning,council,prefecture-level city,G0021,,pending,,,,,咸宁市,CN042140
+G0221,Xiantao,council,sub-prefecture-level city,G0021,,pending,,,,,仙桃市[1],CN042150
+G0222,Xiaogan,council,prefecture-level city,G0021,,pending,,,,,孝感市,CN042160
+G0223,Yichang,council,prefecture-level city,G0021,,pending,,,,,宜昌市,CN042170
+G0224,Changde,council,prefecture-level city,G0022,,pending,,,,,常德市,CN043010
+G0225,Changsha,council,prefecture-level city,G0022,,pending,,,,,长沙市,CN043020
+G0226,Chenzhou,council,prefecture-level city,G0022,,pending,,,,,郴州市,CN043030
+G0227,Hengyang,council,prefecture-level city,G0022,,pending,,,,,衡阳市,CN043040
+G0228,Huaihua,council,prefecture-level city,G0022,,pending,,,,,怀化市,CN043050
+G0229,Loudi,council,prefecture-level city,G0022,,pending,,,,,娄底市,CN043060
+G0230,Shaoyang,council,prefecture-level city,G0022,,pending,,,,,邵阳市,CN043070
+G0231,Xiangtan,council,prefecture-level city,G0022,,pending,,,,,湘潭市,CN043080
+G0232,Xiangxi Tujia and Miao Autonomous Prefecture,council,autonomous prefecture,G0022,,pending,,,,,湘西土家族苗族自治州,CN043090
+G0233,Yiyang,council,prefecture-level city,G0022,,pending,,,,,益阳市,CN043100
+G0234,Yongzhou,council,prefecture-level city,G0022,,pending,,,,,永州市,CN043110
+G0235,Yueyang,council,prefecture-level city,G0022,,pending,,,,,岳阳市,CN043120
+G0236,Zhangjiajie,council,prefecture-level city,G0022,,pending,,,,,张家界市,CN043130
+G0237,Zhuzhou,council,prefecture-level city,G0022,,pending,,,,,株州市,CN043140
+G0238,Chaozhou,council,prefecture-level city,G0023,,pending,,,,,潮州市,CN044010
+G0239,Dongguan,council,prefecture-level city,G0023,,pending,,,,,东莞市,CN044020
+G0240,Foshan,council,prefecture-level city,G0023,,pending,,,,,佛山市,CN044030
+G0241,Guangzhou,council,prefecture-level city,G0023,,pending,,,,,广州市,CN044040
+G0242,Heyuan,council,prefecture-level city,G0023,,pending,,,,,河源市,CN044050
+G0243,Huizhou,council,prefecture-level city,G0023,,pending,,,,,惠州市,CN044060
+G0244,Jiangmen,council,prefecture-level city,G0023,,pending,,,,,江门市,CN044070
+G0245,Jieyang,council,prefecture-level city,G0023,,pending,,,,,揭阳市,CN044080
+G0246,Maoming,council,prefecture-level city,G0023,,pending,,,,,茂名市,CN044090
+G0247,Meizhou,council,prefecture-level city,G0023,,pending,,,,,梅州市,CN044100
+G0248,Qingyuan,council,prefecture-level city,G0023,,pending,,,,,清远市,CN044110
+G0249,Shantou,council,prefecture-level city,G0023,,pending,,,,,汕头市,CN044120
+G0250,Shanwei,council,prefecture-level city,G0023,,pending,,,,,汕尾市,CN044130
+G0251,Shaoguan,council,prefecture-level city,G0023,,pending,,,,,韶关市,CN044140
+G0252,Shenzhen,council,prefecture-level city,G0023,,pending,,,,,深圳市,CN044150
+G0253,Yangjiang,council,prefecture-level city,G0023,,pending,,,,,阳江市,CN044160
+G0254,Yunfu,council,prefecture-level city,G0023,,pending,,,,,云浮市,CN044170
+G0255,Zhanjiang,council,prefecture-level city,G0023,,pending,,,,,湛江市,CN044180
+G0256,Zhaoqing,council,prefecture-level city,G0023,,pending,,,,,肇庆市,CN044190
+G0257,Zhongshan,council,prefecture-level city,G0023,,pending,,,,,中山市,CN044200
+G0258,Zhuhai,council,prefecture-level city,G0023,,pending,,,,,珠海市,CN044210
+G0259,Baise,council,prefecture-level city,G0024,,pending,,,,,百色市,CN045010
+G0260,Beihai,council,prefecture-level city,G0024,,pending,,,,,北海市,CN045020
+G0261,Chongzuo,council,prefecture-level city,G0024,,pending,,,,,崇左市,CN045030
+G0262,Fangchenggang,council,prefecture-level city,G0024,,pending,,,,,防城港市,CN045040
+G0263,Guigang,council,prefecture-level city,G0024,,pending,,,,,贵港市,CN045050
+G0264,Guilin,council,prefecture-level city,G0024,,pending,,,,,桂林市,CN045060
+G0265,Hechi,council,prefecture-level city,G0024,,pending,,,,,河池市,CN045070
+G0266,Hezhou,council,prefecture-level city,G0024,,pending,,,,,贺州市,CN045080
+G0267,Laibin,council,prefecture-level city,G0024,,pending,,,,,来宾市,CN045090
+G0268,Liuzhou,council,prefecture-level city,G0024,,pending,,,,,柳州市,CN045100
+G0269,NanNing,council,prefecture-level city,G0024,,pending,,,,,南宁市,CN045110
+G0270,Qinzhou,council,prefecture-level city,G0024,,pending,,,,,钦州市,CN045120
+G0271,Wuzhou,council,prefecture-level city,G0024,,pending,,,,,梧州市,CN045130
+G0272,Yulin,council,prefecture-level city,G0024,,pending,,,,,玉林市,CN045140
+G0273,Baisha Li Autonomous County,council,autonomous county,G0025,,pending,,,,,白沙黎族自治县[2],CN046010
+G0274,Baoting Li and Miao Autonomous County,council,autonomous county,G0025,,pending,,,,,保亭黎族苗族自治县[2],CN046020
+G0275,Changjiang Li Autonomous County,council,autonomous county,G0025,,pending,,,,,昌江黎族自治县[2],CN046030
+G0276,Chengmai County,council,county,G0025,,pending,,,,,澄迈县[2],CN046040
+G0277,Danzhou,council,prefecture-level city,G0025,,pending,,,,,儋州市,CN046050
+G0278,Ding'an County,council,county,G0025,,pending,,,,,定安县[2],CN046060
+G0279,Dongfang City,council,county-level city,G0025,,pending,,,,,东方市[1],CN046070
+G0280,Haikou,council,prefecture-level city,G0025,,pending,,,,,海口市,CN046080
+G0281,Ledong Li Autonomous County,council,autonomous county,G0025,,pending,,,,,乐东黎族自治县[2],CN046090
+G0282,Lingao County,council,county,G0025,,pending,,,,,临高县[2],CN046100
+G0283,Lingshui Li Autonomous County,council,autonomous county,G0025,,pending,,,,,陵水黎族自治县[2],CN046110
+G0284,Qionghai City,council,county-level city,G0025,,pending,,,,,琼海市[1],CN046120
+G0285,Qiongzhong Li and Miao Autonomous County,council,autonomous county,G0025,,pending,,,,,琼中黎族苗族自治县[2],CN046130
+G0286,Sansha,council,prefecture-level city,G0025,,pending,,,,,三沙市,CN046140
+G0287,Sanya,council,prefecture-level city,G0025,,pending,,,,,三亚市,CN046150
+G0288,Tunchang County,council,county,G0025,,pending,,,,,屯昌县[1],CN046160
+G0289,Wanning City,council,county-level city,G0025,,pending,,,,,万宁市[1],CN046170
+G0290,Wuzhishan City,council,county-level city,G0025,,pending,,,,,五指山市[1],CN046180
+G0291,Chongqing Municipality,council,municipality,G0026,,pending,,,,,重庆市,CN050010
+G0292,Bazhong,council,prefecture-level city,G0027,,pending,,,,,巴中市,CN051010
+G0293,Chengdu,council,prefecture-level city,G0027,,pending,,,,,成都市,CN051020
+G0294,Dazhou,council,prefecture-level city,G0027,,pending,,,,,达州市,CN051030
+G0295,Deyang,council,prefecture-level city,G0027,,pending,,,,,德阳市,CN051040
+G0296,Garzê Tibetan Autonomous Prefecture,council,autonomous prefecture,G0027,,pending,,,,,甘孜藏族自治州,CN051050
+G0297,Guang'an,council,prefecture-level city,G0027,,pending,,,,,广安市,CN051060
+G0298,Guangyuan,council,prefecture-level city,G0027,,pending,,,,,广元市,CN051070
+G0299,Leshan,council,prefecture-level city,G0027,,pending,,,,,乐山市,CN051080
+G0300,Liangshan Yi Autonomous Prefecture,council,autonomous prefecture,G0027,,pending,,,,,凉山彝族自治州,CN051090
+G0301,Luzhou,council,prefecture-level city,G0027,,pending,,,,,泸州市,CN051100
+G0302,Meishan,council,prefecture-level city,G0027,,pending,,,,,眉山市,CN051110
+G0303,Mianyang,council,prefecture-level city,G0027,,pending,,,,,绵阳市,CN051120
+G0304,Nanchong,council,prefecture-level city,G0027,,pending,,,,,南充市,CN051130
+G0305,Neijiang,council,prefecture-level city,G0027,,pending,,,,,内江市,CN051140
+G0306,Ngawa Tibetan and Qiang Autonomous Prefecture,council,autonomous prefecture,G0027,,pending,,,,,阿坝藏族羌族自治州,CN051150
+G0307,Panzhihua,council,prefecture-level city,G0027,,pending,,,,,攀枝花市,CN051160
+G0308,Suining,council,prefecture-level city,G0027,,pending,,,,,遂宁市,CN051170
+G0309,Ya'an,council,prefecture-level city,G0027,,pending,,,,,雅安市,CN051180
+G0310,Yibin,council,prefecture-level city,G0027,,pending,,,,,宜宾市,CN051190
+G0311,Zigong,council,prefecture-level city,G0027,,pending,,,,,自贡市,CN051200
+G0312,Ziyang,council,prefecture-level city,G0027,,pending,,,,,资阳市,CN051210
+G0313,Anshun,council,prefecture-level city,G0028,,pending,,,,,安顺市,CN052010
+G0314,Bijie,council,prefecture-level city,G0028,,pending,,,,,毕节市,CN052020
+G0315,Guiyang,council,prefecture-level city,G0028,,pending,,,,,贵阳市,CN052030
+G0316,Liupanshui,council,prefecture-level city,G0028,,pending,,,,,六盘水市,CN052040
+G0317,Qiandongnan Miao and Dong Autonomous Prefecture,council,autonomous prefecture,G0028,,pending,,,,,黔东南苗族侗族自治州,CN052050
+G0318,Qiannan Buyi and Miao Autonomous Prefecture,council,autonomous prefecture,G0028,,pending,,,,,黔南布依族苗族自治州,CN052060
+G0319,Qianxinan Buyi and Miao Autonomous Prefecture,council,autonomous prefecture,G0028,,pending,,,,,黔西南布依族苗族自治州,CN052070
+G0320,Tongren,council,prefecture-level city,G0028,,pending,,,,,铜仁市,CN052080
+G0321,Zunyi,council,prefecture-level city,G0028,,pending,,,,,遵义市,CN052090
+G0322,Baoshan,council,prefecture-level city,G0029,,pending,,,,,保山市,CN053010
+G0323,Chuxiong Yi Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,楚雄彝族自治州,CN053020
+G0324,Dêqên Tibetan Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,迪庆藏族自治州,CN053030
+G0325,Dali Bai Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,大理白族自治州,CN053040
+G0326,Dehong Dai and Jingpo Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,德宏傣族景颇族自治州,CN053050
+G0327,Honghe Hani and Yi Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,红河哈尼族彝族自治州,CN053060
+G0328,Kunming,council,prefecture-level city,G0029,,pending,,,,,昆明市,CN053070
+G0329,Lijiang,council,prefecture-level city,G0029,,pending,,,,,丽江市,CN053080
+G0330,Lincang,council,prefecture-level city,G0029,,pending,,,,,临沧市,CN053090
+G0331,Nujiang Lisu Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,怒江傈僳族自治州,CN053100
+G0332,Pu'er,council,prefecture-level city,G0029,,pending,,,,,普洱市,CN053110
+G0333,Qujing,council,prefecture-level city,G0029,,pending,,,,,曲靖市,CN053120
+G0334,Wenshan Zhuang and Miao Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,文山壮族苗族自治州,CN053130
+G0335,Xishuangbanna Dai Autonomous Prefecture,council,autonomous prefecture,G0029,,pending,,,,,西双版纳傣族自治州,CN053140
+G0336,Yuxi,council,prefecture-level city,G0029,,pending,,,,,玉溪市,CN053150
+G0337,Zhaotong,council,prefecture-level city,G0029,,pending,,,,,昭通市,CN053160
+G0338,Lhasa,council,prefecture-level city,G0030,,pending,,,,,拉萨市,CN054010
+G0339,Lhoka,council,prefecture-level city,G0030,,pending,,,,,山南市,CN054020
+G0340,Nagqu Prefecture,council,prefecture,G0030,,pending,,,,,那曲地区,CN054030
+G0341,Ngari Prefecture,council,prefecture,G0030,,pending,,,,,阿里地区,CN054040
+G0342,Nyingchi,council,prefecture-level city,G0030,,pending,,,,,林芝市,CN054050
+G0343,Qamdo,council,prefecture-level city,G0030,,pending,,,,,昌都市,CN054060
+G0344,Xigazê,council,prefecture-level city,G0030,,pending,,,,,日喀则市,CN054070
+G0345,Ankang,council,prefecture-level city,G0031,,pending,,,,,安康市,CN061010
+G0346,Baoji,council,prefecture-level city,G0031,,pending,,,,,宝鸡市,CN061020
+G0347,Hanzhong,council,prefecture-level city,G0031,,pending,,,,,汉中市,CN061030
+G0348,Shangluo,council,prefecture-level city,G0031,,pending,,,,,商洛市,CN061040
+G0349,Tongchuan,council,prefecture-level city,G0031,,pending,,,,,铜川市,CN061050
+G0350,Weinan,council,prefecture-level city,G0031,,pending,,,,,渭南市,CN061060
+G0351,Xi'an,council,prefecture-level city,G0031,,pending,,,,,西安市,CN061070
+G0352,Xianyang,council,prefecture-level city,G0031,,pending,,,,,咸阳市,CN061080
+G0353,Yan'an,council,prefecture-level city,G0031,,pending,,,,,延安市,CN061090
+G0354,Yulin,council,prefecture-level city,G0031,,pending,,,,,榆林市,CN061100
+G0355,Baiyin,council,prefecture-level city,G0032,,pending,,,,,白银市,CN062010
+G0356,Dingxi,council,prefecture-level city,G0032,,pending,,,,,定西市,CN062020
+G0357,Gannan Tibetan Autonomous Prefecture,council,autonomous prefecture,G0032,,pending,,,,,甘南藏族自治州,CN062030
+G0358,Jiayuguan,council,prefecture-level city,G0032,,pending,,,,,嘉峪关市,CN062040
+G0359,Jinchang,council,prefecture-level city,G0032,,pending,,,,,金昌市,CN062050
+G0360,Jiuquan,council,prefecture-level city,G0032,,pending,,,,,酒泉市,CN062060
+G0361,Lanzhou,council,prefecture-level city,G0032,,pending,,,,,兰州市,CN062070
+G0362,Linxia Hui Autonomous Prefecture,council,autonomous prefecture,G0032,,pending,,,,,临夏回族自治州,CN062080
+G0363,Longnan,council,prefecture-level city,G0032,,pending,,,,,陇南市,CN062090
+G0364,Pingliang,council,prefecture-level city,G0032,,pending,,,,,平凉市,CN062100
+G0365,Qingyang,council,prefecture-level city,G0032,,pending,,,,,庆阳市,CN062110
+G0366,Tianshui,council,prefecture-level city,G0032,,pending,,,,,天水市,CN062120
+G0367,Wuwei,council,prefecture-level city,G0032,,pending,,,,,武威市,CN062130
+G0368,Zhangye,council,prefecture-level city,G0032,,pending,,,,,张掖市,CN062140
+G0369,Golog Tibetan Autonomous Prefecture,council,autonomous prefecture,G0033,,pending,,,,,果洛藏族自治州,CN063010
+G0370,Haibei Tibetan Autonomous Prefecture,council,autonomous prefecture,G0033,,pending,,,,,海北藏族自治州,CN063020
+G0371,Haidong,council,prefecture-level city,G0033,,pending,,,,,海东市,CN063030
+G0372,Hainan Tibetan Autonomous Prefecture,council,autonomous prefecture,G0033,,pending,,,,,海南藏族自治州,CN063040
+G0373,Haixi Mongolian Autonomous Prefecture,council,autonomous prefecture,G0033,,pending,,,,,海西蒙古族自治州,CN063050
+G0374,Huangnan Tibetan Autonomous Prefecture,council,autonomous prefecture,G0033,,pending,,,,,黄南藏族自治州,CN063060
+G0375,Xining,council,prefecture-level city,G0033,,pending,,,,,西宁市,CN063070
+G0376,Yushu Tibetan Autonomous Prefecture,council,autonomous prefecture,G0033,,pending,,,,,玉树藏族自治州,CN063080
+G0377,Guyuan,council,prefecture-level city,G0034,,pending,,,,,固原市,CN064010
+G0378,Shizuishan,council,prefecture-level city,G0034,,pending,,,,,石嘴山市,CN064020
+G0379,Wuzhong,council,prefecture-level city,G0034,,pending,,,,,吴忠市,CN064030
+G0380,Yinchuan,council,prefecture-level city,G0034,,pending,,,,,银川市,CN064040
+G0381,Zhongwei,council,prefecture-level city,G0034,,pending,,,,,中卫市,CN064050
+G0382,Ürümqi,council,prefecture-level city,G0035,,pending,,,,,乌鲁木齐市,CN065010
+G0383,Aksu Prefecture,council,prefecture,G0035,,pending,,,,,阿克苏地区,CN065020
+G0384,Altay Prefecture,council,prefecture,G0035,,pending,,,,,阿勒泰地区,CN065030
+G0385,Bayingolin Mongolia Autonomous Prefecture,council,autonomous prefecture,G0035,,pending,,,,,巴音郭楞蒙古自治州,CN065040
+G0386,Bortala Mongol Autonomous Prefecture,council,autonomous prefecture,G0035,,pending,,,,,博尔塔拉蒙古自治州,CN065050
+G0387,Changji Hui Autonomous Prefecture,council,autonomous prefecture,G0035,,pending,,,,,昌吉回族自治州,CN065060
+G0388,Hami,council,prefecture-level city,G0035,,pending,,,,,哈密市,CN065070
+G0389,Hotan Prefecture,council,prefecture,G0035,,pending,,,,,和田地区,CN065080
+G0390,Ili Kazak Autonomous Prefecture,council,sub-province-level prefecture,G0035,,pending,,,,,伊犁哈萨克自治州[5],CN065090
+G0391,Karamay,council,prefecture-level city,G0035,,pending,,,,,克拉玛依市,CN065100
+G0392,Kashi Prefecture,council,prefecture,G0035,,pending,,,,,喀什地区,CN065110
+G0393,Kizilsu Kirgiz Autonomous Prefecture,council,autonomous prefecture,G0035,,pending,,,,,克孜勒苏柯尔克孜自治州,CN065120
+G0394,Shihezi,council,sub-prefecture-level city,G0035,,pending,,,,,石河子市[1],CN065130
+G0395,Tarbaĝatay Prefecture,council,prefecture,G0035,,pending,,,,,塔城地区,CN065140
+G0396,Turpan,council,prefecture-level city,G0035,,pending,,,,,吐鲁番市,CN065150
+G0397,Taiwan province,council,prefecture,G0036,,pending,,,,,台湾省,CN071010
+G0398,Hong Kong Special Administrative Region,council,special administrative region,G0037,,pending,,,,,香港,CN081010
+G0399,Macao Special Administrative Region,council,special administrative region,G0038,,pending,,,,,澳门,CN082010
