@@ -4,34 +4,5 @@
   "lead": "",
   "status": "in progress",
   "boundaries": "boundaries.json",
-  "notes": "Scope: national (Stortinget, regjeringen), regional (15 fylker) and local (357 kommuner) level. First pass R001 covers prominent supporters across all key layers.",
-  "polls": [
-    {
-      "support": 68,
-      "oppose": 21,
-      "support_text": "About 7 in 10",
-      "scope": "Norway, adults",
-      "question": "Should the richest in Norway contribute more in tax?",
-      "question_original": "Bør de rikeste i Norge bidra med mer skatt?",
-      "pollster": "Sentio Research",
-      "commissioned_by": "Fagforbundet",
-      "fieldwork": "2021-07",
-      "sample": "National sample",
-      "published": "2021-07-18",
-      "url": "https://www.frifagbevegelse.no/nyheter/sju-av-ti-mener-rike-nordmenn-skatter-for-lite/276955"
-    },
-    {
-      "support": 26,
-      "oppose": 50,
-      "scope": "Norway, adults",
-      "question": "Norway should abolish the wealth tax (disagree)",
-      "question_original": "Norge bør avvikle formuesskatten (uenig)",
-      "pollster": "Ipsos",
-      "commissioned_by": "NHO",
-      "fieldwork": "April–June 2026",
-      "sample": "3,000 respondents",
-      "published": "2026-08-02",
-      "url": "https://www.pollofpolls.no/?cmd=Kommentarer&do=vis&kommentarid=3959"
-    }
-  ]
+  "notes": "Scope: national (Stortinget, regjeringen), regional (15 fylker) and local (357 kommuner) level. First pass R001 covers prominent supporters across all key layers. Review 2026-10-24: removed 154 rows that were not evidence of support (see R013); 145 supporters remain."
 }
