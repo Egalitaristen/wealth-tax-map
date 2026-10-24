@@ -14,3 +14,4 @@ wrangler.toml
 *.sqlite3
 community_export*
 .cache/
+data/*/cache/

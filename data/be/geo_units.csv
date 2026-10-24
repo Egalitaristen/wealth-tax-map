@@ -1,0 +1,599 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,Belgium,national,country,,https://www.belgium.be,pending,,,,,,BE
+G0002,Chamber of Representatives,national,legislature,G0001,https://www.dekamer.be,pending,,,,,Federal parliament lower house (Kamer van volksvertegenwoordigers / Chambre des représentants),
+G0003,Senate,national,legislature,G0001,https://www.senate.be,pending,,,,,Federal parliament upper house (Senaat / Sénat),
+G0004,Federal Government,national,executive,G0001,https://www.belgium.be,pending,,,,,Federal Council of Ministers,
+G0005,Flemish Region,region,region,G0001,https://www.vlaanderen.be,pending,,,,,Vlaams Gewest / Flanders,BE2
+G0006,Walloon Region,region,region,G0001,https://www.wallonie.be,pending,,,,,Région wallonne / Wallonia,BE3
+G0007,Brussels-Capital Region,region,region,G0001,https://be.brussels,pending,,,,,Région de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewest,BE1
+G0008,Antwerpen,county,province,G0005,,pending,,,,,,BE21
+G0009,Limburg,county,province,G0005,,pending,,,,,,BE22
+G0010,Oost-Vlaanderen,county,province,G0005,,pending,,,,,,BE23
+G0011,Vlaams-Brabant,county,province,G0005,,pending,,,,,,BE24
+G0012,West-Vlaanderen,county,province,G0005,,pending,,,,,,BE25
+G0013,Brabant wallon,county,province,G0006,,pending,,,,,,BE31
+G0014,Hainaut,county,province,G0006,,pending,,,,,,BE32
+G0015,Liège,county,province,G0006,,pending,,,,,,BE33
+G0016,Luxembourg,county,province,G0006,,pending,,,,,,BE34
+G0017,Namur,county,province,G0006,,pending,,,,,,BE35
+G0018,Aartselaar,council,municipality,G0008,,pending,,,,,NIS 11001; Pop 14890,11001
+G0019,Antwerpen / Anvers,council,municipality,G0008,,pending,,,,,NIS 11002; Pop 544759,11002
+G0020,Boechout,council,municipality,G0008,,pending,,,,,NIS 11004; Pop 13831,11004
+G0021,Boom,council,municipality,G0008,,pending,,,,,NIS 11005; Pop 19431,11005
+G0022,Borsbeek,council,municipality,G0008,,pending,,,,,NIS 11007; Pop 11379,11007
+G0023,Brasschaat,council,municipality,G0008,,pending,,,,,NIS 11008; Pop 38470,11008
+G0024,Brecht,council,municipality,G0008,,pending,,,,,NIS 11009; Pop 30610,11009
+G0025,Edegem,council,municipality,G0008,,pending,,,,,NIS 11013; Pop 23009,11013
+G0026,Essen,council,municipality,G0008,,pending,,,,,NIS 11016; Pop 19630,11016
+G0027,Hemiksem,council,municipality,G0008,,pending,,,,,NIS 11018; Pop 12396,11018
+G0028,Hove (Antwerpen) / Hove (Anvers),council,municipality,G0008,,pending,,,,,NIS 11021; Pop 8406,11021
+G0029,Kalmthout,council,municipality,G0008,,pending,,,,,NIS 11022; Pop 19672,11022
+G0030,Kapellen (Antwerpen) / Kapellen (Anvers),council,municipality,G0008,,pending,,,,,NIS 11023; Pop 27782,11023
+G0031,Kontich,council,municipality,G0008,,pending,,,,,NIS 11024; Pop 21693,11024
+G0032,Lint,council,municipality,G0008,,pending,,,,,NIS 11025; Pop 8505,11025
+G0033,Mortsel,council,municipality,G0008,,pending,,,,,NIS 11029; Pop 26588,11029
+G0034,Niel,council,municipality,G0008,,pending,,,,,NIS 11030; Pop 10966,11030
+G0035,Ranst,council,municipality,G0008,,pending,,,,,NIS 11035; Pop 19776,11035
+G0036,Rumst,council,municipality,G0008,,pending,,,,,NIS 11037; Pop 15536,11037
+G0037,Schelle,council,municipality,G0008,,pending,,,,,NIS 11038; Pop 8614,11038
+G0038,Schilde,council,municipality,G0008,,pending,,,,,NIS 11039; Pop 20319,11039
+G0039,Schoten,council,municipality,G0008,,pending,,,,,NIS 11040; Pop 34641,11040
+G0040,Stabroek,council,municipality,G0008,,pending,,,,,NIS 11044; Pop 18826,11044
+G0041,Wijnegem,council,municipality,G0008,,pending,,,,,NIS 11050; Pop 10580,11050
+G0042,Wommelgem,council,municipality,G0008,,pending,,,,,NIS 11052; Pop 13370,11052
+G0043,Wuustwezel,council,municipality,G0008,,pending,,,,,NIS 11053; Pop 21794,11053
+G0044,Zandhoven,council,municipality,G0008,,pending,,,,,NIS 11054; Pop 13445,11054
+G0045,Zoersel,council,municipality,G0008,,pending,,,,,NIS 11055; Pop 22557,11055
+G0046,Zwijndrecht,council,municipality,G0008,,pending,,,,,NIS 11056; Pop 19580,11056
+G0047,Malle,council,municipality,G0008,,pending,,,,,NIS 11057; Pop 16194,11057
+G0048,Berlaar,council,municipality,G0008,,pending,,,,,NIS 12002; Pop 12061,12002
+G0049,Bonheiden,council,municipality,G0008,,pending,,,,,NIS 12005; Pop 15454,12005
+G0050,Bornem,council,municipality,G0008,,pending,,,,,NIS 12007; Pop 22076,12007
+G0051,Duffel,council,municipality,G0008,,pending,,,,,NIS 12009; Pop 18062,12009
+G0052,Heist-op-den-Berg,council,municipality,G0008,,pending,,,,,NIS 12014; Pop 44505,12014
+G0053,Lier / Lierre,council,municipality,G0008,,pending,,,,,NIS 12021; Pop 38210,12021
+G0054,Mechelen / Malines,council,municipality,G0008,,pending,,,,,NIS 12025; Pop 89313,12025
+G0055,Nijlen,council,municipality,G0008,,pending,,,,,NIS 12026; Pop 23707,12026
+G0056,Putte,council,municipality,G0008,,pending,,,,,NIS 12029; Pop 18914,12029
+G0057,Sint-Katelijne-Waver,council,municipality,G0008,,pending,,,,,NIS 12035; Pop 21792,12035
+G0058,Willebroek,council,municipality,G0008,,pending,,,,,NIS 12040; Pop 28248,12040
+G0059,Puurs-Sint-Amands,council,municipality,G0008,,pending,,,,,NIS 12041; Pop 26957,12041
+G0060,Arendonk,council,municipality,G0008,,pending,,,,,NIS 13001; Pop 13391,13001
+G0061,Baarle-Hertog / Baerle-Duc,council,municipality,G0008,,pending,,,,,NIS 13002; Pop 3001,13002
+G0062,Balen,council,municipality,G0008,,pending,,,,,NIS 13003; Pop 23523,13003
+G0063,Beerse,council,municipality,G0008,,pending,,,,,NIS 13004; Pop 18601,13004
+G0064,Dessel,council,municipality,G0008,,pending,,,,,NIS 13006; Pop 9892,13006
+G0065,Geel,council,municipality,G0008,,pending,,,,,NIS 13008; Pop 42331,13008
+G0066,Grobbendonk,council,municipality,G0008,,pending,,,,,NIS 13010; Pop 11607,13010
+G0067,Herentals,council,municipality,G0008,,pending,,,,,NIS 13011; Pop 28865,13011
+G0068,Herenthout,council,municipality,G0008,,pending,,,,,NIS 13012; Pop 9454,13012
+G0069,Herselt,council,municipality,G0008,,pending,,,,,NIS 13013; Pop 14838,13013
+G0070,Hoogstraten,council,municipality,G0008,,pending,,,,,NIS 13014; Pop 22278,13014
+G0071,Hulshout,council,municipality,G0008,,pending,,,,,NIS 13016; Pop 10594,13016
+G0072,Kasterlee,council,municipality,G0008,,pending,,,,,NIS 13017; Pop 19648,13017
+G0073,Lille,council,municipality,G0008,,pending,,,,,NIS 13019; Pop 17026,13019
+G0074,Meerhout,council,municipality,G0008,,pending,,,,,NIS 13021; Pop 10396,13021
+G0075,Merksplas,council,municipality,G0008,,pending,,,,,NIS 13023; Pop 8883,13023
+G0076,Mol,council,municipality,G0008,,pending,,,,,NIS 13025; Pop 38534,13025
+G0077,Olen,council,municipality,G0008,,pending,,,,,NIS 13029; Pop 12824,13029
+G0078,Oud-Turnhout,council,municipality,G0008,,pending,,,,,NIS 13031; Pop 14828,13031
+G0079,Ravels,council,municipality,G0008,,pending,,,,,NIS 13035; Pop 15514,13035
+G0080,Retie,council,municipality,G0008,,pending,,,,,NIS 13036; Pop 11867,13036
+G0081,Rijkevorsel,council,municipality,G0008,,pending,,,,,NIS 13037; Pop 12561,13037
+G0082,Turnhout,council,municipality,G0008,,pending,,,,,NIS 13040; Pop 47305,13040
+G0083,Vorselaar,council,municipality,G0008,,pending,,,,,NIS 13044; Pop 8034,13044
+G0084,Vosselaar,council,municipality,G0008,,pending,,,,,NIS 13046; Pop 11801,13046
+G0085,Westerlo,council,municipality,G0008,,pending,,,,,NIS 13049; Pop 25625,13049
+G0086,Laakdal,council,municipality,G0008,,pending,,,,,NIS 13053; Pop 16753,13053
+G0087,Anderlecht,council,municipality,G0007,,pending,,,,,NIS 21001; Pop 126581,21001
+G0088,Auderghem / Oudergem,council,municipality,G0007,,pending,,,,,NIS 21002; Pop 35350,21002
+G0089,Berchem-Sainte-Agathe / Sint-Agatha-Berchem,council,municipality,G0007,,pending,,,,,NIS 21003; Pop 25787,21003
+G0090,Bruxelles / Brussel,council,municipality,G0007,,pending,,,,,NIS 21004; Pop 196828,21004
+G0091,Etterbeek,council,municipality,G0007,,pending,,,,,NIS 21005; Pop 49775,21005
+G0092,Evere,council,municipality,G0007,,pending,,,,,NIS 21006; Pop 45234,21006
+G0093,Vorst (Brussel-Hoofdstad) / Forest (Bruxelles-Capitale),council,municipality,G0007,,pending,,,,,NIS 21007; Pop 58044,21007
+G0094,Ganshoren,council,municipality,G0007,,pending,,,,,NIS 21008; Pop 25564,21008
+G0095,Ixelles / Elsene,council,municipality,G0007,,pending,,,,,NIS 21009; Pop 89278,21009
+G0096,Jette,council,municipality,G0007,,pending,,,,,NIS 21010; Pop 54107,21010
+G0097,Koekelberg,council,municipality,G0007,,pending,,,,,NIS 21011; Pop 22648,21011
+G0098,Molenbeek-Saint-Jean / Sint-Jans-Molenbeek,council,municipality,G0007,,pending,,,,,NIS 21012; Pop 98365,21012
+G0099,Saint-Gilles / Sint-Gillis,council,municipality,G0007,,pending,,,,,NIS 21013; Pop 49293,21013
+G0100,Saint-Josse-ten-Noode / Sint-Joost-ten-Node,council,municipality,G0007,,pending,,,,,NIS 21014; Pop 26895,21014
+G0101,Schaerbeek / Schaarbeek,council,municipality,G0007,,pending,,,,,NIS 21015; Pop 130405,21015
+G0102,Uccle / Ukkel,council,municipality,G0007,,pending,,,,,NIS 21016; Pop 86806,21016
+G0103,Watermael-Boitsfort / Watermaal-Bosvoorde,council,municipality,G0007,,pending,,,,,NIS 21017; Pop 25295,21017
+G0104,Woluwe-Saint-Lambert / Sint-Lambrechts-Woluwe,council,municipality,G0007,,pending,,,,,NIS 21018; Pop 60771,21018
+G0105,Woluwe-Saint-Pierre / Sint-Pieters-Woluwe,council,municipality,G0007,,pending,,,,,NIS 21019; Pop 42571,21019
+G0106,Asse,council,municipality,G0011,,pending,,,,,NIS 23002; Pop 35755,23002
+G0107,Beersel,council,municipality,G0011,,pending,,,,,NIS 23003; Pop 26505,23003
+G0108,Bever / Biévène,council,municipality,G0011,,pending,,,,,NIS 23009; Pop 2276,23009
+G0109,Dilbeek,council,municipality,G0011,,pending,,,,,NIS 23016; Pop 44878,23016
+G0110,Galmaarden / Gammerages,council,municipality,G0011,,pending,,,,,NIS 23023; Pop 8931,23023
+G0111,Gooik,council,municipality,G0011,,pending,,,,,NIS 23024; Pop 9527,23024
+G0112,Grimbergen,council,municipality,G0011,,pending,,,,,NIS 23025; Pop 39860,23025
+G0113,Halle (Halle-Vilvoorde) / Hal (Hal-Vilvorde),council,municipality,G0011,,pending,,,,,NIS 23027; Pop 42595,23027
+G0114,Herne,council,municipality,G0011,,pending,,,,,NIS 23032; Pop 6825,23032
+G0115,Hoeilaart,council,municipality,G0011,,pending,,,,,NIS 23033; Pop 11636,23033
+G0116,Kampenhout,council,municipality,G0011,,pending,,,,,NIS 23038; Pop 12528,23038
+G0117,Kapelle-op-den-Bos,council,municipality,G0011,,pending,,,,,NIS 23039; Pop 9703,23039
+G0118,Liedekerke,council,municipality,G0011,,pending,,,,,NIS 23044; Pop 14013,23044
+G0119,Londerzeel,council,municipality,G0011,,pending,,,,,NIS 23045; Pop 19404,23045
+G0120,Machelen (Halle-Vilvoorde) / Machelen (Hal-Vilvorde),council,municipality,G0011,,pending,,,,,NIS 23047; Pop 16576,23047
+G0121,Meise,council,municipality,G0011,,pending,,,,,NIS 23050; Pop 20299,23050
+G0122,Merchtem,council,municipality,G0011,,pending,,,,,NIS 23052; Pop 18029,23052
+G0123,Opwijk,council,municipality,G0011,,pending,,,,,NIS 23060; Pop 14866,23060
+G0124,Overijse,council,municipality,G0011,,pending,,,,,NIS 23062; Pop 25970,23062
+G0125,Pepingen,council,municipality,G0011,,pending,,,,,NIS 23064; Pop 4592,23064
+G0126,Sint-Pieters-Leeuw,council,municipality,G0011,,pending,,,,,NIS 23077; Pop 36525,23077
+G0127,Steenokkerzeel,council,municipality,G0011,,pending,,,,,NIS 23081; Pop 12663,23081
+G0128,Ternat,council,municipality,G0011,,pending,,,,,NIS 23086; Pop 16578,23086
+G0129,Vilvoorde / Vilvorde,council,municipality,G0011,,pending,,,,,NIS 23088; Pop 47445,23088
+G0130,Zaventem,council,municipality,G0011,,pending,,,,,NIS 23094; Pop 36676,23094
+G0131,Zemst,council,municipality,G0011,,pending,,,,,NIS 23096; Pop 23401,23096
+G0132,Roosdaal,council,municipality,G0011,,pending,,,,,NIS 23097; Pop 11958,23097
+G0133,Drogenbos,council,municipality,G0011,,pending,,,,,NIS 23098; Pop 5944,23098
+G0134,Kraainem,council,municipality,G0011,,pending,,,,,NIS 23099; Pop 13962,23099
+G0135,Linkebeek,council,municipality,G0011,,pending,,,,,NIS 23100; Pop 4674,23100
+G0136,Sint-Genesius-Rode / Rhode-Saint-Genèse,council,municipality,G0011,,pending,,,,,NIS 23101; Pop 18693,23101
+G0137,Wemmel,council,municipality,G0011,,pending,,,,,NIS 23102; Pop 18179,23102
+G0138,Wezembeek-Oppem,council,municipality,G0011,,pending,,,,,NIS 23103; Pop 14742,23103
+G0139,Lennik,council,municipality,G0011,,pending,,,,,NIS 23104; Pop 9471,23104
+G0140,Affligem,council,municipality,G0011,,pending,,,,,NIS 23105; Pop 13651,23105
+G0141,Aarschot,council,municipality,G0011,,pending,,,,,NIS 24001; Pop 31138,24001
+G0142,Begijnendijk,council,municipality,G0011,,pending,,,,,NIS 24007; Pop 10615,24007
+G0143,Bekkevoort,council,municipality,G0011,,pending,,,,,NIS 24008; Pop 6771,24008
+G0144,Bertem,council,municipality,G0011,,pending,,,,,NIS 24009; Pop 10242,24009
+G0145,Bierbeek,council,municipality,G0011,,pending,,,,,NIS 24011; Pop 10534,24011
+G0146,Boortmeerbeek,council,municipality,G0011,,pending,,,,,NIS 24014; Pop 13348,24014
+G0147,Boutersem,council,municipality,G0011,,pending,,,,,NIS 24016; Pop 8634,24016
+G0148,Diest,council,municipality,G0011,,pending,,,,,NIS 24020; Pop 24971,24020
+G0149,Geetbets,council,municipality,G0011,,pending,,,,,NIS 24028; Pop 6261,24028
+G0150,Haacht,council,municipality,G0011,,pending,,,,,NIS 24033; Pop 15516,24033
+G0151,Herent,council,municipality,G0011,,pending,,,,,NIS 24038; Pop 23007,24038
+G0152,Hoegaarden,council,municipality,G0011,,pending,,,,,NIS 24041; Pop 6873,24041
+G0153,Holsbeek,council,municipality,G0011,,pending,,,,,NIS 24043; Pop 10207,24043
+G0154,Huldenberg,council,municipality,G0011,,pending,,,,,NIS 24045; Pop 10083,24045
+G0155,Keerbergen,council,municipality,G0011,,pending,,,,,NIS 24048; Pop 13298,24048
+G0156,Kortenaken,council,municipality,G0011,,pending,,,,,NIS 24054; Pop 7949,24054
+G0157,Kortenberg,council,municipality,G0011,,pending,,,,,NIS 24055; Pop 21165,24055
+G0158,Landen,council,municipality,G0011,,pending,,,,,NIS 24059; Pop 16390,24059
+G0159,Leuven / Louvain,council,municipality,G0011,,pending,,,,,NIS 24062; Pop 104009,24062
+G0160,Lubbeek,council,municipality,G0011,,pending,,,,,NIS 24066; Pop 15124,24066
+G0161,Oud-Heverlee,council,municipality,G0011,,pending,,,,,NIS 24086; Pop 11474,24086
+G0162,Rotselaar,council,municipality,G0011,,pending,,,,,NIS 24094; Pop 17672,24094
+G0163,Tervuren,council,municipality,G0011,,pending,,,,,NIS 24104; Pop 23077,24104
+G0164,Tienen / Tirlemont,council,municipality,G0011,,pending,,,,,NIS 24107; Pop 36581,24107
+G0165,Tremelo,council,municipality,G0011,,pending,,,,,NIS 24109; Pop 15417,24109
+G0166,Zoutleeuw / Léau,council,municipality,G0011,,pending,,,,,NIS 24130; Pop 8734,24130
+G0167,Linter,council,municipality,G0011,,pending,,,,,NIS 24133; Pop 7323,24133
+G0168,Scherpenheuvel-Zichem / Montaigu-Zichem,council,municipality,G0011,,pending,,,,,NIS 24134; Pop 24001,24134
+G0169,Tielt-Winge,council,municipality,G0011,,pending,,,,,NIS 24135; Pop 11604,24135
+G0170,Glabbeek,council,municipality,G0011,,pending,,,,,NIS 24137; Pop 5425,24137
+G0171,Beauvechain / Bevekom,council,municipality,G0013,,pending,,,,,NIS 25005; Pop 7233,25005
+G0172,Braine-l'Alleud / Eigenbrakel,council,municipality,G0013,,pending,,,,,NIS 25014; Pop 40461,25014
+G0173,Braine-le-Château / Kasteelbrakel,council,municipality,G0013,,pending,,,,,NIS 25015; Pop 10646,25015
+G0174,Chaumont-Gistoux,council,municipality,G0013,,pending,,,,,NIS 25018; Pop 11818,25018
+G0175,Court-Saint-Etienne,council,municipality,G0013,,pending,,,,,NIS 25023; Pop 10854,25023
+G0176,Genappe / Genepiën,council,municipality,G0013,,pending,,,,,NIS 25031; Pop 16068,25031
+G0177,Grez-Doiceau / Graven,council,municipality,G0013,,pending,,,,,NIS 25037; Pop 14064,25037
+G0178,Incourt,council,municipality,G0013,,pending,,,,,NIS 25043; Pop 5662,25043
+G0179,Ittre / Itter,council,municipality,G0013,,pending,,,,,NIS 25044; Pop 7013,25044
+G0180,Jodoigne / Geldenaken,council,municipality,G0013,,pending,,,,,NIS 25048; Pop 14899,25048
+G0181,La Hulpe / Terhulpen,council,municipality,G0013,,pending,,,,,NIS 25050; Pop 7530,25050
+G0182,Mont-Saint-Guibert,council,municipality,G0013,,pending,,,,,NIS 25068; Pop 8407,25068
+G0183,Nivelles / Nijvel,council,municipality,G0013,,pending,,,,,NIS 25072; Pop 29070,25072
+G0184,Perwijs (Nijvel) / Perwez (Nivelles),council,municipality,G0013,,pending,,,,,NIS 25084; Pop 9704,25084
+G0185,Rixensart,council,municipality,G0013,,pending,,,,,NIS 25091; Pop 23096,25091
+G0186,Tubize / Tubeke,council,municipality,G0013,,pending,,,,,NIS 25105; Pop 28381,25105
+G0187,Villers-la-Ville,council,municipality,G0013,,pending,,,,,NIS 25107; Pop 11114,25107
+G0188,Waterloo,council,municipality,G0013,,pending,,,,,NIS 25110; Pop 30596,25110
+G0189,Wavre / Waver,council,municipality,G0013,,pending,,,,,NIS 25112; Pop 35558,25112
+G0190,Chastre,council,municipality,G0013,,pending,,,,,NIS 25117; Pop 7728,25117
+G0191,Hélécine,council,municipality,G0013,,pending,,,,,NIS 25118; Pop 3848,25118
+G0192,Lasne,council,municipality,G0013,,pending,,,,,NIS 25119; Pop 14198,25119
+G0193,Orp-Jauche,council,municipality,G0013,,pending,,,,,NIS 25120; Pop 9094,25120
+G0194,Ottignies-Louvain-la-Neuve,council,municipality,G0013,,pending,,,,,NIS 25121; Pop 31648,25121
+G0195,Ramillies,council,municipality,G0013,,pending,,,,,NIS 25122; Pop 6700,25122
+G0196,Rebecq,council,municipality,G0013,,pending,,,,,NIS 25123; Pop 11133,25123
+G0197,Walhain,council,municipality,G0013,,pending,,,,,NIS 25124; Pop 7607,25124
+G0198,Beernem,council,municipality,G0012,,pending,,,,,NIS 31003; Pop 16259,31003
+G0199,Blankenberge,council,municipality,G0012,,pending,,,,,NIS 31004; Pop 20559,31004
+G0200,Brugge / Bruges,council,municipality,G0012,,pending,,,,,NIS 31005; Pop 119869,31005
+G0201,Damme,council,municipality,G0012,,pending,,,,,NIS 31006; Pop 11207,31006
+G0202,Jabbeke,council,municipality,G0012,,pending,,,,,NIS 31012; Pop 14832,31012
+G0203,Oostkamp,council,municipality,G0012,,pending,,,,,NIS 31022; Pop 24275,31022
+G0204,Torhout,council,municipality,G0012,,pending,,,,,NIS 31033; Pop 20965,31033
+G0205,Zedelgem,council,municipality,G0012,,pending,,,,,NIS 31040; Pop 23460,31040
+G0206,Zuienkerke,council,municipality,G0012,,pending,,,,,NIS 31042; Pop 2676,31042
+G0207,Knokke-Heist,council,municipality,G0012,,pending,,,,,NIS 31043; Pop 32514,31043
+G0208,Diksmuide / Dixmude,council,municipality,G0012,,pending,,,,,NIS 32003; Pop 17228,32003
+G0209,Houthulst,council,municipality,G0012,,pending,,,,,NIS 32006; Pop 10464,32006
+G0210,Koekelare,council,municipality,G0012,,pending,,,,,NIS 32010; Pop 8827,32010
+G0211,Kortemark,council,municipality,G0012,,pending,,,,,NIS 32011; Pop 12815,32011
+G0212,Lo-Reninge,council,municipality,G0012,,pending,,,,,NIS 32030; Pop 3216,32030
+G0213,Ieper / Ypres,council,municipality,G0012,,pending,,,,,NIS 33011; Pop 35550,33011
+G0214,Mesen / Messines,council,municipality,G0012,,pending,,,,,NIS 33016; Pop 1075,33016
+G0215,Poperinge,council,municipality,G0012,,pending,,,,,NIS 33021; Pop 19921,33021
+G0216,Wervik,council,municipality,G0012,,pending,,,,,NIS 33029; Pop 19209,33029
+G0217,Zonnebeke,council,municipality,G0012,,pending,,,,,NIS 33037; Pop 12705,33037
+G0218,Heuvelland,council,municipality,G0012,,pending,,,,,NIS 33039; Pop 7969,33039
+G0219,Langemark-Poelkapelle,council,municipality,G0012,,pending,,,,,NIS 33040; Pop 8100,33040
+G0220,Vleteren,council,municipality,G0012,,pending,,,,,NIS 33041; Pop 3600,33041
+G0221,Anzegem,council,municipality,G0012,,pending,,,,,NIS 34002; Pop 15148,34002
+G0222,Avelgem,council,municipality,G0012,,pending,,,,,NIS 34003; Pop 10406,34003
+G0223,Deerlijk,council,municipality,G0012,,pending,,,,,NIS 34009; Pop 12670,34009
+G0224,Harelbeke,council,municipality,G0012,,pending,,,,,NIS 34013; Pop 29904,34013
+G0225,Kortrijk / Courtrai,council,municipality,G0012,,pending,,,,,NIS 34022; Pop 80032,34022
+G0226,Kuurne,council,municipality,G0012,,pending,,,,,NIS 34023; Pop 14145,34023
+G0227,Lendelede,council,municipality,G0012,,pending,,,,,NIS 34025; Pop 5881,34025
+G0228,Menen / Menin,council,municipality,G0012,,pending,,,,,NIS 34027; Pop 34417,34027
+G0229,Waregem,council,municipality,G0012,,pending,,,,,NIS 34040; Pop 39997,34040
+G0230,Wevelgem,council,municipality,G0012,,pending,,,,,NIS 34041; Pop 31884,34041
+G0231,Zwevegem,council,municipality,G0012,,pending,,,,,NIS 34042; Pop 25785,34042
+G0232,Spiere-Helkijn / Espierres-Helchin,council,municipality,G0012,,pending,,,,,NIS 34043; Pop 2063,34043
+G0233,Bredene,council,municipality,G0012,,pending,,,,,NIS 35002; Pop 18180,35002
+G0234,Gistel,council,municipality,G0012,,pending,,,,,NIS 35005; Pop 12244,35005
+G0235,Ichtegem,council,municipality,G0012,,pending,,,,,NIS 35006; Pop 14516,35006
+G0236,Middelkerke,council,municipality,G0012,,pending,,,,,NIS 35011; Pop 19855,35011
+G0237,Oostende / Ostende,council,municipality,G0012,,pending,,,,,NIS 35013; Pop 72586,35013
+G0238,Oudenburg,council,municipality,G0012,,pending,,,,,NIS 35014; Pop 9933,35014
+G0239,De Haan,council,municipality,G0012,,pending,,,,,NIS 35029; Pop 12718,35029
+G0240,Hooglede,council,municipality,G0012,,pending,,,,,NIS 36006; Pop 10235,36006
+G0241,Ingelmunster,council,municipality,G0012,,pending,,,,,NIS 36007; Pop 11537,36007
+G0242,Izegem,council,municipality,G0012,,pending,,,,,NIS 36008; Pop 29227,36008
+G0243,Ledegem,council,municipality,G0012,,pending,,,,,NIS 36010; Pop 9779,36010
+G0244,Lichtervelde,council,municipality,G0012,,pending,,,,,NIS 36011; Pop 9319,36011
+G0245,Moorslede,council,municipality,G0012,,pending,,,,,NIS 36012; Pop 11473,36012
+G0246,Roeselare / Roulers,council,municipality,G0012,,pending,,,,,NIS 36015; Pop 66262,36015
+G0247,Staden,council,municipality,G0012,,pending,,,,,NIS 36019; Pop 11677,36019
+G0248,Dentergem,council,municipality,G0012,,pending,,,,,NIS 37002; Pop 8722,37002
+G0249,Meulebeke,council,municipality,G0012,,pending,,,,,NIS 37007; Pop 11123,37007
+G0250,Oostrozebeke,council,municipality,G0012,,pending,,,,,NIS 37010; Pop 8064,37010
+G0251,Pittem,council,municipality,G0012,,pending,,,,,NIS 37011; Pop 6946,37011
+G0252,Ruiselede,council,municipality,G0012,,pending,,,,,NIS 37012; Pop 5484,37012
+G0253,Tielt (Tielt),council,municipality,G0012,,pending,,,,,NIS 37015; Pop 20627,37015
+G0254,Wielsbeke,council,municipality,G0012,,pending,,,,,NIS 37017; Pop 10138,37017
+G0255,Wingene,council,municipality,G0012,,pending,,,,,NIS 37018; Pop 15161,37018
+G0256,Ardooie,council,municipality,G0012,,pending,,,,,NIS 37020; Pop 9355,37020
+G0257,Alveringem,council,municipality,G0012,,pending,,,,,NIS 38002; Pop 5023,38002
+G0258,De Panne / La Panne,council,municipality,G0012,,pending,,,,,NIS 38008; Pop 11021,38008
+G0259,Koksijde,council,municipality,G0012,,pending,,,,,NIS 38014; Pop 21546,38014
+G0260,Nieuwpoort / Nieuport,council,municipality,G0012,,pending,,,,,NIS 38016; Pop 11455,38016
+G0261,Veurne / Furnes,council,municipality,G0012,,pending,,,,,NIS 38025; Pop 12542,38025
+G0262,Aalst (Aalst) / Alost (Alost),council,municipality,G0010,,pending,,,,,NIS 41002; Pop 90995,41002
+G0263,Denderleeuw,council,municipality,G0010,,pending,,,,,NIS 41011; Pop 21056,41011
+G0264,Geraardsbergen / Grammont,council,municipality,G0010,,pending,,,,,NIS 41018; Pop 34999,41018
+G0265,Haaltert,council,municipality,G0010,,pending,,,,,NIS 41024; Pop 19402,41024
+G0266,Herzele,council,municipality,G0010,,pending,,,,,NIS 41027; Pop 18928,41027
+G0267,Lede,council,municipality,G0010,,pending,,,,,NIS 41034; Pop 19310,41034
+G0268,Ninove,council,municipality,G0010,,pending,,,,,NIS 41048; Pop 40363,41048
+G0269,Sint-Lievens-Houtem,council,municipality,G0010,,pending,,,,,NIS 41063; Pop 10687,41063
+G0270,Zottegem,council,municipality,G0010,,pending,,,,,NIS 41081; Pop 28085,41081
+G0271,Erpe-Mere,council,municipality,G0010,,pending,,,,,NIS 41082; Pop 21013,41082
+G0272,Berlare,council,municipality,G0010,,pending,,,,,NIS 42003; Pop 15486,42003
+G0273,Buggenhout,council,municipality,G0010,,pending,,,,,NIS 42004; Pop 14957,42004
+G0274,Dendermonde / Termonde,council,municipality,G0010,,pending,,,,,NIS 42006; Pop 47185,42006
+G0275,Hamme (Dendermonde) / Hamme (Termonde),council,municipality,G0010,,pending,,,,,NIS 42008; Pop 25554,42008
+G0276,Laarne,council,municipality,G0010,,pending,,,,,NIS 42010; Pop 12532,42010
+G0277,Lebbeke,council,municipality,G0010,,pending,,,,,NIS 42011; Pop 20059,42011
+G0278,Waasmunster,council,municipality,G0010,,pending,,,,,NIS 42023; Pop 11296,42023
+G0279,Wetteren,council,municipality,G0010,,pending,,,,,NIS 42025; Pop 26960,42025
+G0280,Wichelen,council,municipality,G0010,,pending,,,,,NIS 42026; Pop 12032,42026
+G0281,Zele,council,municipality,G0010,,pending,,,,,NIS 42028; Pop 21501,42028
+G0282,Assenede,council,municipality,G0010,,pending,,,,,NIS 43002; Pop 14650,43002
+G0283,Eeklo,council,municipality,G0010,,pending,,,,,NIS 43005; Pop 22401,43005
+G0284,Kaprijke,council,municipality,G0010,,pending,,,,,NIS 43007; Pop 6660,43007
+G0285,Maldegem,council,municipality,G0010,,pending,,,,,NIS 43010; Pop 24744,43010
+G0286,Sint-Laureins,council,municipality,G0010,,pending,,,,,NIS 43014; Pop 7016,43014
+G0287,Zelzate,council,municipality,G0010,,pending,,,,,NIS 43018; Pop 13704,43018
+G0288,De Pinte,council,municipality,G0010,,pending,,,,,NIS 44012; Pop 11091,44012
+G0289,Destelbergen,council,municipality,G0010,,pending,,,,,NIS 44013; Pop 19110,44013
+G0290,Evergem,council,municipality,G0010,,pending,,,,,NIS 44019; Pop 36860,44019
+G0291,Gavere,council,municipality,G0010,,pending,,,,,NIS 44020; Pop 13311,44020
+G0292,Gent / Gand,council,municipality,G0010,,pending,,,,,NIS 44021; Pop 269597,44021
+G0293,Lochristi,council,municipality,G0010,,pending,,,,,NIS 44034; Pop 23028,44034
+G0294,Melle,council,municipality,G0010,,pending,,,,,NIS 44040; Pop 11981,44040
+G0295,Merelbeke,council,municipality,G0010,,pending,,,,,NIS 44043; Pop 25229,44043
+G0296,Moerbeke (Gent) / Moerbeke (Gand),council,municipality,G0010,,pending,,,,,NIS 44045; Pop 6758,44045
+G0297,Nazareth,council,municipality,G0010,,pending,,,,,NIS 44048; Pop 12305,44048
+G0298,Oosterzele,council,municipality,G0010,,pending,,,,,NIS 44052; Pop 14062,44052
+G0299,Sint-Martens-Latem,council,municipality,G0010,,pending,,,,,NIS 44064; Pop 8208,44064
+G0300,Wachtebeke,council,municipality,G0010,,pending,,,,,NIS 44073; Pop 7897,44073
+G0301,Zulte,council,municipality,G0010,,pending,,,,,NIS 44081; Pop 16095,44081
+G0302,Deinze,council,municipality,G0010,,pending,,,,,NIS 44083; Pop 45471,44083
+G0303,Aalter,council,municipality,G0010,,pending,,,,,NIS 44084; Pop 29787,44084
+G0304,Lievegem,council,municipality,G0010,,pending,,,,,NIS 44085; Pop 27225,44085
+G0305,Oudenaarde / Audenarde,council,municipality,G0010,,pending,,,,,NIS 45035; Pop 32702,45035
+G0306,Ronse / Renaix,council,municipality,G0010,,pending,,,,,NIS 45041; Pop 27356,45041
+G0307,Brakel,council,municipality,G0010,,pending,,,,,NIS 45059; Pop 15073,45059
+G0308,Kluisbergen,council,municipality,G0010,,pending,,,,,NIS 45060; Pop 6888,45060
+G0309,Wortegem-Petegem,council,municipality,G0010,,pending,,,,,NIS 45061; Pop 6552,45061
+G0310,Horebeke,council,municipality,G0010,,pending,,,,,NIS 45062; Pop 2012,45062
+G0311,Lierde,council,municipality,G0010,,pending,,,,,NIS 45063; Pop 6874,45063
+G0312,Maarkedal,council,municipality,G0010,,pending,,,,,NIS 45064; Pop 6323,45064
+G0313,Zwalm,council,municipality,G0010,,pending,,,,,NIS 45065; Pop 8340,45065
+G0314,Kruisem,council,municipality,G0010,,pending,,,,,NIS 45068; Pop 15961,45068
+G0315,Beveren (Sint-Niklaas) / Beveren (Saint-Nicolas),council,municipality,G0010,,pending,,,,,NIS 46003; Pop 50838,46003
+G0316,Kruibeke,council,municipality,G0010,,pending,,,,,NIS 46013; Pop 17072,46013
+G0317,Lokeren,council,municipality,G0010,,pending,,,,,NIS 46014; Pop 43554,46014
+G0318,Sint-Gillis-Waas,council,municipality,G0010,,pending,,,,,NIS 46020; Pop 20144,46020
+G0319,Sint-Niklaas (Sint-Niklaas) / Saint-Nicolas (Saint-Nicolas),council,municipality,G0010,,pending,,,,,NIS 46021; Pop 81863,46021
+G0320,Stekene,council,municipality,G0010,,pending,,,,,NIS 46024; Pop 19589,46024
+G0321,Temse / Tamise,council,municipality,G0010,,pending,,,,,NIS 46025; Pop 31271,46025
+G0322,Ath / Aat,council,municipality,G0014,,pending,,,,,NIS 51004; Pop 30048,51004
+G0323,Beloeil,council,municipality,G0014,,pending,,,,,NIS 51008; Pop 14244,51008
+G0324,Bernissart,council,municipality,G0014,,pending,,,,,NIS 51009; Pop 11878,51009
+G0325,Brugelette,council,municipality,G0014,,pending,,,,,NIS 51012; Pop 3853,51012
+G0326,Chièvres,council,municipality,G0014,,pending,,,,,NIS 51014; Pop 7168,51014
+G0327,Ellezelles / Elzele,council,municipality,G0014,,pending,,,,,NIS 51017; Pop 5970,51017
+G0328,Flobecq / Vloesberg,council,municipality,G0014,,pending,,,,,NIS 51019; Pop 3434,51019
+G0329,Frasnes-lez-Anvaing,council,municipality,G0014,,pending,,,,,NIS 51065; Pop 12134,51065
+G0330,Enghien / Edingen,council,municipality,G0014,,pending,,,,,NIS 51067; Pop 14509,51067
+G0331,Silly / Opzullik,council,municipality,G0014,,pending,,,,,NIS 51068; Pop 8475,51068
+G0332,Lessines / Lessen,council,municipality,G0014,,pending,,,,,NIS 51069; Pop 18735,51069
+G0333,Chapelle-lez-Herlaimont,council,municipality,G0014,,pending,,,,,NIS 52010; Pop 14839,52010
+G0334,Charleroi,council,municipality,G0014,,pending,,,,,NIS 52011; Pop 204322,52011
+G0335,Châtelet,council,municipality,G0014,,pending,,,,,NIS 52012; Pop 35595,52012
+G0336,Courcelles,council,municipality,G0014,,pending,,,,,NIS 52015; Pop 31337,52015
+G0337,Farciennes,council,municipality,G0014,,pending,,,,,NIS 52018; Pop 11394,52018
+G0338,Fleurus,council,municipality,G0014,,pending,,,,,NIS 52021; Pop 22915,52021
+G0339,Fontaine-l'Evêque,council,municipality,G0014,,pending,,,,,NIS 52022; Pop 18122,52022
+G0340,Gerpinnes,council,municipality,G0014,,pending,,,,,NIS 52025; Pop 12863,52025
+G0341,Montigny-le-Tilleul,council,municipality,G0014,,pending,,,,,NIS 52048; Pop 10141,52048
+G0342,Pont-à-Celles,council,municipality,G0014,,pending,,,,,NIS 52055; Pop 17650,52055
+G0343,Aiseau-Presles,council,municipality,G0014,,pending,,,,,NIS 52074; Pop 10978,52074
+G0344,Les Bons Villers,council,municipality,G0014,,pending,,,,,NIS 52075; Pop 9586,52075
+G0345,Boussu,council,municipality,G0014,,pending,,,,,NIS 53014; Pop 20283,53014
+G0346,Dour,council,municipality,G0014,,pending,,,,,NIS 53020; Pop 16567,53020
+G0347,Frameries,council,municipality,G0014,,pending,,,,,NIS 53028; Pop 21671,53028
+G0348,Hensies,council,municipality,G0014,,pending,,,,,NIS 53039; Pop 6816,53039
+G0349,Jurbise / Jurbeke,council,municipality,G0014,,pending,,,,,NIS 53044; Pop 10868,53044
+G0350,Lens,council,municipality,G0014,,pending,,,,,NIS 53046; Pop 4636,53046
+G0351,Mons / Bergen,council,municipality,G0014,,pending,,,,,NIS 53053; Pop 96358,53053
+G0352,Quaregnon,council,municipality,G0014,,pending,,,,,NIS 53065; Pop 18959,53065
+G0353,Quiévrain,council,municipality,G0014,,pending,,,,,NIS 53068; Pop 6865,53068
+G0354,Saint-Ghislain,council,municipality,G0014,,pending,,,,,NIS 53070; Pop 23743,53070
+G0355,Colfontaine,council,municipality,G0014,,pending,,,,,NIS 53082; Pop 20745,53082
+G0356,Honnelles,council,municipality,G0014,,pending,,,,,NIS 53083; Pop 5176,53083
+G0357,Quévy,council,municipality,G0014,,pending,,,,,NIS 53084; Pop 8168,53084
+G0358,'s Gravenbrakel / Braine-le-Comte,council,municipality,G0014,,pending,,,,,NIS 55004; Pop 23443,55004
+G0359,Le Roeulx,council,municipality,G0014,,pending,,,,,NIS 55035; Pop 8708,55035
+G0360,Soignies / Zinnik,council,municipality,G0014,,pending,,,,,NIS 55040; Pop 29032,55040
+G0361,Ecaussinnes,council,municipality,G0014,,pending,,,,,NIS 55050; Pop 11572,55050
+G0362,Seneffe,council,municipality,G0014,,pending,,,,,NIS 55085; Pop 11624,55085
+G0363,Manage,council,municipality,G0014,,pending,,,,,NIS 55086; Pop 24108,55086
+G0364,Anderlues,council,municipality,G0014,,pending,,,,,NIS 56001; Pop 12809,56001
+G0365,Beaumont,council,municipality,G0014,,pending,,,,,NIS 56005; Pop 7140,56005
+G0366,Chimay,council,municipality,G0014,,pending,,,,,NIS 56016; Pop 9691,56016
+G0367,Erquelinnes,council,municipality,G0014,,pending,,,,,NIS 56022; Pop 10039,56022
+G0368,Froidchapelle,council,municipality,G0014,,pending,,,,,NIS 56029; Pop 4084,56029
+G0369,Lobbes,council,municipality,G0014,,pending,,,,,NIS 56044; Pop 5949,56044
+G0370,Merbes-le-Château,council,municipality,G0014,,pending,,,,,NIS 56049; Pop 4171,56049
+G0371,Momignies,council,municipality,G0014,,pending,,,,,NIS 56051; Pop 5234,56051
+G0372,Thuin,council,municipality,G0014,,pending,,,,,NIS 56078; Pop 14871,56078
+G0373,Ham-sur-Heure-Nalinnes,council,municipality,G0014,,pending,,,,,NIS 56086; Pop 13825,56086
+G0374,Sivry-Rance,council,municipality,G0014,,pending,,,,,NIS 56088; Pop 4871,56088
+G0375,Antoing,council,municipality,G0014,,pending,,,,,NIS 57003; Pop 7623,57003
+G0376,Celles (Doornik) / Celles (Tournai),council,municipality,G0014,,pending,,,,,NIS 57018; Pop 5722,57018
+G0377,Estaimpuis,council,municipality,G0014,,pending,,,,,NIS 57027; Pop 10748,57027
+G0378,Pecq,council,municipality,G0014,,pending,,,,,NIS 57062; Pop 5966,57062
+G0379,Péruwelz,council,municipality,G0014,,pending,,,,,NIS 57064; Pop 17318,57064
+G0380,Rumes,council,municipality,G0014,,pending,,,,,NIS 57072; Pop 5351,57072
+G0381,Tournai / Doornik,council,municipality,G0014,,pending,,,,,NIS 57081; Pop 68554,57081
+G0382,Brunehaut,council,municipality,G0014,,pending,,,,,NIS 57093; Pop 8099,57093
+G0383,Leuze-en-Hainaut,council,municipality,G0014,,pending,,,,,NIS 57094; Pop 14201,57094
+G0384,Mont-de-l'Enclus,council,municipality,G0014,,pending,,,,,NIS 57095; Pop 3879,57095
+G0385,Mouscron / Moeskroen,council,municipality,G0014,,pending,,,,,NIS 57096; Pop 59987,57096
+G0386,Comines-Warneton / Komen-Waasten,council,municipality,G0014,,pending,,,,,NIS 57097; Pop 18391,57097
+G0387,La Louvière,council,municipality,G0014,,pending,,,,,NIS 58001; Pop 81241,58001
+G0388,Binche,council,municipality,G0014,,pending,,,,,NIS 58002; Pop 33651,58002
+G0389,Estinnes,council,municipality,G0014,,pending,,,,,NIS 58003; Pop 7955,58003
+G0390,Morlanwelz,council,municipality,G0014,,pending,,,,,NIS 58004; Pop 19172,58004
+G0391,Amay,council,municipality,G0015,,pending,,,,,NIS 61003; Pop 14531,61003
+G0392,Burdinne,council,municipality,G0015,,pending,,,,,NIS 61010; Pop 3295,61010
+G0393,Clavier,council,municipality,G0015,,pending,,,,,NIS 61012; Pop 4946,61012
+G0394,Ferrières,council,municipality,G0015,,pending,,,,,NIS 61019; Pop 5122,61019
+G0395,Hamoir,council,municipality,G0015,,pending,,,,,NIS 61024; Pop 3780,61024
+G0396,Héron,council,municipality,G0015,,pending,,,,,NIS 61028; Pop 5598,61028
+G0397,Huy / Hoei,council,municipality,G0015,,pending,,,,,NIS 61031; Pop 21706,61031
+G0398,Marchin,council,municipality,G0015,,pending,,,,,NIS 61039; Pop 5612,61039
+G0399,Modave,council,municipality,G0015,,pending,,,,,NIS 61041; Pop 4207,61041
+G0400,Nandrin,council,municipality,G0015,,pending,,,,,NIS 61043; Pop 5745,61043
+G0401,Ouffet,council,municipality,G0015,,pending,,,,,NIS 61048; Pop 2788,61048
+G0402,Verlaine,council,municipality,G0015,,pending,,,,,NIS 61063; Pop 4361,61063
+G0403,Villers-Le-Bouillet,council,municipality,G0015,,pending,,,,,NIS 61068; Pop 6836,61068
+G0404,Wanze,council,municipality,G0015,,pending,,,,,NIS 61072; Pop 14010,61072
+G0405,Anthisnes,council,municipality,G0015,,pending,,,,,NIS 61079; Pop 4220,61079
+G0406,Engis,council,municipality,G0015,,pending,,,,,NIS 61080; Pop 6296,61080
+G0407,Tinlot,council,municipality,G0015,,pending,,,,,NIS 61081; Pop 2777,61081
+G0408,Ans,council,municipality,G0015,,pending,,,,,NIS 62003; Pop 28989,62003
+G0409,Awans,council,municipality,G0015,,pending,,,,,NIS 62006; Pop 9344,62006
+G0410,Aywaille,council,municipality,G0015,,pending,,,,,NIS 62009; Pop 12880,62009
+G0411,Bassenge / Bitsingen,council,municipality,G0015,,pending,,,,,NIS 62011; Pop 9028,62011
+G0412,Beyne-Heusay,council,municipality,G0015,,pending,,,,,NIS 62015; Pop 12018,62015
+G0413,Chaudfontaine,council,municipality,G0015,,pending,,,,,NIS 62022; Pop 20600,62022
+G0414,Comblain-au-Pont,council,municipality,G0015,,pending,,,,,NIS 62026; Pop 5319,62026
+G0415,Dalhem,council,municipality,G0015,,pending,,,,,NIS 62027; Pop 7712,62027
+G0416,Esneux,council,municipality,G0015,,pending,,,,,NIS 62032; Pop 12827,62032
+G0417,Fléron,council,municipality,G0015,,pending,,,,,NIS 62038; Pop 16380,62038
+G0418,Herstal,council,municipality,G0015,,pending,,,,,NIS 62051; Pop 40814,62051
+G0419,Juprelle,council,municipality,G0015,,pending,,,,,NIS 62060; Pop 9733,62060
+G0420,Liège / Luik,council,municipality,G0015,,pending,,,,,NIS 62063; Pop 195778,62063
+G0421,Oupeye,council,municipality,G0015,,pending,,,,,NIS 62079; Pop 25743,62079
+G0422,Saint-Nicolas (Luik) / Saint-Nicolas (Liège),council,municipality,G0015,,pending,,,,,NIS 62093; Pop 24491,62093
+G0423,Seraing,council,municipality,G0015,,pending,,,,,NIS 62096; Pop 64266,62096
+G0424,Soumagne,council,municipality,G0015,,pending,,,,,NIS 62099; Pop 17351,62099
+G0425,Sprimont,council,municipality,G0015,,pending,,,,,NIS 62100; Pop 15141,62100
+G0426,Visé / Wezet,council,municipality,G0015,,pending,,,,,NIS 62108; Pop 18154,62108
+G0427,Grâce-Hollogne,council,municipality,G0015,,pending,,,,,NIS 62118; Pop 23261,62118
+G0428,Blegny,council,municipality,G0015,,pending,,,,,NIS 62119; Pop 13482,62119
+G0429,Flémalle,council,municipality,G0015,,pending,,,,,NIS 62120; Pop 27002,62120
+G0430,Neupré,council,municipality,G0015,,pending,,,,,NIS 62121; Pop 10010,62121
+G0431,Trooz,council,municipality,G0015,,pending,,,,,NIS 62122; Pop 8058,62122
+G0432,Amel / Amblève,council,municipality,G0015,,pending,,,,,NIS 63001; Pop 5612,63001
+G0433,Aubel,council,municipality,G0015,,pending,,,,,NIS 63003; Pop 4252,63003
+G0434,Baelen,council,municipality,G0015,,pending,,,,,NIS 63004; Pop 4487,63004
+G0435,Büllingen / Bullange,council,municipality,G0015,,pending,,,,,NIS 63012; Pop 5544,63012
+G0436,Bütgenbach / Butgenbach,council,municipality,G0015,,pending,,,,,NIS 63013; Pop 5652,63013
+G0437,Dison,council,municipality,G0015,,pending,,,,,NIS 63020; Pop 15260,63020
+G0438,Eupen,council,municipality,G0015,,pending,,,,,NIS 63023; Pop 20093,63023
+G0439,Herve,council,municipality,G0015,,pending,,,,,NIS 63035; Pop 17850,63035
+G0440,Jalhay,council,municipality,G0015,,pending,,,,,NIS 63038; Pop 8777,63038
+G0441,Kelmis / La Calamine,council,municipality,G0015,,pending,,,,,NIS 63040; Pop 11352,63040
+G0442,Lierneux,council,municipality,G0015,,pending,,,,,NIS 63045; Pop 3644,63045
+G0443,Limbourg / Limburg,council,municipality,G0015,,pending,,,,,NIS 63046; Pop 5654,63046
+G0444,Lontzen,council,municipality,G0015,,pending,,,,,NIS 63048; Pop 6058,63048
+G0445,Malmedy,council,municipality,G0015,,pending,,,,,NIS 63049; Pop 12950,63049
+G0446,Olne,council,municipality,G0015,,pending,,,,,NIS 63057; Pop 4142,63057
+G0447,Pepinster,council,municipality,G0015,,pending,,,,,NIS 63058; Pop 9274,63058
+G0448,Raeren,council,municipality,G0015,,pending,,,,,NIS 63061; Pop 11136,63061
+G0449,Sankt Vith / Saint-Vith,council,municipality,G0015,,pending,,,,,NIS 63067; Pop 10071,63067
+G0450,Spa,council,municipality,G0015,,pending,,,,,NIS 63072; Pop 9812,63072
+G0451,Stavelot,council,municipality,G0015,,pending,,,,,NIS 63073; Pop 7271,63073
+G0452,Stoumont,council,municipality,G0015,,pending,,,,,NIS 63075; Pop 3150,63075
+G0453,Theux,council,municipality,G0015,,pending,,,,,NIS 63076; Pop 12052,63076
+G0454,Verviers,council,municipality,G0015,,pending,,,,,NIS 63079; Pop 55770,63079
+G0455,Waimes / Weismes,council,municipality,G0015,,pending,,,,,NIS 63080; Pop 7563,63080
+G0456,Welkenraedt,council,municipality,G0015,,pending,,,,,NIS 63084; Pop 10464,63084
+G0457,Trois-Ponts,council,municipality,G0015,,pending,,,,,NIS 63086; Pop 2547,63086
+G0458,Burg-Reuland,council,municipality,G0015,,pending,,,,,NIS 63087; Pop 3961,63087
+G0459,Plombières,council,municipality,G0015,,pending,,,,,NIS 63088; Pop 10771,63088
+G0460,Thimister-Clermont,council,municipality,G0015,,pending,,,,,NIS 63089; Pop 5587,63089
+G0461,Berloz,council,municipality,G0015,,pending,,,,,NIS 64008; Pop 3344,64008
+G0462,Braives,council,municipality,G0015,,pending,,,,,NIS 64015; Pop 6554,64015
+G0463,Crisnée,council,municipality,G0015,,pending,,,,,NIS 64021; Pop 3539,64021
+G0464,Donceel,council,municipality,G0015,,pending,,,,,NIS 64023; Pop 3119,64023
+G0465,Fexhe-le-Haut-Clocher,council,municipality,G0015,,pending,,,,,NIS 64025; Pop 3426,64025
+G0466,Geer,council,municipality,G0015,,pending,,,,,NIS 64029; Pop 3558,64029
+G0467,Hannut / Hannuit,council,municipality,G0015,,pending,,,,,NIS 64034; Pop 17134,64034
+G0468,Lincent / Lijsem,council,municipality,G0015,,pending,,,,,NIS 64047; Pop 3375,64047
+G0469,Oreye / Oerle,council,municipality,G0015,,pending,,,,,NIS 64056; Pop 4028,64056
+G0470,Remicourt,council,municipality,G0015,,pending,,,,,NIS 64063; Pop 6009,64063
+G0471,Saint-Georges-sur-Meuse,council,municipality,G0015,,pending,,,,,NIS 64065; Pop 7230,64065
+G0472,Waremme / Borgworm,council,municipality,G0015,,pending,,,,,NIS 64074; Pop 15489,64074
+G0473,Wasseiges,council,municipality,G0015,,pending,,,,,NIS 64075; Pop 3138,64075
+G0474,Faimes,council,municipality,G0015,,pending,,,,,NIS 64076; Pop 4128,64076
+G0475,As,council,municipality,G0009,,pending,,,,,NIS 71002; Pop 8259,71002
+G0476,Beringen,council,municipality,G0009,,pending,,,,,NIS 71004; Pop 48353,71004
+G0477,Diepenbeek,council,municipality,G0009,,pending,,,,,NIS 71011; Pop 19607,71011
+G0478,Genk,council,municipality,G0009,,pending,,,,,NIS 71016; Pop 67877,71016
+G0479,Gingelom,council,municipality,G0009,,pending,,,,,NIS 71017; Pop 8732,71017
+G0480,Halen,council,municipality,G0009,,pending,,,,,NIS 71020; Pop 9545,71020
+G0481,Hasselt,council,municipality,G0009,,pending,,,,,NIS 71022; Pop 80828,71022
+G0482,Herk-de-Stad / Herck-la-Ville,council,municipality,G0009,,pending,,,,,NIS 71024; Pop 12841,71024
+G0483,Leopoldsburg / Bourg-Léopold,council,municipality,G0009,,pending,,,,,NIS 71034; Pop 16607,71034
+G0484,Lummen,council,municipality,G0009,,pending,,,,,NIS 71037; Pop 15320,71037
+G0485,Nieuwerkerken (Hasselt),council,municipality,G0009,,pending,,,,,NIS 71045; Pop 7295,71045
+G0486,Sint-Truiden / Saint-Trond,council,municipality,G0009,,pending,,,,,NIS 71053; Pop 41469,71053
+G0487,Tessenderlo,council,municipality,G0009,,pending,,,,,NIS 71057; Pop 19011,71057
+G0488,Zonhoven,council,municipality,G0009,,pending,,,,,NIS 71066; Pop 21845,71066
+G0489,Zutendaal,council,municipality,G0009,,pending,,,,,NIS 71067; Pop 7384,71067
+G0490,Ham,council,municipality,G0009,,pending,,,,,NIS 71069; Pop 11338,71069
+G0491,Heusden-Zolder,council,municipality,G0009,,pending,,,,,NIS 71070; Pop 35017,71070
+G0492,Bocholt,council,municipality,G0009,,pending,,,,,NIS 72003; Pop 13753,72003
+G0493,Bree,council,municipality,G0009,,pending,,,,,NIS 72004; Pop 16967,72004
+G0494,Kinrooi,council,municipality,G0009,,pending,,,,,NIS 72018; Pop 12406,72018
+G0495,Lommel,council,municipality,G0009,,pending,,,,,NIS 72020; Pop 34913,72020
+G0496,Maaseik,council,municipality,G0009,,pending,,,,,NIS 72021; Pop 25823,72021
+G0497,Peer,council,municipality,G0009,,pending,,,,,NIS 72030; Pop 16585,72030
+G0498,Hamont-Achel,council,municipality,G0009,,pending,,,,,NIS 72037; Pop 14507,72037
+G0499,Hechtel-Eksel,council,municipality,G0009,,pending,,,,,NIS 72038; Pop 12965,72038
+G0500,Houthalen-Helchteren,council,municipality,G0009,,pending,,,,,NIS 72039; Pop 30896,72039
+G0501,Dilsen-Stokkem,council,municipality,G0009,,pending,,,,,NIS 72041; Pop 21346,72041
+G0502,Oudsbergen,council,municipality,G0009,,pending,,,,,NIS 72042; Pop 23875,72042
+G0503,Pelt,council,municipality,G0009,,pending,,,,,NIS 72043; Pop 34433,72043
+G0504,Alken,council,municipality,G0009,,pending,,,,,NIS 73001; Pop 11918,73001
+G0505,Bilzen,council,municipality,G0009,,pending,,,,,NIS 73006; Pop 32782,73006
+G0506,Borgloon / Looz,council,municipality,G0009,,pending,,,,,NIS 73009; Pop 11580,73009
+G0507,Heers,council,municipality,G0009,,pending,,,,,NIS 73022; Pop 7593,73022
+G0508,Herstappe,council,municipality,G0009,,pending,,,,,NIS 73028; Pop 76,73028
+G0509,Hoeselt,council,municipality,G0009,,pending,,,,,NIS 73032; Pop 10080,73032
+G0510,Kortessem,council,municipality,G0009,,pending,,,,,NIS 73040; Pop 8757,73040
+G0511,Lanaken,council,municipality,G0009,,pending,,,,,NIS 73042; Pop 26366,73042
+G0512,Riemst,council,municipality,G0009,,pending,,,,,NIS 73066; Pop 16896,73066
+G0513,Tongeren / Tongres,council,municipality,G0009,,pending,,,,,NIS 73083; Pop 32138,73083
+G0514,Wellen,council,municipality,G0009,,pending,,,,,NIS 73098; Pop 7490,73098
+G0515,Maasmechelen,council,municipality,G0009,,pending,,,,,NIS 73107; Pop 40219,73107
+G0516,Voeren / Fourons,council,municipality,G0009,,pending,,,,,NIS 73109; Pop 4406,73109
+G0517,Arlon / Aarlen,council,municipality,G0016,,pending,,,,,NIS 81001; Pop 31310,81001
+G0518,Attert,council,municipality,G0016,,pending,,,,,NIS 81003; Pop 5797,81003
+G0519,Aubange,council,municipality,G0016,,pending,,,,,NIS 81004; Pop 17845,81004
+G0520,Martelange,council,municipality,G0016,,pending,,,,,NIS 81013; Pop 2064,81013
+G0521,Messancy,council,municipality,G0016,,pending,,,,,NIS 81015; Pop 8549,81015
+G0522,Bastogne / Bastenaken,council,municipality,G0016,,pending,,,,,NIS 82003; Pop 16921,82003
+G0523,Bertogne,council,municipality,G0016,,pending,,,,,NIS 82005; Pop 3767,82005
+G0524,Fauvillers,council,municipality,G0016,,pending,,,,,NIS 82009; Pop 2453,82009
+G0525,Houffalize,council,municipality,G0016,,pending,,,,,NIS 82014; Pop 5307,82014
+G0526,Vielsalm,council,municipality,G0016,,pending,,,,,NIS 82032; Pop 7940,82032
+G0527,Vaux-sur-Sûre,council,municipality,G0016,,pending,,,,,NIS 82036; Pop 6269,82036
+G0528,Gouvy,council,municipality,G0016,,pending,,,,,NIS 82037; Pop 5474,82037
+G0529,Sainte-Ode,council,municipality,G0016,,pending,,,,,NIS 82038; Pop 2720,82038
+G0530,Durbuy,council,municipality,G0016,,pending,,,,,NIS 83012; Pop 11506,83012
+G0531,Erezée,council,municipality,G0016,,pending,,,,,NIS 83013; Pop 3345,83013
+G0532,Hotton,council,municipality,G0016,,pending,,,,,NIS 83028; Pop 5706,83028
+G0533,La Roche-en-Ardenne,council,municipality,G0016,,pending,,,,,NIS 83031; Pop 4100,83031
+G0534,Marche-en-Famenne,council,municipality,G0016,,pending,,,,,NIS 83034; Pop 17972,83034
+G0535,Nassogne,council,municipality,G0016,,pending,,,,,NIS 83040; Pop 5735,83040
+G0536,Rendeux,council,municipality,G0016,,pending,,,,,NIS 83044; Pop 2707,83044
+G0537,Tenneville,council,municipality,G0016,,pending,,,,,NIS 83049; Pop 2881,83049
+G0538,Manhay,council,municipality,G0016,,pending,,,,,NIS 83055; Pop 3715,83055
+G0539,Bertrix,council,municipality,G0016,,pending,,,,,NIS 84009; Pop 9017,84009
+G0540,Bouillon,council,municipality,G0016,,pending,,,,,NIS 84010; Pop 5377,84010
+G0541,Daverdisse,council,municipality,G0016,,pending,,,,,NIS 84016; Pop 1426,84016
+G0542,Herbeumont,council,municipality,G0016,,pending,,,,,NIS 84029; Pop 1750,84029
+G0543,Léglise,council,municipality,G0016,,pending,,,,,NIS 84033; Pop 5839,84033
+G0544,Libin,council,municipality,G0016,,pending,,,,,NIS 84035; Pop 5351,84035
+G0545,Neufchâteau (Neufchâteau),council,municipality,G0016,,pending,,,,,NIS 84043; Pop 8260,84043
+G0546,Paliseul,council,municipality,G0016,,pending,,,,,NIS 84050; Pop 5530,84050
+G0547,Saint-Hubert,council,municipality,G0016,,pending,,,,,NIS 84059; Pop 5693,84059
+G0548,Tellin,council,municipality,G0016,,pending,,,,,NIS 84068; Pop 2539,84068
+G0549,Wellin,council,municipality,G0016,,pending,,,,,NIS 84075; Pop 3147,84075
+G0550,Libramont-Chevigny,council,municipality,G0016,,pending,,,,,NIS 84077; Pop 11972,84077
+G0551,Chiny,council,municipality,G0016,,pending,,,,,NIS 85007; Pop 5308,85007
+G0552,Etalle,council,municipality,G0016,,pending,,,,,NIS 85009; Pop 6024,85009
+G0553,Florenville,council,municipality,G0016,,pending,,,,,NIS 85011; Pop 5787,85011
+G0554,Meix-devant-Virton,council,municipality,G0016,,pending,,,,,NIS 85024; Pop 2819,85024
+G0555,Musson,council,municipality,G0016,,pending,,,,,NIS 85026; Pop 4668,85026
+G0556,Saint-Léger (Virton),council,municipality,G0016,,pending,,,,,NIS 85034; Pop 3716,85034
+G0557,Tintigny,council,municipality,G0016,,pending,,,,,NIS 85039; Pop 4605,85039
+G0558,Virton,council,municipality,G0016,,pending,,,,,NIS 85045; Pop 11368,85045
+G0559,Habay,council,municipality,G0016,,pending,,,,,NIS 85046; Pop 8723,85046
+G0560,Rouvroy,council,municipality,G0016,,pending,,,,,NIS 85047; Pop 2144,85047
+G0561,Anhée,council,municipality,G0017,,pending,,,,,NIS 91005; Pop 7135,91005
+G0562,Beauraing,council,municipality,G0017,,pending,,,,,NIS 91013; Pop 9490,91013
+G0563,Bièvre,council,municipality,G0017,,pending,,,,,NIS 91015; Pop 3476,91015
+G0564,Ciney,council,municipality,G0017,,pending,,,,,NIS 91030; Pop 17183,91030
+G0565,Dinant,council,municipality,G0017,,pending,,,,,NIS 91034; Pop 13328,91034
+G0566,Gedinne,council,municipality,G0017,,pending,,,,,NIS 91054; Pop 4681,91054
+G0567,Hamois,council,municipality,G0017,,pending,,,,,NIS 91059; Pop 7469,91059
+G0568,Havelange,council,municipality,G0017,,pending,,,,,NIS 91064; Pop 5428,91064
+G0569,Houyet,council,municipality,G0017,,pending,,,,,NIS 91072; Pop 5183,91072
+G0570,Onhaye,council,municipality,G0017,,pending,,,,,NIS 91103; Pop 3231,91103
+G0571,Rochefort,council,municipality,G0017,,pending,,,,,NIS 91114; Pop 12716,91114
+G0572,Somme-Leuze,council,municipality,G0017,,pending,,,,,NIS 91120; Pop 6099,91120
+G0573,Yvoir,council,municipality,G0017,,pending,,,,,NIS 91141; Pop 9136,91141
+G0574,Hastière,council,municipality,G0017,,pending,,,,,NIS 91142; Pop 6148,91142
+G0575,Vresse-sur-Semois,council,municipality,G0017,,pending,,,,,NIS 91143; Pop 2470,91143
+G0576,Andenne,council,municipality,G0017,,pending,,,,,NIS 92003; Pop 28187,92003
+G0577,Assesse,council,municipality,G0017,,pending,,,,,NIS 92006; Pop 7325,92006
+G0578,Eghezée,council,municipality,G0017,,pending,,,,,NIS 92035; Pop 16866,92035
+G0579,Floreffe,council,municipality,G0017,,pending,,,,,NIS 92045; Pop 8082,92045
+G0580,Fosses-la-Ville,council,municipality,G0017,,pending,,,,,NIS 92048; Pop 10418,92048
+G0581,Gesves,council,municipality,G0017,,pending,,,,,NIS 92054; Pop 7481,92054
+G0582,Mettet,council,municipality,G0017,,pending,,,,,NIS 92087; Pop 13529,92087
+G0583,Namur / Namen,council,municipality,G0017,,pending,,,,,NIS 92094; Pop 114142,92094
+G0584,Ohey,council,municipality,G0017,,pending,,,,,NIS 92097; Pop 5226,92097
+G0585,Profondeville,council,municipality,G0017,,pending,,,,,NIS 92101; Pop 12318,92101
+G0586,Sombreffe,council,municipality,G0017,,pending,,,,,NIS 92114; Pop 8388,92114
+G0587,Sambreville,council,municipality,G0017,,pending,,,,,NIS 92137; Pop 28615,92137
+G0588,Fernelmont,council,municipality,G0017,,pending,,,,,NIS 92138; Pop 8210,92138
+G0589,Jemeppe-sur-Sambre,council,municipality,G0017,,pending,,,,,NIS 92140; Pop 19225,92140
+G0590,La Bruyère,council,municipality,G0017,,pending,,,,,NIS 92141; Pop 9351,92141
+G0591,Gembloux,council,municipality,G0017,,pending,,,,,NIS 92142; Pop 26496,92142
+G0592,Cerfontaine,council,municipality,G0017,,pending,,,,,NIS 93010; Pop 4991,93010
+G0593,Couvin,council,municipality,G0017,,pending,,,,,NIS 93014; Pop 13907,93014
+G0594,Doische,council,municipality,G0017,,pending,,,,,NIS 93018; Pop 2952,93018
+G0595,Florennes,council,municipality,G0017,,pending,,,,,NIS 93022; Pop 11378,93022
+G0596,Philippeville,council,municipality,G0017,,pending,,,,,NIS 93056; Pop 9521,93056
+G0597,Walcourt,council,municipality,G0017,,pending,,,,,NIS 93088; Pop 18465,93088
+G0598,Viroinval,council,municipality,G0017,,pending,,,,,NIS 93090; Pop 5649,93090

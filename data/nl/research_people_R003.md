@@ -1,0 +1,31 @@
+# Netherlands people sweep R003
+
+15 new public people staged; 12 A and 3 B evidence rows. All remain verified=n pending independent checking. No shared CSVs changed. Sources were opened in full via web reader, except Stek, Maina and Albert where direct public-page fetch succeeded after reader failure. All dates are source publication dates, not upload-path dates.
+
+## Source and identity notes
+
+- P1 David Hollanders: original Spanning October 2015, printed pp8–9 / PDF indices7–8. Author credit on p8. PDF text read; rendering/page screenshot still needed for final independent PDF check.
+- P2 Rob Mollink: original Spanning February 2016, printed pp18–19 / PDF indices17–18. Author and parliamentary finance staff role on p19. Typed campaigner as a published policy advocate; no inferred tax-law qualification. PDF text read; rendering/page screenshot still needed for final independent PDF check.
+- P3 Dick Timmer: Amnesty Wordt Vervolgd original interview dated 5 June 2023, explicit wealth-cap advocate. Opponent Marcel Tak not added. Publisher identity: https://www.singeluitgeverijen.nl/auteur/dick-timmer/ ; own media index https://dicktimmer.com/media/ .
+- P4 Sander Heijne: NPO interview dated 4 June 2025. Page explicitly names Sander (not Bas). Quotation is short and context-dependent: full preceding paragraph proposes EUR10m ceiling. Consider expanding the quote within the 25-word source allowance if desired.
+- P5 Derk Stegeman: Stek original column begins Prinsjesdag 2026; no exact day exposed, so date=2026. Names a substantial wealth tax in own voice and raises a wealth maximum, but starts from Box3 debate: retain B and contextual caveat. Identity source: https://www.stekdenhaag.nl/files/derk-interv-202312-dh-centraal-interview-3pp.pdf (Den Haag Centraal 7 December 2023 interview, born1966, minister/Stek director). Cellist and historical same-name people are different.
+- P6/P7 Maarten Keune and Paul de Beer: joint original UvA repository PDF, S&D volume77 number3 June2020, printed p16 / PDF index4. Source is an authored recommendation, not merely their research. Quote repeated for both authors totals14 words, within aggregate25. PDF text read; rendering/page screenshot still needed for final independent PDF check.
+- P8 Henry Meijer: NLFiscaal original publisher author abstract, 14 September2026, NLF-W2026/33. Full article paywalled; free abstract itself explicitly recommends broad wealth tax. Role corroboration https://www.taxlive.nl/nl/columnisten/henry-meijer/ .
+- P9 Fons Burger: original Joop opinion dated10 August2020. Direct approval sentence follows Piketty progressive wealth-tax proposal including2%. Own public bio https://www.fonsburger.com/about/ .
+- P10 Jean-Paul Fonteijn: original Joop opinion11 August2026, author explicitly explains founding Superrijkenbelasting. No inference from campaign membership. Public author profile https://www.bnnvara.nl/joop/personen/F/jean-paul-fonteijn .
+- P11 Jan Soons: original Joop opinion21 April2026 explicitly endorses Reinier Kooiman broad8%annualwealthtax, gradualtransition. Public jurist/socialeconomist profile https://www.bnnvara.nl/joop/personen/S/jan-soons ; publisher bio https://www.elikser.nl/auteur/jan-soons/ . Same-name1981death belongs to another person.
+- P12 Maina van der Zwan: original Joop dated24 January2012,3%onwealthiest10%stockEUR700bn, estimatedannualyieldEUR21bn. Original direct-fetch confirms date/byline/text. Historical publicrolefromarticle.
+- P13 Eduard de Jong: actual public ProudtoPayMore2024 letter signature reads Eduard de Jong (NL). Identity resolved beyond initials: https://www.sit.fraunhofer.de/fileadmin/dokumente/sonstiges/Laudatio_WS2017_de-Jong.pdf?_=1487843406 establishes Dutch public inventor/entrepreneur; https://www.pureluxe.nl/2025/01/miljonairs-meer-belasting-betalen/ dated23January2025 explicitly identifies the millionaire letter signer as smart-card software inventor. Existing exclusion X0008 should now be reviewed/resolved. Original2024 letter date17January2024; signatory page public, not private petition.
+- P14 Michiel Spanjers: NLFiscaal original complete publication3July2025. Startpunt: vermogen als grondslag section explicitly reiterates emergency wealth tax andSpanishvariant. Own page prints full first name and initialsM.P.A.; no identity inference needed.
+- P15 Philippe Albert: original NLFiscaal full opinion direct-fetched, publication5January2022, NLF Opinie2022/1. Actual stock tax0.5%above500k is expressly separated from gains-tax proposal, so not generic Box3-income advocacy. Current publisher authorprofile https://www.nlfiscaal.nl/nlfiscaal-author/ALBERT_PGH confirms Nyenrode/BakerTilly and2026publications; unrelatedFrenchdeathrecords not him. Corroborating ownpublisher account https://www.taxlive.nl/nl/documenten/nieuws/fiscaal-experts-voorkom-nieuw-rechtsherstel-en-voer-meteen-vermogensbelasting-in/ dated26August2022.
+
+Alive checks: exact-name obituary/death searches completed for stagedpeople; no matching record found. Public2025/2026activity supports identity where available. No death narration written into actor notes.
+
+## Search coverage and next leads
+
+Searched Dutch economic/academic, wealthy-letter, faith, commentator and tax-professional routes. Search engines used for discovery; only opened originals used for staged evidence. Initial Exa route was unavailable, so web reader/direct original fetching used. Original dates and definitions were checked. No private petition signers imported.
+
+Unresolved/high-yield: Thomas Piketty Netherlands parliamentary testimony2014/2020; Mirjam de Rijk original book sample rather than secondaryreview; Sweder van Wijnbergen February2026radio transcript; Arnoud Boot BNR December2024video transcript; wealth-cap campaign named endorsers with public own statements. Wiemer Salverda and Irene van Staveren searches found inequality research and generic gains language but no safely qualifying original yet. Laurens Wijtvliet2014 article appears critical of simplistic tax inference; do not add without reading full original. Distinguish all regular Box3income/gains changes from actualstocktax.
+
+The lane is substantial but not exhaustive. Parent should run independentquote checks and ensure PDF page rendering before marking verified.
+

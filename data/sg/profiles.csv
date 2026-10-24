@@ -1,0 +1,42 @@
+profile_id,actor_id,platform,url,source,checked
+P00001,A0001,website,https://www.jamuslim.net,actors.csv website column,2026-10-23
+P00002,A0002,website,https://www.wp.sg,actors.csv website column,2026-10-23
+P00003,A0003,website,https://www.wp.sg,actors.csv website column,2026-10-23
+P00004,A0004,website,https://www.wp.sg,actors.csv website column,2026-10-23
+P00005,A0005,website,https://www.pap.org.sg,actors.csv website column,2026-10-23
+P00006,A0006,website,https://psp.org.sg,actors.csv website column,2026-10-23
+P00007,A0007,website,https://reddotunited.sg,actors.csv website column,2026-10-23
+P00008,A0009,website,https://www.suss.edu.sg,actors.csv website column,2026-10-23
+P00009,A0011,website,https://www.aware.org.sg,actors.csv website column,2026-10-23
+P00010,A0001,x,https://x.com/jamuslim,Wikidata Q96882723,2026-10-23
+P00011,A0001,instagram,https://www.instagram.com/jamuslim/,Wikidata Q96882723,2026-10-23
+P00012,A0001,facebook,https://www.facebook.com/jamus.lim,Wikidata Q96882723,2026-10-23
+P00013,A0001,linkedin,https://www.linkedin.com/in/jamuslim/,Wikidata Q96882723,2026-10-23
+P00014,A0001,wikipedia,https://en.wikipedia.org/wiki/Jamus_Lim,Wikidata Q96882723,2026-10-23
+P00015,A0002,x,https://x.com/wpsg,Wikidata Q2299911,2026-10-23
+P00016,A0002,instagram,https://www.instagram.com/wpsgp/,Wikidata Q2299911,2026-10-23
+P00017,A0002,facebook,https://www.facebook.com/workersparty,Wikidata Q2299911,2026-10-23
+P00018,A0002,youtube,https://www.youtube.com/channel/UCkM5bLg6YPPMUrIJGBJilIw,Wikidata Q2299911,2026-10-23
+P00019,A0002,tiktok,https://www.tiktok.com/@thehammertok,Wikidata Q2299911,2026-10-23
+P00020,A0002,wikipedia,https://en.wikipedia.org/wiki/Workers%27_Party_%28Singapore%29,Wikidata Q2299911,2026-10-23
+P00021,A0003,facebook,https://www.facebook.com/pritam.eunos,Wikidata Q7245929,2026-10-23
+P00022,A0003,wikipedia,https://en.wikipedia.org/wiki/Pritam_Singh,Wikidata Q7245929,2026-10-23
+P00023,A0004,instagram,https://www.instagram.com/chuakhengwee/,Wikidata Q97162298,2026-10-23
+P00024,A0004,facebook,https://www.facebook.com/ChuaKhengWee,Wikidata Q97162298,2026-10-23
+P00025,A0004,wikipedia,https://en.wikipedia.org/wiki/Louis_Chua,Wikidata Q97162298,2026-10-23
+P00026,A0005,wikipedia,https://en.wikipedia.org/wiki/Neil_Cazares-Thomas,Wikidata Q21005298,2026-10-23
+P00027,A0006,x,https://x.com/ProgressSgParty,Wikidata Q66120569,2026-10-23
+P00028,A0006,instagram,https://www.instagram.com/progresssingaporeparty/,Wikidata Q66120569,2026-10-23
+P00029,A0006,facebook,https://www.facebook.com/progresssingaporepartyofficial,Wikidata Q66120569,2026-10-23
+P00030,A0006,youtube,https://www.youtube.com/channel/UCEXEs-Wnt5Y7Z5fotCyBIGQ,Wikidata Q66120569,2026-10-23
+P00031,A0006,wikipedia,https://en.wikipedia.org/wiki/Progress_Singapore_Party,Wikidata Q66120569,2026-10-23
+P00032,A0007,wikipedia,https://en.wikipedia.org/wiki/Red_Dot_United,Wikidata Q96630776,2026-10-23
+P00033,A0011,wikipedia,https://en.wikipedia.org/wiki/Association_of_Women_for_Action_and_Research,Wikidata Q4810131,2026-10-23
+P00052,A0018,website,https://economics.smu.edu.sg/faculty/profile/9634/hoon-hian-teck,actors.csv website column,2026-10-23
+P00067,A0024,website,https://workersmakepossible.substack.com,actors.csv website column,2026-10-23
+P00068,A0025,website,https://www.sgclimaterally.com,actors.csv website column,2026-10-23
+P00069,A0026,website,https://lkyspp.nus.edu.sg/our-people/faculty/ramkishen-s-rajan,actors.csv website column,2026-10-23
+P00136,A0079,website,https://www.ricemedia.co,actors.csv website column,2026-10-23
+P00137,A0080,website,https://workersmakepossible.wordpress.com,actors.csv website column,2026-10-23
+P00138,A0081,website,https://workersmakepossible.wordpress.com,actors.csv website column,2026-10-23
+P00141,A0081,wikipedia,https://en.wikipedia.org/wiki/Kokila_Annamalai,Wikidata Q136126268,2026-10-23

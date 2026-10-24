@@ -1,0 +1,117 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0001,A0006,A0005,member_of,,,Fagforbundet is the largest member union of LO
+L0002,A0007,A0001,leads,,,Kirsti Bergstø is leader of Sosialistisk Venstreparti
+L0003,A0014,A0003,leads,,,Trygve Slagsvold Vedum is leader of Senterpartiet
+L0004,A0015,A0002,leads,,,Jonas Gahr Støre is leader of Arbeiderpartiet
+L0005,A0016,A0001,member_of,,,Kari Elisabeth Kaski is chief finance spokesperson and MP for SV
+L0006,A0017,A0024,member_of,,,Mímir Kristjánsson is chief finance spokesperson and MP for Rødt
+L0007,A0008,A0024,leads,,,Marie Sneve Martinussen is leader of Rødt
+L0008,A0009,A0024,member_of,,,Charlotte Therkelsen is deputy leader of Rødt
+L0009,A0018,A0004,member_of,,,Lan Marie Berg is MP and former deputy leader of MDG
+L0010,A0022,A0005,member_of,,,Fellesforbundet is the largest private-sector member union of LO
+L0011,A0023,A0022,leads,,,Jørn Eggum was leader of Fellesforbundet
+L0012,A0025,A0002,member_of,,,Tuva Moflag is MP and finance committee chair for Arbeiderpartiet
+L0013,A0026,A0003,member_of,,,Geir Pollestad is MP and minister for Senterpartiet
+L0014,A0030,A0005,member_of,,,Norsk Tjenestemannslag is an affiliated national union of LO
+L0015,A0031,A0030,leads,,,Kjersti Barsok is president of Norsk Tjenestemannslag
+L0114,A0131,A0005,member_of,E00131,https://www.lo.no/om-lo/ledelsen/peggy-hessen-folsvik/,President of Landsorganisasjonen i Norge (LO)
+L0115,A0132,A0005,member_of,E00132,https://www.lo.no/om-lo/ledelsen/kine-asper-vistnes/,First Deputy Leader of Landsorganisasjonen i Norge (LO)
+L0116,A0133,A0002,member_of,E00133,https://auf.no/om-oss/,Youth wing of Arbeiderpartiet
+L0117,A0134,A0133,leads,E00134,https://auf.no/sentralstyret/gaute-borstad-skjervo/,Leader of Arbeidernes Ungdomsfylking (AUF)
+L0118,A0135,A0001,member_of,E00135,https://su.no/om-oss/,Youth wing of Sosialistisk Venstreparti
+L0119,A0136,A0024,member_of,E00136,https://www.xn--rdungdom-54a.no/om-oss,Youth wing of Rødt
+L0120,A0137,A0004,member_of,E00137,https://gronnungdom.no/om-oss/,Youth wing of Miljøpartiet De Grønne
+L0121,A0138,A0137,member_of,E00138,https://gronnungdom.no/sentralstyret/,Deputy leader of Grønn Ungdom
+L0122,A0140,A0139,leads,E00140,https://www.unio.no/om-unio/ledelsen/,President of Unio
+L0123,A0141,A0005,member_of,E00141,https://www.fo.no/om-fo/,Affiliated national union of Landsorganisasjonen i Norge (LO)
+L0124,A0142,A0141,leads,E00142,https://www.fo.no/om-fo/politisk-ledelse/,President of Fellesorganisasjonen (FO)
+L0125,A0143,A0005,member_of,E00143,https://elogit.no/om-forbundet/,Affiliated national union of Landsorganisasjonen i Norge (LO)
+L0126,A0144,A0143,member_of,E00144,https://elogit.no/om-forbundet/ledelsen/,Former leader of EL og IT Forbundet
+L0127,A0145,A0005,member_of,E00145,https://www.hk.no/om-hk/,Affiliated national union of Landsorganisasjonen i Norge (LO)
+L0128,A0146,A0145,leads,E00146,https://www.hk.no/om-hk/forbundsledelsen/,President of Handel og Kontor i Norge
+L0132,A0157,A0006,leads,E00157,https://www.fagforbundet.no/om-fagforbundet/politisk-ledelse/mette-nord/,President of Fagforbundet
+L0133,A0157,A0002,member_of,E00157,https://www.arbeiderpartiet.no/om/sentralstyret/,"Member of Central Board (sentralstyret), Arbeiderpartiet"
+L0134,A0158,A0002,member_of,E00158,https://www.stortinget.no/no/Representanter-og-komiteer/Representantene/Representant/?perid=TWA,Member and Mayor for Arbeiderpartiet
+L0135,A0159,A0005,works_for,E00159,https://www.lo.no,Chief Economist of Landsorganisasjonen i Norge (LO) (1998–2017)
+L0136,A0160,A0005,works_for,E00160,https://www.lo.no/om-lo/administrasjonen/samfunnspolitisk-avdeling/,Chief Economist of Landsorganisasjonen i Norge (LO) (2017–present)
+L0137,A0161,A0021,works_for,E00161,https://tankesmienagenda.no/,Former Deputy Director and economist at Tankesmien Agenda
+L0138,A0163,A0021,works_for,E00163,https://tankesmienagenda.no/,Economist and Special Adviser at Tankesmien Agenda
+L0139,A0164,A0021,works_for,E00164,https://tankesmienagenda.no/,Senior Adviser at Tankesmien Agenda
+L0140,A0166,A0001,member_of,E00166,https://oslo.sv.no,Leader of Oslo SV and former City Commissioner
+L0141,A0167,A0001,member_of,E00167,https://faktaomformuesskatt.no/start/om-prosjektet,Group Leader for Sosialistisk Venstreparti in Bjørnafjorden municipal council
+L0142,A0167,A0168,founded,E00167,https://faktaomformuesskatt.no/start/om-prosjektet,Founder of Fakta om formuesskatt project
+L0143,A0173,A0174,founded,E00173,https://www.langsikt.no,Co-founder and former Managing Director of Tankesmien Langsikt
+L0144,A0175,A0176,works_for,E00175,https://arbeidsmandsforbundet.no/,President of Norsk Arbeidsmandsforbund (NAF)
+L0145,A0176,A0005,member_of,E00176,https://arbeidsmandsforbundet.no/,Affiliated national union of Landsorganisasjonen i Norge (LO)
+L0146,A0177,A0002,funds,,,Major campaign donor to the Labour Party (Arbeiderpartiet)
+L0147,A0177,A0001,funds,,,Campaign supporter and donor to the Socialist Left Party (SV)
+L0148,A0178,A0001,leads,,,Former party leader of SV (1997–2012)
+L0149,A0178,A0001,member_of,,,Prominent member and former parliamentary leader of SV
+L0150,A0179,A0001,member_of,,,Former deputy leader and parliamentary leader of SV
+L0151,A0180,A0020,leads,,,Director of Manifest Tankesmie
+L0152,A0180,A0020,works_for,,,Director and editor-in-chief at Manifest
+L0153,A0181,A0020,works_for,,,Chief Economist at Manifest Tankesmie
+L0154,A0182,A0184,leads,,,President of Pensjonistforbundet (2015–2026)
+L0155,A0182,A0006,leads,,,Former long-serving President of Fagforbundet (1994–2013)
+L0156,A0183,A0184,works_for,,,Chief Economist at Pensjonistforbundet
+L0157,A0184,A0005,coalition_partner,,,Cooperation partner with LO on social security and pensioner rights
+L0158,A0185,A0029,member_of,,,Active member and tax policy analyst in Attac Norge
+L0159,A0186,A0005,leads,,,First Secretary (Førstesekretær) in LO Norway's elected leadership
+L0160,A0186,A0005,works_for,,,Elected executive official at LO Norway
+L0161,A0187,A0021,founded,,,Founding CEO of Tankesmien Agenda (2014–2018)
+L0162,A0187,A0021,leads,,,Former CEO of Tankesmien Agenda
+L0163,A0188,A0020,works_for,,,Researcher and author at Manifest Tankesmie
+L0164,A0189,A0020,works_for,,,Researcher and author at Manifest Tankesmie
+L0165,A0190,A0020,works_for,,,Advisor and researcher at Manifest Tankesmie
+L0166,A0191,A0020,works_for,,,Contributing economist at Manifest Tankesmie
+L0167,A0192,A0008,leads,,,Former Executive Director of Tax Justice Norge (2011–2023)
+L0168,A0192,A0008,works_for,,,Long-term leader and advisor at Tax Justice Norge
+L0169,A0193,A0008,works_for,,,Political Director at Tax Justice Norge
+L0170,A0194,A0021,works_for,,,Editor and commentator at Tankesmien Agenda / Agenda Magasin
+L0171,A0195,A0021,leads,,,CEO and Managing Director of Tankesmien Agenda
+L0172,A0195,A0021,works_for,,,Managing Director at Tankesmien Agenda
+L0173,A0196,A0021,works_for,,,Senior Advisor at Tankesmien Agenda
+L0174,A0197,A0021,works_for,,,Contributing analyst at Tankesmien Agenda
+L0175,A0198,A0005,leads,,,Former leader of LO i Oslo (2005–2017)
+L0176,A0198,A0025,member_of,,,Former deputy leader and national board member of Rødt
+L0177,A0199,A0020,works_for,,,Policy advisor and author at Manifest Tankesmie
+L0178,A0200,A0025,works_for,,,Political advisor on finance and economic policy for Rødt in Stortinget
+L0179,A0200,A0020,works_for,,,Former economic researcher at Manifest Tankesmie
+L0180,A0201,A0002,member_of,,,Jens Stoltenberg member of Arbeiderpartiet
+L0181,A0202,A0139,works_for,,,Erik Orskaug chief economist at Unio
+L0182,A0203,A0006,leads,,,Helene Harsvik Skeibrok leader at Fagforbundet
+L0183,A0204,A0024,member_of,,,Astrid Hauge Rambøl adviser at Rødt
+L0184,A0205,A0005,works_for,,,Ebba Boye adviser at Landsorganisasjonen i Norge
+L0185,A0208,A0012,works_for,,,Jonas Veland adviser at Tax Justice Norge
+L0186,A0209,A0012,leads,,,Andreas Fjeldskår executive director of Tax Justice Norge
+L0187,A0210,A0012,leads,,,Helge Renå board chair of Tax Justice Norge
+L0188,A0211,A0012,member_of,,,Matilde Angeltveit board member of Tax Justice Norge
+L0189,A0212,A0012,member_of,,,Sondre Nave board member/chair of Tax Justice Norge
+L0190,A0213,A0214,works_for,,,Anne Marte Skaland senior adviser at Kirkens Nødhjelp
+L0191,A0214,A0012,coalition_partner,,,Kirkens Nødhjelp member organization of Tax Justice Norge coalition
+L0192,A0215,A0012,member_of,,,Jørgen Pedersen board member of Tax Justice Norge
+L0193,A0216,A0021,works_for,,,Axel Fjeldavli head of analysis at Tankesmien Agenda
+L0194,A0217,A0021,works_for,,,Kari Kristensen adviser at Tankesmien Agenda
+L0195,A0218,A0021,works_for,,,Trond Gram adviser at Tankesmien Agenda
+L0196,A0219,A0021,works_for,,,Kristian Skard partner at Agenda Rådgivning / Agenda
+L0197,A0220,A0021,works_for,,,Lilas Al Taoyl economist at Tankesmien Agenda
+L0198,A0221,A0021,works_for,,,Lars West Johnsen commentator at Tankesmien Agenda
+L0199,A0222,A0001,leads,,,Marthe Hammer Storting MP and spokesperson for SV
+L0200,A0223,A0001,member_of,,,Alexander Papas political adviser and county politician for SV
+L0201,A0224,A0020,works_for,,,Kjetil Nordengen writer for Manifest
+L0202,A0225,A0005,works_for,,https://www.lo.no,Leder for samfunnskontakt og strategi i LO
+L0203,A0226,A0005,works_for,,https://www.lo.no,Spesialrådgiver og økonom i LO
+L0204,A0229,A0002,member_of,,https://www.stortinget.no,Stortingsrepresentant og leder i Oslo Arbeiderparti
+L0205,A0238,A0021,works_for,,https://tankesmienagenda.no,Tidligere rådgiver i Tankesmien Agenda
+L0206,A0239,A0002,member_of,,https://www.stortinget.no,Tidligere stortingsrepresentant og finanspolitisk talsperson for Arbeiderpartiet
+L0207,A0240,A0005,works_for,,https://www.lo.no,Tidligere samfunnsøkonom i LO
+L0208,A0241,A0141,leads,,https://www.fo.no,Tidligere forbundsleder i Fellesorganisasjonen
+L0209,A0242,A0004,member_of,,https://www.stortinget.no,Stortingsrepresentant og tidligere talsperson for Miljøpartiet De Grønne
+L0210,A0243,A0021,works_for,,https://tankesmienagenda.no,Rådgiver i Tankesmien Agenda
+L0211,A0244,A0021,works_for,,https://tankesmienagenda.no,Fagsjef i Tankesmien Agenda
+L0212,A0246,A0012,works_for,,https://taxjustice.no,Fagrådgiver i Tax Justice Norge
+L0213,A0247,A0020,works_for,,https://manifestanalyse.no,Notatforfatter for Manifest Analyse
+L0214,A0248,A0020,works_for,,https://agendamagasin.no,Forfatter og skribent tilknyttet Manifest Tankesmie
+L0218,A0264,A0012,works_for,E00264,https://taxjustice.no,Gregar Berg-Rolness faglig rådgiver i Tax Justice Norge
+L0220,A0266,A0012,works_for,E00266,https://taxjustice.no,Kristina Avalo Høie styremedlem i Tax Justice Norge
+L0224,A0269,A0012,works_for,E00269,https://taxjustice.no,Tora Danielsen rådgiver i Tax Justice Norge
