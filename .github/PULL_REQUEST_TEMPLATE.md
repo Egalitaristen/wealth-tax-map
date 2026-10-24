@@ -13,6 +13,10 @@
 - [ ] I ran `wtdb.py checkquotes` on the new rows and looked at anything it could not fetch
 - [ ] I ran `wtdb.py dedupe` and merged true duplicates
 - [ ] Supporters only: no opponents, no petition signers, no private individuals
+- [ ] Each person has evidence of their own: a party platform, a roster, a member list or a whole-budget vote is not enough (`skill/SKILL.md` section 4)
+- [ ] I ran `python skill/scripts/review_scan.py` and fixed or justified what it listed
+- [ ] Any poll asks about a wealth tax, I checked its figures at the source, and the description says who paid for it
+- [ ] No scratch scripts or caches are committed (the geography and map recipe is in `skill/references/countries/<iso2>.md`)
 - [ ] I checked for death records; anyone found dead is in `exclusions.csv`
 - [ ] `checkquotes` finds every new quote on its source
 - [ ] `meta.json` is filled in (`name`, `iso2`, `lead`, `status`)

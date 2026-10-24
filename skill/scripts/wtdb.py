@@ -950,10 +950,14 @@ def _quote_parts(e):
     fragment needs three words or six CJK characters. A quote shorter than that is checked whole when it is a name
     on a roll-call or roster (two words, a vote row, or three CJK characters)."""
     q = _plain(e["quote_original"])
-    parts = [p.strip() for p in re.split(r"…|\.\.\.", q)
-             if len(p.split()) >= 3 or (CJK.search(p) and len(p.strip()) >= 6)]
+    frags = [p.strip() for p in re.split(r"…|\.\.\.", q) if p.strip()]
+    parts = [p for p in frags if len(p.split()) >= 3 or (CJK.search(p) and len(p.strip()) >= 6)]
     if parts:
         return parts
+    # name...organisation...title: every fragment is short, but each must still be on the page
+    short = [p for p in frags if len(p.split()) >= 2 or (CJK.search(p) and len(p.replace(" ", "")) >= 3)]
+    if len(frags) > 1 and len(short) == len(frags):
+        return frags
     if len(q.split()) >= 2 or e.get("evidence_type") == "vote" or (CJK.search(q) and len(q) >= 3):
         return [q]
     return []

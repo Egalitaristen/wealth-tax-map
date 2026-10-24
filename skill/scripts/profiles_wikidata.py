@@ -55,13 +55,15 @@ def main():
     actors, evidence, prof = rd("actors.csv"), rd("evidence.csv"), rd("profiles.csv")
     sup = {e["actor_id"] for e in evidence}
     have = {(p["actor_id"], p["platform"]) for p in prof}
+    urls = {(p["actor_id"], p["url"].rstrip("/").lower()) for p in prof}  # one row per actor and address, whatever its platform
     today = date.today().isoformat()
     new = []
 
     def add(aid, platform, url, source):
-        if (aid, platform) in have or not url.startswith("https://"):
+        key = (aid, url.rstrip("/").lower())
+        if (aid, platform) in have or key in urls or not url.startswith("https://"):
             return
-        have.add((aid, platform))
+        have.add((aid, platform)); urls.add(key)
         new.append({"actor_id": aid, "platform": platform, "url": url, "source": source, "checked": today})
 
     eligible = []
