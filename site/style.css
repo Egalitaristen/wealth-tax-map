@@ -471,6 +471,8 @@ a.ov:hover .spark rect.pk { fill: var(--signal); }
 
 /* ---------- footer ---------- */
 .foot { border-top: 1.5px solid var(--ink); margin-top: 40px; padding: 48px 0 40px; }
+/* The footer sits under an empty <main> until the first page renders, then gets pushed down: hide it until then so it is not counted as layout shift. */
+body:not(.ready) .foot { visibility: hidden; }
 .foot-big { font: 400 clamp(44px, 9vw, 128px)/.9 var(--serif); letter-spacing: -.035em; }
 .foot-big i { color: var(--signal); }
 .foot-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 32px; margin-top: 36px; font-size: 14.5px; }

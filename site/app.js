@@ -1129,4 +1129,4 @@ function suggestPage(W, params) {
 // ---------- start ----------
 $('#report-top').href = $('#report-foot').href = issueUrl('Report: ');
 $('#repo-link').href = `https://github.com/${REPO}`;
-render(false);
+render(false).finally(() => document.body.classList.add('ready'));
