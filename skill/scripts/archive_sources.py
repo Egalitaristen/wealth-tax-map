@@ -8,7 +8,7 @@ date. With --save, a source that has no snapshot yet is submitted for saving (sl
 often one client can save), and its new snapshot is recorded. Sources are looked up once each, however many rows
 cite them. Standard library only.
 """
-import argparse, json, sys, time, urllib.parse, urllib.request
+import argparse, json, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -20,9 +20,18 @@ UA = {"User-Agent": "wealth-tax-supporters/0.1 (https://github.com/Egalitaristen
 def closest(url, date):
     stamp = "".join(ch for ch in (date or "") if ch.isdigit())[:8]
     q = "https://archive.org/wayback/available?" + urllib.parse.urlencode({"url": url, **({"timestamp": stamp} if stamp else {})})
-    try:
-        d = json.load(urllib.request.urlopen(urllib.request.Request(q, headers=UA), timeout=40))
-    except Exception:
+    d = None
+    for wait in (0, 15, 45, 120):  # the Wayback Machine answers 429 when asked too fast: wait and try again
+        time.sleep(wait)
+        try:
+            d = json.load(urllib.request.urlopen(urllib.request.Request(q, headers=UA), timeout=40))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                return ""
+        except Exception:
+            return ""
+    if d is None:
         return ""
     snap = (d.get("archived_snapshots") or {}).get("closest") or {}
     return snap.get("url", "").replace("http://web.archive.org", "https://web.archive.org") if snap.get("available") else ""
@@ -55,7 +64,7 @@ def main():
             time.sleep(12)
         found[u] = snap
         print(f"[{i}/{len(urls)}] {'ok  ' if snap else 'none'} {u[:90]}")
-        time.sleep(1)
+        time.sleep(3)
     n = 0
     for e in rows:
         if not e.get("archive_url") and found.get(e.get("source_url")):
