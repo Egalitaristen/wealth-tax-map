@@ -1,10 +1,10 @@
 {
   "name": "Indonesia",
   "iso2": "ID",
-  "lead": "Antigravity",
+  "lead": "",
   "status": "in progress",
   "boundaries": "boundaries.json",
-  "notes": "Depth: seed. Scope: national plus regional (provinsi) and local (kabupaten/kota) sample. R001 (2026-10-22) covered the prominent civil society coalitions (Forum Pajak Berkeadilan Indonesia, The PRAKARSA, PWYP Indonesia, CELIOS, PUSKAHA, TII, FITRA, Lokataru, IGJ, Trend Asia, Aksi!), leading economists (Bhima Yudhistira, Media Wahyudi Askar, Esther Sri Astuti / INDEF), political party and presidential campaign endorsements (Ganjar Pranowo / PDI-P, Anies Baswedan, Muhaimin Iskandar, Thomas Lembong, Handi Risza / PKS), and the student movement (LMND, EW-LMND Sumsel). The register holds the country root, 3 national institutions, 34 provinces, and 514 kabupaten & kota (BPS-PCODE from OCHA COD-AB, CC-BY-IGO-3.0). Exclusions noted for deceased economist Faisal Basri, wealth tax opponent Budi Frensidy, and out-of-definition/neutral figures. Polls record Earth4All/Ipsos 2024 (86% support across G20) and Glocalities/Millionaires for Humanity 2021 (79% support for 1% annual tax over Rp 140B).",
+  "notes": "Depth: seed. Scope: national plus regional (provinsi) and local (kabupaten/kota) sample. R001 (2026-10-22) covered the prominent civil society coalitions (Forum Pajak Berkeadilan Indonesia, The PRAKARSA, PWYP Indonesia, CELIOS, PUSKAHA, TII, FITRA, Lokataru, IGJ, Trend Asia, Aksi!), leading economists (Bhima Yudhistira, Media Wahyudi Askar, Esther Sri Astuti / INDEF), political party and presidential campaign endorsements (Ganjar Pranowo / PDI-P, Anies Baswedan, Muhaimin Iskandar, Thomas Lembong, Handi Risza / PKS), and the student movement (LMND, EW-LMND Sumsel). The register holds the country root, 3 national institutions, 34 provinces, and 514 kabupaten & kota (BPS-PCODE from OCHA COD-AB, CC-BY-IGO-3.0). Exclusions noted for deceased economist Faisal Basri, wealth tax opponent Budi Frensidy, and out-of-definition/neutral figures. Polls record Earth4All/Ipsos 2024 (86% support across G20) and Glocalities/Millionaires for Humanity 2021 (79% support for 1% annual tax over Rp 140B). Review 2026-10-24 (R004): 5 rows removed, 8 regraded A to B.",
   "polls": [
     {
       "support": 86,
@@ -17,7 +17,7 @@
       "fieldwork": "2024-03-05 to 2024-04-08",
       "sample": "1,000 respondents in Indonesia (22,000 across 22 countries)",
       "published": "2024-06-25",
-      "url": "https://earth4all.life/news/indonesia-support-wealth-tax/"
+      "url": "https://earth4all.life/news/tax-the-rich-say-g20-citizens/"
     },
     {
       "support": 79,

@@ -2,7 +2,6 @@ profile_id,actor_id,platform,url,source,checked
 P00001,A0003,website,https://aniesbaswedan.com,actors.csv website column,2026-10-22
 P00002,A0004,website,https://pkb.id,actors.csv website column,2026-10-22
 P00003,A0005,website,https://pks.id,actors.csv website column,2026-10-22
-P00004,A0006,website,https://pks.id,actors.csv website column,2026-10-22
 P00005,A0007,website,https://celios.co.id,actors.csv website column,2026-10-22
 P00006,A0008,website,https://celios.co.id,actors.csv website column,2026-10-22
 P00007,A0009,website,https://mediaaskar.com,actors.csv website column,2026-10-22
@@ -51,9 +50,6 @@ P00052,A0001,instagram,https://www.instagram.com/ganjar_pranowo/,Wikidata Q12483
 P00053,A0001,facebook,https://www.facebook.com/GanjarpranowoOfficial,Wikidata Q12483474,2026-10-22
 P00054,A0001,youtube,https://www.youtube.com/channel/UCmhoZ5MJ3SiZVwOQlbWQVcQ,Wikidata Q12483474,2026-10-22
 P00055,A0001,wikipedia,https://en.wikipedia.org/wiki/Ganjar_Pranowo,Wikidata Q12483474,2026-10-22
-P00056,A0006,x,https://x.com/PKSejahtera,Wikidata Q1511101,2026-10-22
-P00057,A0006,instagram,https://www.instagram.com/pk_sejahtera/,Wikidata Q1511101,2026-10-22
-P00058,A0006,wikipedia,https://en.wikipedia.org/wiki/Prosperous_Justice_Party,Wikidata Q1511101,2026-10-22
 P00059,A0061,website,https://www.fraksipkb.com,actors.csv website column,2026-10-22
 P00060,A0062,website,https://celios.co.id,actors.csv website column,2026-10-22
 P00061,A0065,website,https://ylbhi.or.id,actors.csv website column,2026-10-22
