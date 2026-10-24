@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Review supporter suggestions sent from the site's /suggest form (Cloudflare D1 database wts-suggestions).
+"""Review supporter suggestions sent from the site's /suggest form, and feedback and bug reports from /feedback
+(Cloudflare D1 database wts-suggestions).
 
 Usage:
   python scripts/suggestions.py                     list new suggestions, oldest first
   python scripts/suggestions.py --all               list every suggestion, with its status
   python scripts/suggestions.py mark ID STATUS [NOTE]   STATUS: added | duplicate | rejected | new
   python scripts/suggestions.py export FILE.csv     write the new ones to a CSV (for a research run to work through)
+  python scripts/suggestions.py feedback            list new feedback and bug reports (--all for every one)
+  python scripts/suggestions.py fmark ID STATUS [NOTE]  STATUS: done | wontfix | new
 
 A suggestion is a lead, not evidence: check it against its source with the rules in skill/SKILL.md before adding
 anyone, then mark it. Needs Node.js and a one-time `npx wrangler login`. ID may be the first 8 characters.
@@ -54,7 +57,7 @@ def show(rows):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", nargs="?", default="list", choices=["list", "mark", "export"])
+    ap.add_argument("cmd", nargs="?", default="list", choices=["list", "mark", "export", "feedback", "fmark"])
     ap.add_argument("args", nargs="*")
     ap.add_argument("--all", action="store_true")
     a = ap.parse_args()
@@ -68,6 +71,27 @@ def main():
         d1("UPDATE suggestions SET status = ?, review_note = ?, reviewed_at = ? WHERE id = ?", a.args[1],
            " ".join(a.args[2:]), datetime.now(timezone.utc).isoformat(timespec="seconds"), sid)
         print(f"{sid[:8]} marked {a.args[1]}")
+    elif a.cmd == "feedback":
+        where = "" if a.all else "WHERE status = 'new'"
+        rows = d1(f"SELECT id, created_at, kind, message, page, contact, user_agent, status, review_note FROM feedback {where} ORDER BY created_at")
+        for r in rows:
+            print(f"\n[{r['id'][:8]}] {r['created_at'][:16].replace('T', ' ')}  {r['kind'].upper()}  {r['status'].upper()}"
+                  + (f"  page {r['page']}" if r.get("page") else "") + (f"  reply to {r['contact']}" if r.get("contact") else ""))
+            print(textwrap.indent(textwrap.fill(r["message"], 100), "  > "))
+            if r.get("user_agent"):
+                print(f"  browser: {r['user_agent']}")
+            if r.get("review_note"):
+                print(f"  note: {r['review_note']}")
+        print(f"\n{len(rows)} message(s)")
+    elif a.cmd == "fmark":
+        if len(a.args) < 2 or a.args[1] not in ("done", "wontfix", "new"):
+            sys.exit("Usage: suggestions.py fmark ID done|wontfix|new [NOTE]")
+        found = d1("SELECT id FROM feedback WHERE id LIKE ?", a.args[0] + "%")
+        if len(found) != 1:
+            sys.exit(f"{len(found)} messages match '{a.args[0]}'")
+        d1("UPDATE feedback SET status = ?, review_note = ?, reviewed_at = ? WHERE id = ?", a.args[1],
+           " ".join(a.args[2:]), datetime.now(timezone.utc).isoformat(timespec="seconds"), found[0]["id"])
+        print(f"{found[0]['id'][:8]} marked {a.args[1]}")
     elif a.cmd == "export":
         if not a.args:
             sys.exit("Usage: suggestions.py export FILE.csv")
