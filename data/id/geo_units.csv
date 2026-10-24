@@ -1,0 +1,553 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,Indonesia,national,country,,https://indonesia.go.id,pending,,,,,,
+G0002,Dewan Perwakilan Rakyat,national,legislature,G0001,https://www.dpr.go.id,pending,,,,,DPR RI (House of Representatives),
+G0003,Dewan Perwakilan Daerah,national,legislature,G0001,https://www.dpd.go.id,pending,,,,,DPD RI (Regional Representative Council),
+G0004,Pemerintah Indonesia,national,executive,G0001,https://indonesia.go.id,pending,,,,,Federal Executive / Cabinet,
+G0005,Aceh,region,province,G0001,,pending,,,,,Provinsi Aceh,ID11
+G0006,Sumatera Utara,region,province,G0001,,pending,,,,,Provinsi Sumatera Utara,ID12
+G0007,Sumatera Barat,region,province,G0001,,pending,,,,,Provinsi Sumatera Barat,ID13
+G0008,Riau,region,province,G0001,,pending,,,,,Provinsi Riau,ID14
+G0009,Jambi,region,province,G0001,,pending,,,,,Provinsi Jambi,ID15
+G0010,Sumatera Selatan,region,province,G0001,,pending,,,,,Provinsi Sumatera Selatan,ID16
+G0011,Bengkulu,region,province,G0001,,pending,,,,,Provinsi Bengkulu,ID17
+G0012,Lampung,region,province,G0001,,pending,,,,,Provinsi Lampung,ID18
+G0013,Kepulauan Bangka Belitung,region,province,G0001,,pending,,,,,Provinsi Kepulauan Bangka Belitung,ID19
+G0014,Kepulauan Riau,region,province,G0001,,pending,,,,,Provinsi Kepulauan Riau,ID21
+G0015,Dki Jakarta,region,province,G0001,,pending,,,,,Provinsi Dki Jakarta,ID31
+G0016,Jawa Barat,region,province,G0001,,pending,,,,,Provinsi Jawa Barat,ID32
+G0017,Jawa Tengah,region,province,G0001,,pending,,,,,Provinsi Jawa Tengah,ID33
+G0018,Daerah Istimewa Yogyakarta,region,province,G0001,,pending,,,,,Provinsi Daerah Istimewa Yogyakarta,ID34
+G0019,Jawa Timur,region,province,G0001,,pending,,,,,Provinsi Jawa Timur,ID35
+G0020,Banten,region,province,G0001,,pending,,,,,Provinsi Banten,ID36
+G0021,Bali,region,province,G0001,,pending,,,,,Provinsi Bali,ID51
+G0022,Nusa Tenggara Barat,region,province,G0001,,pending,,,,,Provinsi Nusa Tenggara Barat,ID52
+G0023,Nusa Tenggara Timur,region,province,G0001,,pending,,,,,Provinsi Nusa Tenggara Timur,ID53
+G0024,Kalimantan Barat,region,province,G0001,,pending,,,,,Provinsi Kalimantan Barat,ID61
+G0025,Kalimantan Tengah,region,province,G0001,,pending,,,,,Provinsi Kalimantan Tengah,ID62
+G0026,Kalimantan Selatan,region,province,G0001,,pending,,,,,Provinsi Kalimantan Selatan,ID63
+G0027,Kalimantan Timur,region,province,G0001,,pending,,,,,Provinsi Kalimantan Timur,ID64
+G0028,Kalimantan Utara,region,province,G0001,,pending,,,,,Provinsi Kalimantan Utara,ID65
+G0029,Sulawesi Utara,region,province,G0001,,pending,,,,,Provinsi Sulawesi Utara,ID71
+G0030,Sulawesi Tengah,region,province,G0001,,pending,,,,,Provinsi Sulawesi Tengah,ID72
+G0031,Sulawesi Selatan,region,province,G0001,,pending,,,,,Provinsi Sulawesi Selatan,ID73
+G0032,Sulawesi Tenggara,region,province,G0001,,pending,,,,,Provinsi Sulawesi Tenggara,ID74
+G0033,Gorontalo,region,province,G0001,,pending,,,,,Provinsi Gorontalo,ID75
+G0034,Sulawesi Barat,region,province,G0001,,pending,,,,,Provinsi Sulawesi Barat,ID76
+G0035,Maluku,region,province,G0001,,pending,,,,,Provinsi Maluku,ID81
+G0036,Maluku Utara,region,province,G0001,,pending,,,,,Provinsi Maluku Utara,ID82
+G0037,Papua Barat,region,province,G0001,,pending,,,,,Provinsi Papua Barat,ID91
+G0038,Papua,region,province,G0001,,pending,,,,,Provinsi Papua,ID94
+G0039,Aceh Barat,council,regency,G0005,,pending,,,,,,ID1107
+G0040,Aceh Barat Daya,council,regency,G0005,,pending,,,,,,ID1112
+G0041,Aceh Besar,council,regency,G0005,,pending,,,,,,ID1108
+G0042,Aceh Jaya,council,regency,G0005,,pending,,,,,,ID1116
+G0043,Aceh Selatan,council,regency,G0005,,pending,,,,,,ID1103
+G0044,Aceh Singkil,council,regency,G0005,,pending,,,,,,ID1102
+G0045,Aceh Tamiang,council,regency,G0005,,pending,,,,,,ID1114
+G0046,Aceh Tengah,council,regency,G0005,,pending,,,,,,ID1106
+G0047,Aceh Tenggara,council,regency,G0005,,pending,,,,,,ID1104
+G0048,Aceh Timur,council,regency,G0005,,pending,,,,,,ID1105
+G0049,Aceh Utara,council,regency,G0005,,pending,,,,,,ID1111
+G0050,Agam,council,regency,G0007,,pending,,,,,,ID1307
+G0051,Alor,council,regency,G0023,,pending,,,,,,ID5307
+G0052,Asahan,council,regency,G0006,,pending,,,,,,ID1208
+G0053,Asmat,council,regency,G0038,,pending,,,,,,ID9415
+G0054,Badung,council,regency,G0021,,pending,,,,,,ID5103
+G0055,Balangan,council,regency,G0026,,pending,,,,,,ID6311
+G0056,Bandung,council,regency,G0016,,pending,,,,,,ID3204
+G0057,Bandung Barat,council,regency,G0016,,pending,,,,,,ID3217
+G0058,Banggai,council,regency,G0030,,pending,,,,,,ID7202
+G0059,Banggai Kepulauan,council,regency,G0030,,pending,,,,,,ID7201
+G0060,Banggai Laut,council,regency,G0030,,pending,,,,,,ID7211
+G0061,Bangka,council,regency,G0013,,pending,,,,,,ID1901
+G0062,Bangka Barat,council,regency,G0013,,pending,,,,,,ID1903
+G0063,Bangka Selatan,council,regency,G0013,,pending,,,,,,ID1905
+G0064,Bangka Tengah,council,regency,G0013,,pending,,,,,,ID1904
+G0065,Bangkalan,council,regency,G0019,,pending,,,,,,ID3526
+G0066,Bangli,council,regency,G0021,,pending,,,,,,ID5106
+G0067,Banjar,council,regency,G0026,,pending,,,,,,ID6303
+G0068,Banjarnegara,council,regency,G0017,,pending,,,,,,ID3304
+G0069,Bantaeng,council,regency,G0031,,pending,,,,,,ID7303
+G0070,Bantul,council,regency,G0018,,pending,,,,,,ID3402
+G0071,Banyu Asin,council,regency,G0010,,pending,,,,,,ID1607
+G0072,Banyumas,council,regency,G0017,,pending,,,,,,ID3302
+G0073,Banyuwangi,council,regency,G0019,,pending,,,,,,ID3510
+G0074,Barito Kuala,council,regency,G0026,,pending,,,,,,ID6304
+G0075,Barito Selatan,council,regency,G0025,,pending,,,,,,ID6204
+G0076,Barito Timur,council,regency,G0025,,pending,,,,,,ID6212
+G0077,Barito Utara,council,regency,G0025,,pending,,,,,,ID6205
+G0078,Barru,council,regency,G0031,,pending,,,,,,ID7310
+G0079,Batang,council,regency,G0017,,pending,,,,,,ID3325
+G0080,Batang Hari,council,regency,G0009,,pending,,,,,,ID1504
+G0081,Batu Bara,council,regency,G0006,,pending,,,,,,ID1219
+G0082,Bekasi,council,regency,G0016,,pending,,,,,,ID3216
+G0083,Belitung,council,regency,G0013,,pending,,,,,,ID1902
+G0084,Belitung Timur,council,regency,G0013,,pending,,,,,,ID1906
+G0085,Belu,council,regency,G0023,,pending,,,,,,ID5306
+G0086,Bener Meriah,council,regency,G0005,,pending,,,,,,ID1117
+G0087,Bengkalis,council,regency,G0008,,pending,,,,,,ID1408
+G0088,Bengkayang,council,regency,G0024,,pending,,,,,,ID6102
+G0089,Bengkulu Selatan,council,regency,G0011,,pending,,,,,,ID1701
+G0090,Bengkulu Tengah,council,regency,G0011,,pending,,,,,,ID1709
+G0091,Bengkulu Utara,council,regency,G0011,,pending,,,,,,ID1703
+G0092,Berau,council,regency,G0027,,pending,,,,,,ID6405
+G0093,Biak Numfor,council,regency,G0038,,pending,,,,,,ID9409
+G0094,Bima,council,regency,G0022,,pending,,,,,,ID5206
+G0095,Bintan,council,regency,G0014,,pending,,,,,,ID2102
+G0096,Bireuen,council,regency,G0005,,pending,,,,,,ID1110
+G0097,Blitar,council,regency,G0019,,pending,,,,,,ID3505
+G0098,Blora,council,regency,G0017,,pending,,,,,,ID3316
+G0099,Boalemo,council,regency,G0033,,pending,,,,,,ID7501
+G0100,Bogor,council,regency,G0016,,pending,,,,,,ID3201
+G0101,Bojonegoro,council,regency,G0019,,pending,,,,,,ID3522
+G0102,Bolaang Mongondow,council,regency,G0029,,pending,,,,,,ID7101
+G0103,Bolaang Mongondow Selatan,council,regency,G0029,,pending,,,,,,ID7110
+G0104,Bolaang Mongondow Timur,council,regency,G0029,,pending,,,,,,ID7111
+G0105,Bolaang Mongondow Utara,council,regency,G0029,,pending,,,,,,ID7107
+G0106,Bombana,council,regency,G0032,,pending,,,,,,ID7406
+G0107,Bondowoso,council,regency,G0019,,pending,,,,,,ID3511
+G0108,Bone,council,regency,G0031,,pending,,,,,,ID7311
+G0109,Bone Bolango,council,regency,G0033,,pending,,,,,,ID7504
+G0110,Boven Digoel,council,regency,G0038,,pending,,,,,,ID9413
+G0111,Boyolali,council,regency,G0017,,pending,,,,,,ID3309
+G0112,Brebes,council,regency,G0017,,pending,,,,,,ID3329
+G0113,Buleleng,council,regency,G0021,,pending,,,,,,ID5108
+G0114,Bulukumba,council,regency,G0031,,pending,,,,,,ID7302
+G0115,Bulungan,council,regency,G0028,,pending,,,,,,ID6502
+G0116,Bungo,council,regency,G0009,,pending,,,,,,ID1509
+G0117,Buol,council,regency,G0030,,pending,,,,,,ID7207
+G0118,Buru,council,regency,G0035,,pending,,,,,,ID8104
+G0119,Buru Selatan,council,regency,G0035,,pending,,,,,,ID8109
+G0120,Buton,council,regency,G0032,,pending,,,,,,ID7401
+G0121,Buton Selatan,council,regency,G0032,,pending,,,,,,ID7415
+G0122,Buton Tengah,council,regency,G0032,,pending,,,,,,ID7414
+G0123,Buton Utara,council,regency,G0032,,pending,,,,,,ID7409
+G0124,Ciamis,council,regency,G0016,,pending,,,,,,ID3207
+G0125,Cianjur,council,regency,G0016,,pending,,,,,,ID3203
+G0126,Cilacap,council,regency,G0017,,pending,,,,,,ID3301
+G0127,Cirebon,council,regency,G0016,,pending,,,,,,ID3209
+G0128,Dairi,council,regency,G0006,,pending,,,,,,ID1210
+G0129,Deiyai,council,regency,G0038,,pending,,,,,,ID9436
+G0130,Deli Serdang,council,regency,G0006,,pending,,,,,,ID1212
+G0131,Demak,council,regency,G0017,,pending,,,,,,ID3321
+G0132,Dharmasraya,council,regency,G0007,,pending,,,,,,ID1311
+G0133,Dogiyai,council,regency,G0038,,pending,,,,,,ID9434
+G0134,Dompu,council,regency,G0022,,pending,,,,,,ID5205
+G0135,Donggala,council,regency,G0030,,pending,,,,,,ID7205
+G0136,Empat Lawang,council,regency,G0010,,pending,,,,,,ID1611
+G0137,Ende,council,regency,G0023,,pending,,,,,,ID5311
+G0138,Enrekang,council,regency,G0031,,pending,,,,,,ID7316
+G0139,Fakfak,council,regency,G0037,,pending,,,,,,ID9101
+G0140,Flores Timur,council,regency,G0023,,pending,,,,,,ID5309
+G0141,Garut,council,regency,G0016,,pending,,,,,,ID3205
+G0142,Gayo Lues,council,regency,G0005,,pending,,,,,,ID1113
+G0143,Gianyar,council,regency,G0021,,pending,,,,,,ID5104
+G0144,Gorontalo,council,regency,G0033,,pending,,,,,,ID7502
+G0145,Gorontalo Utara,council,regency,G0033,,pending,,,,,,ID7505
+G0146,Gowa,council,regency,G0031,,pending,,,,,,ID7306
+G0147,Gresik,council,regency,G0019,,pending,,,,,,ID3525
+G0148,Grobogan,council,regency,G0017,,pending,,,,,,ID3315
+G0149,Gunung Kidul,council,regency,G0018,,pending,,,,,,ID3403
+G0150,Gunung Mas,council,regency,G0025,,pending,,,,,,ID6211
+G0151,Halmahera Barat,council,regency,G0036,,pending,,,,,,ID8201
+G0152,Halmahera Selatan,council,regency,G0036,,pending,,,,,,ID8204
+G0153,Halmahera Tengah,council,regency,G0036,,pending,,,,,,ID8202
+G0154,Halmahera Timur,council,regency,G0036,,pending,,,,,,ID8206
+G0155,Halmahera Utara,council,regency,G0036,,pending,,,,,,ID8205
+G0156,Hulu Sungai Selatan,council,regency,G0026,,pending,,,,,,ID6306
+G0157,Hulu Sungai Tengah,council,regency,G0026,,pending,,,,,,ID6307
+G0158,Hulu Sungai Utara,council,regency,G0026,,pending,,,,,,ID6308
+G0159,Humbang Hasundutan,council,regency,G0006,,pending,,,,,,ID1215
+G0160,Indragiri Hilir,council,regency,G0008,,pending,,,,,,ID1403
+G0161,Indragiri Hulu,council,regency,G0008,,pending,,,,,,ID1402
+G0162,Indramayu,council,regency,G0016,,pending,,,,,,ID3212
+G0163,Intan Jaya,council,regency,G0038,,pending,,,,,,ID9435
+G0164,Jayapura,council,regency,G0038,,pending,,,,,,ID9403
+G0165,Jayawijaya,council,regency,G0038,,pending,,,,,,ID9402
+G0166,Jember,council,regency,G0019,,pending,,,,,,ID3509
+G0167,Jembrana,council,regency,G0021,,pending,,,,,,ID5101
+G0168,Jeneponto,council,regency,G0031,,pending,,,,,,ID7304
+G0169,Jepara,council,regency,G0017,,pending,,,,,,ID3320
+G0170,Jombang,council,regency,G0019,,pending,,,,,,ID3517
+G0171,Kaimana,council,regency,G0037,,pending,,,,,,ID9102
+G0172,Kampar,council,regency,G0008,,pending,,,,,,ID1406
+G0173,Kapuas,council,regency,G0025,,pending,,,,,,ID6203
+G0174,Kapuas Hulu,council,regency,G0024,,pending,,,,,,ID6108
+G0175,Karang Asem,council,regency,G0021,,pending,,,,,,ID5107
+G0176,Karanganyar,council,regency,G0017,,pending,,,,,,ID3313
+G0177,Karawang,council,regency,G0016,,pending,,,,,,ID3215
+G0178,Karimun,council,regency,G0014,,pending,,,,,,ID2101
+G0179,Karo,council,regency,G0006,,pending,,,,,,ID1211
+G0180,Katingan,council,regency,G0025,,pending,,,,,,ID6209
+G0181,Kaur,council,regency,G0011,,pending,,,,,,ID1704
+G0182,Kayong Utara,council,regency,G0024,,pending,,,,,,ID6111
+G0183,Kebumen,council,regency,G0017,,pending,,,,,,ID3305
+G0184,Kediri,council,regency,G0019,,pending,,,,,,ID3506
+G0185,Keerom,council,regency,G0038,,pending,,,,,,ID9420
+G0186,Kendal,council,regency,G0017,,pending,,,,,,ID3324
+G0187,Kepahiang,council,regency,G0011,,pending,,,,,,ID1708
+G0188,Kepulauan Anambas,council,regency,G0014,,pending,,,,,,ID2105
+G0189,Kepulauan Aru,council,regency,G0035,,pending,,,,,,ID8105
+G0190,Kepulauan Mentawai,council,regency,G0007,,pending,,,,,,ID1301
+G0191,Kepulauan Meranti,council,regency,G0008,,pending,,,,,,ID1410
+G0192,Kepulauan Sangihe,council,regency,G0029,,pending,,,,,,ID7103
+G0193,Kepulauan Selayar,council,regency,G0031,,pending,,,,,,ID7301
+G0194,Kepulauan Seribu,council,regency,G0015,,pending,,,,,,ID3101
+G0195,Kepulauan Sula,council,regency,G0036,,pending,,,,,,ID8203
+G0196,Kepulauan Talaud,council,regency,G0029,,pending,,,,,,ID7104
+G0197,Kepulauan Yapen,council,regency,G0038,,pending,,,,,,ID9408
+G0198,Kerinci,council,regency,G0009,,pending,,,,,,ID1501
+G0199,Ketapang,council,regency,G0024,,pending,,,,,,ID6106
+G0200,Klaten,council,regency,G0017,,pending,,,,,,ID3310
+G0201,Klungkung,council,regency,G0021,,pending,,,,,,ID5105
+G0202,Kolaka,council,regency,G0032,,pending,,,,,,ID7404
+G0203,Kolaka Timur,council,regency,G0032,,pending,,,,,,ID7411
+G0204,Kolaka Utara,council,regency,G0032,,pending,,,,,,ID7408
+G0205,Konawe,council,regency,G0032,,pending,,,,,,ID7403
+G0206,Konawe Kepulauan,council,regency,G0032,,pending,,,,,,ID7412
+G0207,Konawe Selatan,council,regency,G0032,,pending,,,,,,ID7405
+G0208,Konawe Utara,council,regency,G0032,,pending,,,,,,ID7410
+G0209,Kota Ambon,council,city,G0035,,pending,,,,,,ID8171
+G0210,Kota Balikpapan,council,city,G0027,,pending,,,,,,ID6471
+G0211,Kota Banda Aceh,council,city,G0005,,pending,,,,,,ID1171
+G0212,Kota Bandar Lampung,council,city,G0012,,pending,,,,,,ID1871
+G0213,Kota Bandung,council,city,G0016,,pending,,,,,,ID3273
+G0214,Kota Banjar,council,city,G0016,,pending,,,,,,ID3279
+G0215,Kota Banjar Baru,council,city,G0026,,pending,,,,,,ID6372
+G0216,Kota Banjarmasin,council,city,G0026,,pending,,,,,,ID6371
+G0217,Kota Baru,council,regency,G0026,,pending,,,,,,ID6302
+G0218,Kota Batam,council,city,G0014,,pending,,,,,,ID2171
+G0219,Kota Batu,council,city,G0019,,pending,,,,,,ID3579
+G0220,Kota Baubau,council,city,G0032,,pending,,,,,,ID7472
+G0221,Kota Bekasi,council,city,G0016,,pending,,,,,,ID3275
+G0222,Kota Bengkulu,council,city,G0011,,pending,,,,,,ID1771
+G0223,Kota Bima,council,city,G0022,,pending,,,,,,ID5272
+G0224,Kota Binjai,council,city,G0006,,pending,,,,,,ID1276
+G0225,Kota Bitung,council,city,G0029,,pending,,,,,,ID7172
+G0226,Kota Blitar,council,city,G0019,,pending,,,,,,ID3572
+G0227,Kota Bogor,council,city,G0016,,pending,,,,,,ID3271
+G0228,Kota Bontang,council,city,G0027,,pending,,,,,,ID6474
+G0229,Kota Bukittinggi,council,city,G0007,,pending,,,,,,ID1375
+G0230,Kota Cilegon,council,city,G0020,,pending,,,,,,ID3672
+G0231,Kota Cimahi,council,city,G0016,,pending,,,,,,ID3277
+G0232,Kota Cirebon,council,city,G0016,,pending,,,,,,ID3274
+G0233,Kota Denpasar,council,city,G0021,,pending,,,,,,ID5171
+G0234,Kota Depok,council,city,G0016,,pending,,,,,,ID3276
+G0235,Kota Dumai,council,city,G0008,,pending,,,,,,ID1473
+G0236,Kota Gorontalo,council,city,G0033,,pending,,,,,,ID7571
+G0237,Kota Gunungsitoli,council,city,G0006,,pending,,,,,,ID1278
+G0238,Kota Jakarta Barat,council,city,G0015,,pending,,,,,,ID3174
+G0239,Kota Jakarta Pusat,council,city,G0015,,pending,,,,,,ID3173
+G0240,Kota Jakarta Selatan,council,city,G0015,,pending,,,,,,ID3171
+G0241,Kota Jakarta Timur,council,city,G0015,,pending,,,,,,ID3172
+G0242,Kota Jakarta Utara,council,city,G0015,,pending,,,,,,ID3175
+G0243,Kota Jambi,council,city,G0009,,pending,,,,,,ID1571
+G0244,Kota Jayapura,council,city,G0038,,pending,,,,,,ID9471
+G0245,Kota Kediri,council,city,G0019,,pending,,,,,,ID3571
+G0246,Kota Kendari,council,city,G0032,,pending,,,,,,ID7471
+G0247,Kota Kotamobagu,council,city,G0029,,pending,,,,,,ID7174
+G0248,Kota Kupang,council,city,G0023,,pending,,,,,,ID5371
+G0249,Kota Langsa,council,city,G0005,,pending,,,,,,ID1173
+G0250,Kota Lhokseumawe,council,city,G0005,,pending,,,,,,ID1174
+G0251,Kota Lubuklinggau,council,city,G0010,,pending,,,,,,ID1674
+G0252,Kota Madiun,council,city,G0019,,pending,,,,,,ID3577
+G0253,Kota Magelang,council,city,G0017,,pending,,,,,,ID3371
+G0254,Kota Makassar,council,city,G0031,,pending,,,,,,ID7371
+G0255,Kota Malang,council,city,G0019,,pending,,,,,,ID3573
+G0256,Kota Manado,council,city,G0029,,pending,,,,,,ID7171
+G0257,Kota Mataram,council,city,G0022,,pending,,,,,,ID5271
+G0258,Kota Medan,council,city,G0006,,pending,,,,,,ID1275
+G0259,Kota Metro,council,city,G0012,,pending,,,,,,ID1872
+G0260,Kota Mojokerto,council,city,G0019,,pending,,,,,,ID3576
+G0261,Kota Padang,council,city,G0007,,pending,,,,,,ID1371
+G0262,Kota Padang Panjang,council,city,G0007,,pending,,,,,,ID1374
+G0263,Kota Padangsidimpuan,council,city,G0006,,pending,,,,,,ID1277
+G0264,Kota Pagar Alam,council,city,G0010,,pending,,,,,,ID1673
+G0265,Kota Palangka Raya,council,city,G0025,,pending,,,,,,ID6271
+G0266,Kota Palembang,council,city,G0010,,pending,,,,,,ID1671
+G0267,Kota Palopo,council,city,G0031,,pending,,,,,,ID7373
+G0268,Kota Palu,council,city,G0030,,pending,,,,,,ID7271
+G0269,Kota Pangkal Pinang,council,city,G0013,,pending,,,,,,ID1971
+G0270,Kota Parepare,council,city,G0031,,pending,,,,,,ID7372
+G0271,Kota Pariaman,council,city,G0007,,pending,,,,,,ID1377
+G0272,Kota Pasuruan,council,city,G0019,,pending,,,,,,ID3575
+G0273,Kota Payakumbuh,council,city,G0007,,pending,,,,,,ID1376
+G0274,Kota Pekalongan,council,city,G0017,,pending,,,,,,ID3375
+G0275,Kota Pekanbaru,council,city,G0008,,pending,,,,,,ID1471
+G0276,Kota Pematang Siantar,council,city,G0006,,pending,,,,,,ID1273
+G0277,Kota Pontianak,council,city,G0024,,pending,,,,,,ID6171
+G0278,Kota Prabumulih,council,city,G0010,,pending,,,,,,ID1672
+G0279,Kota Probolinggo,council,city,G0019,,pending,,,,,,ID3574
+G0280,Kota Sabang,council,city,G0005,,pending,,,,,,ID1172
+G0281,Kota Salatiga,council,city,G0017,,pending,,,,,,ID3373
+G0282,Kota Samarinda,council,city,G0027,,pending,,,,,,ID6472
+G0283,Kota Sawah Lunto,council,city,G0007,,pending,,,,,,ID1373
+G0284,Kota Semarang,council,city,G0017,,pending,,,,,,ID3374
+G0285,Kota Serang,council,city,G0020,,pending,,,,,,ID3673
+G0286,Kota Sibolga,council,city,G0006,,pending,,,,,,ID1271
+G0287,Kota Singkawang,council,city,G0024,,pending,,,,,,ID6172
+G0288,Kota Solok,council,city,G0007,,pending,,,,,,ID1372
+G0289,Kota Sorong,council,city,G0037,,pending,,,,,,ID9171
+G0290,Kota Subulussalam,council,city,G0005,,pending,,,,,,ID1175
+G0291,Kota Sukabumi,council,city,G0016,,pending,,,,,,ID3272
+G0292,Kota Sungai Penuh,council,city,G0009,,pending,,,,,,ID1572
+G0293,Kota Surabaya,council,city,G0019,,pending,,,,,,ID3578
+G0294,Kota Surakarta,council,city,G0017,,pending,,,,,,ID3372
+G0295,Kota Tangerang,council,city,G0020,,pending,,,,,,ID3671
+G0296,Kota Tangerang Selatan,council,city,G0020,,pending,,,,,,ID3674
+G0297,Kota Tanjung Balai,council,city,G0006,,pending,,,,,,ID1272
+G0298,Kota Tanjung Pinang,council,city,G0014,,pending,,,,,,ID2172
+G0299,Kota Tarakan,council,city,G0028,,pending,,,,,,ID6571
+G0300,Kota Tasikmalaya,council,city,G0016,,pending,,,,,,ID3278
+G0301,Kota Tebing Tinggi,council,city,G0006,,pending,,,,,,ID1274
+G0302,Kota Tegal,council,city,G0017,,pending,,,,,,ID3376
+G0303,Kota Ternate,council,city,G0036,,pending,,,,,,ID8271
+G0304,Kota Tidore Kepulauan,council,city,G0036,,pending,,,,,,ID8272
+G0305,Kota Tomohon,council,city,G0029,,pending,,,,,,ID7173
+G0306,Kota Tual,council,city,G0035,,pending,,,,,,ID8172
+G0307,Kota Yogyakarta,council,city,G0018,,pending,,,,,,ID3471
+G0308,Kotawaringin Barat,council,regency,G0025,,pending,,,,,,ID6201
+G0309,Kotawaringin Timur,council,regency,G0025,,pending,,,,,,ID6202
+G0310,Kuantan Singingi,council,regency,G0008,,pending,,,,,,ID1401
+G0311,Kubu Raya,council,regency,G0024,,pending,,,,,,ID6112
+G0312,Kudus,council,regency,G0017,,pending,,,,,,ID3319
+G0313,Kulon Progo,council,regency,G0018,,pending,,,,,,ID3401
+G0314,Kuningan,council,regency,G0016,,pending,,,,,,ID3208
+G0315,Kupang,council,regency,G0023,,pending,,,,,,ID5303
+G0316,Kutai Barat,council,regency,G0027,,pending,,,,,,ID6402
+G0317,Kutai Kartanegara,council,regency,G0027,,pending,,,,,,ID6403
+G0318,Kutai Timur,council,regency,G0027,,pending,,,,,,ID6404
+G0319,Labuhan Batu,council,regency,G0006,,pending,,,,,,ID1207
+G0320,Labuhan Batu Selatan,council,regency,G0006,,pending,,,,,,ID1222
+G0321,Labuhan Batu Utara,council,regency,G0006,,pending,,,,,,ID1223
+G0322,Lahat,council,regency,G0010,,pending,,,,,,ID1604
+G0323,Lamandau,council,regency,G0025,,pending,,,,,,ID6207
+G0324,Lamongan,council,regency,G0019,,pending,,,,,,ID3524
+G0325,Lampung Barat,council,regency,G0012,,pending,,,,,,ID1801
+G0326,Lampung Selatan,council,regency,G0012,,pending,,,,,,ID1803
+G0327,Lampung Tengah,council,regency,G0012,,pending,,,,,,ID1805
+G0328,Lampung Timur,council,regency,G0012,,pending,,,,,,ID1804
+G0329,Lampung Utara,council,regency,G0012,,pending,,,,,,ID1806
+G0330,Landak,council,regency,G0024,,pending,,,,,,ID6103
+G0331,Langkat,council,regency,G0006,,pending,,,,,,ID1213
+G0332,Lanny Jaya,council,regency,G0038,,pending,,,,,,ID9430
+G0333,Lebak,council,regency,G0020,,pending,,,,,,ID3602
+G0334,Lebong,council,regency,G0011,,pending,,,,,,ID1707
+G0335,Lembata,council,regency,G0023,,pending,,,,,,ID5308
+G0336,Lima Puluh Kota,council,regency,G0007,,pending,,,,,,ID1308
+G0337,Lingga,council,regency,G0014,,pending,,,,,,ID2104
+G0338,Lombok Barat,council,regency,G0022,,pending,,,,,,ID5201
+G0339,Lombok Tengah,council,regency,G0022,,pending,,,,,,ID5202
+G0340,Lombok Timur,council,regency,G0022,,pending,,,,,,ID5203
+G0341,Lombok Utara,council,regency,G0022,,pending,,,,,,ID5208
+G0342,Lumajang,council,regency,G0019,,pending,,,,,,ID3508
+G0343,Luwu,council,regency,G0031,,pending,,,,,,ID7317
+G0344,Luwu Timur,council,regency,G0031,,pending,,,,,,ID7325
+G0345,Luwu Utara,council,regency,G0031,,pending,,,,,,ID7322
+G0346,Madiun,council,regency,G0019,,pending,,,,,,ID3519
+G0347,Magelang,council,regency,G0017,,pending,,,,,,ID3308
+G0348,Magetan,council,regency,G0019,,pending,,,,,,ID3520
+G0349,Mahakam Hulu,council,regency,G0027,,pending,,,,,,ID6411
+G0350,Majalengka,council,regency,G0016,,pending,,,,,,ID3210
+G0351,Majene,council,regency,G0034,,pending,,,,,,ID7601
+G0352,Malaka,council,regency,G0023,,pending,,,,,,ID5321
+G0353,Malang,council,regency,G0019,,pending,,,,,,ID3507
+G0354,Malinau,council,regency,G0028,,pending,,,,,,ID6501
+G0355,Maluku Barat Daya,council,regency,G0035,,pending,,,,,,ID8108
+G0356,Maluku Tengah,council,regency,G0035,,pending,,,,,,ID8103
+G0357,Maluku Tenggara,council,regency,G0035,,pending,,,,,,ID8102
+G0358,Maluku Tenggara Barat,council,regency,G0035,,pending,,,,,,ID8101
+G0359,Mamasa,council,regency,G0034,,pending,,,,,,ID7603
+G0360,Mamberamo Raya,council,regency,G0038,,pending,,,,,,ID9428
+G0361,Mamberamo Tengah,council,regency,G0038,,pending,,,,,,ID9431
+G0362,Mamuju,council,regency,G0034,,pending,,,,,,ID7604
+G0363,Mamuju Tengah,council,regency,G0034,,pending,,,,,,ID7606
+G0364,Mamuju Utara,council,regency,G0034,,pending,,,,,,ID7605
+G0365,Mandailing Natal,council,regency,G0006,,pending,,,,,,ID1202
+G0366,Manggarai,council,regency,G0023,,pending,,,,,,ID5313
+G0367,Manggarai Barat,council,regency,G0023,,pending,,,,,,ID5315
+G0368,Manggarai Timur,council,regency,G0023,,pending,,,,,,ID5319
+G0369,Manokwari,council,regency,G0037,,pending,,,,,,ID9105
+G0370,Manokwari Selatan,council,regency,G0037,,pending,,,,,,ID9111
+G0371,Mappi,council,regency,G0038,,pending,,,,,,ID9414
+G0372,Maros,council,regency,G0031,,pending,,,,,,ID7308
+G0373,Maybrat,council,regency,G0037,,pending,,,,,,ID9110
+G0374,Melawi,council,regency,G0024,,pending,,,,,,ID6110
+G0375,Mempawah,council,regency,G0024,,pending,,,,,,ID6104
+G0376,Merangin,council,regency,G0009,,pending,,,,,,ID1502
+G0377,Merauke,council,regency,G0038,,pending,,,,,,ID9401
+G0378,Mesuji,council,regency,G0012,,pending,,,,,,ID1811
+G0379,Mimika,council,regency,G0038,,pending,,,,,,ID9412
+G0380,Minahasa,council,regency,G0029,,pending,,,,,,ID7102
+G0381,Minahasa Selatan,council,regency,G0029,,pending,,,,,,ID7105
+G0382,Minahasa Tenggara,council,regency,G0029,,pending,,,,,,ID7109
+G0383,Minahasa Utara,council,regency,G0029,,pending,,,,,,ID7106
+G0384,Mojokerto,council,regency,G0019,,pending,,,,,,ID3516
+G0385,Morowali,council,regency,G0030,,pending,,,,,,ID7203
+G0386,Morowali Utara,council,regency,G0030,,pending,,,,,,ID7212
+G0387,Muara Enim,council,regency,G0010,,pending,,,,,,ID1603
+G0388,Muaro Jambi,council,regency,G0009,,pending,,,,,,ID1505
+G0389,Mukomuko,council,regency,G0011,,pending,,,,,,ID1706
+G0390,Muna,council,regency,G0032,,pending,,,,,,ID7402
+G0391,Muna Barat,council,regency,G0032,,pending,,,,,,ID7413
+G0392,Murung Raya,council,regency,G0025,,pending,,,,,,ID6213
+G0393,Musi Banyuasin,council,regency,G0010,,pending,,,,,,ID1606
+G0394,Musi Rawas,council,regency,G0010,,pending,,,,,,ID1605
+G0395,Musi Rawas Utara,council,regency,G0010,,pending,,,,,,ID1613
+G0396,Nabire,council,regency,G0038,,pending,,,,,,ID9404
+G0397,Nagan Raya,council,regency,G0005,,pending,,,,,,ID1115
+G0398,Nagekeo,council,regency,G0023,,pending,,,,,,ID5318
+G0399,Natuna,council,regency,G0014,,pending,,,,,,ID2103
+G0400,Nduga,council,regency,G0038,,pending,,,,,,ID9429
+G0401,Ngada,council,regency,G0023,,pending,,,,,,ID5312
+G0402,Nganjuk,council,regency,G0019,,pending,,,,,,ID3518
+G0403,Ngawi,council,regency,G0019,,pending,,,,,,ID3521
+G0404,Nias,council,regency,G0006,,pending,,,,,,ID1201
+G0405,Nias Barat,council,regency,G0006,,pending,,,,,,ID1225
+G0406,Nias Selatan,council,regency,G0006,,pending,,,,,,ID1214
+G0407,Nias Utara,council,regency,G0006,,pending,,,,,,ID1224
+G0408,Nunukan,council,regency,G0028,,pending,,,,,,ID6504
+G0409,Ogan Ilir,council,regency,G0010,,pending,,,,,,ID1610
+G0410,Ogan Komering Ilir,council,regency,G0010,,pending,,,,,,ID1602
+G0411,Ogan Komering Ulu,council,regency,G0010,,pending,,,,,,ID1601
+G0412,Ogan Komering Ulu Selatan,council,regency,G0010,,pending,,,,,,ID1608
+G0413,Ogan Komering Ulu Timur,council,regency,G0010,,pending,,,,,,ID1609
+G0414,Pacitan,council,regency,G0019,,pending,,,,,,ID3501
+G0415,Padang Lawas,council,regency,G0006,,pending,,,,,,ID1221
+G0416,Padang Lawas Utara,council,regency,G0006,,pending,,,,,,ID1220
+G0417,Padang Pariaman,council,regency,G0007,,pending,,,,,,ID1306
+G0418,Pakpak Bharat,council,regency,G0006,,pending,,,,,,ID1216
+G0419,Pamekasan,council,regency,G0019,,pending,,,,,,ID3528
+G0420,Pandeglang,council,regency,G0020,,pending,,,,,,ID3601
+G0421,Pangandaran,council,regency,G0016,,pending,,,,,,ID3218
+G0422,Pangkajene Dan Kepulauan,council,regency,G0031,,pending,,,,,,ID7309
+G0423,Paniai,council,regency,G0038,,pending,,,,,,ID9410
+G0424,Parigi Moutong,council,regency,G0030,,pending,,,,,,ID7208
+G0425,Pasaman,council,regency,G0007,,pending,,,,,,ID1309
+G0426,Pasaman Barat,council,regency,G0007,,pending,,,,,,ID1312
+G0427,Paser,council,regency,G0027,,pending,,,,,,ID6401
+G0428,Pasuruan,council,regency,G0019,,pending,,,,,,ID3514
+G0429,Pati,council,regency,G0017,,pending,,,,,,ID3318
+G0430,Pegunungan Arfak,council,regency,G0037,,pending,,,,,,ID9112
+G0431,Pegunungan Bintang,council,regency,G0038,,pending,,,,,,ID9417
+G0432,Pekalongan,council,regency,G0017,,pending,,,,,,ID3326
+G0433,Pelalawan,council,regency,G0008,,pending,,,,,,ID1404
+G0434,Pemalang,council,regency,G0017,,pending,,,,,,ID3327
+G0435,Penajam Paser Utara,council,regency,G0027,,pending,,,,,,ID6409
+G0436,Penukal Abab Lematang Ilir,council,regency,G0010,,pending,,,,,,ID1612
+G0437,Pesawaran,council,regency,G0012,,pending,,,,,,ID1809
+G0438,Pesisir Barat,council,regency,G0012,,pending,,,,,,ID1813
+G0439,Pesisir Selatan,council,regency,G0007,,pending,,,,,,ID1302
+G0440,Pidie,council,regency,G0005,,pending,,,,,,ID1109
+G0441,Pidie Jaya,council,regency,G0005,,pending,,,,,,ID1118
+G0442,Pinrang,council,regency,G0031,,pending,,,,,,ID7315
+G0443,Pohuwato,council,regency,G0033,,pending,,,,,,ID7503
+G0444,Polewali Mandar,council,regency,G0034,,pending,,,,,,ID7602
+G0445,Ponorogo,council,regency,G0019,,pending,,,,,,ID3502
+G0446,Poso,council,regency,G0030,,pending,,,,,,ID7204
+G0447,Pringsewu,council,regency,G0012,,pending,,,,,,ID1810
+G0448,Probolinggo,council,regency,G0019,,pending,,,,,,ID3513
+G0449,Pulang Pisau,council,regency,G0025,,pending,,,,,,ID6210
+G0450,Pulau Morotai,council,regency,G0036,,pending,,,,,,ID8207
+G0451,Pulau Taliabu,council,regency,G0036,,pending,,,,,,ID8208
+G0452,Puncak,council,regency,G0038,,pending,,,,,,ID9433
+G0453,Puncak Jaya,council,regency,G0038,,pending,,,,,,ID9411
+G0454,Purbalingga,council,regency,G0017,,pending,,,,,,ID3303
+G0455,Purwakarta,council,regency,G0016,,pending,,,,,,ID3214
+G0456,Purworejo,council,regency,G0017,,pending,,,,,,ID3306
+G0457,Raja Ampat,council,regency,G0037,,pending,,,,,,ID9108
+G0458,Rejang Lebong,council,regency,G0011,,pending,,,,,,ID1702
+G0459,Rembang,council,regency,G0017,,pending,,,,,,ID3317
+G0460,Rokan Hilir,council,regency,G0008,,pending,,,,,,ID1409
+G0461,Rokan Hulu,council,regency,G0008,,pending,,,,,,ID1407
+G0462,Rote Ndao,council,regency,G0023,,pending,,,,,,ID5314
+G0463,Sabu Raijua,council,regency,G0023,,pending,,,,,,ID5320
+G0464,Sambas,council,regency,G0024,,pending,,,,,,ID6101
+G0465,Samosir,council,regency,G0006,,pending,,,,,,ID1217
+G0466,Sampang,council,regency,G0019,,pending,,,,,,ID3527
+G0467,Sanggau,council,regency,G0024,,pending,,,,,,ID6105
+G0468,Sarmi,council,regency,G0038,,pending,,,,,,ID9419
+G0469,Sarolangun,council,regency,G0009,,pending,,,,,,ID1503
+G0470,Sekadau,council,regency,G0024,,pending,,,,,,ID6109
+G0471,Seluma,council,regency,G0011,,pending,,,,,,ID1705
+G0472,Semarang,council,regency,G0017,,pending,,,,,,ID3322
+G0473,Seram Bagian Barat,council,regency,G0035,,pending,,,,,,ID8106
+G0474,Seram Bagian Timur,council,regency,G0035,,pending,,,,,,ID8107
+G0475,Serang,council,regency,G0020,,pending,,,,,,ID3604
+G0476,Serdang Bedagai,council,regency,G0006,,pending,,,,,,ID1218
+G0477,Seruyan,council,regency,G0025,,pending,,,,,,ID6208
+G0478,Siak,council,regency,G0008,,pending,,,,,,ID1405
+G0479,Siau Tagulandang Biaro,council,regency,G0029,,pending,,,,,,ID7108
+G0480,Sidenreng Rappang,council,regency,G0031,,pending,,,,,,ID7314
+G0481,Sidoarjo,council,regency,G0019,,pending,,,,,,ID3515
+G0482,Sigi,council,regency,G0030,,pending,,,,,,ID7210
+G0483,Sijunjung,council,regency,G0007,,pending,,,,,,ID1304
+G0484,Sikka,council,regency,G0023,,pending,,,,,,ID5310
+G0485,Simalungun,council,regency,G0006,,pending,,,,,,ID1209
+G0486,Simeulue,council,regency,G0005,,pending,,,,,,ID1101
+G0487,Sinjai,council,regency,G0031,,pending,,,,,,ID7307
+G0488,Sintang,council,regency,G0024,,pending,,,,,,ID6107
+G0489,Situbondo,council,regency,G0019,,pending,,,,,,ID3512
+G0490,Sleman,council,regency,G0018,,pending,,,,,,ID3404
+G0491,Solok,council,regency,G0007,,pending,,,,,,ID1303
+G0492,Solok Selatan,council,regency,G0007,,pending,,,,,,ID1310
+G0493,Soppeng,council,regency,G0031,,pending,,,,,,ID7312
+G0494,Sorong,council,regency,G0037,,pending,,,,,,ID9107
+G0495,Sorong Selatan,council,regency,G0037,,pending,,,,,,ID9106
+G0496,Sragen,council,regency,G0017,,pending,,,,,,ID3314
+G0497,Subang,council,regency,G0016,,pending,,,,,,ID3213
+G0498,Sukabumi,council,regency,G0016,,pending,,,,,,ID3202
+G0499,Sukamara,council,regency,G0025,,pending,,,,,,ID6206
+G0500,Sukoharjo,council,regency,G0017,,pending,,,,,,ID3311
+G0501,Sumba Barat,council,regency,G0023,,pending,,,,,,ID5301
+G0502,Sumba Barat Daya,council,regency,G0023,,pending,,,,,,ID5317
+G0503,Sumba Tengah,council,regency,G0023,,pending,,,,,,ID5316
+G0504,Sumba Timur,council,regency,G0023,,pending,,,,,,ID5302
+G0505,Sumbawa,council,regency,G0022,,pending,,,,,,ID5204
+G0506,Sumbawa Barat,council,regency,G0022,,pending,,,,,,ID5207
+G0507,Sumedang,council,regency,G0016,,pending,,,,,,ID3211
+G0508,Sumenep,council,regency,G0019,,pending,,,,,,ID3529
+G0509,Supiori,council,regency,G0038,,pending,,,,,,ID9427
+G0510,Tabalong,council,regency,G0026,,pending,,,,,,ID6309
+G0511,Tabanan,council,regency,G0021,,pending,,,,,,ID5102
+G0512,Takalar,council,regency,G0031,,pending,,,,,,ID7305
+G0513,Tambrauw,council,regency,G0037,,pending,,,,,,ID9109
+G0514,Tana Tidung,council,regency,G0028,,pending,,,,,,ID6503
+G0515,Tana Toraja,council,regency,G0031,,pending,,,,,,ID7318
+G0516,Tanah Bumbu,council,regency,G0026,,pending,,,,,,ID6310
+G0517,Tanah Datar,council,regency,G0007,,pending,,,,,,ID1305
+G0518,Tanah Laut,council,regency,G0026,,pending,,,,,,ID6301
+G0519,Tangerang,council,regency,G0020,,pending,,,,,,ID3603
+G0520,Tanggamus,council,regency,G0012,,pending,,,,,,ID1802
+G0521,Tanjung Jabung Barat,council,regency,G0009,,pending,,,,,,ID1507
+G0522,Tanjung Jabung Timur,council,regency,G0009,,pending,,,,,,ID1506
+G0523,Tapanuli Selatan,council,regency,G0006,,pending,,,,,,ID1203
+G0524,Tapanuli Tengah,council,regency,G0006,,pending,,,,,,ID1204
+G0525,Tapanuli Utara,council,regency,G0006,,pending,,,,,,ID1205
+G0526,Tapin,council,regency,G0026,,pending,,,,,,ID6305
+G0527,Tasikmalaya,council,regency,G0016,,pending,,,,,,ID3206
+G0528,Tebo,council,regency,G0009,,pending,,,,,,ID1508
+G0529,Tegal,council,regency,G0017,,pending,,,,,,ID3328
+G0530,Teluk Bintuni,council,regency,G0037,,pending,,,,,,ID9104
+G0531,Teluk Wondama,council,regency,G0037,,pending,,,,,,ID9103
+G0532,Temanggung,council,regency,G0017,,pending,,,,,,ID3323
+G0533,Timor Tengah Selatan,council,regency,G0023,,pending,,,,,,ID5304
+G0534,Timor Tengah Utara,council,regency,G0023,,pending,,,,,,ID5305
+G0535,Toba Samosir,council,regency,G0006,,pending,,,,,,ID1206
+G0536,Tojo Una-Una,council,regency,G0030,,pending,,,,,,ID7209
+G0537,Toli-Toli,council,regency,G0030,,pending,,,,,,ID7206
+G0538,Tolikara,council,regency,G0038,,pending,,,,,,ID9418
+G0539,Toraja Utara,council,regency,G0031,,pending,,,,,,ID7326
+G0540,Trenggalek,council,regency,G0019,,pending,,,,,,ID3503
+G0541,Tuban,council,regency,G0019,,pending,,,,,,ID3523
+G0542,Tulang Bawang Barat,council,regency,G0012,,pending,,,,,,ID1812
+G0543,Tulangbawang,council,regency,G0012,,pending,,,,,,ID1808
+G0544,Tulungagung,council,regency,G0019,,pending,,,,,,ID3504
+G0545,Wajo,council,regency,G0031,,pending,,,,,,ID7313
+G0546,Wakatobi,council,regency,G0032,,pending,,,,,,ID7407
+G0547,Waropen,council,regency,G0038,,pending,,,,,,ID9426
+G0548,Way Kanan,council,regency,G0012,,pending,,,,,,ID1807
+G0549,Wonogiri,council,regency,G0017,,pending,,,,,,ID3312
+G0550,Wonosobo,council,regency,G0017,,pending,,,,,,ID3307
+G0551,Yahukimo,council,regency,G0038,,pending,,,,,,ID9416
+G0552,Yalimo,council,regency,G0038,,pending,,,,,,ID9432

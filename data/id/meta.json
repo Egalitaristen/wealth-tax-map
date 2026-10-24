@@ -1,0 +1,49 @@
+{
+  "name": "Indonesia",
+  "iso2": "ID",
+  "lead": "",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Depth: seed. Scope: national plus regional (provinsi) and local (kabupaten/kota) sample. R001 (2026-10-22) covered the prominent civil society coalitions (Forum Pajak Berkeadilan Indonesia, The PRAKARSA, PWYP Indonesia, CELIOS, PUSKAHA, TII, FITRA, Lokataru, IGJ, Trend Asia, Aksi!), leading economists (Bhima Yudhistira, Media Wahyudi Askar, Esther Sri Astuti / INDEF), political party and presidential campaign endorsements (Ganjar Pranowo / PDI-P, Anies Baswedan, Muhaimin Iskandar, Thomas Lembong, Handi Risza / PKS), and the student movement (LMND, EW-LMND Sumsel). The register holds the country root, 3 national institutions, 34 provinces, and 514 kabupaten & kota (BPS-PCODE from OCHA COD-AB, CC-BY-IGO-3.0). Exclusions noted for deceased economist Faisal Basri, wealth tax opponent Budi Frensidy, and out-of-definition/neutral figures. Polls record Earth4All/Ipsos 2024 (86% support across G20) and Glocalities/Millionaires for Humanity 2021 (79% support for 1% annual tax over Rp 140B). Review 2026-10-24 (R004): 5 rows removed, 8 regraded A to B.",
+  "polls": [
+    {
+      "support": 86,
+      "oppose": null,
+      "scope": "Indonesia, adults aged 18-75, online",
+      "question": "A tax on the wealth of the super-rich to fund economic, social, and environmental transformations",
+      "question_original": "",
+      "pollster": "Ipsos",
+      "commissioned_by": "Earth4All / Global Commons Alliance",
+      "fieldwork": "2024-03-05 to 2024-04-08",
+      "sample": "1,000 respondents in Indonesia (22,000 across 22 countries)",
+      "published": "2024-06-25",
+      "url": "https://earth4all.life/news/tax-the-rich-say-g20-citizens/"
+    },
+    {
+      "support": 79,
+      "oppose": 4,
+      "scope": "Indonesia, representative sample of adults",
+      "question": "An additional 1% annual wealth tax on individuals with net wealth exceeding IDR 140 billion (~US$10m) to help fund post-pandemic recovery",
+      "question_original": "Dukungan terhadap penerapan wealth tax di Indonesia dimana orang yang memiliki lebih dari Rp140 miliar rupiah harus membayar pajak tahunan tambahan sebesar 1 persen",
+      "pollster": "Glocalities",
+      "commissioned_by": "Millionaires for Humanity in partnership with The PRAKARSA",
+      "fieldwork": "2021-01 to 2021-03",
+      "sample": "1,051 respondents",
+      "published": "2021-04-28",
+      "url": "https://theprakarsa.org/penerapan-pajak-kekayaan-bagi-orang-superkaya-dinilai-jadi-solusi-pulihkan-ekonomi/"
+    },
+    {
+      "support": 90,
+      "oppose": 10,
+      "scope": "Indonesia, national representative public sample",
+      "question": "Persetujuan terhadap penerapan pajak kekayaan (wealth tax) sebesar 2 persen pada 50 orang terkaya di Indonesia untuk mendanai perlindungan sosial dan menekan ketimpangan",
+      "question_original": "Tingkat persetujuan terhadap penerapan pajak kekayaan sebesar 2% pada 50 orang terkaya di Indonesia (89,77% setuju, 10,23% menolak)",
+      "pollster": "CELIOS",
+      "commissioned_by": "Center of Economic and Law Studies (CELIOS)",
+      "fieldwork": "2026-03 to 2026-04",
+      "sample": "National representative survey",
+      "published": "2026-04-26",
+      "url": "https://nasional.kontan.co.id/news/survei-celios-mayoritas-masyarakat-setuju-penerapan-pajak-kekayaan"
+    }
+  ]
+}
