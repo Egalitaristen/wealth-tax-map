@@ -1,0 +1,360 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,Netherlands,national,country,,,in_progress,,,,,,
+G0002,Tweede Kamer,national,legislature,G0001,https://www.tweedekamer.nl,pending,,,,,,
+G0003,Eerste Kamer,national,legislature,G0001,https://www.eerstekamer.nl,pending,,,,,,
+G0004,Kabinet (Government of the Netherlands),national,executive,G0001,https://www.rijksoverheid.nl,pending,,,,,,
+G0005,European Parliament (Dutch MEPs),supranational,legislature,G0001,,pending,,,,,,
+G0006,Drenthe,region,province,G0001,,pending,,,,,,PV22
+G0007,Flevoland,region,province,G0001,,pending,,,,,,PV24
+G0008,Fryslân,region,province,G0001,,pending,,,,,,PV21
+G0009,Gelderland,region,province,G0001,,pending,,,,,,PV25
+G0010,Groningen,region,province,G0001,,pending,,,,,,PV20
+G0011,Limburg,region,province,G0001,,pending,,,,,,PV31
+G0012,Noord-Brabant,region,province,G0001,,pending,,,,,,PV30
+G0013,Noord-Holland,region,province,G0001,,pending,,,,,,PV27
+G0014,Overijssel,region,province,G0001,,pending,,,,,,PV23
+G0015,Utrecht,region,province,G0001,,pending,,,,,,PV26
+G0016,Zeeland,region,province,G0001,,pending,,,,,,PV29
+G0017,Zuid-Holland,region,province,G0001,,pending,,,,,,PV28
+G0018,'s-Gravenhage,council,municipality,G0017,,in_progress,R004,2026-10-23,1,2,"R004 targeted branch programme/campaign follow-up found public supporters. Party/campaign advocacy, not municipal institutional adoption. No exhaustive local sweep claimed.",GM0518
+G0019,'s-Hertogenbosch,council,municipality,G0012,,pending,,,,,,GM0796
+G0020,Aa en Hunze,council,municipality,G0006,,pending,,,,,,GM1680
+G0021,Aalsmeer,council,municipality,G0013,,pending,,,,,,GM0358
+G0022,Aalten,council,municipality,G0009,,pending,,,,,,GM0197
+G0023,Achtkarspelen,council,municipality,G0008,,pending,,,,,,GM0059
+G0024,Alblasserdam,council,municipality,G0017,,pending,,,,,,GM0482
+G0025,Albrandswaard,council,municipality,G0017,,pending,,,,,,GM0613
+G0026,Alkmaar,council,municipality,G0013,,pending,,,,,,GM0361
+G0027,Almelo,council,municipality,G0014,,pending,,,,,,GM0141
+G0028,Almere,council,municipality,G0007,,pending,,,,,,GM0034
+G0029,Alphen aan den Rijn,council,municipality,G0017,,pending,,,,,,GM0484
+G0030,Alphen-Chaam,council,municipality,G0012,,pending,,,,,,GM1723
+G0031,Altena,council,municipality,G0012,,pending,,,,,,GM1959
+G0032,Ameland,council,municipality,G0008,,pending,,,,,,GM0060
+G0033,Amersfoort,council,municipality,G0015,,pending,,,,,,GM0307
+G0034,Amstelveen,council,municipality,G0013,,pending,,,,,,GM0362
+G0035,Amsterdam,council,municipality,G0013,,in_progress,R004,2026-10-23,1,1,"R004 targeted branch programme/campaign follow-up found public supporters. Party/campaign advocacy, not municipal institutional adoption. No exhaustive local sweep claimed.",GM0363
+G0036,Apeldoorn,council,municipality,G0009,,pending,,,,,,GM0200
+G0037,Arnhem,council,municipality,G0009,,pending,,,,,,GM0202
+G0038,Assen,council,municipality,G0006,,pending,,,,,,GM0106
+G0039,Asten,council,municipality,G0012,,pending,,,,,,GM0743
+G0040,Baarle-Nassau,council,municipality,G0012,,pending,,,,,,GM0744
+G0041,Baarn,council,municipality,G0015,,pending,,,,,,GM0308
+G0042,Barendrecht,council,municipality,G0017,,pending,,,,,,GM0489
+G0043,Barneveld,council,municipality,G0009,,pending,,,,,,GM0203
+G0044,Beek (L.),council,municipality,G0011,,pending,,,,,,GM0888
+G0045,Beekdaelen,council,municipality,G0011,,pending,,,,,,GM1954
+G0046,Beesel,council,municipality,G0011,,pending,,,,,,GM0889
+G0047,Berg en Dal,council,municipality,G0009,,pending,,,,,,GM1945
+G0048,Bergeijk,council,municipality,G0012,,pending,,,,,,GM1724
+G0049,Bergen (L.),council,municipality,G0011,,pending,,,,,,GM0893
+G0050,Bergen (NH.),council,municipality,G0013,,pending,,,,,,GM0373
+G0051,Bergen op Zoom,council,municipality,G0012,,pending,,,,,,GM0748
+G0052,Berkelland,council,municipality,G0009,,pending,,,,,,GM1859
+G0053,Bernheze,council,municipality,G0012,,pending,,,,,,GM1721
+G0054,Best,council,municipality,G0012,,pending,,,,,,GM0753
+G0055,Beuningen,council,municipality,G0009,,pending,,,,,,GM0209
+G0056,Beverwijk,council,municipality,G0013,,pending,,,,,,GM0375
+G0057,Bladel,council,municipality,G0012,,pending,,,,,,GM1728
+G0058,Blaricum,council,municipality,G0013,,pending,,,,,,GM0376
+G0059,Bloemendaal,council,municipality,G0013,,pending,,,,,,GM0377
+G0060,Bodegraven-Reeuwijk,council,municipality,G0017,,pending,,,,,,GM1901
+G0061,Boekel,council,municipality,G0012,,pending,,,,,,GM0755
+G0062,Borger-Odoorn,council,municipality,G0006,,pending,,,,,,GM1681
+G0063,Borne,council,municipality,G0014,,pending,,,,,,GM0147
+G0064,Borsele,council,municipality,G0016,,pending,,,,,,GM0654
+G0065,Boxtel,council,municipality,G0012,,pending,,,,,,GM0757
+G0066,Breda,council,municipality,G0012,,pending,,,,,,GM0758
+G0067,Bronckhorst,council,municipality,G0009,,pending,,,,,,GM1876
+G0068,Brummen,council,municipality,G0009,,pending,,,,,,GM0213
+G0069,Brunssum,council,municipality,G0011,,pending,,,,,,GM0899
+G0070,Bunnik,council,municipality,G0015,,pending,,,,,,GM0312
+G0071,Bunschoten,council,municipality,G0015,,pending,,,,,,GM0313
+G0072,Buren,council,municipality,G0009,,pending,,,,,,GM0214
+G0073,Capelle aan den IJssel,council,municipality,G0017,,pending,,,,,,GM0502
+G0074,Castricum,council,municipality,G0013,,pending,,,,,,GM0383
+G0075,Coevorden,council,municipality,G0006,,pending,,,,,,GM0109
+G0076,Cranendonck,council,municipality,G0012,,pending,,,,,,GM1706
+G0077,Culemborg,council,municipality,G0009,,pending,,,,,,GM0216
+G0078,Dalfsen,council,municipality,G0014,,pending,,,,,,GM0148
+G0079,Dantumadiel,council,municipality,G0008,,pending,,,,,,GM1891
+G0080,De Bilt,council,municipality,G0015,,pending,,,,,,GM0310
+G0081,De Fryske Marren,council,municipality,G0008,,pending,,,,,,GM1940
+G0082,De Ronde Venen,council,municipality,G0015,,pending,,,,,,GM0736
+G0083,De Wolden,council,municipality,G0006,,pending,,,,,,GM1690
+G0084,Delft,council,municipality,G0017,,pending,,,,,,GM0503
+G0085,Den Helder,council,municipality,G0013,,pending,,,,,,GM0400
+G0086,Deurne,council,municipality,G0012,,pending,,,,,,GM0762
+G0087,Deventer,council,municipality,G0014,,pending,,,,,,GM0150
+G0088,Diemen,council,municipality,G0013,,pending,,,,,,GM0384
+G0089,Dijk en Waard,council,municipality,G0013,,pending,,,,,,GM1980
+G0090,Dinkelland,council,municipality,G0014,,pending,,,,,,GM1774
+G0091,Doesburg,council,municipality,G0009,,pending,,,,,,GM0221
+G0092,Doetinchem,council,municipality,G0009,,pending,,,,,,GM0222
+G0093,Dongen,council,municipality,G0012,,pending,,,,,,GM0766
+G0094,Dordrecht,council,municipality,G0017,,pending,,,,,,GM0505
+G0095,Drechterland,council,municipality,G0013,,pending,,,,,,GM0498
+G0096,Drimmelen,council,municipality,G0012,,pending,,,,,,GM1719
+G0097,Dronten,council,municipality,G0007,,pending,,,,,,GM0303
+G0098,Druten,council,municipality,G0009,,pending,,,,,,GM0225
+G0099,Duiven,council,municipality,G0009,,pending,,,,,,GM0226
+G0100,Echt-Susteren,council,municipality,G0011,,pending,,,,,,GM1711
+G0101,Edam-Volendam,council,municipality,G0013,,pending,,,,,,GM0385
+G0102,Ede,council,municipality,G0009,,pending,,,,,,GM0228
+G0103,Eemnes,council,municipality,G0015,,pending,,,,,,GM0317
+G0104,Eemsdelta,council,municipality,G0010,,pending,,,,,,GM1979
+G0105,Eersel,council,municipality,G0012,,pending,,,,,,GM0770
+G0106,Eijsden-Margraten,council,municipality,G0011,,pending,,,,,,GM1903
+G0107,Eindhoven,council,municipality,G0012,,pending,,,,,,GM0772
+G0108,Elburg,council,municipality,G0009,,pending,,,,,,GM0230
+G0109,Emmen,council,municipality,G0006,,pending,,,,,,GM0114
+G0110,Enkhuizen,council,municipality,G0013,,pending,,,,,,GM0388
+G0111,Enschede,council,municipality,G0014,,pending,,,,,,GM0153
+G0112,Epe,council,municipality,G0009,,pending,,,,,,GM0232
+G0113,Ermelo,council,municipality,G0009,,pending,,,,,,GM0233
+G0114,Etten-Leur,council,municipality,G0012,,pending,,,,,,GM0777
+G0115,Geertruidenberg,council,municipality,G0012,,pending,,,,,,GM0779
+G0116,Geldrop-Mierlo,council,municipality,G0012,,pending,,,,,,GM1771
+G0117,Gemert-Bakel,council,municipality,G0012,,pending,,,,,,GM1652
+G0118,Gennep,council,municipality,G0011,,pending,,,,,,GM0907
+G0119,Gilze en Rijen,council,municipality,G0012,,pending,,,,,,GM0784
+G0120,Goeree-Overflakkee,council,municipality,G0017,,pending,,,,,,GM1924
+G0121,Goes,council,municipality,G0016,,pending,,,,,,GM0664
+G0122,Goirle,council,municipality,G0012,,pending,,,,,,GM0785
+G0123,Gooise Meren,council,municipality,G0013,,pending,,,,,,GM1942
+G0124,Gorinchem,council,municipality,G0017,,pending,,,,,,GM0512
+G0125,Gouda,council,municipality,G0017,,pending,,,,,,GM0513
+G0126,Groningen,council,municipality,G0010,,in_progress,R002,2026-10-23,1,0,One official-site web query pilot; no qualifying local institutional source confirmed. Not a completed sweep.,GM0014
+G0127,Gulpen-Wittem,council,municipality,G0011,,pending,,,,,,GM1729
+G0128,Haaksbergen,council,municipality,G0014,,pending,,,,,,GM0158
+G0129,Haarlem,council,municipality,G0013,,pending,,,,,,GM0392
+G0130,Haarlemmermeer,council,municipality,G0013,,pending,,,,,,GM0394
+G0131,Halderberge,council,municipality,G0012,,pending,,,,,,GM1655
+G0132,Hardenberg,council,municipality,G0014,,pending,,,,,,GM0160
+G0133,Harderwijk,council,municipality,G0009,,pending,,,,,,GM0243
+G0134,Hardinxveld-Giessendam,council,municipality,G0017,,pending,,,,,,GM0523
+G0135,Harlingen,council,municipality,G0008,,pending,,,,,,GM0072
+G0136,Hattem,council,municipality,G0009,,pending,,,,,,GM0244
+G0137,Heemskerk,council,municipality,G0013,,pending,,,,,,GM0396
+G0138,Heemstede,council,municipality,G0013,,pending,,,,,,GM0397
+G0139,Heerde,council,municipality,G0009,,pending,,,,,,GM0246
+G0140,Heerenveen,council,municipality,G0008,,pending,,,,,,GM0074
+G0141,Heerlen,council,municipality,G0011,,in_progress,R004,2026-10-23,,5,"R004 targeted branch programme/campaign follow-up found public supporters. Party/campaign advocacy, not municipal institutional adoption. No exhaustive local sweep claimed.",GM0917
+G0142,Heeze-Leende,council,municipality,G0012,,pending,,,,,,GM1658
+G0143,Heiloo,council,municipality,G0013,,pending,,,,,,GM0399
+G0144,Hellendoorn,council,municipality,G0014,,pending,,,,,,GM0163
+G0145,Helmond,council,municipality,G0012,,pending,,,,,,GM0794
+G0146,Hendrik-Ido-Ambacht,council,municipality,G0017,,pending,,,,,,GM0531
+G0147,Hengelo (O.),council,municipality,G0014,,pending,,,,,,GM0164
+G0148,Het Hogeland,council,municipality,G0010,,pending,,,,,,GM1966
+G0149,Heumen,council,municipality,G0009,,pending,,,,,,GM0252
+G0150,Heusden,council,municipality,G0012,,pending,,,,,,GM0797
+G0151,Hillegom,council,municipality,G0017,,pending,,,,,,GM0534
+G0152,Hilvarenbeek,council,municipality,G0012,,pending,,,,,,GM0798
+G0153,Hilversum,council,municipality,G0013,,pending,,,,,,GM0402
+G0154,Hoeksche Waard,council,municipality,G0017,,pending,,,,,,GM1963
+G0155,Hof van Twente,council,municipality,G0014,,pending,,,,,,GM1735
+G0156,Hollands Kroon,council,municipality,G0013,,pending,,,,,,GM1911
+G0157,Hoogeveen,council,municipality,G0006,,pending,,,,,,GM0118
+G0158,Hoorn,council,municipality,G0013,,pending,,,,,,GM0405
+G0159,Horst aan de Maas,council,municipality,G0011,,pending,,,,,,GM1507
+G0160,Houten,council,municipality,G0015,,pending,,,,,,GM0321
+G0161,Huizen,council,municipality,G0013,,pending,,,,,,GM0406
+G0162,Hulst,council,municipality,G0016,,pending,,,,,,GM0677
+G0163,IJsselstein,council,municipality,G0015,,pending,,,,,,GM0353
+G0164,Kaag en Braassem,council,municipality,G0017,,pending,,,,,,GM1884
+G0165,Kampen,council,municipality,G0014,,pending,,,,,,GM0166
+G0166,Kapelle,council,municipality,G0016,,pending,,,,,,GM0678
+G0167,Katwijk,council,municipality,G0017,,pending,,,,,,GM0537
+G0168,Kerkrade,council,municipality,G0011,,pending,,,,,,GM0928
+G0169,Koggenland,council,municipality,G0013,,pending,,,,,,GM1598
+G0170,Krimpen aan den IJssel,council,municipality,G0017,,pending,,,,,,GM0542
+G0171,Krimpenerwaard,council,municipality,G0017,,pending,,,,,,GM1931
+G0172,Laarbeek,council,municipality,G0012,,pending,,,,,,GM1659
+G0173,Land van Cuijk,council,municipality,G0012,,pending,,,,,,GM1982
+G0174,Landgraaf,council,municipality,G0011,,pending,,,,,,GM0882
+G0175,Landsmeer,council,municipality,G0013,,pending,,,,,,GM0415
+G0176,Lansingerland,council,municipality,G0017,,pending,,,,,,GM1621
+G0177,Laren (NH.),council,municipality,G0013,,pending,,,,,,GM0417
+G0178,Leeuwarden,council,municipality,G0008,,pending,,,,,,GM0080
+G0179,Leiden,council,municipality,G0017,,pending,,,,,,GM0546
+G0180,Leiderdorp,council,municipality,G0017,,pending,,,,,,GM0547
+G0181,Leidschendam-Voorburg,council,municipality,G0017,,pending,,,,,,GM1916
+G0182,Lelystad,council,municipality,G0007,,pending,,,,,,GM0995
+G0183,Leudal,council,municipality,G0011,,pending,,,,,,GM1640
+G0184,Leusden,council,municipality,G0015,,pending,,,,,,GM0327
+G0185,Lingewaard,council,municipality,G0009,,pending,,,,,,GM1705
+G0186,Lisse,council,municipality,G0017,,pending,,,,,,GM0553
+G0187,Lochem,council,municipality,G0009,,pending,,,,,,GM0262
+G0188,Loon op Zand,council,municipality,G0012,,pending,,,,,,GM0809
+G0189,Lopik,council,municipality,G0015,,pending,,,,,,GM0331
+G0190,Losser,council,municipality,G0014,,pending,,,,,,GM0168
+G0191,Maasdriel,council,municipality,G0009,,pending,,,,,,GM0263
+G0192,Maasgouw,council,municipality,G0011,,pending,,,,,,GM1641
+G0193,Maashorst,council,municipality,G0012,,pending,,,,,,GM1991
+G0194,Maassluis,council,municipality,G0017,,pending,,,,,,GM0556
+G0195,Maastricht,council,municipality,G0011,,pending,,,,,,GM0935
+G0196,Medemblik,council,municipality,G0013,,pending,,,,,,GM0420
+G0197,Meerssen,council,municipality,G0011,,pending,,,,,,GM0938
+G0198,Meierijstad,council,municipality,G0012,,pending,,,,,,GM1948
+G0199,Meppel,council,municipality,G0006,,pending,,,,,,GM0119
+G0200,Middelburg (Z.),council,municipality,G0016,,pending,,,,,,GM0687
+G0201,Midden-Delfland,council,municipality,G0017,,pending,,,,,,GM1842
+G0202,Midden-Drenthe,council,municipality,G0006,,pending,,,,,,GM1731
+G0203,Midden-Groningen,council,municipality,G0010,,pending,,,,,,GM1952
+G0204,Moerdijk,council,municipality,G0012,,pending,,,,,,GM1709
+G0205,Molenlanden,council,municipality,G0017,,pending,,,,,,GM1978
+G0206,Montferland,council,municipality,G0009,,pending,,,,,,GM1955
+G0207,Montfoort,council,municipality,G0015,,pending,,,,,,GM0335
+G0208,Mook en Middelaar,council,municipality,G0011,,pending,,,,,,GM0944
+G0209,Neder-Betuwe,council,municipality,G0009,,pending,,,,,,GM1740
+G0210,Nederweert,council,municipality,G0011,,pending,,,,,,GM0946
+G0211,Nieuwegein,council,municipality,G0015,,pending,,,,,,GM0356
+G0212,Nieuwkoop,council,municipality,G0017,,pending,,,,,,GM0569
+G0213,Nijkerk,council,municipality,G0009,,pending,,,,,,GM0267
+G0214,Nijmegen,council,municipality,G0009,,pending,,,,,,GM0268
+G0215,Nissewaard,council,municipality,G0017,,pending,,,,,,GM1930
+G0216,Noardeast-Fryslân,council,municipality,G0008,,pending,,,,,,GM1970
+G0217,Noord-Beveland,council,municipality,G0016,,pending,,,,,,GM1695
+G0218,Noordenveld,council,municipality,G0006,,pending,,,,,,GM1699
+G0219,Noordoostpolder,council,municipality,G0007,,pending,,,,,,GM0171
+G0220,Noordwijk,council,municipality,G0017,,pending,,,,,,GM0575
+G0221,"Nuenen, Gerwen en Nederwetten",council,municipality,G0012,,pending,,,,,,GM0820
+G0222,Nunspeet,council,municipality,G0009,,pending,,,,,,GM0302
+G0223,Oegstgeest,council,municipality,G0017,,pending,,,,,,GM0579
+G0224,Oirschot,council,municipality,G0012,,pending,,,,,,GM0823
+G0225,Oisterwijk,council,municipality,G0012,,pending,,,,,,GM0824
+G0226,Oldambt,council,municipality,G0010,,pending,,,,,,GM1895
+G0227,Oldebroek,council,municipality,G0009,,pending,,,,,,GM0269
+G0228,Oldenzaal,council,municipality,G0014,,pending,,,,,,GM0173
+G0229,Olst-Wijhe,council,municipality,G0014,,pending,,,,,,GM1773
+G0230,Ommen,council,municipality,G0014,,pending,,,,,,GM0175
+G0231,Oost Gelre,council,municipality,G0009,,pending,,,,,,GM1586
+G0232,Oosterhout,council,municipality,G0012,,pending,,,,,,GM0826
+G0233,Ooststellingwerf,council,municipality,G0008,,pending,,,,,,GM0085
+G0234,Oostzaan,council,municipality,G0013,,pending,,,,,,GM0431
+G0235,Opmeer,council,municipality,G0013,,pending,,,,,,GM0432
+G0236,Opsterland,council,municipality,G0008,,pending,,,,,,GM0086
+G0237,Oss,council,municipality,G0012,,pending,,,,,,GM0828
+G0238,Oude IJsselstreek,council,municipality,G0009,,pending,,,,,,GM1509
+G0239,Ouder-Amstel,council,municipality,G0013,,pending,,,,,,GM0437
+G0240,Oudewater,council,municipality,G0015,,pending,,,,,,GM0589
+G0241,Overbetuwe,council,municipality,G0009,,pending,,,,,,GM1734
+G0242,Papendrecht,council,municipality,G0017,,pending,,,,,,GM0590
+G0243,Peel en Maas,council,municipality,G0011,,pending,,,,,,GM1894
+G0244,Pekela,council,municipality,G0010,,pending,,,,,,GM0765
+G0245,Pijnacker-Nootdorp,council,municipality,G0017,,pending,,,,,,GM1926
+G0246,Purmerend,council,municipality,G0013,,pending,,,,,,GM0439
+G0247,Putten,council,municipality,G0009,,pending,,,,,,GM0273
+G0248,Raalte,council,municipality,G0014,,pending,,,,,,GM0177
+G0249,Reimerswaal,council,municipality,G0016,,pending,,,,,,GM0703
+G0250,Renkum,council,municipality,G0009,,pending,,,,,,GM0274
+G0251,Renswoude,council,municipality,G0015,,pending,,,,,,GM0339
+G0252,Reusel-De Mierden,council,municipality,G0012,,pending,,,,,,GM1667
+G0253,Rheden,council,municipality,G0009,,pending,,,,,,GM0275
+G0254,Rhenen,council,municipality,G0015,,pending,,,,,,GM0340
+G0255,Ridderkerk,council,municipality,G0017,,pending,,,,,,GM0597
+G0256,Rijssen-Holten,council,municipality,G0014,,pending,,,,,,GM1742
+G0257,Rijswijk (ZH.),council,municipality,G0017,,pending,,,,,,GM0603
+G0258,Roerdalen,council,municipality,G0011,,pending,,,,,,GM1669
+G0259,Roermond,council,municipality,G0011,,pending,,,,,,GM0957
+G0260,Roosendaal,council,municipality,G0012,,pending,,,,,,GM1674
+G0261,Rotterdam,council,municipality,G0017,,in_progress,R002,2026-10-23,1,0,One official-site web query pilot; no qualifying local institutional source confirmed. Not a completed sweep.,GM0599
+G0262,Rozendaal,council,municipality,G0009,,pending,,,,,,GM0277
+G0263,Rucphen,council,municipality,G0012,,pending,,,,,,GM0840
+G0264,Schagen,council,municipality,G0013,,pending,,,,,,GM0441
+G0265,Scherpenzeel,council,municipality,G0009,,pending,,,,,,GM0279
+G0266,Schiedam,council,municipality,G0017,,pending,,,,,,GM0606
+G0267,Schiermonnikoog,council,municipality,G0008,,pending,,,,,,GM0088
+G0268,Schouwen-Duiveland,council,municipality,G0016,,pending,,,,,,GM1676
+G0269,Simpelveld,council,municipality,G0011,,pending,,,,,,GM0965
+G0270,Sint-Michielsgestel,council,municipality,G0012,,pending,,,,,,GM0845
+G0271,Sittard-Geleen,council,municipality,G0011,,pending,,,,,,GM1883
+G0272,Sliedrecht,council,municipality,G0017,,pending,,,,,,GM0610
+G0273,Sluis,council,municipality,G0016,,pending,,,,,,GM1714
+G0274,Smallingerland,council,municipality,G0008,,pending,,,,,,GM0090
+G0275,Soest,council,municipality,G0015,,pending,,,,,,GM0342
+G0276,Someren,council,municipality,G0012,,pending,,,,,,GM0847
+G0277,Son en Breugel,council,municipality,G0012,,pending,,,,,,GM0848
+G0278,Stadskanaal,council,municipality,G0010,,pending,,,,,,GM0037
+G0279,Staphorst,council,municipality,G0014,,pending,,,,,,GM0180
+G0280,Stede Broec,council,municipality,G0013,,pending,,,,,,GM0532
+G0281,Steenbergen,council,municipality,G0012,,pending,,,,,,GM0851
+G0282,Steenwijkerland,council,municipality,G0014,,pending,,,,,,GM1708
+G0283,Stein (L.),council,municipality,G0011,,pending,,,,,,GM0971
+G0284,Stichtse Vecht,council,municipality,G0015,,pending,,,,,,GM1904
+G0285,Súdwest-Fryslân,council,municipality,G0008,,pending,,,,,,GM1900
+G0286,Terneuzen,council,municipality,G0016,,pending,,,,,,GM0715
+G0287,Terschelling,council,municipality,G0008,,pending,,,,,,GM0093
+G0288,Texel,council,municipality,G0013,,pending,,,,,,GM0448
+G0289,Teylingen,council,municipality,G0017,,pending,,,,,,GM1525
+G0290,Tholen,council,municipality,G0016,,pending,,,,,,GM0716
+G0291,Tiel,council,municipality,G0009,,pending,,,,,,GM0281
+G0292,Tilburg,council,municipality,G0012,,pending,,,,,,GM0855
+G0293,Tubbergen,council,municipality,G0014,,pending,,,,,,GM0183
+G0294,Twenterand,council,municipality,G0014,,pending,,,,,,GM1700
+G0295,Tynaarlo,council,municipality,G0006,,pending,,,,,,GM1730
+G0296,Tytsjerksteradiel,council,municipality,G0008,,pending,,,,,,GM0737
+G0297,Uitgeest,council,municipality,G0013,,pending,,,,,,GM0450
+G0298,Uithoorn,council,municipality,G0013,,pending,,,,,,GM0451
+G0299,Urk,council,municipality,G0007,,pending,,,,,,GM0184
+G0300,Utrecht,council,municipality,G0015,,in_progress,R004,2026-10-23,1,2,"R004 targeted branch programme/campaign follow-up found public supporters. Party/campaign advocacy, not municipal institutional adoption. No exhaustive local sweep claimed.",GM0344
+G0301,Utrechtse Heuvelrug,council,municipality,G0015,,pending,,,,,,GM1581
+G0302,Vaals,council,municipality,G0011,,pending,,,,,,GM0981
+G0303,Valkenburg aan de Geul,council,municipality,G0011,,pending,,,,,,GM0994
+G0304,Valkenswaard,council,municipality,G0012,,pending,,,,,,GM0858
+G0305,Veendam,council,municipality,G0010,,pending,,,,,,GM0047
+G0306,Veenendaal,council,municipality,G0015,,pending,,,,,,GM0345
+G0307,Veere,council,municipality,G0016,,pending,,,,,,GM0717
+G0308,Veldhoven,council,municipality,G0012,,pending,,,,,,GM0861
+G0309,Velsen,council,municipality,G0013,,pending,,,,,,GM0453
+G0310,Venlo,council,municipality,G0011,,pending,,,,,,GM0983
+G0311,Venray,council,municipality,G0011,,pending,,,,,,GM0984
+G0312,Vijfheerenlanden,council,municipality,G0015,,pending,,,,,,GM1961
+G0313,Vlaardingen,council,municipality,G0017,,pending,,,,,,GM0622
+G0314,Vlieland,council,municipality,G0008,,pending,,,,,,GM0096
+G0315,Vlissingen,council,municipality,G0016,,pending,,,,,,GM0718
+G0316,Voerendaal,council,municipality,G0011,,pending,,,,,,GM0986
+G0317,Voorne aan Zee,council,municipality,G0017,,pending,,,,,,GM1992
+G0318,Voorschoten,council,municipality,G0017,,pending,,,,,,GM0626
+G0319,Voorst,council,municipality,G0009,,pending,,,,,,GM0285
+G0320,Vught,council,municipality,G0012,,pending,,,,,,GM0865
+G0321,Waadhoeke,council,municipality,G0008,,pending,,,,,,GM1949
+G0322,Waalre,council,municipality,G0012,,pending,,,,,,GM0866
+G0323,Waalwijk,council,municipality,G0012,,pending,,,,,,GM0867
+G0324,Waddinxveen,council,municipality,G0017,,pending,,,,,,GM0627
+G0325,Wageningen,council,municipality,G0009,,pending,,,,,,GM0289
+G0326,Wassenaar,council,municipality,G0017,,pending,,,,,,GM0629
+G0327,Waterland,council,municipality,G0013,,pending,,,,,,GM0852
+G0328,Weert,council,municipality,G0011,,pending,,,,,,GM0988
+G0329,West Betuwe,council,municipality,G0009,,pending,,,,,,GM1960
+G0330,West Maas en Waal,council,municipality,G0009,,pending,,,,,,GM0668
+G0331,Westerkwartier,council,municipality,G0010,,pending,,,,,,GM1969
+G0332,Westerveld,council,municipality,G0006,,pending,,,,,,GM1701
+G0333,Westervoort,council,municipality,G0009,,pending,,,,,,GM0293
+G0334,Westerwolde,council,municipality,G0010,,pending,,,,,,GM1950
+G0335,Westland,council,municipality,G0017,,pending,,,,,,GM1783
+G0336,Weststellingwerf,council,municipality,G0008,,pending,,,,,,GM0098
+G0337,Wierden,council,municipality,G0014,,pending,,,,,,GM0189
+G0338,Wijchen,council,municipality,G0009,,pending,,,,,,GM0296
+G0339,Wijdemeren,council,municipality,G0013,,pending,,,,,,GM1696
+G0340,Wijk bij Duurstede,council,municipality,G0015,,pending,,,,,,GM0352
+G0341,Winterswijk,council,municipality,G0009,,pending,,,,,,GM0294
+G0342,Woensdrecht,council,municipality,G0012,,pending,,,,,,GM0873
+G0343,Woerden,council,municipality,G0015,,pending,,,,,,GM0632
+G0344,Wormerland,council,municipality,G0013,,pending,,,,,,GM0880
+G0345,Woudenberg,council,municipality,G0015,,pending,,,,,,GM0351
+G0346,Zaanstad,council,municipality,G0013,,pending,,,,,,GM0479
+G0347,Zaltbommel,council,municipality,G0009,,pending,,,,,,GM0297
+G0348,Zandvoort,council,municipality,G0013,,pending,,,,,,GM0473
+G0349,Zeewolde,council,municipality,G0007,,pending,,,,,,GM0050
+G0350,Zeist,council,municipality,G0015,,pending,,,,,,GM0355
+G0351,Zevenaar,council,municipality,G0009,,pending,,,,,,GM0299
+G0352,Zoetermeer,council,municipality,G0017,,pending,,,,,,GM0637
+G0353,Zoeterwoude,council,municipality,G0017,,pending,,,,,,GM0638
+G0354,Zuidplas,council,municipality,G0017,,pending,,,,,,GM1892
+G0355,Zundert,council,municipality,G0012,,pending,,,,,,GM0879
+G0356,Zutphen,council,municipality,G0009,,in_progress,R004,2026-10-23,,1,"R004 targeted branch programme/campaign follow-up found public supporters. Party/campaign advocacy, not municipal institutional adoption. No exhaustive local sweep claimed.",GM0301
+G0357,Zwartewaterland,council,municipality,G0014,,pending,,,,,,GM1896
+G0358,Zwijndrecht,council,municipality,G0017,,pending,,,,,,GM0642
+G0359,Zwolle,council,municipality,G0014,,pending,,,,,,GM0193

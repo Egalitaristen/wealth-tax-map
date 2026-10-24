@@ -1,0 +1,22 @@
+{
+  "name": "Netherlands",
+  "iso2": "NL",
+  "lead": "Egalitaristen",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Wide national, supranational and targeted local research in progress; not saturated. R001–R005:203 supporters and244 evidence records. R005 adds14 actors and15 records:12 public Dutch signatories of a G20 wealth-tax letter and2 original policy authors, plus new evidence for Joris Thijssen. IMPORTANT SCOPE:59 supporters currently have only evidence for developing a wealth-related exit-tax proposal. International proposals, wealth caps, temporary taxes and conditional designs remain explicit. Letter publication dates are not individual signature timestamps. All evidence verified=n for maintainer review; older runs not fully rechecked. Official CBS2026 map/register:342 municipalities and12 provinces, CC BY4.0; Caribbean public bodies outside map. Local institutional coverage remains preliminary. See area_profile.md and qa_R005.md. Review 2026-10-24 (R006): the exit-tax-only votes were removed; 144 supporters remain.",
+  "polls": [
+    {
+      "support": 72,
+      "oppose": null,
+      "scope": "Netherlands, adults",
+      "question": "Higher taxes for the super-rich (as cited by Oxfam Novib)",
+      "pollster": "cited in Oxfam Novib report",
+      "commissioned_by": "Oxfam Novib",
+      "fieldwork": "",
+      "sample": "",
+      "published": "2025-01-24",
+      "url": "https://www.accountancyvanmorgen.nl/2025/01/24/oxfam-ongelijkheid-groeit-door-fiscaal-beleid-dat-vermogens-bevoordeelt/"
+    }
+  ]
+}
