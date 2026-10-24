@@ -1,0 +1,8 @@
+{
+  "name": "Japan",
+  "iso2": "JP",
+  "lead": "Egalitaristen",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Scope: national (Diet, parties, unions, economists, commentators), 47 prefectures and 1,749 municipalities (JIS X 0401/0402). Seed pass R001. Review 2026-10-24 (R004): party-platform and roster rows removed; 31 supporters remain. Map vintage: GSI Global Map Japan 2016 (1,749 units); municipal mergers since then are not reflected."
+}

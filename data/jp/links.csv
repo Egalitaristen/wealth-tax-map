@@ -1,0 +1,23 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0001,A0002,A0001,party_of,E00002,https://www.sangiin.go.jp/japanese/joho1/kousei/giin/217/profile/7001026.htm,Secretariat Head of the Japanese Communist Party
+L0002,A0003,A0001,party_of,E00003,https://www.sangiin.go.jp/,Policy spokesperson and Councillor of JCP
+L0003,A0004,A0001,party_of,E00004,https://www.shugiin.go.jp/,Representative of JCP
+L0004,A0005,A0001,party_of,E00005,https://www.shugiin.go.jp/,Representative of JCP
+L0005,A0009,A0008,member_of,E00009,https://tax-justice.com/?p=1627,Co-representative of Citizens' Liaison Committee for Fair Taxation
+L0006,A0010,A0008,member_of,E00010,https://tax-justice.com/?p=1627,Co-representative and editor
+L00011,A0021,A0008,coalition_partner,E00021,https://tax-justice.com/?page_id=27,Participating organization / coalition partner in the Citizens' Liaison Committee for Fair Taxation.
+L00019,A0021,A0008,coalition_partner,E00021,https://tax-justice.com/?page_id=27,Participating organization / coalition partner in the Citizens' Liaison Committee for Fair Taxation.
+L00062,A0064,A0008,member_of,E00064,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00063,A0065,A0008,member_of,E00065,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00064,A0066,A0008,member_of,E00066,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00065,A0067,A0008,member_of,E00067,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00066,A0068,A0008,member_of,E00068,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00067,A0069,A0008,member_of,E00069,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00068,A0070,A0008,member_of,E00070,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00069,A0071,A0008,member_of,E00071,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00070,A0072,A0008,member_of,E00072,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00071,A0073,A0008,member_of,E00073,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00072,A0074,A0008,member_of,E00074,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00073,A0075,A0008,member_of,E00075,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00074,A0076,A0008,member_of,E00076,https://tax-justice.com/?page_id=27,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.
+L00075,A0077,A0008,member_of,E00077,https://tax-justice.com/?page_id=29,Co-initiator of the Citizens' Liaison Committee for Fair Taxation.

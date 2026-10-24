@@ -1,0 +1,74 @@
+profile_id,actor_id,platform,url,source,checked
+P0001,A0001,website,https://www.jcp.or.jp/,https://www.jcp.or.jp/,2026-10-22
+P0002,A0002,website,https://www.koike-akira.jp/,https://www.koike-akira.jp/,2026-10-22
+P0003,A0003,website,https://daimon-mikishi.jp/,https://daimon-mikishi.jp/,2026-10-22
+P0004,A0004,website,https://www.kasai-akira.jp/,https://www.kasai-akira.jp/,2026-10-22
+P0005,A0005,website,https://miyamototooru.info/,https://miyamototooru.info/,2026-10-22
+P0006,A0006,website,https://kaiedabanri.jp/,https://kaiedabanri.jp/,2026-10-22
+P0007,A0007,website,https://funayama-yasue.net/,https://funayama-yasue.net/,2026-10-22
+P0008,A0008,website,https://tax-justice.com/,https://tax-justice.com/,2026-10-22
+P0009,A0009,website,https://utsunomiyakenji.com/,https://utsunomiyakenji.com/,2026-10-22
+P0010,A0010,website,https://sdaigo.cocolog-nifty.com/,https://sdaigo.cocolog-nifty.com/,2026-10-22
+P0011,A0011,website,https://miki-taxlaw.com/,https://miki-taxlaw.com/,2026-10-22
+P0012,A0012,website,https://seikeiken.org/,https://seikeiken.org/,2026-10-22
+P00013,A0013,website,https://tax-justice.com/,actors.csv website column,2026-10-22
+P00014,A0014,website,https://tax-justice.com/,actors.csv website column,2026-10-22
+P00015,A0015,website,https://sdp.or.jp/,official,2026-10-23
+P00016,A0016,website,https://reiwa-shinsengumi.com/,official,2026-10-23
+P00021,A0021,website,https://tax-justice.com/,official,2026-10-23
+P00337,A0064,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00338,A0065,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00339,A0066,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00340,A0067,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00341,A0068,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00342,A0069,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00343,A0070,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00344,A0071,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00345,A0072,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00346,A0073,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00347,A0074,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00348,A0075,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00349,A0076,website,https://tax-justice.com/?page_id=27,actors.csv website column,2026-10-23
+P00350,A0077,website,https://tax-justice.com/?page_id=29,actors.csv website column,2026-10-23
+P00351,A0001,x,https://x.com/jcp_cc,Wikidata Q641600,2026-10-23
+P00352,A0001,instagram,https://www.instagram.com/nihonkyosanto/,Wikidata Q641600,2026-10-23
+P00353,A0001,facebook,https://www.facebook.com/kyosanto,Wikidata Q641600,2026-10-23
+P00354,A0001,youtube,https://www.youtube.com/channel/UC_7GbtufUtR9l3pwvvn7Zlg,Wikidata Q641600,2026-10-23
+P00355,A0001,tiktok,https://www.tiktok.com/@jcp_cc,Wikidata Q641600,2026-10-23
+P00356,A0001,wikipedia,https://en.wikipedia.org/wiki/Japanese_Communist_Party,Wikidata Q641600,2026-10-23
+P00357,A0002,x,https://x.com/koike_akira,Wikidata Q418771,2026-10-23
+P00358,A0002,facebook,https://www.facebook.com/koikeakira,Wikidata Q418771,2026-10-23
+P00359,A0002,youtube,https://www.youtube.com/channel/UCWndeVuKNW6fA4xd79YmgPQ,Wikidata Q418771,2026-10-23
+P00360,A0002,wikipedia,https://en.wikipedia.org/wiki/Akira_Koike,Wikidata Q418771,2026-10-23
+P00361,A0003,x,https://x.com/mikishi_daimon1,Wikidata Q6849902,2026-10-23
+P00362,A0003,instagram,https://www.instagram.com/mikishidaimon/,Wikidata Q6849902,2026-10-23
+P00363,A0003,youtube,https://www.youtube.com/channel/UC5s4kIdKMjeM0I9sOgJMNbw,Wikidata Q6849902,2026-10-23
+P00364,A0003,wikipedia,https://en.wikipedia.org/wiki/Mikishi_Daimon,Wikidata Q6849902,2026-10-23
+P00365,A0004,x,https://x.com/akibacsi,Wikidata Q4701145,2026-10-23
+P00366,A0004,facebook,https://www.facebook.com/akira.kasai1,Wikidata Q4701145,2026-10-23
+P00367,A0004,wikipedia,https://en.wikipedia.org/wiki/Akira_Kasai,Wikidata Q4701145,2026-10-23
+P00368,A0005,x,https://x.com/miyamototooru,Wikidata Q18818200,2026-10-23
+P00369,A0005,instagram,https://www.instagram.com/miyamototooru1972/,Wikidata Q18818200,2026-10-23
+P00370,A0005,facebook,https://www.facebook.com/miyamototooru.jcp,Wikidata Q18818200,2026-10-23
+P00371,A0005,youtube,https://www.youtube.com/channel/UCYTvoZlKB1m7lGT-_jg1jlA,Wikidata Q18818200,2026-10-23
+P00372,A0005,tiktok,https://www.tiktok.com/@miyamototooru1972,Wikidata Q18818200,2026-10-23
+P00373,A0005,wikipedia,https://en.wikipedia.org/wiki/Toru_Miyamoto_%28politician%29,Wikidata Q18818200,2026-10-23
+P00374,A0006,x,https://x.com/banrikaieda,Wikidata Q806947,2026-10-23
+P00375,A0006,instagram,https://www.instagram.com/kaiedabanri/,Wikidata Q806947,2026-10-23
+P00376,A0006,facebook,https://www.facebook.com/kaieda.banri,Wikidata Q806947,2026-10-23
+P00377,A0006,youtube,https://www.youtube.com/channel/UC12HrKEYXP-iBQsEqlZ9ZcA,Wikidata Q806947,2026-10-23
+P00378,A0006,wikipedia,https://en.wikipedia.org/wiki/Banri_Kaieda,Wikidata Q806947,2026-10-23
+P00379,A0007,x,https://x.com/yasue_funayama0,Wikidata Q8049955,2026-10-23
+P00380,A0007,instagram,https://www.instagram.com/funayama_yasue/,Wikidata Q8049955,2026-10-23
+P00381,A0007,facebook,https://www.facebook.com/yasue.funayama,Wikidata Q8049955,2026-10-23
+P00382,A0007,youtube,https://www.youtube.com/channel/UCgX_iJmfXY8H8q803NTqWKA,Wikidata Q8049955,2026-10-23
+P00383,A0007,wikipedia,https://en.wikipedia.org/wiki/Yasue_Funayama,Wikidata Q8049955,2026-10-23
+P00384,A0009,x,https://x.com/utsunomiyakenji,Wikidata Q1661529,2026-10-23
+P00385,A0009,instagram,https://www.instagram.com/utsunomiya_kenji/,Wikidata Q1661529,2026-10-23
+P00386,A0009,facebook,https://www.facebook.com/utsunomiyakenji,Wikidata Q1661529,2026-10-23
+P00387,A0009,youtube,https://www.youtube.com/channel/UCNcnaA4Ue2vZ7nmqWOnbLbQ,Wikidata Q1661529,2026-10-23
+P00388,A0009,tiktok,https://www.tiktok.com/@teamkenjiutsunomiya,Wikidata Q1661529,2026-10-23
+P00389,A0009,wikipedia,https://en.wikipedia.org/wiki/Kenji_Utsunomiya,Wikidata Q1661529,2026-10-23
+P00390,A0016,x,https://x.com/musikerboard,Wikidata Q65241477,2026-10-23
+P00391,A0016,facebook,https://www.facebook.com/musikerboard.de,Wikidata Q65241477,2026-10-23
+P00398,A0066,x,https://x.com/karin_amamiya,Wikidata Q11256219,2026-10-23
