@@ -1,0 +1,8 @@
+{
+  "name": "Malaysia",
+  "iso2": "MY",
+  "lead": "",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Depth: seed pass with wide sweeps across all layers. Scope: National level (Dewan Rakyat, political parties, trade unions, NGOs, think tanks, economists, columnists/media), with 16 states and federal territories and 144 administrative districts in the geography register. District boundaries and state outlines from Department of Statistics Malaysia (DOSM) via OCHA Common Operational Datasets (cod-ab-mys), CC BY-IGO. Review 2026-10-24 (R004): 4 rows removed, 3 regraded."
+}

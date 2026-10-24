@@ -1,0 +1,7 @@
+link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
+L0001,A0001,A0002,member_of,E00001,https://www.wp.sg,Member of Parliament representing The Workers' Party
+L0002,A0003,A0002,leads,E00003,https://www.wp.sg,Secretary-General of The Workers' Party
+L0003,A0004,A0002,member_of,E00004,https://www.wp.sg,Member of Parliament representing The Workers' Party
+L0009,A0017,A0010,co_author,E00017,https://www.academia.sg/academic-views/ultra-rich-philanthropy-or-taxes/,Co-authored policy analysis on wealth taxation and philanthropy with Linda Lim
+L0015,A0025,A0024,coalition_partner,,https://www.ricemedia.co,Co-organized alternative May Day rallies and joint advocacy events on labour rights and economic justice
+L0016,A0027,A0026,co_author,E00027,https://news.nus.edu.sg/time-to-consider-a-wealth-tax-for-spore/,Co-authored published policy commentary in The Straits Times proposing a wealth tax for Singapore

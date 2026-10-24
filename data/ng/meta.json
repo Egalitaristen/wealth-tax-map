@@ -1,0 +1,8 @@
+{
+  "name": "Nigeria",
+  "iso2": "NG",
+  "lead": "Egalitaristen",
+  "status": "in progress",
+  "boundaries": "boundaries.json",
+  "notes": "Depth: seed. Scope: national, regional (36 states and the Federal Capital Territory) and local (774 Local Government Areas, sampled). The geography register holds the country root, three federal institutions, 36 states + FCT (OSGOF / OCHA COD-AB P-codes NG001–NG037) and 774 Local Government Areas (NG001001–NG037006), with a local-tier map from OSGOF / eHealth Africa / UNCS via OCHA HDX (cod-ab-nga, CC-BY-IGO-3.0). Review 2026-10-24 (R003): removed rows that named land, property, luxury or income taxes or only \"tax the rich\"; 39 supporters remain."
+}

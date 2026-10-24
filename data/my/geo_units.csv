@@ -1,0 +1,165 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,Malaysia,national,country,,https://www.malaysia.gov.my,pending,,,,,,MY
+G0002,Dewan Rakyat,national,legislature,G0001,https://www.parlimen.gov.my,pending,,,,,House of Representatives of the Parliament of Malaysia,
+G0003,Dewan Negara,national,legislature,G0001,https://www.parlimen.gov.my,pending,,,,,Senate of the Parliament of Malaysia,
+G0004,Government of Malaysia,national,executive,G0001,https://www.malaysia.gov.my,pending,,,,,Federal Government / Prime Minister's Department,
+G0005,Johor,region,state,G0001,,pending,,,,,,MY01
+G0006,Kedah,region,state,G0001,,pending,,,,,,MY02
+G0007,Kelantan,region,state,G0001,,pending,,,,,,MY03
+G0008,W.P. Kuala Lumpur,region,federal_territory,G0001,,pending,,,,,,MY04
+G0009,W.P. Labuan,region,federal_territory,G0001,,pending,,,,,,MY05
+G0010,Melaka,region,state,G0001,,pending,,,,,,MY06
+G0011,Negeri Sembilan,region,state,G0001,,pending,,,,,,MY07
+G0012,Pahang,region,state,G0001,,pending,,,,,,MY08
+G0013,Perak,region,state,G0001,,pending,,,,,,MY09
+G0014,Perlis,region,state,G0001,,pending,,,,,,MY10
+G0015,Pulau Pinang,region,state,G0001,,pending,,,,,,MY11
+G0016,Sabah,region,state,G0001,,pending,,,,,,MY12
+G0017,Sarawak,region,state,G0001,,pending,,,,,,MY13
+G0018,Terengganu,region,state,G0001,,pending,,,,,,MY15
+G0019,W.P. Putrajaya,region,federal_territory,G0001,,pending,,,,,,MY16
+G0020,Selangor,region,state,G0001,,pending,,,,,,MY17
+G0021,Batu Pahat,county,district,G0005,,pending,,,,,District (Johor),MY0101
+G0022,Johor Bahru,county,district,G0005,,pending,,,,,District (Johor),MY0102
+G0023,Kluang,county,district,G0005,,pending,,,,,District (Johor),MY0103
+G0024,Kota Tinggi,county,district,G0005,,pending,,,,,District (Johor),MY0104
+G0025,Kulaijaya,county,district,G0005,,pending,,,,,District (Johor),MY0105
+G0026,Ledang,county,district,G0005,,pending,,,,,District (Johor),MY0106
+G0027,Mersing,county,district,G0005,,pending,,,,,District (Johor),MY0107
+G0028,Muar,county,district,G0005,,pending,,,,,District (Johor),MY0108
+G0029,Pontian,county,district,G0005,,pending,,,,,District (Johor),MY0109
+G0030,Segamat,county,district,G0005,,pending,,,,,District (Johor),MY0110
+G0031,Baling,county,district,G0006,,pending,,,,,District (Kedah),MY0201
+G0032,Bandar Baharu,county,district,G0006,,pending,,,,,District (Kedah),MY0202
+G0033,Kota Setar,county,district,G0006,,pending,,,,,District (Kedah),MY0203
+G0034,Kuala Muda,county,district,G0006,,pending,,,,,District (Kedah),MY0204
+G0035,Kubang Pasu,county,district,G0006,,pending,,,,,District (Kedah),MY0205
+G0036,Kulim,county,district,G0006,,pending,,,,,District (Kedah),MY0206
+G0037,Langkawi,county,district,G0006,,pending,,,,,District (Kedah),MY0207
+G0038,Padang Terap,county,district,G0006,,pending,,,,,District (Kedah),MY0208
+G0039,Pendang,county,district,G0006,,pending,,,,,District (Kedah),MY0209
+G0040,Pokok Sena,county,district,G0006,,pending,,,,,District (Kedah),MY0210
+G0041,Sik,county,district,G0006,,pending,,,,,District (Kedah),MY0211
+G0042,Yan,county,district,G0006,,pending,,,,,District (Kedah),MY0212
+G0043,Bachok,county,district,G0007,,pending,,,,,District (Kelantan),MY0301
+G0044,Gua Musang,county,district,G0007,,pending,,,,,District (Kelantan),MY0302
+G0045,Jeli,county,district,G0007,,pending,,,,,District (Kelantan),MY0303
+G0046,Kota Bharu,county,district,G0007,,pending,,,,,District (Kelantan),MY0304
+G0047,Kuala Krai,county,district,G0007,,pending,,,,,District (Kelantan),MY0305
+G0048,Machang,county,district,G0007,,pending,,,,,District (Kelantan),MY0306
+G0049,Pasir Mas,county,district,G0007,,pending,,,,,District (Kelantan),MY0307
+G0050,Pasir Puteh,county,district,G0007,,pending,,,,,District (Kelantan),MY0308
+G0051,Tanah Merah,county,district,G0007,,pending,,,,,District (Kelantan),MY0309
+G0052,Tumpat,county,district,G0007,,pending,,,,,District (Kelantan),MY0310
+G0053,WP. Kuala Lumpur,county,district,G0008,,pending,,,,,District (W.P. Kuala Lumpur),MY0401
+G0054,W.P. Labuan,county,district,G0009,,pending,,,,,District (W.P. Labuan),MY0501
+G0055,Alor Gajah,county,district,G0010,,pending,,,,,District (Melaka),MY0601
+G0056,Jasin,county,district,G0010,,pending,,,,,District (Melaka),MY0602
+G0057,Melaka Tengah,county,district,G0010,,pending,,,,,District (Melaka),MY0603
+G0058,Jelebu,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0701
+G0059,Jempol,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0702
+G0060,Kuala Pilah,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0703
+G0061,Port Dickson,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0704
+G0062,Rembau,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0705
+G0063,Seremban,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0706
+G0064,Tampin,county,district,G0011,,pending,,,,,District (Negeri Sembilan),MY0707
+G0065,Bentong,county,district,G0012,,pending,,,,,District (Pahang),MY0801
+G0066,Bera,county,district,G0012,,pending,,,,,District (Pahang),MY0802
+G0067,Cameron Highlands,county,district,G0012,,pending,,,,,District (Pahang),MY0803
+G0068,Jerantut,county,district,G0012,,pending,,,,,District (Pahang),MY0804
+G0069,Kuantan,county,district,G0012,,pending,,,,,District (Pahang),MY0805
+G0070,Lipis,county,district,G0012,,pending,,,,,District (Pahang),MY0806
+G0071,Maran,county,district,G0012,,pending,,,,,District (Pahang),MY0807
+G0072,Pekan,county,district,G0012,,pending,,,,,District (Pahang),MY0808
+G0073,Raub,county,district,G0012,,pending,,,,,District (Pahang),MY0809
+G0074,Rompin,county,district,G0012,,pending,,,,,District (Pahang),MY0810
+G0075,Temerloh,county,district,G0012,,pending,,,,,District (Pahang),MY0811
+G0076,Batang Padang,county,district,G0013,,pending,,,,,District (Perak),MY0901
+G0077,Hilir Perak,county,district,G0013,,pending,,,,,District (Perak),MY0902
+G0078,Ulu Perak,county,district,G0013,,pending,,,,,District (Perak),MY0903
+G0079,Kampar,county,district,G0013,,pending,,,,,District (Perak),MY0904
+G0080,Kerian,county,district,G0013,,pending,,,,,District (Perak),MY0905
+G0081,Kinta,county,district,G0013,,pending,,,,,District (Perak),MY0906
+G0082,Kuala Kangsar,county,district,G0013,,pending,,,,,District (Perak),MY0907
+G0083,Larut Dan Matang,county,district,G0013,,pending,,,,,District (Perak),MY0908
+G0084,Manjung (Dinding),county,district,G0013,,pending,,,,,District (Perak),MY0909
+G0085,Perak Tengah,county,district,G0013,,pending,,,,,District (Perak),MY0910
+G0086,Perlis,county,district,G0014,,pending,,,,,District (Perlis),MY1001
+G0087,Barat Daya,county,district,G0015,,pending,,,,,District (Pulau Pinang),MY1101
+G0088,S.P.Selatan,county,district,G0015,,pending,,,,,District (Pulau Pinang),MY1102
+G0089,S.P. Tengah,county,district,G0015,,pending,,,,,District (Pulau Pinang),MY1103
+G0090,S.P. Utara,county,district,G0015,,pending,,,,,District (Pulau Pinang),MY1104
+G0091,Timur Laut,county,district,G0015,,pending,,,,,District (Pulau Pinang),MY1105
+G0092,Beaufort,county,district,G0016,,pending,,,,,District (Sabah),MY1201
+G0093,Beluran,county,district,G0016,,pending,,,,,District (Sabah),MY1202
+G0094,Keningau,county,district,G0016,,pending,,,,,District (Sabah),MY1203
+G0095,Kinabatangan,county,district,G0016,,pending,,,,,District (Sabah),MY1204
+G0096,Kota Belud,county,district,G0016,,pending,,,,,District (Sabah),MY1205
+G0097,Kota Kinabalu,county,district,G0016,,pending,,,,,District (Sabah),MY1206
+G0098,Kota Marudu,county,district,G0016,,pending,,,,,District (Sabah),MY1207
+G0099,Kuala Penyu,county,district,G0016,,pending,,,,,District (Sabah),MY1208
+G0100,Kudat,county,district,G0016,,pending,,,,,District (Sabah),MY1209
+G0101,Kunak,county,district,G0016,,pending,,,,,District (Sabah),MY1210
+G0102,Lahad Datu,county,district,G0016,,pending,,,,,District (Sabah),MY1211
+G0103,Nabawan,county,district,G0016,,pending,,,,,District (Sabah),MY1212
+G0104,Papar,county,district,G0016,,pending,,,,,District (Sabah),MY1213
+G0105,Penampang,county,district,G0016,,pending,,,,,District (Sabah),MY1214
+G0106,Pitas,county,district,G0016,,pending,,,,,District (Sabah),MY1215
+G0107,Putatan,county,district,G0016,,pending,,,,,District (Sabah),MY1216
+G0108,Ranau,county,district,G0016,,pending,,,,,District (Sabah),MY1217
+G0109,Sandakan,county,district,G0016,,pending,,,,,District (Sabah),MY1218
+G0110,Semporna,county,district,G0016,,pending,,,,,District (Sabah),MY1219
+G0111,Sipitang,county,district,G0016,,pending,,,,,District (Sabah),MY1220
+G0112,Tambunan,county,district,G0016,,pending,,,,,District (Sabah),MY1221
+G0113,Tawau,county,district,G0016,,pending,,,,,District (Sabah),MY1222
+G0114,Tenom,county,district,G0016,,pending,,,,,District (Sabah),MY1223
+G0115,Tongod,county,district,G0016,,pending,,,,,District (Sabah),MY1224
+G0116,Tuaran,county,district,G0016,,pending,,,,,District (Sabah),MY1225
+G0117,Asajaya,county,district,G0017,,pending,,,,,District (Sarawak),MY1301
+G0118,Bau,county,district,G0017,,pending,,,,,District (Sarawak),MY1302
+G0119,Belaga,county,district,G0017,,pending,,,,,District (Sarawak),MY1303
+G0120,Betong,county,district,G0017,,pending,,,,,District (Sarawak),MY1304
+G0121,Bintulu,county,district,G0017,,pending,,,,,District (Sarawak),MY1305
+G0122,Dalat,county,district,G0017,,pending,,,,,District (Sarawak),MY1306
+G0123,Daro,county,district,G0017,,pending,,,,,District (Sarawak),MY1307
+G0124,Julau,county,district,G0017,,pending,,,,,District (Sarawak),MY1308
+G0125,Kanowit,county,district,G0017,,pending,,,,,District (Sarawak),MY1309
+G0126,Kapit,county,district,G0017,,pending,,,,,District (Sarawak),MY1310
+G0127,Kuching,county,district,G0017,,pending,,,,,District (Sarawak),MY1311
+G0128,Lawas,county,district,G0017,,pending,,,,,District (Sarawak),MY1312
+G0129,Limbang,county,district,G0017,,pending,,,,,District (Sarawak),MY1313
+G0130,Lubok Antu,county,district,G0017,,pending,,,,,District (Sarawak),MY1314
+G0131,Lundu,county,district,G0017,,pending,,,,,District (Sarawak),MY1315
+G0132,Marudi,county,district,G0017,,pending,,,,,District (Sarawak),MY1316
+G0133,Matu,county,district,G0017,,pending,,,,,District (Sarawak),MY1317
+G0134,Meradong,county,district,G0017,,pending,,,,,District (Sarawak),MY1318
+G0135,Miri,county,district,G0017,,pending,,,,,District (Sarawak),MY1319
+G0136,Mukah,county,district,G0017,,pending,,,,,District (Sarawak),MY1320
+G0137,Pakan,county,district,G0017,,pending,,,,,District (Sarawak),MY1321
+G0138,Samarahan,county,district,G0017,,pending,,,,,District (Sarawak),MY1322
+G0139,Saratok,county,district,G0017,,pending,,,,,District (Sarawak),MY1323
+G0140,Sarikei,county,district,G0017,,pending,,,,,District (Sarawak),MY1324
+G0141,Selangau,county,district,G0017,,pending,,,,,District (Sarawak),MY1325
+G0142,Serian,county,district,G0017,,pending,,,,,District (Sarawak),MY1326
+G0143,Sibu,county,district,G0017,,pending,,,,,District (Sarawak),MY1327
+G0144,Simunjan,county,district,G0017,,pending,,,,,District (Sarawak),MY1328
+G0145,Song,county,district,G0017,,pending,,,,,District (Sarawak),MY1329
+G0146,Sri Aman,county,district,G0017,,pending,,,,,District (Sarawak),MY1330
+G0147,Tatau,county,district,G0017,,pending,,,,,District (Sarawak),MY1331
+G0148,Besut,county,district,G0018,,pending,,,,,District (Terengganu),MY1501
+G0149,Dungun,county,district,G0018,,pending,,,,,District (Terengganu),MY1502
+G0150,Hulu Terengganu,county,district,G0018,,pending,,,,,District (Terengganu),MY1503
+G0151,Kemaman,county,district,G0018,,pending,,,,,District (Terengganu),MY1504
+G0152,Kuala Terengganu,county,district,G0018,,pending,,,,,District (Terengganu),MY1505
+G0153,Marang,county,district,G0018,,pending,,,,,District (Terengganu),MY1506
+G0154,Setiu,county,district,G0018,,pending,,,,,District (Terengganu),MY1507
+G0155,W.P. Putrajaya,county,district,G0019,,pending,,,,,District (W.P. Putrajaya),MY1601
+G0156,Gombak,county,district,G0020,,pending,,,,,District (Selangor),MY1701
+G0157,Ulu Langat,county,district,G0020,,pending,,,,,District (Selangor),MY1702
+G0158,Ulu Selangor,county,district,G0020,,pending,,,,,District (Selangor),MY1703
+G0159,Klang,county,district,G0020,,pending,,,,,District (Selangor),MY1704
+G0160,Kuala Langat,county,district,G0020,,pending,,,,,District (Selangor),MY1705
+G0161,Kuala Selangor,county,district,G0020,,pending,,,,,District (Selangor),MY1706
+G0162,Petaling,county,district,G0020,,pending,,,,,District (Selangor),MY1707
+G0163,Sabak Bernam,county,district,G0020,,pending,,,,,District (Selangor),MY1708
+G0164,Sepang,county,district,G0020,,pending,,,,,District (Selangor),MY1709
