@@ -116,7 +116,7 @@ async function render(fresh) {
   leaving(); leaving = () => {};
   const parts = location.pathname.split('/').filter(Boolean).map(decodeURIComponent);
   const params = new URLSearchParams(location.search);
-  $$('.nav a').forEach(a => a.removeAttribute('aria-current'));
+  $$('.nav a, .fb-link').forEach(a => a.removeAttribute('aria-current'));
   try {
     const W = await WORLD();
     $('#built').textContent = `Data built ${W.built} · ${W.countries.length} countries · ${fmt(W.countries.reduce((n, c) => n + c.supporters, 0))} supporters`;
@@ -125,12 +125,13 @@ async function render(fresh) {
     else if (parts[0] === 'about' && parts.length === 1) aboutPage(W);
     else if (parts[0] === 'contribute' && parts.length === 1) contributePage(W);
     else if (parts[0] === 'suggest' && parts.length === 1) suggestPage(W, params);
+    else if (parts[0] === 'feedback' && parts.length === 1) feedbackPage(params);
     else if (country && parts.length === 1) await countryPage(country.slug, params);
     else if (country && parts.length === 2 && SECTIONS[parts[1]]) await countryPage(country.slug, params, parts[1]);
     else if (country && parts.length === 2) await personPage(country.slug, parts[1]);
     else notFound();
-    const navKey = {about: '/about', contribute: '/contribute', suggest: '/suggest'}[parts[0]] || null;
-    if (navKey) $$('.nav a').forEach(a => { if (a.getAttribute('href') === navKey) a.setAttribute('aria-current', 'page'); });
+    const navKey = {about: '/about', contribute: '/contribute', suggest: '/suggest', feedback: '/feedback'}[parts[0]] || null;
+    if (navKey) $$('.nav a, .fb-link').forEach(a => { if (a.getAttribute('href') === navKey) a.setAttribute('aria-current', 'page'); });
   } catch (err) {
     console.error(err);
     main.innerHTML = `<div class="wrap page-head"><div class="kicker">Something went wrong</div><h1>Could not load the data.</h1>
@@ -1120,6 +1121,58 @@ function suggestPage(W, params) {
       if (!r.ok) throw new Error(out.error || 'Could not send it. Please try again, or post it on Discord.');
       form.innerHTML = `<div class="sg-done"><h2>Thank you.</h2><p>We'll check <b>${esc(data.name)}</b> against the source and add them if it holds up.</p>
         <p style="margin-top:18px"><a class="btn" href="/suggest${data.country ? '?country=' + enc(data.country) : ''}">Suggest someone else</a></p></div>`;
+    } catch (err) {
+      msg.textContent = err.message; msg.className = 'sg-msg err'; send.disabled = false;
+    }
+  });
+}
+
+// ---------- feedback and bug reports ----------
+function feedbackPage(params) {
+  setTitle('Feedback and bug reports');
+  const bug = params.get('kind') === 'bug';
+  const from = params.get('page') || (document.referrer && new URL(document.referrer).origin === location.origin ? new URL(document.referrer).pathname : '');
+  main.innerHTML = `
+  <div class="wrap page-head fade"><div class="kicker">Feedback</div><h1>Tell us what <em>to fix or improve.</em></h1>
+    <p class="lede" style="margin-top:18px">Something broken, confusing or missing? An idea for the site? Write it here. No account needed.</p></div>
+  <div class="wrap two" style="margin-top:36px">
+    <form class="suggest" id="feedback-form" novalidate>
+      <fieldset class="kinds"><legend>What is it?</legend>
+        <label><input type="radio" name="kind" value="feedback"${bug ? '' : ' checked'}> Feedback or an idea</label>
+        <label><input type="radio" name="kind" value="bug"${bug ? ' checked' : ''}> A bug</label>
+      </fieldset>
+      <label><span>Your message <b>*</b></span><textarea class="field" name="message" rows="7" required maxlength="4000" id="fb-message"></textarea></label>
+      <label><span>Which page?</span><input class="field" name="page" maxlength="300" value="${esc(from)}" placeholder="For example /gb or /us/A0730" autocomplete="off"></label>
+      <label><span>Email, if you would like a reply</span><input class="field" name="contact" type="email" maxlength="200" placeholder="Optional" autocomplete="off"><small>Only used to answer you about this message.</small></label>
+      <label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+      <div class="suggest-foot"><button class="btn" type="submit" id="fb-send">Send</button><span class="sg-msg" id="fb-msg" role="status"></span></div>
+      <p class="fine">We don't ask who you are. To stop spam we keep a scrambled code of your connection that changes every day and can't be traced back to you. For a bug we also keep your browser's name and version, to reproduce it.</p>
+    </form>
+    <aside class="aside-card"><h3>Other ways</h3>
+      <p>Prefer to talk it through? Join the Discord.</p>
+      <p><a class="btn sm" href="${DISCORD}" target="_blank" rel="noopener">Join the Discord ↗</a></p>
+      <p style="margin-top:18px">Found a mistake in a person's entry? Report it on GitHub, where it is tracked until it is fixed.</p>
+      <p><a class="btn sm ghost" href="${esc(issueUrl('Report: '))}" target="_blank" rel="noopener">Report a mistake ↗</a></p>
+      <p class="fine" style="margin-top:18px">Know a supporter we are missing? <a href="/suggest">Suggest a supporter</a>.</p></aside>
+  </div>`;
+  const form = $('#feedback-form'), msg = $('#fb-msg'), send = $('#fb-send'), text = $('#fb-message');
+  const hint = () => {
+    text.placeholder = form.kind.value === 'bug'
+      ? 'What happened, what did you expect, and what did you click? Your device and browser help too.'
+      : 'What would make the site better?';
+  };
+  form.addEventListener('change', hint); hint();
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    if (data.message.trim().length < 5) { msg.textContent = 'Please write a few words.'; msg.className = 'sg-msg err'; return; }
+    send.disabled = true; msg.textContent = 'Sending…'; msg.className = 'sg-msg';
+    try {
+      const r = await fetch('/api/feedback', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(data)});
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(out.error || 'Could not send it. Please try again, or post it on Discord.');
+      form.innerHTML = `<div class="sg-done"><h2>Thank you.</h2><p>${data.kind === 'bug' ? "We'll look into it." : 'We read every message.'}</p>
+        <p style="margin-top:18px"><a class="btn" href="/">Back to the register</a></p></div>`;
     } catch (err) {
       msg.textContent = err.message; msg.className = 'sg-msg err'; send.disabled = false;
     }

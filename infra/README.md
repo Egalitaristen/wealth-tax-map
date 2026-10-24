@@ -47,10 +47,23 @@ python scripts/suggestions.py export new.csv           # hand the new ones to a 
 A suggestion is a lead, not evidence: check it against its source with the rules in `skill/SKILL.md` first. If spam
 gets through, add Cloudflare Turnstile to the form.
 
+### Feedback and bug reports
+
+The `/feedback` page (the link at the far right of the header) posts to `/api/feedback`, which stores each message in the
+`feedback` table of the same database (schema: `infra/d1/feedback.sql`, created once with
+`npx wrangler d1 execute wts-suggestions --remote --file infra/d1/feedback.sql`). It is limited to 10 a day per sender and
+keeps the browser's user agent for bug reports only. An email address is stored only if the sender gives one.
+
+```bash
+python scripts/suggestions.py feedback                      # the new ones
+python scripts/suggestions.py fmark 1a2b3c4d done           # or wontfix, with an optional note
+```
+
 To run the Worker locally with a local copy of the database:
 
 ```bash
 npx wrangler d1 execute wts-suggestions --local --file infra/d1/suggestions.sql
+npx wrangler d1 execute wts-suggestions --local --file infra/d1/feedback.sql
 python scripts/build_site.py && npx wrangler dev --local
 ```
 
