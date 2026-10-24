@@ -1,0 +1,246 @@
+profile_id,actor_id,platform,url,source,checked
+P00001,A0001,website,https://www.sv.no,actors.csv website column,2026-10-22
+P00002,A0002,website,https://www.arbeiderpartiet.no,actors.csv website column,2026-10-22
+P00003,A0003,website,https://www.senterpartiet.no,actors.csv website column,2026-10-22
+P00004,A0004,website,https://www.mdg.no,actors.csv website column,2026-10-22
+P00005,A0005,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00006,A0006,website,https://www.fagforbundet.no,actors.csv website column,2026-10-22
+P00007,A0010,website,https://www.nhh.no/en/employees/faculty/jarle-moen/,actors.csv website column,2026-10-22
+P00008,A0012,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00009,A0013,website,https://klassekampen.no,actors.csv website column,2026-10-22
+P00010,A0001,wikipedia,https://en.wikipedia.org/wiki/24_season_5,Wikidata Q217277,2026-10-22
+P00011,A0002,wikipedia,https://en.wikipedia.org/wiki/Eastern_European_Time,Wikidata Q190252,2026-10-22
+P00012,A0003,wikipedia,https://en.wikipedia.org/wiki/Preetz,Wikidata Q500171,2026-10-22
+P00013,A0004,wikipedia,https://en.wikipedia.org/wiki/Lake_Akan,Wikidata Q429402,2026-10-22
+P00014,A0005,wikipedia,https://en.wikipedia.org/wiki/Grebe_%28disambiguation%29,Wikidata Q1544464,2026-10-22
+P00015,A0006,wikipedia,https://en.wikipedia.org/wiki/Luis_Zubeld%C3%ADa,Wikidata Q1779261,2026-10-22
+P00016,A0007,x,https://x.com/weekirstyw,Wikidata Q6416186,2026-10-22
+P00017,A0007,wikipedia,https://en.wikipedia.org/wiki/Kirsty_Williams_%28drama%29,Wikidata Q6416186,2026-10-22
+P00018,A0013,wikipedia,https://en.wikipedia.org/wiki/The_Salton_Sea_%282002_film%29,Wikidata Q1544258,2026-10-22
+P00019,A0020,website,https://manifestanalyse.no,actors.csv website column,2026-10-22
+P00020,A0021,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00021,A0022,website,https://www.fellesforbundet.no,actors.csv website column,2026-10-22
+P00022,A0024,website,https://roedt.no,actors.csv website column,2026-10-22
+P00023,A0008,facebook,https://www.facebook.com/marie.sneve,Wikidata Q11988277,2026-10-22
+P00024,A0008,wikipedia,https://en.wikipedia.org/wiki/Marie_Sneve_Martinussen,Wikidata Q11988277,2026-10-22
+P00025,A0012,instagram,https://www.instagram.com/taxjusticenorge/,Wikidata Q30260022,2026-10-22
+P00026,A0012,facebook,https://www.facebook.com/TJNorge,Wikidata Q30260022,2026-10-22
+P00027,A0014,instagram,https://www.instagram.com/trygvevedum/,Wikidata Q548001,2026-10-22
+P00028,A0014,facebook,https://www.facebook.com/Trygve-Slagsvold-Vedum-739479816107780,Wikidata Q548001,2026-10-22
+P00029,A0014,wikipedia,https://en.wikipedia.org/wiki/Trygve_Slagsvold_Vedum,Wikidata Q548001,2026-10-22
+P00030,A0015,x,https://x.com/jonasgahrstore,Wikidata Q467948,2026-10-22
+P00031,A0015,instagram,https://www.instagram.com/jonasgahrs/,Wikidata Q467948,2026-10-22
+P00032,A0015,facebook,https://www.facebook.com/jonasgahrstore,Wikidata Q467948,2026-10-22
+P00033,A0015,wikipedia,https://en.wikipedia.org/wiki/Jonas_Gahr_St%C3%B8re,Wikidata Q467948,2026-10-22
+P00034,A0016,x,https://x.com/kariekas,Wikidata Q19715025,2026-10-22
+P00035,A0016,wikipedia,https://en.wikipedia.org/wiki/Kari_Elisabeth_Kaski,Wikidata Q19715025,2026-10-22
+P00036,A0017,x,https://x.com/mimirk,Wikidata Q11039862,2026-10-22
+P00037,A0017,facebook,https://www.facebook.com/mimir.kristjansson,Wikidata Q11039862,2026-10-22
+P00038,A0017,youtube,https://www.youtube.com/channel/UCU0Dxe55nza7Sto8dkrBhHA,Wikidata Q11039862,2026-10-22
+P00039,A0017,wikipedia,https://en.wikipedia.org/wiki/M%C3%ADmir_Kristj%C3%A1nsson,Wikidata Q11039862,2026-10-22
+P00040,A0018,x,https://x.com/lan_marie,Wikidata Q21160698,2026-10-22
+P00041,A0018,wikipedia,https://en.wikipedia.org/wiki/Lan_Marie_Berg,Wikidata Q21160698,2026-10-22
+P00042,A0019,wikipedia,https://en.wikipedia.org/wiki/Karl_Ove_Moene,Wikidata Q16897991,2026-10-22
+P00043,A0020,x,https://x.com/manifesttanke,Wikidata Q11988043,2026-10-22
+P00044,A0020,facebook,https://www.facebook.com/Manifesttankesmie,Wikidata Q11988043,2026-10-22
+P00045,A0021,x,https://x.com/tankesmien,Wikidata Q18783423,2026-10-22
+P00046,A0021,instagram,https://www.instagram.com/tankesmien_agenda/,Wikidata Q18783423,2026-10-22
+P00047,A0021,facebook,https://www.facebook.com/tankesmienagenda,Wikidata Q18783423,2026-10-22
+P00048,A0021,wikipedia,https://en.wikipedia.org/wiki/Agenda_%28think_tank%29,Wikidata Q18783423,2026-10-22
+P00049,A0022,x,https://x.com/Fellesforbundet,Wikidata Q6517266,2026-10-22
+P00050,A0022,instagram,https://www.instagram.com/fellesforbundet/,Wikidata Q6517266,2026-10-22
+P00051,A0022,facebook,https://www.facebook.com/Fellesforbundet,Wikidata Q6517266,2026-10-22
+P00052,A0022,wikipedia,https://en.wikipedia.org/wiki/United_Federation_of_Trade_Unions,Wikidata Q6517266,2026-10-22
+P00053,A0023,wikipedia,https://en.wikipedia.org/wiki/J%C3%B8rn_Eggum,Wikidata Q25429632,2026-10-22
+P00054,A0024,x,https://x.com/raudt,Wikidata Q1512994,2026-10-22
+P00055,A0024,bluesky,https://bsky.app/profile/roedt.no,Wikidata Q1512994,2026-10-22
+P00056,A0024,instagram,https://www.instagram.com/stemroedt/,Wikidata Q1512994,2026-10-22
+P00057,A0024,facebook,https://www.facebook.com/Roedt,Wikidata Q1512994,2026-10-22
+P00058,A0024,youtube,https://www.youtube.com/channel/UCnXkBK4rTokTs13KboQDb_A,Wikidata Q1512994,2026-10-22
+P00059,A0024,wikipedia,https://en.wikipedia.org/wiki/Red_Party_%28Norway%29,Wikidata Q1512994,2026-10-22
+P00060,A0027,website,https://www.nhh.no/en/employees/faculty/guttorm-schjelderup/,actors.csv website column,2026-10-22
+P00061,A0028,website,https://www.nhh.no/en/employees/faculty/petter-bjerksund/,actors.csv website column,2026-10-22
+P00062,A0029,website,https://attac.no,actors.csv website column,2026-10-22
+P00063,A0030,website,https://www.ntl.no,actors.csv website column,2026-10-22
+P00064,A0025,x,https://x.com/TuvaMoflag,Wikidata Q25427910,2026-10-22
+P00065,A0025,wikipedia,https://en.wikipedia.org/wiki/Tuva_Moflag,Wikidata Q25427910,2026-10-22
+P00066,A0026,x,https://x.com/geirpo,Wikidata Q4572995,2026-10-22
+P00067,A0026,wikipedia,https://en.wikipedia.org/wiki/Geir_Pollestad,Wikidata Q4572995,2026-10-22
+P00068,A0027,wikipedia,https://en.wikipedia.org/wiki/Guttorm_Schjelderup,Wikidata Q5621939,2026-10-22
+P00069,A0029,x,https://x.com/AttacNorge,Wikidata Q115118460,2026-10-22
+P00070,A0029,mastodon,https://snabelen.no/@attacnorge,Wikidata Q115118460,2026-10-22
+P00071,A0030,x,https://x.com/NTLnorge,Wikidata Q7061051,2026-10-22
+P00072,A0030,instagram,https://www.instagram.com/ntlnorge/,Wikidata Q7061051,2026-10-22
+P00073,A0030,facebook,https://www.facebook.com/ntlnorge,Wikidata Q7061051,2026-10-22
+P00074,A0030,wikipedia,https://en.wikipedia.org/wiki/Norwegian_Civil_Service_Union,Wikidata Q7061051,2026-10-22
+P00325,A0131,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00326,A0132,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00327,A0133,website,https://auf.no,actors.csv website column,2026-10-22
+P00328,A0134,website,https://auf.no,actors.csv website column,2026-10-22
+P00329,A0135,website,https://su.no,actors.csv website column,2026-10-22
+P00330,A0136,website,https://www.xn--rdungdom-54a.no,actors.csv website column,2026-10-22
+P00331,A0137,website,https://gronnungdom.no,actors.csv website column,2026-10-22
+P00332,A0138,website,https://gronnungdom.no,actors.csv website column,2026-10-22
+P00333,A0139,website,https://www.unio.no,actors.csv website column,2026-10-22
+P00334,A0140,website,https://www.unio.no,actors.csv website column,2026-10-22
+P00335,A0141,website,https://www.fo.no,actors.csv website column,2026-10-22
+P00336,A0142,website,https://www.fo.no,actors.csv website column,2026-10-22
+P00337,A0143,website,https://elogit.no,actors.csv website column,2026-10-22
+P00338,A0144,website,https://elogit.no,actors.csv website column,2026-10-22
+P00339,A0145,website,https://www.hk.no,actors.csv website column,2026-10-22
+P00340,A0146,website,https://www.hk.no,actors.csv website column,2026-10-22
+P00341,A0147,website,https://www.ssb.no,actors.csv website column,2026-10-22
+P00342,A0131,wikipedia,https://en.wikipedia.org/wiki/Peggy_Hessen_F%C3%B8lsvik,Wikidata Q17061767,2026-10-22
+P00343,A0132,wikipedia,https://en.wikipedia.org/wiki/Kine_Asper_Vistnes,Wikidata Q131407254,2026-10-22
+P00344,A0133,instagram,https://www.instagram.com/aufnorge/,Wikidata Q426133,2026-10-22
+P00345,A0133,tiktok,https://www.tiktok.com/@aufnorge,Wikidata Q426133,2026-10-22
+P00346,A0133,wikipedia,https://en.wikipedia.org/wiki/Workers%27_Youth_League_%28Norway%29,Wikidata Q426133,2026-10-22
+P00347,A0134,wikipedia,https://en.wikipedia.org/wiki/Gaute_B%C3%B8rstad_Skjerv%C3%B8,Wikidata Q108149666,2026-10-22
+P00348,A0135,instagram,https://www.instagram.com/sosialistiskungdom/,Wikidata Q6516601,2026-10-22
+P00349,A0135,facebook,https://www.facebook.com/sosialistiskungdom,Wikidata Q6516601,2026-10-22
+P00350,A0135,wikipedia,https://en.wikipedia.org/wiki/Socialist_Youth_%28Norway%29,Wikidata Q6516601,2026-10-22
+P00351,A0136,x,https://x.com/rodungdom,Wikidata Q1769460,2026-10-22
+P00352,A0136,instagram,https://www.instagram.com/rod_ungdom/,Wikidata Q1769460,2026-10-22
+P00353,A0136,facebook,https://www.facebook.com/rodungdomnorge,Wikidata Q1769460,2026-10-22
+P00354,A0136,wikipedia,https://en.wikipedia.org/wiki/Red_Youth_%28Norway%29,Wikidata Q1769460,2026-10-22
+P00355,A0137,x,https://x.com/GronnUngdom,Wikidata Q11973071,2026-10-22
+P00356,A0137,instagram,https://www.instagram.com/gronnungdom/,Wikidata Q11973071,2026-10-22
+P00357,A0137,facebook,https://www.facebook.com/gronnungdom,Wikidata Q11973071,2026-10-22
+P00358,A0137,wikipedia,https://en.wikipedia.org/wiki/Young_Greens_of_Norway,Wikidata Q11973071,2026-10-22
+P00359,A0138,instagram,https://www.instagram.com/froyasjursaether/,Wikidata Q124328564,2026-10-22
+P00360,A0138,facebook,https://www.facebook.com/100036675340527,Wikidata Q124328564,2026-10-22
+P00361,A0138,tiktok,https://www.tiktok.com/@froyaikoya,Wikidata Q124328564,2026-10-22
+P00362,A0138,wikipedia,https://en.wikipedia.org/wiki/Fr%C3%B8ya_Sjurs%C3%A6ther,Wikidata Q124328564,2026-10-22
+P00363,A0139,x,https://x.com/UnioNorge,Wikidata Q1774001,2026-10-22
+P00364,A0139,instagram,https://www.instagram.com/unionorge/,Wikidata Q1774001,2026-10-22
+P00365,A0139,facebook,https://www.facebook.com/Unio.hovedorg,Wikidata Q1774001,2026-10-22
+P00366,A0139,youtube,https://www.youtube.com/channel/UCcAsO_0etmT0suPz0iXZq1A,Wikidata Q1774001,2026-10-22
+P00367,A0139,wikipedia,https://en.wikipedia.org/wiki/Confederation_of_Unions_for_Professionals,Wikidata Q1774001,2026-10-22
+P00368,A0140,linkedin,https://www.linkedin.com/in/steffen-handal-292a5b58/,Wikidata Q12002850,2026-10-22
+P00369,A0141,x,https://x.com/FO_fellesorg,Wikidata Q11968670,2026-10-22
+P00370,A0141,instagram,https://www.instagram.com/fofellesorg/,Wikidata Q11968670,2026-10-22
+P00371,A0141,facebook,https://www.facebook.com/fellesorg,Wikidata Q11968670,2026-10-22
+P00372,A0141,youtube,https://www.youtube.com/channel/UCHdaRC2PmbXJZIH2-kmBJ0w,Wikidata Q11968670,2026-10-22
+P00373,A0141,wikipedia,https://en.wikipedia.org/wiki/Norwegian_Union_of_Social_Educators_and_Social_Workers,Wikidata Q11968670,2026-10-22
+P00374,A0143,x,https://x.com/elogit_no,Wikidata Q5323331,2026-10-22
+P00375,A0143,instagram,https://www.instagram.com/elogit_no/,Wikidata Q5323331,2026-10-22
+P00376,A0143,facebook,https://www.facebook.com/ELogITForbundet,Wikidata Q5323331,2026-10-22
+P00377,A0143,wikipedia,https://en.wikipedia.org/wiki/Electrician_and_IT_Workers%27_Union,Wikidata Q5323331,2026-10-22
+P00378,A0145,x,https://x.com/hkinorge,Wikidata Q7886583,2026-10-22
+P00379,A0145,instagram,https://www.instagram.com/hk_norge/,Wikidata Q7886583,2026-10-22
+P00380,A0145,facebook,https://www.facebook.com/hknorge,Wikidata Q7886583,2026-10-22
+P00381,A0145,wikipedia,https://en.wikipedia.org/wiki/Union_of_Employees_in_Commerce_and_Offices,Wikidata Q7886583,2026-10-22
+P00383,A0149,website,https://www.nmbu.no/ansatte/annette-alstadsaeter,actors.csv website column,2026-10-22
+P00387,A0153,website,https://www.nhh.no/en/employees/faculty/floris-zoutman/,actors.csv website column,2026-10-22
+P00388,A0154,website,https://www.nhh.no/en/employees/faculty/oyvind-thomassen/,actors.csv website column,2026-10-22
+P00389,A0155,website,https://www.ssb.no,actors.csv website column,2026-10-22
+P00390,A0156,website,https://www.ssb.no,actors.csv website column,2026-10-22
+P00391,A0157,website,https://www.fagforbundet.no,actors.csv website column,2026-10-22
+P00392,A0158,website,https://www.nesodden.kommune.no,actors.csv website column,2026-10-22
+P00393,A0159,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00394,A0160,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00395,A0161,website,https://tankesmienagenda.no/,actors.csv website column,2026-10-22
+P00396,A0157,wikipedia,https://en.wikipedia.org/wiki/Mette_Nord,Wikidata Q15195484,2026-10-22
+P00397,A0158,wikipedia,https://en.wikipedia.org/wiki/Truls_Wickholm,Wikidata Q4589905,2026-10-22
+P00398,A0159,wikipedia,https://en.wikipedia.org/wiki/Stein_Reeg%C3%A5rd,Wikidata Q7606778,2026-10-22
+P00399,A0162,website,https://www.ntnu.no/ansatte/ragnar.torvik,actors.csv website column,2026-10-22
+P00400,A0163,website,https://tankesmienagenda.no/,actors.csv website column,2026-10-22
+P00401,A0164,website,https://tankesmienagenda.no/,actors.csv website column,2026-10-22
+P00402,A0165,website,https://www.frifagbevegelse.no,actors.csv website column,2026-10-22
+P00403,A0166,website,https://oslo.sv.no,actors.csv website column,2026-10-22
+P00404,A0167,website,https://faktaomformuesskatt.no/,actors.csv website column,2026-10-22
+P00405,A0168,website,https://faktaomformuesskatt.no/,actors.csv website column,2026-10-22
+P00406,A0169,website,https://kjonnsforskning.no,actors.csv website column,2026-10-22
+P00409,A0172,website,https://samforsk.no,actors.csv website column,2026-10-22
+P00410,A0173,website,https://www.langsikt.no,actors.csv website column,2026-10-22
+P00411,A0174,website,https://www.langsikt.no,actors.csv website column,2026-10-22
+P00412,A0175,website,https://arbeidsmandsforbundet.no/,actors.csv website column,2026-10-22
+P00413,A0176,website,https://arbeidsmandsforbundet.no/,actors.csv website column,2026-10-22
+P00414,A0166,wikipedia,https://en.wikipedia.org/wiki/Sunniva_Holm%C3%A5s_Eidsvoll,Wikidata Q47490972,2026-10-22
+P00415,A0176,x,https://x.com/arbeidsmand,Wikidata Q7061302,2026-10-22
+P00416,A0176,instagram,https://www.instagram.com/norskarbeidsmandsforbund/,Wikidata Q7061302,2026-10-22
+P00417,A0176,facebook,https://www.facebook.com/arbeidsmandsforbundet,Wikidata Q7061302,2026-10-22
+P00418,A0176,wikipedia,https://en.wikipedia.org/wiki/Norwegian_Union_of_General_Workers,Wikidata Q7061302,2026-10-22
+P00419,A0177,website,https://www.mohnfamilien.no,actors.csv website column,2026-10-22
+P00420,A0178,website,https://cicero.oslo.no,actors.csv website column,2026-10-22
+P00421,A0179,website,https://www.norad.no,actors.csv website column,2026-10-22
+P00422,A0180,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00423,A0181,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00424,A0182,website,https://www.pensjonistforbundet.no,actors.csv website column,2026-10-22
+P00425,A0183,website,https://www.pensjonistforbundet.no,actors.csv website column,2026-10-22
+P00426,A0184,website,https://www.pensjonistforbundet.no,actors.csv website column,2026-10-22
+P00427,A0185,website,https://attac.no,actors.csv website column,2026-10-22
+P00428,A0186,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00429,A0187,website,https://agendatankesmie.no,actors.csv website column,2026-10-22
+P00430,A0188,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00431,A0189,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00432,A0190,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00433,A0191,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00434,A0192,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00435,A0193,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00436,A0194,website,https://agendamagasin.no,actors.csv website column,2026-10-22
+P00437,A0195,website,https://agendatankesmie.no,actors.csv website column,2026-10-22
+P00438,A0196,website,https://agendatankesmie.no,actors.csv website column,2026-10-22
+P00439,A0197,website,https://agendatankesmie.no,actors.csv website column,2026-10-22
+P00440,A0198,website,https://lo-oslo.no,actors.csv website column,2026-10-22
+P00441,A0199,website,https://www.manifest.no,actors.csv website column,2026-10-22
+P00442,A0200,website,https://roedt.no,actors.csv website column,2026-10-22
+P00443,A0177,wikipedia,https://en.wikipedia.org/wiki/Trond_Mohn,Wikidata Q7845457,2026-10-22
+P00444,A0178,wikipedia,https://en.wikipedia.org/wiki/Kristin_Halvorsen,Wikidata Q236621,2026-10-22
+P00445,A0179,wikipedia,https://en.wikipedia.org/wiki/B%C3%A5rd_Vegar_Solhjell,Wikidata Q1019331,2026-10-22
+P00446,A0180,x,https://x.com/MagnusMarsdal,Wikidata Q11987843,2026-10-22
+P00447,A0180,facebook,https://www.facebook.com/magnus.marsdal,Wikidata Q11987843,2026-10-22
+P00448,A0187,wikipedia,https://en.wikipedia.org/wiki/The_Woman_I_Am_%28Kellie_Pickler_album%29,Wikidata Q17062402,2026-10-22
+P00449,A0198,wikipedia,https://en.wikipedia.org/wiki/Rovde_Church,Wikidata Q11998522,2026-10-22
+P00450,A0201,website,https://www.regjeringen.no,actors.csv website column,2026-10-22
+P00451,A0202,website,https://www.unio.no,actors.csv website column,2026-10-22
+P00452,A0203,website,https://www.fagforbundet.no,actors.csv website column,2026-10-22
+P00453,A0204,website,https://roedt.no,actors.csv website column,2026-10-22
+P00454,A0205,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00455,A0206,website,https://www.ssb.no,actors.csv website column,2026-10-22
+P00457,A0208,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00458,A0209,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00459,A0210,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00460,A0211,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00461,A0212,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00462,A0213,website,https://www.kirkensnodhjelp.no,actors.csv website column,2026-10-22
+P00463,A0214,website,https://www.kirkensnodhjelp.no,actors.csv website column,2026-10-22
+P00464,A0215,website,https://www.hvl.no,actors.csv website column,2026-10-22
+P00465,A0216,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00466,A0217,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00467,A0218,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00468,A0219,website,https://agendaradgivning.no,actors.csv website column,2026-10-22
+P00469,A0220,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00470,A0221,website,https://agendamagasin.no,actors.csv website column,2026-10-22
+P00471,A0222,website,https://www.sv.no,actors.csv website column,2026-10-22
+P00472,A0223,website,https://www.sv.no,actors.csv website column,2026-10-22
+P00473,A0224,website,https://www.manifesttidsskrift.no,actors.csv website column,2026-10-22
+P00474,A0201,wikipedia,https://en.wikipedia.org/wiki/Quincinetto,Wikidata Q10213,2026-10-22
+P00475,A0214,wikipedia,https://en.wikipedia.org/wiki/Microgale,Wikidata Q1773950,2026-10-22
+P00476,A0218,wikipedia,https://en.wikipedia.org/wiki/2022_Judo_Grand_Slam_Tokyo,Wikidata Q109673994,2026-10-22
+P00477,A0225,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00478,A0226,website,https://www.lo.no,actors.csv website column,2026-10-22
+P00479,A0229,website,https://www.stortinget.no/no/Representanter-og-komiteer/Representantene/Representantfordeling/Representant/?perid=FRJ,actors.csv website column,2026-10-22
+P00480,A0232,website,https://www.dagsavisen.no,actors.csv website column,2026-10-22
+P00481,A0233,website,https://www.ssb.no,actors.csv website column,2026-10-22
+P00485,A0238,website,https://fn.no,actors.csv website column,2026-10-22
+P00486,A0239,website,https://www.stortinget.no/no/Representanter-og-komiteer/Representantene/Representantfordeling/Representant/?perid=MMA,actors.csv website column,2026-10-22
+P00487,A0240,website,https://www.regjeringen.no,actors.csv website column,2026-10-22
+P00488,A0241,website,https://www.fo.no,actors.csv website column,2026-10-22
+P00489,A0242,website,https://www.stortinget.no/no/Representanter-og-komiteer/Representantene/Representantfordeling/Representant/?perid=RAH,actors.csv website column,2026-10-22
+P00490,A0243,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00491,A0244,website,https://tankesmienagenda.no,actors.csv website column,2026-10-22
+P00492,A0246,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00493,A0247,website,https://www.ntnu.no,actors.csv website column,2026-10-22
+P00494,A0248,website,https://www.samfunnsforskning.no,actors.csv website column,2026-10-22
+P00495,A0225,wikipedia,https://en.wikipedia.org/wiki/Wegard_Harsvik,Wikidata Q7979663,2026-10-22
+P00496,A0229,wikipedia,https://en.wikipedia.org/wiki/Stanlee_Ohikhuare,Wikidata Q108770737,2026-10-22
+P00497,A0239,wikipedia,https://en.wikipedia.org/wiki/Lee_Quarry,Wikidata Q6514757,2026-10-22
+P00498,A0242,wikipedia,https://en.wikipedia.org/wiki/Inachori,Wikidata Q630773,2026-10-22
+P00499,A0249,wikipedia,https://en.wikipedia.org/wiki/Linn_Stalsberg,Wikidata Q11984155,2026-10-22
+P00512,A0262,website,https://www.faktisk.no,actors.csv website column,2026-10-22
+P00513,A0263,website,https://agendamagasin.no,actors.csv website column,2026-10-22
+P00514,A0264,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00516,A0266,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00519,A0269,website,https://taxjustice.no,actors.csv website column,2026-10-22
+P00545,A0284,website,https://www.sv.uio.no/econ/personer/vit/sholden/index.html,actors.csv website column,2026-10-22

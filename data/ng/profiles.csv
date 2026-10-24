@@ -1,0 +1,19 @@
+profile_id,actor_id,platform,url,source,checked
+P00001,A0001,website,https://nigeria.oxfam.org,actors.csv website column,2026-10-22
+P00002,A0002,website,https://cislac.org,actors.csv website column,2026-10-22
+P00003,A0003,website,https://taxjustice.ng,actors.csv website column,2026-10-22
+P00004,A0012,website,https://www.carenigeria.org,actors.csv website column,2026-10-22
+P00005,A0014,website,https://www.connecteddevelopment.org,actors.csv website column,2026-10-22
+P00006,A0016,website,https://taxjusticeafrica.net,actors.csv website column,2026-10-22
+P00007,A0026,website,https://www.oxfamnovib.nl,actors.csv website column,2026-10-22
+P00008,A0027,website,https://maketaxfair.net,actors.csv website column,2026-10-22
+P00009,A0028,website,https://ips-dc.org,actors.csv website column,2026-10-22
+P00010,A0029,website,https://patrioticmillionaires.org,actors.csv website column,2026-10-22
+P00011,A0030,website,https://www.fightinequality.org,actors.csv website column,2026-10-22
+P00012,A0034,website,https://www.southsouthecho.com,actors.csv website column,2026-10-22
+P00014,A0043,website,https://nasu.org.ng,actors.csv website column,2026-10-22
+P00020,A0002,wikipedia,https://en.wikipedia.org/wiki/Blake_Johnson,Wikidata Q111962564,2026-10-22
+P00021,A0014,wikipedia,https://en.wikipedia.org/wiki/2021_Senedd_election,Wikidata Q28403875,2026-10-22
+P00034,A0004,wikipedia,https://en.wikipedia.org/wiki/Auwal_Musa_Rafsanjani,Wikidata Q121335465,2026-10-22
+P00044,A0072,x,https://x.com/raufaregbesola,Wikidata Q7296120,2026-10-22
+P00045,A0072,wikipedia,https://en.wikipedia.org/wiki/Rauf_Aregbesola,Wikidata Q7296120,2026-10-22

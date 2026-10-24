@@ -1,0 +1,816 @@
+geo_unit_id,name,level,unit_type,parent_id,website,sweep_status,swept_run,swept_date,queries_run,hits,notes,code
+G0001,Nigeria,national,country,,https://nigeria.gov.ng,done,R001,2026-10-22,16,17,"National sweep across civil society coalitions (Oxfam in Nigeria, CISLAC, TJ&GP, CARE, ActionAid, CODE), unions (NLC, NASU, CDWR), parties (SPN), media, and international partners",
+G0002,House of Representatives,national,legislature,G0001,https://nass.gov.ng,done,R001,2026-10-22,3,0,Swept House of Representatives debates on the 2024-2025 Tax Reform Bills; no standalone wealth tax bill or motion found,
+G0003,Senate,national,legislature,G0001,https://nass.gov.ng,done,R001,2026-10-22,3,0,Swept Senate debates on the 2024-2025 Tax Reform Bills; Senator Ireti Kingibe logged in exclusions.csv,
+G0004,Federal Government of Nigeria,national,executive,G0001,https://statehouse.gov.ng,done,R001,2026-10-22,3,0,"Swept Federal Executive and Presidential Fiscal Policy and Tax Reforms Committee; former Budget Office DG Ben Akabueze recorded (A0035), Taiwo Oyedele and Bola Tinubu logged in exclusions.csv",
+G0005,Abia,region,state,G0001,,pending,,,,0,,NG001
+G0006,Adamawa,region,state,G0001,,done,,2026-10-22,3,0,,NG002
+G0007,Akwa Ibom,region,state,G0001,,pending,,,,0,,NG003
+G0008,Anambra,region,state,G0001,,done,,2026-10-22,3,0,,NG004
+G0009,Bauchi,region,state,G0001,,pending,,,,0,,NG005
+G0010,Bayelsa,region,state,G0001,,pending,,,,0,,NG006
+G0011,Benue,region,state,G0001,,pending,,,,0,,NG007
+G0012,Borno,region,state,G0001,,done,R001,2026-10-22,1,0,Borno State sample sweep; ICTD Borno State HNWI tax compliance study logged in exclusions.csv (X0005),NG008
+G0013,Cross River,region,state,G0001,,pending,,,,0,,NG009
+G0014,Delta,region,state,G0001,,done,,2026-10-22,3,0,,NG010
+G0015,Ebonyi,region,state,G0001,,pending,,,,0,,NG011
+G0016,Edo,region,state,G0001,,done,,2026-10-22,3,2,,NG012
+G0017,Ekiti,region,state,G0001,,pending,,,,0,,NG013
+G0018,Enugu,region,state,G0001,,done,R001,2026-10-22,1,0,"Enugu State sample sweep; Enugu Land Use Charge digitisation reviewed, no standalone wealth tax supporter found",NG014
+G0019,Federal Capital Territory,region,federal territory,G0001,,done,R001,2026-10-22,4,0,"Federal Capital Territory regional sweep; major concentration of national NGO headquarters, unions, and tax-justice launches in Abuja",NG015
+G0020,Gombe,region,state,G0001,,pending,,,,0,,NG016
+G0021,Imo,region,state,G0001,,pending,,,,0,,NG017
+G0022,Jigawa,region,state,G0001,,pending,,,,0,,NG018
+G0023,Kaduna,region,state,G0001,,done,R001,2026-10-22,1,0,"Kaduna State sample sweep; KADIRS HNWI compliance reviewed, no standalone wealth tax supporter found",NG019
+G0024,Kano,region,state,G0001,,done,R001,2026-10-22,1,0,Kano State sample sweep; TJ&GP state platform noted for follow-up,NG020
+G0025,Katsina,region,state,G0001,,pending,,,,0,,NG021
+G0026,Kebbi,region,state,G0001,,pending,,,,0,,NG022
+G0027,Kogi,region,state,G0001,,pending,,,,0,,NG023
+G0028,Kwara,region,state,G0001,,pending,,,,0,,NG024
+G0029,Lagos,region,state,G0001,,done,R001,2026-10-22,5,4,"Lagos State regional sweep; covers Blakey's February 2024 Wealth-Tax Conference, ACRC Lagos Land Use Charge reform study, socialist groups, and media",NG025
+G0030,Nasarawa,region,state,G0001,,pending,,,,0,,NG026
+G0031,Niger,region,state,G0001,,pending,,,,0,,NG027
+G0032,Ogun,region,state,G0001,,done,,2026-10-22,3,0,,NG028
+G0033,Ondo,region,state,G0001,,done,R001,2026-10-22,1,0,Ondo State sample sweep; FUTA academic Olumuyiwa Adegun (A0040),NG029
+G0034,Osun,region,state,G0001,,done,R001,2026-10-22,1,1,Osun State sample sweep; OAU academic Damilola Agbalajobi (A0039),NG030
+G0035,Oyo,region,state,G0001,,done,R001,2026-10-22,2,0,Oyo State regional sweep; Governor Seyi Makinde (A0050) and NASU national headquarters (A0043) in Ibadan,NG031
+G0036,Plateau,region,state,G0001,,pending,,,,0,,NG032
+G0037,Rivers,region,state,G0001,,done,R001,2026-10-22,1,1,"Rivers State sample sweep; state IGR and property tax debates reviewed, no standalone wealth tax supporter found",NG033
+G0038,Sokoto,region,state,G0001,,pending,,,,0,,NG034
+G0039,Taraba,region,state,G0001,,pending,,,,0,,NG035
+G0040,Yobe,region,state,G0001,,pending,,,,0,,NG036
+G0041,Zamfara,region,state,G0001,,pending,,,,0,,NG037
+G0042,Aba North,council,local government area,G0005,,pending,,,,0,,NG001001
+G0043,Aba South,council,local government area,G0005,,pending,,,,0,,NG001002
+G0044,Arochukwu,council,local government area,G0005,,pending,,,,0,,NG001003
+G0045,Bende,council,local government area,G0005,,pending,,,,0,,NG001004
+G0046,Ikwuano,council,local government area,G0005,,pending,,,,0,,NG001005
+G0047,Isiala-Ngwa North,council,local government area,G0005,,pending,,,,0,,NG001006
+G0048,Isiala-Ngwa South,council,local government area,G0005,,pending,,,,0,,NG001007
+G0049,Isiukwuato,council,local government area,G0005,,pending,,,,0,,NG001008
+G0050,Obi Ngwa,council,local government area,G0005,,pending,,,,0,,NG001009
+G0051,Ohafia,council,local government area,G0005,,pending,,,,0,,NG001010
+G0052,Osisioma Ngwa,council,local government area,G0005,,pending,,,,0,,NG001011
+G0053,Ugwunagbo,council,local government area,G0005,,pending,,,,0,,NG001012
+G0054,Ukwa East,council,local government area,G0005,,pending,,,,0,,NG001013
+G0055,Ukwa West,council,local government area,G0005,,pending,,,,0,,NG001014
+G0056,Umuahia North,council,local government area,G0005,,pending,,,,0,,NG001015
+G0057,Umuahia South,council,local government area,G0005,,pending,,,,0,,NG001016
+G0058,Umu-Nneochi,council,local government area,G0005,,pending,,,,0,,NG001017
+G0059,Demsa,council,local government area,G0006,,pending,,,,0,,NG002001
+G0060,Fufore,council,local government area,G0006,,pending,,,,0,,NG002002
+G0061,Ganye,council,local government area,G0006,,pending,,,,0,,NG002003
+G0062,Gombi,council,local government area,G0006,,pending,,,,0,,NG002004
+G0063,Girei,council,local government area,G0006,,pending,,,,0,,NG002005
+G0064,Guyuk,council,local government area,G0006,,pending,,,,0,,NG002006
+G0065,Hong,council,local government area,G0006,,pending,,,,0,,NG002007
+G0066,Jada,council,local government area,G0006,,done,,2026-10-22,3,1,,NG002008
+G0067,Lamurde,council,local government area,G0006,,pending,,,,0,,NG002009
+G0068,Madagali,council,local government area,G0006,,pending,,,,0,,NG002010
+G0069,Maiha,council,local government area,G0006,,pending,,,,0,,NG002011
+G0070,Mayo-Belwa,council,local government area,G0006,,pending,,,,0,,NG002012
+G0071,Michika,council,local government area,G0006,,pending,,,,0,,NG002013
+G0072,Mubi North,council,local government area,G0006,,pending,,,,0,,NG002014
+G0073,Mubi South,council,local government area,G0006,,pending,,,,0,,NG002015
+G0074,Numan,council,local government area,G0006,,pending,,,,0,,NG002016
+G0075,Shelleng,council,local government area,G0006,,pending,,,,0,,NG002017
+G0076,Song,council,local government area,G0006,,pending,,,,0,,NG002018
+G0077,Toungo,council,local government area,G0006,,pending,,,,0,,NG002019
+G0078,Yola North,council,local government area,G0006,,pending,,,,0,,NG002020
+G0079,Yola South,council,local government area,G0006,,pending,,,,0,,NG002021
+G0080,Abak,council,local government area,G0007,,pending,,,,0,,NG003001
+G0081,Eastern Obolo,council,local government area,G0007,,pending,,,,0,,NG003002
+G0082,Eket,council,local government area,G0007,,pending,,,,0,,NG003003
+G0083,Esit - Eket,council,local government area,G0007,,pending,,,,0,,NG003004
+G0084,Essien Udim,council,local government area,G0007,,pending,,,,0,,NG003005
+G0085,Etim Ekpo,council,local government area,G0007,,pending,,,,0,,NG003006
+G0086,Etinan,council,local government area,G0007,,pending,,,,0,,NG003007
+G0087,Ibeno,council,local government area,G0007,,pending,,,,0,,NG003008
+G0088,Ibesikpo Asutan,council,local government area,G0007,,pending,,,,0,,NG003009
+G0089,Ibiono Ibom,council,local government area,G0007,,pending,,,,0,,NG003010
+G0090,Ika,council,local government area,G0007,,pending,,,,0,,NG003011
+G0091,Ikono,council,local government area,G0007,,pending,,,,0,,NG003012
+G0092,Ikot Abasi,council,local government area,G0007,,pending,,,,0,,NG003013
+G0093,Ikot Ekpene,council,local government area,G0007,,pending,,,,0,,NG003014
+G0094,Ini,council,local government area,G0007,,pending,,,,0,,NG003015
+G0095,Itu,council,local government area,G0007,,pending,,,,0,,NG003016
+G0096,Mbo,council,local government area,G0007,,pending,,,,0,,NG003017
+G0097,Mkpat Enin,council,local government area,G0007,,pending,,,,0,,NG003018
+G0098,Nsit Atai,council,local government area,G0007,,pending,,,,0,,NG003019
+G0099,Nsit Ibom,council,local government area,G0007,,pending,,,,0,,NG003020
+G0100,Nsit Ubium,council,local government area,G0007,,pending,,,,0,,NG003021
+G0101,Obot Akara,council,local government area,G0007,,pending,,,,0,,NG003022
+G0102,Okobo,council,local government area,G0007,,pending,,,,0,,NG003023
+G0103,Onna,council,local government area,G0007,,pending,,,,0,,NG003024
+G0104,Oron,council,local government area,G0007,,pending,,,,0,,NG003025
+G0105,Oruk Anam,council,local government area,G0007,,pending,,,,0,,NG003026
+G0106,Udung Uko,council,local government area,G0007,,pending,,,,0,,NG003027
+G0107,Ukanafun,council,local government area,G0007,,pending,,,,0,,NG003028
+G0108,Uruan,council,local government area,G0007,,pending,,,,0,,NG003029
+G0109,Urue-Offong/Oruko,council,local government area,G0007,,pending,,,,0,,NG003030
+G0110,Uyo,council,local government area,G0007,,pending,,,,0,,NG003031
+G0111,Aguata,council,local government area,G0008,,pending,,,,0,,NG004001
+G0112,Anambra East,council,local government area,G0008,,pending,,,,0,,NG004002
+G0113,Anambra West,council,local government area,G0008,,pending,,,,0,,NG004003
+G0114,Anaocha,council,local government area,G0008,,pending,,,,0,,NG004004
+G0115,Awka North,council,local government area,G0008,,pending,,,,0,,NG004005
+G0116,Awka South,council,local government area,G0008,,done,,2026-10-22,3,2,,NG004006
+G0117,Ayamelum,council,local government area,G0008,,pending,,,,0,,NG004007
+G0118,Dunukofia,council,local government area,G0008,,pending,,,,0,,NG004008
+G0119,Ekwusigo,council,local government area,G0008,,pending,,,,0,,NG004009
+G0120,Idemili North,council,local government area,G0008,,pending,,,,0,,NG004010
+G0121,Idemili South,council,local government area,G0008,,pending,,,,0,,NG004011
+G0122,Ihiala,council,local government area,G0008,,pending,,,,0,,NG004012
+G0123,Njikoka,council,local government area,G0008,,pending,,,,0,,NG004013
+G0124,Nnewi North,council,local government area,G0008,,pending,,,,0,,NG004014
+G0125,Nnewi South,council,local government area,G0008,,pending,,,,0,,NG004015
+G0126,Ogbaru,council,local government area,G0008,,pending,,,,0,,NG004016
+G0127,Onitsha North,council,local government area,G0008,,pending,,,,0,,NG004017
+G0128,Onitsha South,council,local government area,G0008,,pending,,,,0,,NG004018
+G0129,Orumba North,council,local government area,G0008,,pending,,,,0,,NG004019
+G0130,Orumba South,council,local government area,G0008,,pending,,,,0,,NG004020
+G0131,Oyi,council,local government area,G0008,,pending,,,,0,,NG004021
+G0132,Alkaleri,council,local government area,G0009,,pending,,,,0,,NG005001
+G0133,Bauchi,council,local government area,G0009,,pending,,,,0,,NG005002
+G0134,Bogoro,council,local government area,G0009,,pending,,,,0,,NG005003
+G0135,Damban,council,local government area,G0009,,pending,,,,0,,NG005004
+G0136,Darazo,council,local government area,G0009,,pending,,,,0,,NG005005
+G0137,Dass,council,local government area,G0009,,pending,,,,0,,NG005006
+G0138,Gamawa,council,local government area,G0009,,pending,,,,0,,NG005007
+G0139,Ganjuwa,council,local government area,G0009,,pending,,,,0,,NG005008
+G0140,Giade,council,local government area,G0009,,pending,,,,0,,NG005009
+G0141,Itas/Gadau,council,local government area,G0009,,pending,,,,0,,NG005010
+G0142,Jama'are,council,local government area,G0009,,pending,,,,0,,NG005011
+G0143,Katagum,council,local government area,G0009,,pending,,,,0,,NG005012
+G0144,Kirfi,council,local government area,G0009,,pending,,,,0,,NG005013
+G0145,Misau,council,local government area,G0009,,pending,,,,0,,NG005014
+G0146,Ningi,council,local government area,G0009,,pending,,,,0,,NG005015
+G0147,Shira,council,local government area,G0009,,pending,,,,0,,NG005016
+G0148,Tafawa-Balewa,council,local government area,G0009,,pending,,,,0,,NG005017
+G0149,Toro,council,local government area,G0009,,pending,,,,0,,NG005018
+G0150,Warji,council,local government area,G0009,,pending,,,,0,,NG005019
+G0151,Zaki,council,local government area,G0009,,pending,,,,0,,NG005020
+G0152,Brass,council,local government area,G0010,,pending,,,,0,,NG006001
+G0153,Ekeremor,council,local government area,G0010,,pending,,,,0,,NG006002
+G0154,Kolokuma/Opokuma,council,local government area,G0010,,pending,,,,0,,NG006003
+G0155,Nembe,council,local government area,G0010,,pending,,,,0,,NG006004
+G0156,Ogbia,council,local government area,G0010,,pending,,,,0,,NG006005
+G0157,Sagbama,council,local government area,G0010,,pending,,,,0,,NG006006
+G0158,Southern Ijaw,council,local government area,G0010,,pending,,,,0,,NG006007
+G0159,Yenegoa,council,local government area,G0010,,pending,,,,0,,NG006008
+G0160,Ado,council,local government area,G0011,,pending,,,,0,,NG007001
+G0161,Agatu,council,local government area,G0011,,pending,,,,0,,NG007002
+G0162,Apa,council,local government area,G0011,,pending,,,,0,,NG007003
+G0163,Buruku,council,local government area,G0011,,pending,,,,0,,NG007004
+G0164,Gboko,council,local government area,G0011,,pending,,,,0,,NG007005
+G0165,Guma,council,local government area,G0011,,pending,,,,0,,NG007006
+G0166,Gwer East,council,local government area,G0011,,pending,,,,0,,NG007007
+G0167,Gwer West,council,local government area,G0011,,pending,,,,0,,NG007008
+G0168,Katsina-Ala,council,local government area,G0011,,pending,,,,0,,NG007009
+G0169,Konshisha,council,local government area,G0011,,pending,,,,0,,NG007010
+G0170,Kwande,council,local government area,G0011,,pending,,,,0,,NG007011
+G0171,Logo,council,local government area,G0011,,pending,,,,0,,NG007012
+G0172,Makurdi,council,local government area,G0011,,pending,,,,0,,NG007013
+G0173,Obi,council,local government area,G0011,,pending,,,,0,,NG007014
+G0174,Ogbadibo,council,local government area,G0011,,pending,,,,0,,NG007015
+G0175,Ohimini,council,local government area,G0011,,pending,,,,0,,NG007016
+G0176,Oju,council,local government area,G0011,,pending,,,,0,,NG007017
+G0177,Okpokwu,council,local government area,G0011,,pending,,,,0,,NG007018
+G0178,Oturkpo,council,local government area,G0011,,pending,,,,0,,NG007019
+G0179,Tarka,council,local government area,G0011,,pending,,,,0,,NG007020
+G0180,Ukum,council,local government area,G0011,,pending,,,,0,,NG007021
+G0181,Ushongo,council,local government area,G0011,,pending,,,,0,,NG007022
+G0182,Vandeikya,council,local government area,G0011,,pending,,,,0,,NG007023
+G0183,Abadam,council,local government area,G0012,,pending,,,,0,,NG008001
+G0184,Askira/Uba,council,local government area,G0012,,pending,,,,0,,NG008002
+G0185,Bama,council,local government area,G0012,,pending,,,,0,,NG008003
+G0186,Bayo,council,local government area,G0012,,pending,,,,0,,NG008004
+G0187,Biu,council,local government area,G0012,,pending,,,,0,,NG008005
+G0188,Chibok,council,local government area,G0012,,pending,,,,0,,NG008006
+G0189,Damboa,council,local government area,G0012,,pending,,,,0,,NG008007
+G0190,Dikwa,council,local government area,G0012,,pending,,,,0,,NG008008
+G0191,Gubio,council,local government area,G0012,,pending,,,,0,,NG008009
+G0192,Guzamala,council,local government area,G0012,,pending,,,,0,,NG008010
+G0193,Gwoza,council,local government area,G0012,,done,,2026-10-22,3,1,,NG008011
+G0194,Hawul,council,local government area,G0012,,pending,,,,0,,NG008012
+G0195,Jere,council,local government area,G0012,,pending,,,,0,,NG008013
+G0196,Kaga,council,local government area,G0012,,pending,,,,0,,NG008014
+G0197,Kala/Balge,council,local government area,G0012,,pending,,,,0,,NG008015
+G0198,Konduga,council,local government area,G0012,,pending,,,,0,,NG008016
+G0199,Kukawa,council,local government area,G0012,,pending,,,,0,,NG008017
+G0200,Kwaya Kusar,council,local government area,G0012,,pending,,,,0,,NG008018
+G0201,Mafa,council,local government area,G0012,,pending,,,,0,,NG008019
+G0202,Magumeri,council,local government area,G0012,,pending,,,,0,,NG008020
+G0203,Maiduguri,council,local government area,G0012,,pending,,,,0,,NG008021
+G0204,Marte,council,local government area,G0012,,pending,,,,0,,NG008022
+G0205,Mobbar,council,local government area,G0012,,pending,,,,0,,NG008023
+G0206,Monguno,council,local government area,G0012,,pending,,,,0,,NG008024
+G0207,Ngala,council,local government area,G0012,,pending,,,,0,,NG008025
+G0208,Nganzai,council,local government area,G0012,,pending,,,,0,,NG008026
+G0209,Shani,council,local government area,G0012,,pending,,,,0,,NG008027
+G0210,Abi,council,local government area,G0013,,pending,,,,0,,NG009001
+G0211,Akamkpa,council,local government area,G0013,,pending,,,,0,,NG009002
+G0212,Akpabuyo,council,local government area,G0013,,pending,,,,0,,NG009003
+G0213,Bakassi,council,local government area,G0013,,pending,,,,0,,NG009005
+G0214,Bekwara,council,local government area,G0013,,pending,,,,0,,NG009006
+G0215,Biase,council,local government area,G0013,,pending,,,,0,,NG009007
+G0216,Boki,council,local government area,G0013,,pending,,,,0,,NG009008
+G0217,Calabar South,council,local government area,G0013,,pending,,,,0,,NG009009
+G0218,Calabar-Municipal,council,local government area,G0013,,pending,,,,0,,NG009010
+G0219,Etung,council,local government area,G0013,,pending,,,,0,,NG009011
+G0220,Ikom,council,local government area,G0013,,pending,,,,0,,NG009012
+G0221,Obanliku,council,local government area,G0013,,pending,,,,0,,NG009013
+G0222,Obubra,council,local government area,G0013,,pending,,,,0,,NG009014
+G0223,Obudu,council,local government area,G0013,,pending,,,,0,,NG009015
+G0224,Odukpani,council,local government area,G0013,,pending,,,,0,,NG009016
+G0225,Ogoja,council,local government area,G0013,,pending,,,,0,,NG009017
+G0226,Yakurr,council,local government area,G0013,,pending,,,,0,,NG009018
+G0227,Yala,council,local government area,G0013,,pending,,,,0,,NG009019
+G0228,Aniocha North,council,local government area,G0014,,pending,,,,0,,NG010001
+G0229,Aniocha South,council,local government area,G0014,,pending,,,,0,,NG010002
+G0230,Bomadi,council,local government area,G0014,,pending,,,,0,,NG010003
+G0231,Burutu,council,local government area,G0014,,pending,,,,0,,NG010004
+G0232,Ethiope East,council,local government area,G0014,,pending,,,,0,,NG010005
+G0233,Ethiope West,council,local government area,G0014,,pending,,,,0,,NG010006
+G0234,Ika North East,council,local government area,G0014,,pending,,,,0,,NG010007
+G0235,Ika South,council,local government area,G0014,,pending,,,,0,,NG010008
+G0236,Isoko North,council,local government area,G0014,,pending,,,,0,,NG010009
+G0237,Isoko South,council,local government area,G0014,,pending,,,,0,,NG010010
+G0238,Ndokwa East,council,local government area,G0014,,pending,,,,0,,NG010011
+G0239,Ndokwa West,council,local government area,G0014,,pending,,,,0,,NG010012
+G0240,Okpe,council,local government area,G0014,,pending,,,,0,,NG010013
+G0241,Oshimili North,council,local government area,G0014,,done,,2026-10-22,3,1,,NG010014
+G0242,Oshimili South,council,local government area,G0014,,pending,,,,0,,NG010015
+G0243,Patani,council,local government area,G0014,,pending,,,,0,,NG010016
+G0244,Sapele,council,local government area,G0014,,pending,,,,0,,NG010017
+G0245,Udu,council,local government area,G0014,,pending,,,,0,,NG010018
+G0246,Ughelli North,council,local government area,G0014,,pending,,,,0,,NG010019
+G0247,Ughelli South,council,local government area,G0014,,pending,,,,0,,NG010020
+G0248,Ukwuani,council,local government area,G0014,,pending,,,,0,,NG010021
+G0249,Uvwie,council,local government area,G0014,,pending,,,,0,,NG010022
+G0250,Warri North,council,local government area,G0014,,pending,,,,0,,NG010023
+G0251,Warri South,council,local government area,G0014,,pending,,,,0,,NG010024
+G0252,Warri South West,council,local government area,G0014,,pending,,,,0,,NG010025
+G0253,Abakaliki,council,local government area,G0015,,pending,,,,0,,NG011001
+G0254,Afikpo North,council,local government area,G0015,,pending,,,,0,,NG011002
+G0255,Afikpo South,council,local government area,G0015,,pending,,,,0,,NG011003
+G0256,Ebonyi,council,local government area,G0015,,pending,,,,0,,NG011004
+G0257,Ezza North,council,local government area,G0015,,pending,,,,0,,NG011005
+G0258,Ezza South,council,local government area,G0015,,pending,,,,0,,NG011006
+G0259,Ikwo,council,local government area,G0015,,pending,,,,0,,NG011007
+G0260,Ishielu,council,local government area,G0015,,pending,,,,0,,NG011008
+G0261,Ivo,council,local government area,G0015,,pending,,,,0,,NG011009
+G0262,Izzi,council,local government area,G0015,,pending,,,,0,,NG011010
+G0263,Ohaozara,council,local government area,G0015,,pending,,,,0,,NG011011
+G0264,Ohaukwu,council,local government area,G0015,,pending,,,,0,,NG011012
+G0265,Onicha,council,local government area,G0015,,pending,,,,0,,NG011013
+G0266,Akoko-Edo,council,local government area,G0016,,pending,,,,0,,NG012001
+G0267,Egor,council,local government area,G0016,,pending,,,,0,,NG012002
+G0268,Esan Central,council,local government area,G0016,,pending,,,,0,,NG012003
+G0269,Esan North East,council,local government area,G0016,,pending,,,,0,,NG012004
+G0270,Esan South East,council,local government area,G0016,,pending,,,,0,,NG012005
+G0271,Esan West,council,local government area,G0016,,pending,,,,0,,NG012006
+G0272,Etsako Central,council,local government area,G0016,,pending,,,,0,,NG012007
+G0273,Etsako East,council,local government area,G0016,,pending,,,,0,,NG012008
+G0274,Etsako West,council,local government area,G0016,,done,,2026-10-22,3,1,,NG012009
+G0275,Igueben,council,local government area,G0016,,pending,,,,0,,NG012010
+G0276,Ikpoba-Okha,council,local government area,G0016,,pending,,,,0,,NG012011
+G0277,Oredo,council,local government area,G0016,,pending,,,,0,,NG012012
+G0278,Orhionmwon,council,local government area,G0016,,pending,,,,0,,NG012013
+G0279,Ovia North East,council,local government area,G0016,,pending,,,,0,,NG012014
+G0280,Ovia South West,council,local government area,G0016,,pending,,,,0,,NG012015
+G0281,Owan East,council,local government area,G0016,,pending,,,,0,,NG012016
+G0282,Owan West,council,local government area,G0016,,pending,,,,0,,NG012017
+G0283,Uhunmwonde,council,local government area,G0016,,pending,,,,0,,NG012018
+G0284,Ado Ekiti,council,local government area,G0017,,pending,,,,0,,NG013001
+G0285,Aiyekire (Gbonyin),council,local government area,G0017,,pending,,,,0,,NG013002
+G0286,Efon,council,local government area,G0017,,pending,,,,0,,NG013003
+G0287,Ekiti East,council,local government area,G0017,,pending,,,,0,,NG013004
+G0288,Ekiti South West,council,local government area,G0017,,pending,,,,0,,NG013005
+G0289,Ekiti West,council,local government area,G0017,,pending,,,,0,,NG013006
+G0290,Emure,council,local government area,G0017,,pending,,,,0,,NG013007
+G0291,Ido-Osi,council,local government area,G0017,,pending,,,,0,,NG013008
+G0292,Ijero,council,local government area,G0017,,pending,,,,0,,NG013009
+G0293,Ikere,council,local government area,G0017,,pending,,,,0,,NG013010
+G0294,Ikole,council,local government area,G0017,,pending,,,,0,,NG013011
+G0295,Ilejemeji,council,local government area,G0017,,pending,,,,0,,NG013012
+G0296,Irepodun/Ifelodun,council,local government area,G0017,,pending,,,,0,,NG013013
+G0297,Ise/Orun,council,local government area,G0017,,pending,,,,0,,NG013014
+G0298,Moba,council,local government area,G0017,,pending,,,,0,,NG013015
+G0299,Oye,council,local government area,G0017,,pending,,,,0,,NG013016
+G0300,Aninri,council,local government area,G0018,,pending,,,,0,,NG014001
+G0301,Awgu,council,local government area,G0018,,pending,,,,0,,NG014002
+G0302,Enugu East,council,local government area,G0018,,pending,,,,0,,NG014003
+G0303,Enugu North,council,local government area,G0018,,done,R001,2026-10-22,1,0,Enugu North LGA (Enugu) sample sweep; no council-level wealth tax motion or supporter found,NG014004
+G0304,Enugu South,council,local government area,G0018,,pending,,,,0,,NG014005
+G0305,Ezeagu,council,local government area,G0018,,pending,,,,0,,NG014006
+G0306,Igbo-Etiti,council,local government area,G0018,,pending,,,,0,,NG014007
+G0307,Igbo-Eze North,council,local government area,G0018,,pending,,,,0,,NG014008
+G0308,Igbo-Eze South,council,local government area,G0018,,pending,,,,0,,NG014009
+G0309,Isi-Uzo,council,local government area,G0018,,pending,,,,0,,NG014010
+G0310,Nkanu East,council,local government area,G0018,,pending,,,,0,,NG014011
+G0311,Nkanu West,council,local government area,G0018,,pending,,,,0,,NG014012
+G0312,Nsukka,council,local government area,G0018,,done,,2026-10-22,3,1,,NG014013
+G0313,Oji-River,council,local government area,G0018,,pending,,,,0,,NG014014
+G0314,Udenu,council,local government area,G0018,,pending,,,,0,,NG014015
+G0315,Udi,council,local government area,G0018,,pending,,,,0,,NG014016
+G0316,Uzo-Uwani,council,local government area,G0018,,pending,,,,0,,NG014017
+G0317,Abaji,council,local government area,G0019,,pending,,,,0,,NG015001
+G0318,Abuja Municipal,council,local government area,G0019,,done,R001,2026-10-22,4,32,"Abuja Municipal Area Council (AMAC) sweep; headquarters of Oxfam in Nigeria, CISLAC, TJ&GP, CARE Nigeria, CODE, ActionAid Nigeria, and NLC",NG015002
+G0319,Bwari,council,local government area,G0019,,pending,,,,0,,NG015003
+G0320,Gwagwalada,council,local government area,G0019,,done,,2026-10-22,3,1,,NG015004
+G0321,Kuje,council,local government area,G0019,,pending,,,,0,,NG015005
+G0322,Kwali,council,local government area,G0019,,pending,,,,0,,NG015006
+G0323,Akko,council,local government area,G0020,,pending,,,,0,,NG016001
+G0324,Balanga,council,local government area,G0020,,pending,,,,0,,NG016002
+G0325,Billiri,council,local government area,G0020,,pending,,,,0,,NG016003
+G0326,Dukku,council,local government area,G0020,,pending,,,,0,,NG016004
+G0327,Funakaye,council,local government area,G0020,,pending,,,,0,,NG016005
+G0328,Gombe,council,local government area,G0020,,pending,,,,0,,NG016006
+G0329,Kaltungo,council,local government area,G0020,,pending,,,,0,,NG016007
+G0330,Kwami,council,local government area,G0020,,pending,,,,0,,NG016008
+G0331,Nafada,council,local government area,G0020,,pending,,,,0,,NG016009
+G0332,Shomgom,council,local government area,G0020,,pending,,,,0,,NG016010
+G0333,Yamaltu/Deba,council,local government area,G0020,,pending,,,,0,,NG016011
+G0334,Aboh-Mbaise,council,local government area,G0021,,pending,,,,0,,NG017001
+G0335,Ahiazu-Mbaise,council,local government area,G0021,,pending,,,,0,,NG017002
+G0336,Ehime-Mbano,council,local government area,G0021,,pending,,,,0,,NG017003
+G0337,Ezinihitte,council,local government area,G0021,,pending,,,,0,,NG017004
+G0338,Ideato North,council,local government area,G0021,,pending,,,,0,,NG017005
+G0339,Ideato South,council,local government area,G0021,,pending,,,,0,,NG017006
+G0340,Ihitte/Uboma,council,local government area,G0021,,pending,,,,0,,NG017007
+G0341,Ikeduru,council,local government area,G0021,,pending,,,,0,,NG017008
+G0342,Isiala Mbano,council,local government area,G0021,,pending,,,,0,,NG017009
+G0343,Isu,council,local government area,G0021,,pending,,,,0,,NG017010
+G0344,Mbaitoli,council,local government area,G0021,,pending,,,,0,,NG017011
+G0345,Ngor-Okpala,council,local government area,G0021,,pending,,,,0,,NG017012
+G0346,Njaba,council,local government area,G0021,,pending,,,,0,,NG017013
+G0347,Nkwerre,council,local government area,G0021,,pending,,,,0,,NG017014
+G0348,Nwangele,council,local government area,G0021,,pending,,,,0,,NG017015
+G0349,Obowo,council,local government area,G0021,,pending,,,,0,,NG017016
+G0350,Oguta,council,local government area,G0021,,pending,,,,0,,NG017017
+G0351,Ohaji/Egbema,council,local government area,G0021,,pending,,,,0,,NG017018
+G0352,Okigwe,council,local government area,G0021,,pending,,,,0,,NG017019
+G0353,Orlu,council,local government area,G0021,,pending,,,,0,,NG017020
+G0354,Orsu,council,local government area,G0021,,pending,,,,0,,NG017021
+G0355,Oru East,council,local government area,G0021,,pending,,,,0,,NG017022
+G0356,Oru West,council,local government area,G0021,,pending,,,,0,,NG017023
+G0357,Owerri North,council,local government area,G0021,,pending,,,,0,,NG017024
+G0358,Owerri West,council,local government area,G0021,,pending,,,,0,,NG017025
+G0359,Owerri-Municipal,council,local government area,G0021,,pending,,,,0,,NG017026
+G0360,Unuimo,council,local government area,G0021,,pending,,,,0,,NG017027
+G0361,Auyo,council,local government area,G0022,,pending,,,,0,,NG018001
+G0362,Babura,council,local government area,G0022,,pending,,,,0,,NG018002
+G0363,Biriniwa,council,local government area,G0022,,pending,,,,0,,NG018003
+G0364,Birni Kudu,council,local government area,G0022,,pending,,,,0,,NG018004
+G0365,Buji,council,local government area,G0022,,pending,,,,0,,NG018005
+G0366,Dutse,council,local government area,G0022,,pending,,,,0,,NG018006
+G0367,Gagarawa,council,local government area,G0022,,pending,,,,0,,NG018007
+G0368,Garki,council,local government area,G0022,,pending,,,,0,,NG018008
+G0369,Gumel,council,local government area,G0022,,pending,,,,0,,NG018009
+G0370,Guri,council,local government area,G0022,,pending,,,,0,,NG018010
+G0371,Gwaram,council,local government area,G0022,,pending,,,,0,,NG018011
+G0372,Gwiwa,council,local government area,G0022,,pending,,,,0,,NG018012
+G0373,Hadejia,council,local government area,G0022,,pending,,,,0,,NG018013
+G0374,Jahun,council,local government area,G0022,,pending,,,,0,,NG018014
+G0375,Kafin Hausa,council,local government area,G0022,,pending,,,,0,,NG018015
+G0376,Kaugama,council,local government area,G0022,,pending,,,,0,,NG018016
+G0377,Kazaure,council,local government area,G0022,,pending,,,,0,,NG018017
+G0378,Kiri Kasamma,council,local government area,G0022,,pending,,,,0,,NG018018
+G0379,Kiyawa,council,local government area,G0022,,pending,,,,0,,NG018019
+G0380,Maigatari,council,local government area,G0022,,pending,,,,0,,NG018020
+G0381,Malam Madori,council,local government area,G0022,,pending,,,,0,,NG018021
+G0382,Miga,council,local government area,G0022,,pending,,,,0,,NG018022
+G0383,Ringim,council,local government area,G0022,,pending,,,,0,,NG018023
+G0384,Roni,council,local government area,G0022,,pending,,,,0,,NG018024
+G0385,Sule-Tankarkar,council,local government area,G0022,,pending,,,,0,,NG018025
+G0386,Taura,council,local government area,G0022,,pending,,,,0,,NG018026
+G0387,Yankwashi,council,local government area,G0022,,pending,,,,0,,NG018027
+G0388,Birnin-Gwari,council,local government area,G0023,,pending,,,,0,,NG019001
+G0389,Chikun,council,local government area,G0023,,pending,,,,0,,NG019002
+G0390,Giwa,council,local government area,G0023,,pending,,,,0,,NG019003
+G0391,Igabi,council,local government area,G0023,,pending,,,,0,,NG019004
+G0392,Ikara,council,local government area,G0023,,pending,,,,0,,NG019005
+G0393,Jaba,council,local government area,G0023,,pending,,,,0,,NG019006
+G0394,Jema'a,council,local government area,G0023,,pending,,,,0,,NG019007
+G0395,Kachia,council,local government area,G0023,,pending,,,,0,,NG019008
+G0396,Kaduna North,council,local government area,G0023,,done,R001,2026-10-22,1,1,Kaduna North LGA (Kaduna) sample sweep; no council-level wealth tax motion or supporter found,NG019009
+G0397,Kaduna South,council,local government area,G0023,,pending,,,,0,,NG019010
+G0398,Kagarko,council,local government area,G0023,,pending,,,,0,,NG019011
+G0399,Kajuru,council,local government area,G0023,,pending,,,,0,,NG019012
+G0400,Kaura,council,local government area,G0023,,pending,,,,0,,NG019013
+G0401,Kauru,council,local government area,G0023,,pending,,,,0,,NG019014
+G0402,Kubau,council,local government area,G0023,,pending,,,,0,,NG019015
+G0403,Kudan,council,local government area,G0023,,pending,,,,0,,NG019016
+G0404,Lere,council,local government area,G0023,,pending,,,,0,,NG019017
+G0405,Markafi,council,local government area,G0023,,pending,,,,0,,NG019018
+G0406,Sabon-Gari,council,local government area,G0023,,pending,,,,0,,NG019019
+G0407,Sanga,council,local government area,G0023,,pending,,,,0,,NG019020
+G0408,Soba,council,local government area,G0023,,pending,,,,0,,NG019021
+G0409,Zango-Kataf,council,local government area,G0023,,pending,,,,0,,NG019022
+G0410,Zaria,council,local government area,G0023,,pending,,,,0,,NG019023
+G0411,Ajingi,council,local government area,G0024,,pending,,,,0,,NG020001
+G0412,Albasu,council,local government area,G0024,,pending,,,,0,,NG020002
+G0413,Bagwai,council,local government area,G0024,,pending,,,,0,,NG020003
+G0414,Bebeji,council,local government area,G0024,,pending,,,,0,,NG020004
+G0415,Bichi,council,local government area,G0024,,pending,,,,0,,NG020005
+G0416,Bunkure,council,local government area,G0024,,pending,,,,0,,NG020006
+G0417,Dala,council,local government area,G0024,,pending,,,,0,,NG020007
+G0418,Dambatta,council,local government area,G0024,,pending,,,,0,,NG020008
+G0419,Dawakin Kudu,council,local government area,G0024,,pending,,,,0,,NG020009
+G0420,Dawakin Tofa,council,local government area,G0024,,pending,,,,0,,NG020010
+G0421,Doguwa,council,local government area,G0024,,pending,,,,0,,NG020011
+G0422,Fagge,council,local government area,G0024,,pending,,,,0,,NG020012
+G0423,Gabasawa,council,local government area,G0024,,pending,,,,0,,NG020013
+G0424,Garko,council,local government area,G0024,,pending,,,,0,,NG020014
+G0425,Garum Mallam,council,local government area,G0024,,pending,,,,0,,NG020015
+G0426,Gaya,council,local government area,G0024,,pending,,,,0,,NG020016
+G0427,Gezawa,council,local government area,G0024,,pending,,,,0,,NG020017
+G0428,Gwale,council,local government area,G0024,,pending,,,,0,,NG020018
+G0429,Gwarzo,council,local government area,G0024,,pending,,,,0,,NG020019
+G0430,Kabo,council,local government area,G0024,,pending,,,,0,,NG020020
+G0431,Kano Municipal,council,local government area,G0024,,done,R001,2026-10-22,1,1,Kano Municipal LGA (Kano) sample sweep; no council-level wealth tax motion or supporter found,NG020021
+G0432,Karaye,council,local government area,G0024,,pending,,,,0,,NG020022
+G0433,Kibiya,council,local government area,G0024,,pending,,,,0,,NG020023
+G0434,Kiru,council,local government area,G0024,,pending,,,,0,,NG020024
+G0435,Kumbotso,council,local government area,G0024,,pending,,,,0,,NG020025
+G0436,Kunchi,council,local government area,G0024,,pending,,,,0,,NG020026
+G0437,Kura,council,local government area,G0024,,pending,,,,0,,NG020027
+G0438,Madobi,council,local government area,G0024,,pending,,,,0,,NG020028
+G0439,Makoda,council,local government area,G0024,,pending,,,,0,,NG020029
+G0440,Minjibir,council,local government area,G0024,,pending,,,,0,,NG020030
+G0441,Nasarawa,council,local government area,G0024,,pending,,,,0,,NG020031
+G0442,Rano,council,local government area,G0024,,pending,,,,0,,NG020032
+G0443,Rimin Gado,council,local government area,G0024,,pending,,,,0,,NG020033
+G0444,Rogo,council,local government area,G0024,,pending,,,,0,,NG020034
+G0445,Shanono,council,local government area,G0024,,pending,,,,0,,NG020035
+G0446,Sumaila,council,local government area,G0024,,pending,,,,0,,NG020036
+G0447,Takai,council,local government area,G0024,,pending,,,,0,,NG020037
+G0448,Tarauni,council,local government area,G0024,,pending,,,,0,,NG020038
+G0449,Tofa,council,local government area,G0024,,pending,,,,0,,NG020039
+G0450,Tsanyawa,council,local government area,G0024,,pending,,,,0,,NG020040
+G0451,Tudun Wada,council,local government area,G0024,,pending,,,,0,,NG020041
+G0452,Ungogo,council,local government area,G0024,,pending,,,,0,,NG020042
+G0453,Warawa,council,local government area,G0024,,pending,,,,0,,NG020043
+G0454,Wudil,council,local government area,G0024,,pending,,,,0,,NG020044
+G0455,Bakori,council,local government area,G0025,,pending,,,,0,,NG021001
+G0456,Batagarawa,council,local government area,G0025,,pending,,,,0,,NG021002
+G0457,Batsari,council,local government area,G0025,,pending,,,,0,,NG021003
+G0458,Baure,council,local government area,G0025,,pending,,,,0,,NG021004
+G0459,Bindawa,council,local government area,G0025,,pending,,,,0,,NG021005
+G0460,Charanchi,council,local government area,G0025,,pending,,,,0,,NG021006
+G0461,Dan Musa,council,local government area,G0025,,pending,,,,0,,NG021007
+G0462,Dandume,council,local government area,G0025,,pending,,,,0,,NG021008
+G0463,Danja,council,local government area,G0025,,pending,,,,0,,NG021009
+G0464,Daura,council,local government area,G0025,,pending,,,,0,,NG021010
+G0465,Dutsi,council,local government area,G0025,,pending,,,,0,,NG021011
+G0466,Dutsin-Ma,council,local government area,G0025,,pending,,,,0,,NG021012
+G0467,Faskari,council,local government area,G0025,,pending,,,,0,,NG021013
+G0468,Funtua,council,local government area,G0025,,pending,,,,0,,NG021014
+G0469,Ingawa,council,local government area,G0025,,pending,,,,0,,NG021015
+G0470,Jibia,council,local government area,G0025,,pending,,,,0,,NG021016
+G0471,Kafur,council,local government area,G0025,,pending,,,,0,,NG021017
+G0472,Kaita,council,local government area,G0025,,pending,,,,0,,NG021018
+G0473,Kankara,council,local government area,G0025,,pending,,,,0,,NG021019
+G0474,Kankia,council,local government area,G0025,,pending,,,,0,,NG021020
+G0475,Katsina,council,local government area,G0025,,pending,,,,0,,NG021021
+G0476,Kurfi,council,local government area,G0025,,pending,,,,0,,NG021022
+G0477,Kusada,council,local government area,G0025,,pending,,,,0,,NG021023
+G0478,Mai'adua,council,local government area,G0025,,pending,,,,0,,NG021024
+G0479,Malumfashi,council,local government area,G0025,,pending,,,,0,,NG021025
+G0480,Mani,council,local government area,G0025,,pending,,,,0,,NG021026
+G0481,Mashi,council,local government area,G0025,,pending,,,,0,,NG021027
+G0482,Matazu,council,local government area,G0025,,pending,,,,0,,NG021028
+G0483,Musawa,council,local government area,G0025,,pending,,,,0,,NG021029
+G0484,Rimi,council,local government area,G0025,,pending,,,,0,,NG021030
+G0485,Sabuwa,council,local government area,G0025,,pending,,,,0,,NG021031
+G0486,Safana,council,local government area,G0025,,pending,,,,0,,NG021032
+G0487,Sandamu,council,local government area,G0025,,pending,,,,0,,NG021033
+G0488,Zango,council,local government area,G0025,,pending,,,,0,,NG021034
+G0489,Aleiro,council,local government area,G0026,,pending,,,,0,,NG022001
+G0490,Arewa-Dandi,council,local government area,G0026,,pending,,,,0,,NG022002
+G0491,Argungu,council,local government area,G0026,,pending,,,,0,,NG022003
+G0492,Augie,council,local government area,G0026,,pending,,,,0,,NG022004
+G0493,Bagudo,council,local government area,G0026,,pending,,,,0,,NG022005
+G0494,Birnin Kebbi,council,local government area,G0026,,pending,,,,0,,NG022006
+G0495,Bunza,council,local government area,G0026,,pending,,,,0,,NG022007
+G0496,Dandi,council,local government area,G0026,,pending,,,,0,,NG022008
+G0497,Fakai,council,local government area,G0026,,pending,,,,0,,NG022009
+G0498,Gwandu,council,local government area,G0026,,pending,,,,0,,NG022010
+G0499,Jega,council,local government area,G0026,,pending,,,,0,,NG022011
+G0500,Kalgo,council,local government area,G0026,,pending,,,,0,,NG022012
+G0501,Koko/Besse,council,local government area,G0026,,pending,,,,0,,NG022013
+G0502,Maiyama,council,local government area,G0026,,pending,,,,0,,NG022014
+G0503,Ngaski,council,local government area,G0026,,pending,,,,0,,NG022015
+G0504,Sakaba,council,local government area,G0026,,pending,,,,0,,NG022016
+G0505,Shanga,council,local government area,G0026,,pending,,,,0,,NG022017
+G0506,Suru,council,local government area,G0026,,pending,,,,0,,NG022018
+G0507,Wasagu/Danko,council,local government area,G0026,,pending,,,,0,,NG022019
+G0508,Yauri,council,local government area,G0026,,pending,,,,0,,NG022020
+G0509,Zuru,council,local government area,G0026,,pending,,,,0,,NG022021
+G0510,Adavi,council,local government area,G0027,,pending,,,,0,,NG023001
+G0511,Ajaokuta,council,local government area,G0027,,pending,,,,0,,NG023002
+G0512,Ankpa,council,local government area,G0027,,pending,,,,0,,NG023003
+G0513,Bassa,council,local government area,G0027,,pending,,,,0,,NG023004
+G0514,Dekina,council,local government area,G0027,,pending,,,,0,,NG023005
+G0515,Ibaji,council,local government area,G0027,,pending,,,,0,,NG023006
+G0516,Idah,council,local government area,G0027,,pending,,,,0,,NG023007
+G0517,Igalamela-Odolu,council,local government area,G0027,,pending,,,,0,,NG023008
+G0518,Ijumu,council,local government area,G0027,,pending,,,,0,,NG023009
+G0519,Kabba/Bunu,council,local government area,G0027,,pending,,,,0,,NG023010
+G0520,Kogi,council,local government area,G0027,,pending,,,,0,,NG023011
+G0521,Lokoja,council,local government area,G0027,,pending,,,,0,,NG023012
+G0522,Mopa-Muro,council,local government area,G0027,,pending,,,,0,,NG023013
+G0523,Ofu,council,local government area,G0027,,pending,,,,0,,NG023014
+G0524,Ogori/Magongo,council,local government area,G0027,,pending,,,,0,,NG023015
+G0525,Okehi,council,local government area,G0027,,pending,,,,0,,NG023016
+G0526,Okene,council,local government area,G0027,,pending,,,,0,,NG023017
+G0527,Olamabolo,council,local government area,G0027,,pending,,,,0,,NG023018
+G0528,Omala,council,local government area,G0027,,pending,,,,0,,NG023019
+G0529,Yagba East,council,local government area,G0027,,pending,,,,0,,NG023020
+G0530,Yagba West,council,local government area,G0027,,pending,,,,0,,NG023021
+G0531,Asa,council,local government area,G0028,,pending,,,,0,,NG024001
+G0532,Baruten,council,local government area,G0028,,pending,,,,0,,NG024002
+G0533,Edu,council,local government area,G0028,,pending,,,,0,,NG024003
+G0534,Ekiti,council,local government area,G0028,,pending,,,,0,,NG024004
+G0535,Ifelodun,council,local government area,G0028,,pending,,,,0,,NG024005
+G0536,Ilorin East,council,local government area,G0028,,pending,,,,0,,NG024006
+G0537,Ilorin South,council,local government area,G0028,,pending,,,,0,,NG024007
+G0538,Ilorin West,council,local government area,G0028,,pending,,,,0,,NG024008
+G0539,Irepodun,council,local government area,G0028,,pending,,,,0,,NG024009
+G0540,Isin,council,local government area,G0028,,pending,,,,0,,NG024010
+G0541,Kaiama,council,local government area,G0028,,pending,,,,0,,NG024011
+G0542,Moro,council,local government area,G0028,,pending,,,,0,,NG024012
+G0543,Offa,council,local government area,G0028,,pending,,,,0,,NG024013
+G0544,Oke-Ero,council,local government area,G0028,,pending,,,,0,,NG024014
+G0545,Oyun,council,local government area,G0028,,pending,,,,0,,NG024015
+G0546,Pategi,council,local government area,G0028,,pending,,,,0,,NG024016
+G0547,Agege,council,local government area,G0029,,pending,,,,0,,NG025001
+G0548,Ajeromi-Ifelodun,council,local government area,G0029,,pending,,,,0,,NG025002
+G0549,Alimosho,council,local government area,G0029,,pending,,,,0,,NG025003
+G0550,Amuwo-Odofin,council,local government area,G0029,,pending,,,,0,,NG025004
+G0551,Apapa,council,local government area,G0029,,pending,,,,0,,NG025005
+G0552,Badagry,council,local government area,G0029,,pending,,,,0,,NG025006
+G0553,Epe,council,local government area,G0029,,pending,,,,0,,NG025007
+G0554,Eti-Osa,council,local government area,G0029,,done,R001,2026-10-22,1,2,Eti-Osa LGA (Lagos) sample sweep; Lagos Business School economist Doyin Salami (A0036),NG025008
+G0555,Ibeju/Lekki,council,local government area,G0029,,pending,,,,0,,NG025009
+G0556,Ifako-Ijaye,council,local government area,G0029,,pending,,,,0,,NG025010
+G0557,Ikeja,council,local government area,G0029,,done,R001,2026-10-22,1,5,Ikeja LGA (Lagos) sample sweep; The Punch Editorial Board (A0051),NG025011
+G0558,Ikorodu,council,local government area,G0029,,pending,,,,0,,NG025012
+G0559,Kosofe,council,local government area,G0029,,done,R001,2026-10-22,2,3,Kosofe LGA (Lagos) sample sweep; venue and convener of Blakey Okwudili Ijezie's February 2024 Wealth-Tax Conference in Anthony Village (A0031),NG025013
+G0560,Lagos Island,council,local government area,G0029,,pending,,,,0,,NG025014
+G0561,Lagos Mainland,council,local government area,G0029,,done,R001,2026-10-22,2,11,"Lagos Mainland LGA (Lagos) sample sweep; University of Lagos academics Esther Thontteh (A0037) and Taibat Lawanson (A0038), plus SPN and CDWR",NG025015
+G0562,Mushin,council,local government area,G0029,,pending,,,,0,,NG025016
+G0563,Ojo,council,local government area,G0029,,pending,,,,0,,NG025017
+G0564,Oshodi-Isolo,council,local government area,G0029,,done,,2026-10-22,3,1,,NG025018
+G0565,Shomolu,council,local government area,G0029,,pending,,,,0,,NG025019
+G0566,Surulere,council,local government area,G0029,,pending,,,,0,,NG025020
+G0567,Akwanga,council,local government area,G0030,,pending,,,,0,,NG026001
+G0568,Awe,council,local government area,G0030,,pending,,,,0,,NG026002
+G0569,Doma,council,local government area,G0030,,pending,,,,0,,NG026003
+G0570,Karu,council,local government area,G0030,,pending,,,,0,,NG026004
+G0571,Keana,council,local government area,G0030,,pending,,,,0,,NG026005
+G0572,Keffi,council,local government area,G0030,,pending,,,,0,,NG026006
+G0573,Kokona,council,local government area,G0030,,pending,,,,0,,NG026007
+G0574,Lafia,council,local government area,G0030,,pending,,,,0,,NG026008
+G0575,Nasarawa,council,local government area,G0030,,pending,,,,0,,NG026009
+G0576,Nasarawa-Eggon,council,local government area,G0030,,pending,,,,0,,NG026010
+G0577,Obi,council,local government area,G0030,,pending,,,,0,,NG026011
+G0578,Toto,council,local government area,G0030,,pending,,,,0,,NG026012
+G0579,Wamba,council,local government area,G0030,,pending,,,,0,,NG026013
+G0580,Agaie,council,local government area,G0031,,pending,,,,0,,NG027001
+G0581,Agwara,council,local government area,G0031,,pending,,,,0,,NG027002
+G0582,Bida,council,local government area,G0031,,pending,,,,0,,NG027003
+G0583,Borgu,council,local government area,G0031,,pending,,,,0,,NG027004
+G0584,Bosso,council,local government area,G0031,,pending,,,,0,,NG027005
+G0585,Chanchaga,council,local government area,G0031,,pending,,,,0,,NG027006
+G0586,Edati,council,local government area,G0031,,pending,,,,0,,NG027007
+G0587,Gbako,council,local government area,G0031,,pending,,,,0,,NG027008
+G0588,Gurara,council,local government area,G0031,,pending,,,,0,,NG027009
+G0589,Katcha,council,local government area,G0031,,pending,,,,0,,NG027010
+G0590,Kontagora,council,local government area,G0031,,pending,,,,0,,NG027011
+G0591,Lapai,council,local government area,G0031,,pending,,,,0,,NG027012
+G0592,Lavun,council,local government area,G0031,,pending,,,,0,,NG027013
+G0593,Magama,council,local government area,G0031,,pending,,,,0,,NG027014
+G0594,Mariga,council,local government area,G0031,,pending,,,,0,,NG027015
+G0595,Mashegu,council,local government area,G0031,,pending,,,,0,,NG027016
+G0596,Mokwa,council,local government area,G0031,,pending,,,,0,,NG027017
+G0597,Muya,council,local government area,G0031,,pending,,,,0,,NG027018
+G0598,Paikoro,council,local government area,G0031,,pending,,,,0,,NG027019
+G0599,Rafi,council,local government area,G0031,,pending,,,,0,,NG027020
+G0600,Rijau,council,local government area,G0031,,pending,,,,0,,NG027021
+G0601,Shiroro,council,local government area,G0031,,pending,,,,0,,NG027022
+G0602,Suleja,council,local government area,G0031,,pending,,,,0,,NG027023
+G0603,Tafa,council,local government area,G0031,,pending,,,,0,,NG027024
+G0604,Wushishi,council,local government area,G0031,,pending,,,,0,,NG027025
+G0605,Abeokuta North,council,local government area,G0032,,done,,2026-10-22,3,1,,NG028001
+G0606,Abeokuta South,council,local government area,G0032,,pending,,,,0,,NG028002
+G0607,Ado-Odo/Ota,council,local government area,G0032,,pending,,,,0,,NG028003
+G0608,Egbado North,council,local government area,G0032,,pending,,,,0,,NG028004
+G0609,Egbado South,council,local government area,G0032,,pending,,,,0,,NG028005
+G0610,Ewekoro,council,local government area,G0032,,pending,,,,0,,NG028006
+G0611,Ifo,council,local government area,G0032,,pending,,,,0,,NG028007
+G0612,Ijebu East,council,local government area,G0032,,pending,,,,0,,NG028008
+G0613,Ijebu North,council,local government area,G0032,,pending,,,,0,,NG028009
+G0614,Ijebu North East,council,local government area,G0032,,pending,,,,0,,NG028010
+G0615,Ijebu Ode,council,local government area,G0032,,pending,,,,0,,NG028011
+G0616,Ikenne,council,local government area,G0032,,pending,,,,0,,NG028012
+G0617,Imeko-Afon,council,local government area,G0032,,pending,,,,0,,NG028013
+G0618,Ipokia,council,local government area,G0032,,pending,,,,0,,NG028014
+G0619,Obafemi-Owode,council,local government area,G0032,,pending,,,,0,,NG028015
+G0620,Odeda,council,local government area,G0032,,pending,,,,0,,NG028016
+G0621,Odogbolu,council,local government area,G0032,,pending,,,,0,,NG028017
+G0622,Ogun waterside,council,local government area,G0032,,pending,,,,0,,NG028018
+G0623,Remo North,council,local government area,G0032,,pending,,,,0,,NG028019
+G0624,Shagamu,council,local government area,G0032,,pending,,,,0,,NG028020
+G0625,Akoko North East,council,local government area,G0033,,pending,,,,0,,NG029001
+G0626,Akoko North West,council,local government area,G0033,,pending,,,,0,,NG029002
+G0627,Akoko South East,council,local government area,G0033,,pending,,,,0,,NG029003
+G0628,Akoko South West,council,local government area,G0033,,pending,,,,0,,NG029004
+G0629,Akure North,council,local government area,G0033,,pending,,,,0,,NG029005
+G0630,Akure South,council,local government area,G0033,,done,R001,2026-10-22,1,1,Akure South LGA (Ondo) sample sweep; FUTA academic Olumuyiwa Adegun (A0040),NG029006
+G0631,Ese-Odo,council,local government area,G0033,,pending,,,,0,,NG029007
+G0632,Idanre,council,local government area,G0033,,pending,,,,0,,NG029008
+G0633,Ifedore,council,local government area,G0033,,pending,,,,0,,NG029009
+G0634,Ilaje,council,local government area,G0033,,pending,,,,0,,NG029010
+G0635,Ile-Oluji-Okeigbo,council,local government area,G0033,,pending,,,,0,,NG029011
+G0636,Irele,council,local government area,G0033,,pending,,,,0,,NG029012
+G0637,Odigbo,council,local government area,G0033,,pending,,,,0,,NG029013
+G0638,Okitipupa,council,local government area,G0033,,done,,2026-10-22,3,1,,NG029014
+G0639,Ondo East,council,local government area,G0033,,pending,,,,0,,NG029015
+G0640,Ondo West,council,local government area,G0033,,pending,,,,0,,NG029016
+G0641,Ose,council,local government area,G0033,,pending,,,,0,,NG029017
+G0642,Owo,council,local government area,G0033,,pending,,,,0,,NG029018
+G0643,Aiyedade,council,local government area,G0034,,pending,,,,0,,NG030001
+G0644,Aiyedire,council,local government area,G0034,,pending,,,,0,,NG030002
+G0645,Atakumosa East,council,local government area,G0034,,pending,,,,0,,NG030003
+G0646,Atakumosa West,council,local government area,G0034,,pending,,,,0,,NG030004
+G0647,Boluwaduro,council,local government area,G0034,,pending,,,,0,,NG030005
+G0648,Boripe,council,local government area,G0034,,pending,,,,0,,NG030006
+G0649,Ede North,council,local government area,G0034,,pending,,,,0,,NG030007
+G0650,Ede South,council,local government area,G0034,,pending,,,,0,,NG030008
+G0651,Egbedore,council,local government area,G0034,,pending,,,,0,,NG030009
+G0652,Ejigbo,council,local government area,G0034,,pending,,,,0,,NG030010
+G0653,Ife Central,council,local government area,G0034,,done,R001,2026-10-22,1,1,Ife Central LGA (Osun) sample sweep; Obafemi Awolowo University academic Damilola Agbalajobi (A0039),NG030011
+G0654,Ife East,council,local government area,G0034,,pending,,,,0,,NG030012
+G0655,Ife North,council,local government area,G0034,,pending,,,,0,,NG030013
+G0656,Ife South,council,local government area,G0034,,pending,,,,0,,NG030014
+G0657,Ifedayo,council,local government area,G0034,,pending,,,,0,,NG030015
+G0658,Ifelodun,council,local government area,G0034,,pending,,,,0,,NG030016
+G0659,Ila,council,local government area,G0034,,pending,,,,0,,NG030017
+G0660,Ilesha East,council,local government area,G0034,,pending,,,,0,,NG030018
+G0661,Ilesha West,council,local government area,G0034,,pending,,,,0,,NG030019
+G0662,Irepodun,council,local government area,G0034,,pending,,,,0,,NG030020
+G0663,Irewole,council,local government area,G0034,,pending,,,,0,,NG030021
+G0664,Isokan,council,local government area,G0034,,pending,,,,0,,NG030022
+G0665,Iwo,council,local government area,G0034,,pending,,,,0,,NG030023
+G0666,Obokun,council,local government area,G0034,,pending,,,,0,,NG030024
+G0667,Odo-Otin,council,local government area,G0034,,pending,,,,0,,NG030025
+G0668,Ola-oluwa,council,local government area,G0034,,pending,,,,0,,NG030026
+G0669,Olorunda,council,local government area,G0034,,pending,,,,0,,NG030027
+G0670,Oriade,council,local government area,G0034,,pending,,,,0,,NG030028
+G0671,Orolu,council,local government area,G0034,,pending,,,,0,,NG030029
+G0672,Osogbo,council,local government area,G0034,,pending,,,,0,,NG030030
+G0673,Afijio,council,local government area,G0035,,pending,,,,0,,NG031001
+G0674,Akinyele,council,local government area,G0035,,pending,,,,0,,NG031002
+G0675,Atiba,council,local government area,G0035,,pending,,,,0,,NG031003
+G0676,Atigbo,council,local government area,G0035,,pending,,,,0,,NG031004
+G0677,Egbeda,council,local government area,G0035,,pending,,,,0,,NG031005
+G0678,Ibadan North,council,local government area,G0035,,done,R001,2026-10-22,2,2,Ibadan North LGA (Oyo) sample sweep; Oyo State Governor Seyi Makinde (A0050) and NASU headquarters (A0043),NG031006
+G0679,Ibadan North East,council,local government area,G0035,,pending,,,,0,,NG031007
+G0680,Ibadan North West,council,local government area,G0035,,pending,,,,0,,NG031008
+G0681,Ibadan South East,council,local government area,G0035,,pending,,,,0,,NG031009
+G0682,Ibadan South West,council,local government area,G0035,,pending,,,,0,,NG031010
+G0683,Ibarapa Central,council,local government area,G0035,,pending,,,,0,,NG031011
+G0684,Ibarapa East,council,local government area,G0035,,pending,,,,0,,NG031012
+G0685,Ibarapa North,council,local government area,G0035,,pending,,,,0,,NG031013
+G0686,Ido,council,local government area,G0035,,pending,,,,0,,NG031014
+G0687,Irepo,council,local government area,G0035,,pending,,,,0,,NG031015
+G0688,Iseyin,council,local government area,G0035,,pending,,,,0,,NG031016
+G0689,Itesiwaju,council,local government area,G0035,,pending,,,,0,,NG031017
+G0690,Iwajowa,council,local government area,G0035,,pending,,,,0,,NG031018
+G0691,Kajola,council,local government area,G0035,,pending,,,,0,,NG031019
+G0692,Lagelu,council,local government area,G0035,,pending,,,,0,,NG031020
+G0693,Ogbomosho North,council,local government area,G0035,,pending,,,,0,,NG031021
+G0694,Ogbomosho South,council,local government area,G0035,,pending,,,,0,,NG031022
+G0695,Ogo Oluwa,council,local government area,G0035,,pending,,,,0,,NG031023
+G0696,Olorunsogo,council,local government area,G0035,,pending,,,,0,,NG031024
+G0697,Oluyole,council,local government area,G0035,,pending,,,,0,,NG031025
+G0698,Ona-Ara,council,local government area,G0035,,pending,,,,0,,NG031026
+G0699,Orelope,council,local government area,G0035,,pending,,,,0,,NG031027
+G0700,Ori Ire,council,local government area,G0035,,pending,,,,0,,NG031028
+G0701,Oyo East,council,local government area,G0035,,pending,,,,0,,NG031029
+G0702,Oyo West,council,local government area,G0035,,pending,,,,0,,NG031030
+G0703,Saki East,council,local government area,G0035,,pending,,,,0,,NG031031
+G0704,Saki West,council,local government area,G0035,,pending,,,,0,,NG031032
+G0705,Surulere,council,local government area,G0035,,pending,,,,0,,NG031033
+G0706,Barikin Ladi,council,local government area,G0036,,pending,,,,0,,NG032001
+G0707,Bassa,council,local government area,G0036,,pending,,,,0,,NG032002
+G0708,Bokkos,council,local government area,G0036,,pending,,,,0,,NG032003
+G0709,Jos East,council,local government area,G0036,,pending,,,,0,,NG032004
+G0710,Jos North,council,local government area,G0036,,pending,,,,0,,NG032005
+G0711,Jos South,council,local government area,G0036,,pending,,,,0,,NG032006
+G0712,Kanam,council,local government area,G0036,,pending,,,,0,,NG032007
+G0713,Kanke,council,local government area,G0036,,pending,,,,0,,NG032008
+G0714,Langtang North,council,local government area,G0036,,pending,,,,0,,NG032009
+G0715,Langtang South,council,local government area,G0036,,pending,,,,0,,NG032010
+G0716,Mangu,council,local government area,G0036,,pending,,,,0,,NG032011
+G0717,Mikang,council,local government area,G0036,,pending,,,,0,,NG032012
+G0718,Pankshin,council,local government area,G0036,,pending,,,,0,,NG032013
+G0719,Qua'an Pan,council,local government area,G0036,,pending,,,,0,,NG032014
+G0720,Riyom,council,local government area,G0036,,pending,,,,0,,NG032015
+G0721,Shendam,council,local government area,G0036,,pending,,,,0,,NG032016
+G0722,Wase,council,local government area,G0036,,pending,,,,0,,NG032017
+G0723,Abua/Odual,council,local government area,G0037,,pending,,,,0,,NG033001
+G0724,Ahoada East,council,local government area,G0037,,pending,,,,0,,NG033002
+G0725,Ahoada West,council,local government area,G0037,,pending,,,,0,,NG033003
+G0726,Akuku Toru,council,local government area,G0037,,pending,,,,0,,NG033004
+G0727,Andoni,council,local government area,G0037,,pending,,,,0,,NG033005
+G0728,Asari-Toru,council,local government area,G0037,,pending,,,,0,,NG033006
+G0729,Bonny,council,local government area,G0037,,pending,,,,0,,NG033007
+G0730,Degema,council,local government area,G0037,,pending,,,,0,,NG033008
+G0731,Eleme,council,local government area,G0037,,pending,,,,0,,NG033009
+G0732,Emohua,council,local government area,G0037,,pending,,,,0,,NG033010
+G0733,Etche,council,local government area,G0037,,pending,,,,0,,NG033011
+G0734,Gokana,council,local government area,G0037,,pending,,,,0,,NG033012
+G0735,Ikwerre,council,local government area,G0037,,pending,,,,0,,NG033013
+G0736,Khana,council,local government area,G0037,,pending,,,,0,,NG033014
+G0737,Obia/Akpor,council,local government area,G0037,,pending,,,,0,,NG033015
+G0738,Ogba/Egbema/Ndoni,council,local government area,G0037,,pending,,,,0,,NG033016
+G0739,Ogu/Bolo,council,local government area,G0037,,pending,,,,0,,NG033017
+G0740,Okrika,council,local government area,G0037,,pending,,,,0,,NG033018
+G0741,Omumma,council,local government area,G0037,,pending,,,,0,,NG033019
+G0742,Opobo/Nkoro,council,local government area,G0037,,pending,,,,0,,NG033020
+G0743,Oyigbo,council,local government area,G0037,,pending,,,,0,,NG033021
+G0744,Port-Harcourt,council,local government area,G0037,,done,R001,2026-10-22,1,0,Port-Harcourt LGA (Rivers) sample sweep; no council-level wealth tax motion or supporter found,NG033022
+G0745,Tai,council,local government area,G0037,,pending,,,,0,,NG033023
+G0746,Binji,council,local government area,G0038,,pending,,,,0,,NG034001
+G0747,Bodinga,council,local government area,G0038,,pending,,,,0,,NG034002
+G0748,Dange-Shuni,council,local government area,G0038,,pending,,,,0,,NG034003
+G0749,Gada,council,local government area,G0038,,pending,,,,0,,NG034004
+G0750,Gwadabawa,council,local government area,G0038,,pending,,,,0,,NG034005
+G0751,Goronyo,council,local government area,G0038,,pending,,,,0,,NG034006
+G0752,Gudu,council,local government area,G0038,,pending,,,,0,,NG034007
+G0753,Illela,council,local government area,G0038,,pending,,,,0,,NG034008
+G0754,Isa,council,local government area,G0038,,pending,,,,0,,NG034009
+G0755,Kebbe,council,local government area,G0038,,pending,,,,0,,NG034010
+G0756,Kware,council,local government area,G0038,,pending,,,,0,,NG034011
+G0757,Rabah,council,local government area,G0038,,pending,,,,0,,NG034012
+G0758,Sabon Birni,council,local government area,G0038,,pending,,,,0,,NG034013
+G0759,Shagari,council,local government area,G0038,,pending,,,,0,,NG034014
+G0760,Silame,council,local government area,G0038,,pending,,,,0,,NG034015
+G0761,Sokoto North,council,local government area,G0038,,pending,,,,0,,NG034016
+G0762,Sokoto South,council,local government area,G0038,,pending,,,,0,,NG034017
+G0763,Tambuwal,council,local government area,G0038,,pending,,,,0,,NG034018
+G0764,Tangaza,council,local government area,G0038,,pending,,,,0,,NG034019
+G0765,Tureta,council,local government area,G0038,,pending,,,,0,,NG034020
+G0766,Wamako,council,local government area,G0038,,pending,,,,0,,NG034021
+G0767,Wurno,council,local government area,G0038,,pending,,,,0,,NG034022
+G0768,Yabo,council,local government area,G0038,,pending,,,,0,,NG034023
+G0769,Ardo-Kola,council,local government area,G0039,,pending,,,,0,,NG035001
+G0770,Bali,council,local government area,G0039,,pending,,,,0,,NG035002
+G0771,Donga,council,local government area,G0039,,pending,,,,0,,NG035003
+G0772,Gashaka,council,local government area,G0039,,pending,,,,0,,NG035004
+G0773,Gassol,council,local government area,G0039,,pending,,,,0,,NG035005
+G0774,Ibi,council,local government area,G0039,,pending,,,,0,,NG035006
+G0775,Jalingo,council,local government area,G0039,,pending,,,,0,,NG035007
+G0776,Karim-Lamido,council,local government area,G0039,,pending,,,,0,,NG035008
+G0777,Kurmi,council,local government area,G0039,,pending,,,,0,,NG035009
+G0778,Lau,council,local government area,G0039,,pending,,,,0,,NG035010
+G0779,Sardauna,council,local government area,G0039,,pending,,,,0,,NG035011
+G0780,Takum,council,local government area,G0039,,pending,,,,0,,NG035012
+G0781,Ussa,council,local government area,G0039,,pending,,,,0,,NG035013
+G0782,Wukari,council,local government area,G0039,,pending,,,,0,,NG035014
+G0783,Yorro,council,local government area,G0039,,pending,,,,0,,NG035015
+G0784,Zing,council,local government area,G0039,,pending,,,,0,,NG035016
+G0785,Bade,council,local government area,G0040,,pending,,,,0,,NG036001
+G0786,Bursari,council,local government area,G0040,,pending,,,,0,,NG036002
+G0787,Damaturu,council,local government area,G0040,,pending,,,,0,,NG036003
+G0788,Fika,council,local government area,G0040,,pending,,,,0,,NG036004
+G0789,Fune,council,local government area,G0040,,pending,,,,0,,NG036005
+G0790,Geidam,council,local government area,G0040,,pending,,,,0,,NG036006
+G0791,Gujba,council,local government area,G0040,,pending,,,,0,,NG036007
+G0792,Gulani,council,local government area,G0040,,pending,,,,0,,NG036008
+G0793,Jakusko,council,local government area,G0040,,pending,,,,0,,NG036009
+G0794,Karasuwa,council,local government area,G0040,,pending,,,,0,,NG036010
+G0795,Machina,council,local government area,G0040,,pending,,,,0,,NG036011
+G0796,Nangere,council,local government area,G0040,,pending,,,,0,,NG036012
+G0797,Nguru,council,local government area,G0040,,pending,,,,0,,NG036013
+G0798,Potiskum,council,local government area,G0040,,pending,,,,0,,NG036014
+G0799,Tarmua,council,local government area,G0040,,pending,,,,0,,NG036015
+G0800,Yunusari,council,local government area,G0040,,pending,,,,0,,NG036016
+G0801,Yusufari,council,local government area,G0040,,pending,,,,0,,NG036017
+G0802,Anka,council,local government area,G0041,,pending,,,,0,,NG037001
+G0803,Bakura,council,local government area,G0041,,pending,,,,0,,NG037002
+G0804,Birnin Magaji,council,local government area,G0041,,pending,,,,0,,NG037003
+G0805,Bukkuyum,council,local government area,G0041,,pending,,,,0,,NG037004
+G0806,Bungudu,council,local government area,G0041,,pending,,,,0,,NG037005
+G0807,Gummi,council,local government area,G0041,,pending,,,,0,,NG037006
+G0808,Gusau,council,local government area,G0041,,pending,,,,0,,NG037007
+G0809,Kaura Namoda,council,local government area,G0041,,pending,,,,0,,NG037008
+G0810,Maradun,council,local government area,G0041,,pending,,,,0,,NG037009
+G0811,Maru,council,local government area,G0041,,pending,,,,0,,NG037010
+G0812,Shinkafi,council,local government area,G0041,,pending,,,,0,,NG037011
+G0813,Talata Mafara,council,local government area,G0041,,pending,,,,0,,NG037012
+G0814,Tsafe,council,local government area,G0041,,pending,,,,0,,NG037013
+G0815,Zurmi,council,local government area,G0041,,pending,,,,0,,NG037014
