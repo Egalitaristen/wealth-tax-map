@@ -2,69 +2,6 @@ link_id,from_actor_id,to_actor_id,link_type,evidence_id,source_url,note
 L0001,A0001,A0002,member_of,E00001,https://www.wp.sg,Member of Parliament representing The Workers' Party
 L0002,A0003,A0002,leads,E00003,https://www.wp.sg,Secretary-General of The Workers' Party
 L0003,A0004,A0002,member_of,E00004,https://www.wp.sg,Member of Parliament representing The Workers' Party
-L0004,A0012,A0002,member_of,E00012,https://www.wp.sg,Member of Parliament representing The Workers' Party
-L0005,A0013,A0002,member_of,E00013,https://www.wp.sg,Member of Parliament representing The Workers' Party
-L0006,A0014,A0006,leads,E00014,https://psp.org.sg,Secretary-General of Progress Singapore Party
-L0007,A0015,A0006,member_of,E00015,https://psp.org.sg,First Vice-Chairperson of Progress Singapore Party
-L0008,A0016,A0007,member_of,E00016,https://reddotunited.sg,Head of Welfare and Policy Council member of Red Dot United
 L0009,A0017,A0010,co_author,E00017,https://www.academia.sg/academic-views/ultra-rich-philanthropy-or-taxes/,Co-authored policy analysis on wealth taxation and philanthropy with Linda Lim
-L0010,A0019,A0006,leads,E00019,https://psp.org.sg,Chairman and founder of Progress Singapore Party
-L0011,A0020,A0007,leads,E00020,https://reddotunited.sg,Secretary-General and co-founder of Red Dot United
-L0012,A0021,A0002,member_of,E00021,https://www.wp.sg,Member of Parliament representing The Workers' Party
-L0013,A0022,A0002,leads,E00022,https://www.wp.sg,Chair of The Workers' Party
-L0014,A0023,A0002,leads,E00023,https://www.wp.sg,Vice-Chairman of The Workers' Party
 L0015,A0025,A0024,coalition_partner,,https://www.ricemedia.co,Co-organized alternative May Day rallies and joint advocacy events on labour rights and economic justice
 L0016,A0027,A0026,co_author,E00027,https://news.nus.edu.sg/time-to-consider-a-wealth-tax-for-spore/,Co-authored published policy commentary in The Straits Times proposing a wealth tax for Singapore
-L0017,A0028,A0002,member_of,E00028,https://www.wp.sg,Former Member of Parliament representing The Workers' Party
-L0018,A0029,A0002,member_of,E00029,https://www.wp.sg,Former Member of Parliament representing The Workers' Party
-L0019,A0030,A0002,leads,E00030,https://www.wp.sg,Central Executive Committee member of The Workers' Party
-L0020,A0031,A0002,leads,E00031,https://www.wp.sg,Deputy Organising Secretary of The Workers' Party
-L0021,A0032,A0002,member_of,E00032,https://www.wp.sg,Parliamentary candidate representing The Workers' Party
-L0022,A0033,A0002,member_of,E00033,https://www.wp.sg,Parliamentary candidate representing The Workers' Party
-L0023,A0034,A0002,member_of,E00034,https://www.wp.sg,Parliamentary candidate representing The Workers' Party
-L0024,A0035,A0002,member_of,E00035,https://www.wp.sg,Former NCMP and candidate representing The Workers' Party
-L0025,A0036,A0002,leads,E00036,https://www.wp.sg,Central Executive Committee member of The Workers' Party
-L0026,A0037,A0002,leads,E00037,https://www.wp.sg,President of the Youth Wing of The Workers' Party
-L0027,A0038,A0002,member_of,E00038,https://www.wp.sg,Town Councillor and parliamentary candidate representing The Workers' Party
-L0028,A0039,A0002,member_of,E00039,https://www.wp.sg,Parliamentary candidate representing The Workers' Party
-L0029,A0040,A0002,member_of,E00040,https://www.wp.sg,Parliamentary candidate representing The Workers' Party
-L0030,A0041,A0007,leads,E00041,https://reddotunited.sg,Chairman of Red Dot United
-L0031,A0042,A0007,leads,E00042,https://reddotunited.sg,Head of Policy of Red Dot United
-L0032,A0043,A0006,leads,E00043,https://psp.org.sg,Head of Women's Wing of Progress Singapore Party
-L0033,A0044,A0006,leads,E00044,https://psp.org.sg,Former Chairman and Central Executive Committee member of Progress Singapore Party
-L0034,A0045,A0006,member_of,E00045,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0035,A0046,A0002,member_of,E00046,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0036,A0047,A0002,member_of,E00047,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0037,A0048,A0002,member_of,E00048,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0038,A0049,A0002,member_of,E00049,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0039,A0050,A0002,member_of,E00050,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0040,A0051,A0002,member_of,E00051,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0041,A0052,A0002,member_of,E00052,https://www.wp.sg,Member of the Central Executive Committee of The Workers' Party
-L0042,A0053,A0002,member_of,E00053,https://www.wp.sg,Executive Committee member of the Youth Wing of The Workers' Party
-L0043,A0054,A0002,member_of,E00054,https://www.wp.sg,Executive Committee member of the Youth Wing of The Workers' Party
-L0044,A0055,A0006,member_of,E00055,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0045,A0056,A0006,member_of,E00056,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0046,A0057,A0006,member_of,E00057,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0047,A0058,A0006,member_of,E00058,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0048,A0059,A0006,member_of,E00059,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0049,A0060,A0006,member_of,E00060,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0050,A0061,A0006,member_of,E00061,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0051,A0062,A0006,member_of,E00062,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0052,A0063,A0006,member_of,E00063,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0053,A0064,A0006,member_of,E00064,https://psp.org.sg,Parliamentary candidate for Progress Singapore Party in GE2020
-L0054,A0065,A0006,member_of,E00065,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0055,A0066,A0006,member_of,E00066,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0056,A0067,A0006,member_of,E00067,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0057,A0068,A0006,member_of,E00068,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0058,A0069,A0006,member_of,E00069,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0059,A0070,A0006,member_of,E00070,https://psp.org.sg,Central Executive Committee member of Progress Singapore Party
-L0060,A0071,A0007,member_of,E00071,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0061,A0072,A0007,member_of,E00072,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0062,A0073,A0007,member_of,E00073,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0063,A0074,A0007,member_of,E00074,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0064,A0075,A0007,member_of,E00075,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0065,A0076,A0007,member_of,E00076,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0066,A0077,A0007,member_of,E00077,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0067,A0078,A0007,member_of,E00078,https://reddotunited.sg,Central Executive Council member of Red Dot United
-L0068,A0080,A0020,member_of,E00080,https://workersmakepossible.wordpress.com,Founding organiser of Workers Make Possible
-L0069,A0081,A0020,member_of,E00081,https://workersmakepossible.wordpress.com,Founding organiser of Workers Make Possible
