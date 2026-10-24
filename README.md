@@ -39,7 +39,7 @@ Nineteen countries so far, all built with AI assistants and all work in progress
 | Netherlands | `data/nl/` | 342 gemeenten | The Box 3 wealth-tax bill and its cosponsors, motions, party manifestos, Zucman's testimony, the Davos letters |
 | Nigeria | `data/ng/` | 774 local government areas | The Oxfam-led 2024 report and its authors, Oxfam's 2026 call for a 1% tax, a Lagos wealth-tax conference, op-eds |
 | Norway | `data/no/` | 357 kommuner | Parties, unions, think tanks, economists and commentators who defend the formuesskatt in their own words |
-| Poland | `data/pl/` | none yet | Razem and the Greens, OPZZ, economists and commentators, MEP votes; 251 manifesto signatories are flagged as implied support |
+| Poland | `data/pl/` | 2,479 gminas | Razem and the Greens, OPZZ, economists and commentators, MEP votes; 251 manifesto signatories are flagged as implied support |
 | Singapore | `data/sg/` | 55 planning areas | The Workers', Progress Singapore and Red Dot United party platforms, MPs' motions, economists and NGOs |
 | Spain | `data/es/` | 8,125 municipios | The 7 June 2022 Congreso roll call, Ley 38/2022, Sumar, ministers, Oxfam Intermón, Gestha, the big unions |
 | Sweden | `data/se/` | 290 kommuner | Riksdag members of the left parties, unions, economists; the regional and local sweep is still to do |
